@@ -6,6 +6,7 @@ in building.
 
 OJ will be add in fulture:
 - [ ] POJ
+- [ ] HDU `building`
 - [ ] ZOJ
 - [ ] BZOJ
 - [ ] Luogu
@@ -15,5 +16,5 @@ OJ will be add in fulture:
 - [ ] Atcoder
 
 Other things maybe to do
-- [ ] Search support
-- [ ] UI support [semantic](https://semantic-ui.com/)
+- [ ] Search supported
+- [ ] UI supported [semantic](https://semantic-ui.com/)
