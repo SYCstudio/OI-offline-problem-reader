@@ -22,32 +22,9 @@ headers = {'User-Agent':
     'Chrome/51.0.2704.63 Safari/537.36'} # 浏览器伪装
 num =1013;
 Url = "http://acm.hdu.edu.cn/showproblem.php?pid="
-reg = {}
-reg[0] = r"<td align=center><h1 style='color:#1A5CC8'>.*?[\s\S]</h1>"# Problem Title
-reg[1] = r"Time Limit.*?[\s\S]*?(Java/Others)" # Time limit
-reg[2] = r"Memory Limit:.*?[\s\S]*?(Java/Others)" # Memery limit
-reg[3] = r"<div class=panel_title align=left>Problem Description.*?[\s\S]*?<div class=panel_bottom>" # problem description
-reg[4] =r"<div class=panel_title align=left>Input.*?[\s\S]*?<div class=panel_bottom>" #Input desc
-reg[5] =r"<div class=panel_title align=left>Output.*?[\s\S]*?<div class=panel_bottom>" #Output desc
-reg[6] = r'Sample Input.*?[\s\S]*?</div></pre></div>'
-reg[7] = r'Sample Output.*?[\s\S]*?</div></pre></div>'
 while num<=1013:
-    t = open("hdu题库\hdu%s.txt"%num,"w")
-    for j in range (0,8):
-        print (reg[j])
-        imgre=re.compile(reg[j]) #
-        list = zhenghe(Url,str(num),imgre)
-        if(list=="a"):
-            continue
-
-        for i in list:
-            dr = re.compile(r'<[^>]+>',re.S)
-            dd = dr.sub('',i)
-            dr = re.compile(r'Input',re.S)
-            dd = dr.sub('Input\n',dd)
-            dr = re.compile(r'Output',re.S)
-            dd = dr.sub('Output\n',dd)
-            t.write(dd)
-            t.write("\n\n")
+    t = open("HDU%s.txt"%num,"w")
+    html=getHtml(Url+(str)(num));
+    t.write(html);
     t.close()
     num=num+1
