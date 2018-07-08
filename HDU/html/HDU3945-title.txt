@@ -1,1 +1,0 @@
-The irRegularGame of Life

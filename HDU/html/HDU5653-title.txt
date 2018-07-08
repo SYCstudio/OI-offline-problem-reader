@@ -1,1 +1,0 @@
-Bomber Man wants to bomb an Array.

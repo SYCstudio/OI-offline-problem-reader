@@ -1,1 +1,0 @@
-Single CPU, multi-tasking

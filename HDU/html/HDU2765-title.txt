@@ -1,1 +1,0 @@
-Recursively Palindromic Partitions

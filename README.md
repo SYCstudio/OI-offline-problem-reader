@@ -4,6 +4,7 @@ Thanks to XZYQVQ's [BZPRO](https://github.com/konnyakuxzy/BZPRO). It gived me in
 ## V0.0.1
 [2018.7.8]  
 now we support [HDU](http://acm.hdu.edu.cn/) [1000-6297]  
+you can read demo at [this](https://sycstudio.github.io/HDU/)
 
 ## OJ will be add in fulture:
 - [ ] POJ

@@ -1,1 +1,0 @@
-Graph’s Cycle Component
