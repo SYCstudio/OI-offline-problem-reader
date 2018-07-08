@@ -1,0 +1,21 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Doing Homework</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU1074. Doing Homework</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：2000/1000 MS (Java/Others)</span> <span class="ui label">时间限制：65536/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Ignatius has just come back school from the 30th ACM/ICPC. Now he has a lot of homework to do. Every teacher gives him a deadline of handing in the homework. If Ignatius hands in the homework after the deadline, the teacher will reduce his score of the final test, 1 day for 1 point. And as you know, doing homework always takes a long time. So Ignatius wants you to help him to arrange the order of doing homework to minimize the reduced score.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The input contains several test cases. The first line of the input is a single integer T which is the number of test cases. T test cases follow.<br>Each test case start with a positive integer N(1&lt;=N&lt;=15) which indicate the number of homework. Then N lines follow. Each line contains a string S(the subject's name, each string will at most has 100 characters) and two integers D(the deadline of the subject), C(how many days will it take Ignatius to finish this subject's homework). <br><br>Note: All the subject names are given in the alphabet increasing order. So you may process the problem much easier.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For each test case, you should output the smallest total reduced score, then give out the order of the subjects, one subject in a line. If there are more than one orders, you should output the alphabet smallest one.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">2
+3
+Computer 3 3
+English 20 1
+Math 3 2
+3
+Computer 3 3
+English 6 3
+Math 6 3</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">2
+Computer
+Math
+English
+3
+Computer
+English
+Math
+
+<div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div>
+In the second test case, both Computer->English->Math and Computer->Math->English leads to reduce 3 points, but the 
+word "English" appears earlier than the word "Math", so we choose the first order. That is so-called alphabet order.
+</div><i style='font-size:1px'> </i></div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"></div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

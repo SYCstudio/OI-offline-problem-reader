@@ -1,0 +1,34 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>The Social Network</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU4039. The Social Network</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：3000/2000 MS (Java/Others)</span> <span class="ui label">时间限制：65768/65768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The social network system (SNS) helps people to keep connecting with their friends. Every user in SNS has a friends list. The user can read news posted by the users in his friends list. Friend relation is symmetric - if A is a friend of B, B is always a friend of A.<br><br>Another important function in SNS is friend recommendation. One effective way to recommend friends is recommend by mutual friends. A mutual friend between two users A and B, is a user who is a friend of both A and B. A user can not be a friend of himself. For a specific user A, the system will recommend the user who is not himself or his friend, and has mutual friends with A. If more than one such user exists, recommend the one has most mutual friends with A. If still a tie exists, output all of them.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The first line is a integer T (T≤100), the number of test case.<br>The beginning of each test case is two integers N and Q, the number of friend relationship and the number of query. 1 ≤ N, Q ≤ 1000<br>The following N lines each contain two different names separated by a single space. Each name consisted by only lowercase letters, and its length is less than or equal to 15. This means the two users are friends. No friend relationship will be given more than once.<br>The following Q lines each describe a query. Each line contain one user name. The data guarantee that this name appears at least once in above N lines.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For each case, you should output one line containing “Case k: ” first, where k indicates the case number and counts from one. Then for each query, output one line, contains one or more names of recommended friends, separate by a single space, sorted by alphabetical order. If no persons can be recommended, output one line contains “-”.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">1
+10 11
+hongshu digua
+yingying hongshu
+xmm hongshu
+huaxianzi xmm
+tangjiejie huaxianzi
+xhmz yingying
+digua xhmz
+zt tangjiejie
+xmm lcy
+notonlysuccess ljq
+hongshu
+digua
+yingying
+xmm
+huaxianzi
+tangjiejie
+xhmz
+zt
+lcy
+notonlysuccess
+ljq</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">Case 1:
+xhmz
+yingying
+digua
+digua tangjiejie yingying
+hongshu lcy zt
+xmm
+hongshu
+huaxianzi
+hongshu huaxianzi
+-
+-</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=The+36th+ACM%2FICPC+Asia+Regional+Chengdu+Site+%A1%AA%A1%AA+Online+Contest&source=1&searchmode=source"> The 36th ACM/ICPC Asia Regional Chengdu Site —— Online Contest </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

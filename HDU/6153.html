@@ -1,0 +1,19 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>A Secret</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU6153. A Secret</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：2000/1000 MS (Java/Others)</span> <span class="ui label">时间限制：256000/256000 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Today is the birthday of SF,so VS gives two strings S1,S2 to SF as a present,which have a big secret.SF is interested in this secret and ask VS how to get it.There are the things that VS tell:<br>&nbsp;&nbsp;Suffix(S2,i) = S2[i...len].Ni is the times that Suffix(S2,i) occurs in S1 and Li is the length of Suffix(S2,i).Then the secret is the sum of the product of Ni and Li.<br>&nbsp;&nbsp;Now SF wants you to help him find the secret.The answer may be very large, so the answer should mod 1000000007.  </div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Input contains multiple cases.<br>&nbsp;&nbsp;The first line contains an integer T,the number of cases.Then following T cases.<br>&nbsp;&nbsp;Each test case contains two lines.The first line contains a string S1.The second line contains a string S2.<br>&nbsp;&nbsp;1&lt;=T&lt;=10.1&lt;=|S1|,|S2|&lt;=1e6.S1 and S2 only consist of lowercase ,uppercase letter.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For each test case,output a single line containing a integer,the answer of test case.<br>&nbsp;&nbsp;The answer may be very large, so the answer should mod 1e9+7.  </div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">2
+aaaaa
+aa
+abababab
+aba</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">13
+19
+<div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div>
+case 2: 
+Suffix(S2,1) = "aba",
+Suffix(S2,2) = "ba",
+Suffix(S2,3) = "a".
+N1 = 3,
+N2 = 3,
+N3 = 4.
+L1 = 3,
+L2 = 2,
+L3 = 1.
+ans = （3*3+3*2+4*1）%1000000007.
+</div><i style='font-size:1px'> </i></div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2017%D6%D0%B9%FA%B4%F3%D1%A7%C9%FA%B3%CC%D0%F2%C9%E8%BC%C6%BE%BA%C8%FC+-+%CD%F8%C2%E7%D1%A1%B0%CE%C8%FC&source=1&searchmode=source"> 2017中国大学生程序设计竞赛 - 网络选拔赛 </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

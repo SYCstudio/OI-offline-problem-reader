@@ -1,0 +1,40 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Pebbles</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU2167. Pebbles</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：3000/1000 MS (Java/Others)</span> <span class="ui label">时间限制：65536/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">You're given an unlimited number of pebbles to distribute across an N x N game board (N drawn from [3, 15]), where each square on the board contains some positive point value between 10 and 99, inclusive.  A 6 x 6 board might look like this:<br><img style='max-width:100%;' src=./data/images/C127_1004_1.jpg><br>The player distributes pebbles across the board so that:<br><br>?At most one pebble resides in any given square.<br>?No two pebbles are placed on adjacent squares.  Two squares are considered adjacent if they are horizontal, vertical, or even diagonal neighbors.  There's no board wrap, so 44 and 61 of row three aren't neighbors. Neither are 33 and 75 nor 55 and 92.<br><br>The goal is to maximize the number of points claimed by your placement of pebbles.<br><br>Write a program that reads in a sequence of boards from an input file and prints to stdout the maximum number of points attainable by an optimal pebble placement for each.  <br><br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Each board is expressed as a series of lines, where each line is a space-delimited series of numbers.  A blank line marks the end of each board (including the last one)<br><br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">then your program would print the maximum number of points one can get by optimally distributing pebbles while respecting the two rules, which would be this (each output should be printed on a single line and followed with a newline):<br> <br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">71 24 95 56 54
+85 50 74 94 28
+92 96 23 71 10
+23 61 31 30 46
+64 33 32 95 89
+
+78 78 11 55 20 11
+98 54 81 43 39 97
+12 15 79 99 58 10
+13 79 83 65 34 17
+85 59 61 12 58 97
+40 63 97 85 66 90
+
+33 49 78 79 30 16 34 88 54 39 26
+80 21 32 71 89 63 39 52 90 14 89
+49 66 33 19 45 61 31 29 84 98 58
+36 53 35 33 88 90 19 23 76 23 76
+77 27 25 42 70 36 35 91 17 79 43
+33 85 33 59 47 46 63 75 98 96 55
+75 88 10 57 85 71 34 10 59 84 45
+29 34 43 46 75 28 47 63 48 16 19
+62 57 91 85 89 70 80 30 19 38 14
+61 35 36 20 38 18 89 64 63 88 83
+45 46 89 53 83 59 48 45 87 98 21
+
+15 95 24 35 79 35 55 66 91 95 86 87
+94 15 84 42 88 83 64 50 22 99 13 32
+85 12 43 39 41 23 35 97 54 98 18 85
+84 61 77 96 49 38 75 95 16 71 22 14
+18 72 97 94 43 18 59 78 33 80 68 59
+26 94 78 87 78 92 59 83 26 88 91 91
+34 84 53 98 83 49 60 11 55 17 51 75
+29 80 14 79 15 18 94 39 69 24 93 41
+66 64 88 82 21 56 16 41 57 74 51 79
+49 15 59 21 37 27 78 41 38 82 19 62
+54 91 47 29 38 67 52 92 81 99 11 27
+31 62 32 97 42 93 43 79 88 44 54 48</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">572
+683
+2096
+2755</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2007+ACM-ICPC+Pacific+Northwest+Region&source=1&searchmode=source"> 2007 ACM-ICPC Pacific Northwest Region </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

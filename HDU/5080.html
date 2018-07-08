@@ -1,0 +1,24 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Colorful Toy</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU5080. Colorful Toy</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：2000/1000 MS (Java/Others)</span> <span class="ui label">时间限制：262144/262144 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">A toy is made up of N vertices and M undirected edges in the 2D plane. As usual, you want to know how many ways there are to color the vertices of the toy. You have totally C colors.  And of course, to make things fun, you think that if one color configuration can be rotated to get another, these two configurations should be considered the same. Rotation means 2D in-plane rotation and reflection is not considered as rotation.<br><br><center><img style='max-width:100%;' src=./data/images/C549-1011-1.jpg></center><br>For instance, consider coloring the following toy with 2 colors. The coordinates of the vertices are:<br><br>   1. (0,0)<br>   2. (1,0)<br>   3. (0,1)<br>   4. (-1,0)<br>   5. (0,-1)<br><br>The toy has 6 edges: (1,2), (1,3), (2,3), (3,4), (4,5), (5,2).<br><br>As a 2D being, this toy has no symmetry. So there are 32 ways to color it. Had the first two edges been removed, there would be only 12 different ways.<br><br>You should output the answer modulo 10<sup>9</sup> + 7.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The first line contains an integer T (T ≤ 20) denoting the number of the test cases.<br><br>Each test case begins with three positive integers N (1 ≤ N ≤ 50), M (0 ≤ M ≤ N (N - 1)/2) and C(1 ≤ C ≤ 100).<br><br>Then follow N lines. Each line contains 2 integers in range [-10000,10000] describing a vertex.<br><br>Then follow M lines. Each line contains 2 integers in range [1,N] representing an edge. There are neither duplicate edges nor self-loops.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For each test case, output one line containing the answer.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">2
+5 6 2
+0 0
+1 0
+0 1
+-1 0
+0 -1
+1 2
+1 3
+2 3
+3 4
+4 5
+5 2
+5 4 2
+0 0
+1 0
+0 1
+-1 0
+0 -1
+2 3
+3 4
+4 5
+5 2</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">32
+12</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2014+Asia+AnShan+Regional+Contest&source=1&searchmode=source"> 2014 Asia AnShan Regional Contest </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

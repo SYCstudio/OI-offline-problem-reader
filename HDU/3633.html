@@ -1,0 +1,48 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Black and white</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU3633. Black and white</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：20000/10000 MS (Java/Others)</span> <span class="ui label">时间限制：32768/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Given a partially filled grid with N rows and M columns and each gird with a number.We define <b>sumBlack</b> is the sum of all Black gird and <b>sumWhite</b> is the sum of all White gird.<br>You are to calculate how many ways there are to fill the remaining part of the grid under the constraints stated below to make the <b>absolute of (sumBlack - sumWhite)</b> minimum and output one of these ways (if any exist). <br>Each cell in the grid should be colored either black or white.<br>All black cells in the grid should be connected with each other, and all white cells should also be connected with each other.The pictures below show two filled grids where this constraint is only fulfilled in the picture2.<br><center><img style='max-width:100%;' src=./data/images/C308_1002_1.png></center><br>There must be no <b>2x2</b> blocks in the grid which consists of only white cells, or of only black cells.<br>The picture3 shows a grid with a black and a white <b>2x2</b> block, while the picture4 contains no such <b>2x2</b> block. <br><center><img style='max-width:100%;' src=./data/images/C308_1002_2.png></center><br>You are not allowed to change the color of any of the cells whose color has already been assigned in the input, and all cells must be colored.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The first line in the input contains an integer T (1&lt;=T&lt;=30), the number of cases to follow.<br>Each case starts with two integers, N and M (2 ≤ N, M ≤ 8), the number of rows and columns respectively in the grid.<br>The next N lines contains M characters each and describes the grid using the following characters:<br>&nbsp;&nbsp;# - a cell which is colored black<br>&nbsp;&nbsp;o - a cell which is colored white<br>&nbsp;&nbsp;. - a cell which color has not yet been assigned<br>The next N lines contains M integers (-1 or 0 or 1) each indicating the number of this gird.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For each case, first line output the number of case(as shown in the sample output)<br>If there are at least one way, then output the minimum <b>absolute of (sumBlack - sumWhite)</b> and the number of ways to fill the grid make it minimum in a line and output one of these ways, using the same format for the grid as in the input.(anyone is ok)<br>If there is no way to fill the gird under the constraints stated , just output two zero.<br>Output a blank line after each case.(Special judge.If you not output a blank line after each case, you may get Wrong Answer)</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">4
+2 3
+xxx
+oox
+1 1 0
+0 1 0
+
+2 3
+...
+...
+1 1 0
+0 1 -1
+
+5 5
+..x..
+.....
+....o
+o....
+.x...
+1 1 0 0 1
+0 -1 -1 0 1
+1 1 0 -1 0
+1 0 1 -1 -1
+-1 -1 1 -1 0
+
+4 5
+.....
+.....
+.....
+.....
+1 1 0 0 1
+0 -1 -1 0 1
+1 1 0 -1 0
+1 0 1 -1 -1</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">Case 1: 1 1
+xxx
+oox
+
+Case 2: 0 8
+xxx
+xox
+
+Case 3: 0 0
+
+Case 4: 1 54
+xxxxx
+xoxox
+oooox
+oxxxx</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2010+ACM-ICPC+Multi-University+Training+Contest%A3%A819%A3%A9%A1%AA%A1%AAHost+by+HDU&source=1&searchmode=source"> 2010 ACM-ICPC Multi-University Training Contest（19）——Host by HDU </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

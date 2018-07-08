@@ -1,0 +1,102 @@
+<html><head><meta name=keywords content="HDOJ ACM ICPC OJ C C++ Pascal Java"><meta http-equiv=Content-Type content="text/html;charset=gb2312"><link rel=stylesheet type=text/css href="/images/global.css" media=all><link rel=stylesheet type=text/css href="/css/diyinhead.css" media=all><link rel=stylesheet type=text/css href="/css/webinhead.css" media=all><script src="/js/global.js" type=text/javascript></script><script src="/js/register.js" type=text/javascript></script><script src="/js/MathJax/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script><title>Problem - 2249</title></head><body >
+<a name=top></a>
+<table align=center cellSpacing=0 cellPadding=0 width=980 border=0 style="word-wrap:break-word">
+<tr>
+	<td style="border:#1A5CC8 1px solid" align=center width=100%>
+		<a href="/">
+			<img src="/images/banner.jpg" width="100%" height=116 border=0>
+		</a>
+	</td>
+</tr>
+<tr>
+	<td style="border:#1A5CC8 1px solid">
+	<table cellSpacing=0 cellPadding=1 width="979px">
+	<tr bgcolor=#1A5CC8 align=center class=banner height=25>
+		<td>Online Judge</td>
+		<td>Online Exercise</td>
+		<td>Online Teaching</td>
+		<td>Online Contests</td>
+	<td>Exercise Author</td>
+	</tr>
+	<tr style="font-size:16px" align=center>
+		<td width=20% valign=top>
+		<a href="/faq.php" style="text-decoration: none">F.A.Q</a><br>
+		<a href="/friends" style="text-decoration: none">Hand In Hand</a><br>
+		<a href="/onlineuser.php" style="text-decoration: none">Online Acmers</a>	<br>
+		<!-- /onlineuser.php-->
+		
+		<a href="/forum" style="text-decoration: none">Forum | </a><a href="/discuss/public/list.php" style="text-decoration: none">Discuss</a><br>
+		<a href="/statistic/submit_graph.php" style="text-decoration: none">Statistical Charts</a><br>
+		</td>
+		<td width=20% valign=top>
+		<form action="/search.php" method=get>
+		<a href="/listproblem.php?vol=1" style="text-decoration: none">Problem Archive</a><br/>
+		<!--<a href="http://feeds.feedburner.com/Hdoj-problemset"><img src="/images/rss1.jpg" alt="problemset" style="vertical-align:text-bottom;"width=20 height=20></a><br>-->
+		<!--
+			 <a href="/submit.php">Submit Solution</a><br>
+		-->	
+		<a href="/status.php" style="text-decoration: none">Realtime Judge Status</a><br>
+
+		<a href="/ranklist.php" style="text-decoration: none">Authors Ranklist</a><br>
+		<input name=field value=author type=hidden><input class=text60 name=key>&nbsp;<input class=button40 type=submit value=Search>
+		
+		<!--
+			<input name=field value=problem type=hidden><input class=text60 name=key>&nbsp;<input class=button40 type=submit value=Search>
+		-->
+		</form>
+		</td>
+		<td width=20% valign=top>
+		 <form action='/search.php' method=get> 
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="text-decoration: none" href="http://code.hdu.edu.cn/">C/C++/Java Exams &nbsp;&nbsp;&nbsp;&nbsp;</a><br/>
+		<a style="text-decoration: none" href="/game">ACM Steps</a><br/>
+		<a href = "/ITJobs/">Go to Job</a><br/>	
+		<a href="/livecast" style="text-decoration: none">Contest LiveCast</a><br/>
+		<a style="text-decoration: none" href="/region">ICPC@China</a><br/>
+		<!-- <a href="/register.php">Register New Author</a><br> -->
+		<!-- <a href="/modifyuser.php">Update Your Information</a><br> -->
+		</form>
+		</td>
+		<td width=20% valign=top>
+		<a href="http://bestcoder.hdu.edu.cn" style="text-decoration: none; color: red; font-weight: bold;">Best Coder <sup style="color: gray;">beta</sup></a><br/><a href="/vip/contest_list.php" style="text-decoration: none">VIP</a> | <a href="/contests/contest_list.php" style="text-decoration: none">STD Contests</a><br /><a href="http://code.hdu.edu.cn/vcontest" style="text-decoration: none">Virtual Contests </a><br/>&nbsp;&nbsp;<a href="/diy/contest_list.php" style="text-decoration: none">&nbsp;&nbsp;DIY | </a><a href="/webcontest" style="text-decoration: none"><font color="">Web-DIY</font> <font size=1 color="gray"><sup>beta</sup></font></a><br/><a style="text-decoration: none" href="/recentcontest">Recent Contests</a><br/>		</td>
+		<td width=20%>
+					<form method=post action="/userloginex.php?action=login">
+			  <table width=168 border=0 align=center cellspacing=0>
+			  	<tr><td align=center colspan=2><a href="/qqlogin/oauth/login.php"><img src="/qqlogin/images/qqlogin.png" border="0" /></a></td></tr>
+				<tr><td width=68>Author ID&nbsp;</td><td align=right><input name=username type=text class=text90 maxlength=20></td></tr>
+				<tr><td>Password&nbsp;</td><td align=right><input name=userpass type=password class=text90 maxlength=20></td></tr>
+			  </table>
+			  <input name=login type=submit class=button40 value="Sign In">&nbsp;<a href="http://bestcoder.hdu.edu.cn/register.php?url=acm.hdu.edu.cn/userloginex.php?action=login" style="text-decoration: none">Register new ID</a>
+			</form>
+						</td>
+	</tr>
+	</table>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div align=center id=rollword><marquee scrollamount=2 width=600 scrolldelay=30 onMouseOver="javascript:this.stop();" onMouseOut="javascript:this.start();"><b style="margin-right:20px"></b></marquee></div>	</td>
+</tr>
+<tr><td align=center><h1 style='color:#1A5CC8'>最小费用狗</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 1000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 174&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 26<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>在地球上的一个鲜为人知的角落,住着这样一群人.他们整日与算法为伴,以研究出高效的算法为荣.就连竞选村长都是以Word Final的标准进行的.这里的算法风气之浓厚,就连当地的动物们都受到了极大的影响.旺财是村长--TCL(相当于世界冠军的水平)的爱犬,从小就受到村长一家的熏陶,当别的小动物都还在算A+B的的时候,旺财已经学会&quot;迪杰斯特拉&quot;和&quot;贝尔曼-佛德&quot;了,因此他一直是当地的小动物们崇拜的对象,它们眼中的最有希望进Animal Kingdom World Final的明日之星,就连村里面耕地的老牛们见了他都要叫声&quot;大牛好~&quot;.<br>可是,旺财也有他的苦衷.TCL对待他实在是太好了,每天都请医疗专家周海角为旺财开出许多的保健药品(据说TCL那么牛就是因为从小吃周海角开的药).周海角作为一名医疗专家,有着数十年的江湖行医经验,他的药方不是一般人能开得出来的.他每次都会开出两张药方,第一张药方上写有N1种药品(每种药的编号分别为1,2,3……,N1),第二张药方上写有N2种药品(编号分别为N1+1,N1+2,N1+3……,N1+N2),之所以要这样,是因为第一张药方上的药只有村北的药店里才有,而第二张药方上的药只有村南的药店里才有,并且,药方上还明确指出哪些药必须在哪些药服用之后才能服用,否则会有脑残的危险!还需要一提的药是不能打包带回去,只能在相应的药店里在专家指导下当场服用,安全第一嘛。旺财还面临的一个问题是:村北和村南的药店相隔甚远,而且两地之间还有一个规定凡是4条腿或4个轮子的东西经过都要交钱的收费站,作为一条精通算法的小狗,旺财始终把&quot;提高效率减小耗费&quot;作为自己的座右铭.他在想要怎样吃药才能使跑远路的次数最少,这样过路费也会最小.从村南到村北或从村北到村南算一次跑远路,到最后吃完药跑回家,也算一次哦.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>有多组输入数据.每组数组的第一行有三个整数N1, N2, M. 接下来有M行数组,每行有两个整数 a, b, 分别表示在吃第a种药之前,需要先吃第b种药. 最后一组数据后,会有三个0表示输入结束。所有的数据中, 1&lt;=N1,N2&lt;=60000, 0&lt;=M&lt;=120000, 1&lt;=a,b&lt;=N1+N2.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>每组数据输出一个整数,表示旺财把药房上的药吃完所需的跑远路的次数.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">5 3 3
+1 2
+5 1
+3 2
+0 0 0</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">3</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href="/search.php?field=problem&key=HDOJ+2008+Summer+Exercise%A3%A84%A3%A9-+Buffet+Dinner&source=1&searchmode=source"> HDOJ 2008 Summer Exercise（4）- Buffet Dinner </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=2249'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=2249'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=2249">Discuss</a> | <a href='note/note.php?pid=2249'>Note</a><br></td></tr><tr>
+<td>
+	<table style="border:#1A5CC8 1px solid; font-size:14px" cellSpacing=0 cellPadding=1 width=100%>
+	<tr align=center>
+		<td class=footer_link height=45><a href="/">Home</a> | <a href=#top>Top</a></td>
+		<td style="padding:6px">
+			Hangzhou Dianzi University Online Judge 3.0<br>
+			Copyright &copy; 2005-2018 <a href=mailto:acm@hdu.edu.cn>HDU ACM Team</a>. All Rights Reserved.<br>
+			<a href="../about_us/developer.php">Designer & Developer </a>: <a>Wang Rongtao</a>&nbsp<a>LinLe</a>&nbsp<a href=mailto:gjavac@gmail.com >GaoJie</a>&nbsp<a href=mailto:gl8997@gmail.com >GanLu</a><br>
+			<span class=pagerunstatus>Total 0.000000(s) query 2, Server time : 2018-07-07 21:18:17, Gzip disabled</span>		</td>
+		<td class=footer_link>
+			<!-- <a href="javascript:history.go(-1);">Back</a> | <a href="javascript:history.forward();">Forward</a>-->
+			<a href="/admin">Administration</a>	
+		</td>
+	</tr>
+	</table>
+</td>
+</tr>
+</table>
+</body></html>

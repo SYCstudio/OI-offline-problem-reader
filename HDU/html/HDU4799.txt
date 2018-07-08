@@ -1,0 +1,102 @@
+<html><head><meta name=keywords content="HDOJ ACM ICPC OJ C C++ Pascal Java"><meta http-equiv=Content-Type content="text/html;charset=gb2312"><link rel=stylesheet type=text/css href="/images/global.css" media=all><link rel=stylesheet type=text/css href="/css/diyinhead.css" media=all><link rel=stylesheet type=text/css href="/css/webinhead.css" media=all><script src="/js/global.js" type=text/javascript></script><script src="/js/register.js" type=text/javascript></script><script src="/js/MathJax/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script><title>Problem - 4799</title></head><body >
+<a name=top></a>
+<table align=center cellSpacing=0 cellPadding=0 width=980 border=0 style="word-wrap:break-word">
+<tr>
+	<td style="border:#1A5CC8 1px solid" align=center width=100%>
+		<a href="/">
+			<img src="/images/banner.jpg" width="100%" height=116 border=0>
+		</a>
+	</td>
+</tr>
+<tr>
+	<td style="border:#1A5CC8 1px solid">
+	<table cellSpacing=0 cellPadding=1 width="979px">
+	<tr bgcolor=#1A5CC8 align=center class=banner height=25>
+		<td>Online Judge</td>
+		<td>Online Exercise</td>
+		<td>Online Teaching</td>
+		<td>Online Contests</td>
+	<td>Exercise Author</td>
+	</tr>
+	<tr style="font-size:16px" align=center>
+		<td width=20% valign=top>
+		<a href="/faq.php" style="text-decoration: none">F.A.Q</a><br>
+		<a href="/friends" style="text-decoration: none">Hand In Hand</a><br>
+		<a href="/onlineuser.php" style="text-decoration: none">Online Acmers</a>	<br>
+		<!-- /onlineuser.php-->
+		
+		<a href="/forum" style="text-decoration: none">Forum | </a><a href="/discuss/public/list.php" style="text-decoration: none">Discuss</a><br>
+		<a href="/statistic/submit_graph.php" style="text-decoration: none">Statistical Charts</a><br>
+		</td>
+		<td width=20% valign=top>
+		<form action="/search.php" method=get>
+		<a href="/listproblem.php?vol=1" style="text-decoration: none">Problem Archive</a><br/>
+		<!--<a href="http://feeds.feedburner.com/Hdoj-problemset"><img src="/images/rss1.jpg" alt="problemset" style="vertical-align:text-bottom;"width=20 height=20></a><br>-->
+		<!--
+			 <a href="/submit.php">Submit Solution</a><br>
+		-->	
+		<a href="/status.php" style="text-decoration: none">Realtime Judge Status</a><br>
+
+		<a href="/ranklist.php" style="text-decoration: none">Authors Ranklist</a><br>
+		<input name=field value=author type=hidden><input class=text60 name=key>&nbsp;<input class=button40 type=submit value=Search>
+		
+		<!--
+			<input name=field value=problem type=hidden><input class=text60 name=key>&nbsp;<input class=button40 type=submit value=Search>
+		-->
+		</form>
+		</td>
+		<td width=20% valign=top>
+		 <form action='/search.php' method=get> 
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="text-decoration: none" href="http://code.hdu.edu.cn/">C/C++/Java Exams &nbsp;&nbsp;&nbsp;&nbsp;</a><br/>
+		<a style="text-decoration: none" href="/game">ACM Steps</a><br/>
+		<a href = "/ITJobs/">Go to Job</a><br/>	
+		<a href="/livecast" style="text-decoration: none">Contest LiveCast</a><br/>
+		<a style="text-decoration: none" href="/region">ICPC@China</a><br/>
+		<!-- <a href="/register.php">Register New Author</a><br> -->
+		<!-- <a href="/modifyuser.php">Update Your Information</a><br> -->
+		</form>
+		</td>
+		<td width=20% valign=top>
+		<a href="http://bestcoder.hdu.edu.cn" style="text-decoration: none; color: red; font-weight: bold;">Best Coder <sup style="color: gray;">beta</sup></a><br/><a href="/vip/contest_list.php" style="text-decoration: none">VIP</a> | <a href="/contests/contest_list.php" style="text-decoration: none">STD Contests</a><br /><a href="http://code.hdu.edu.cn/vcontest" style="text-decoration: none">Virtual Contests </a><br/>&nbsp;&nbsp;<a href="/diy/contest_list.php" style="text-decoration: none">&nbsp;&nbsp;DIY | </a><a href="/webcontest" style="text-decoration: none"><font color="">Web-DIY</font> <font size=1 color="gray"><sup>beta</sup></font></a><br/><a style="text-decoration: none" href="/recentcontest">Recent Contests</a><br/>		</td>
+		<td width=20%>
+					<form method=post action="/userloginex.php?action=login">
+			  <table width=168 border=0 align=center cellspacing=0>
+			  	<tr><td align=center colspan=2><a href="/qqlogin/oauth/login.php"><img src="/qqlogin/images/qqlogin.png" border="0" /></a></td></tr>
+				<tr><td width=68>Author ID&nbsp;</td><td align=right><input name=username type=text class=text90 maxlength=20></td></tr>
+				<tr><td>Password&nbsp;</td><td align=right><input name=userpass type=password class=text90 maxlength=20></td></tr>
+			  </table>
+			  <input name=login type=submit class=button40 value="Sign In">&nbsp;<a href="http://bestcoder.hdu.edu.cn/register.php?url=acm.hdu.edu.cn/userloginex.php?action=login" style="text-decoration: none">Register new ID</a>
+			</form>
+						</td>
+	</tr>
+	</table>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div align=center id=rollword><marquee scrollamount=2 width=600 scrolldelay=30 onMouseOver="javascript:this.stop();" onMouseOut="javascript:this.start();"><b style="margin-right:20px"></b></marquee></div>	</td>
+</tr>
+<tr><td align=center><h1 style='color:#1A5CC8'>LIKE vs CANDLE</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 4000/2000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 327680/327680 K (Java/Others)<br>Total Submission(s): 588&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 190<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>A microblog caused a war recently - There's the war between LIKE and CANDLE.<br><br><center><img style='max-width:100%;' src=../../data/images/4799-1.jpg></center> <br>As you see, there are N accounts are trying to show their support of LIKE or CANDLE. The way they show the support is forwarding a microblog, which means you choose someone's microblog and repost it with some comment. A valid support microblog is forwarding the original account's microblog or a other valid support microblog. We can assume that all accounts will forward the microblog only once. Also, it is impossible for a microblog forwarding a microblog that posts after it.  When the activity ends, someone will use a software to check these accounts and calculate a Power Point for LIKE and CANDLE. Specifically, each account will have a value based on some algorithm (you need not to care). The value will be added to LIKE if the account is voting LIKE, vice versa. So easy, isn't it?<br>Edward is a programmer and he supports LIKE. He found a bug in the software that used in the activity - He can spend X Power Point of LIKE to flip an account. When an account is flipped, it will be seen as it votes the other side. For example, if Alice votes LIKE and then it is flipped, the software will add the value to CANDLE. Of course, an account can be flipped for several times - If Alice is flipped again, it votes for LIKE again. And if we called the account the flipped account (Notice it's only a concept indicates the account has been flipped and not an attribute of an account), all accounts which forwarding the flipped account's microblog will also be flipped. Soon, Edward found that someone uses this bug before! Some accounts have been flipped already. He can't spend X Power Point to flip them anymore; instead, he need spend Y Power Point to flip an account which has been flipped directly by someone. For the glory of the LIKE, please help Edward to flip accounts so that the Power Point of LIKE can be larger than CANDLE as much as possible.<br>You can spend Power Point as much as you like, no matter the total Power Point of LIKE is negative or not.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The input contains no more than 20 test cases. Notice there's no empty line between each test case.<br>For each test case, first line has three integers N (1 ≤ N ≤ 50000) - the number of the accounts, X (0 ≤ X ≤ 1000) and Y (0 ≤ Y ≤ 1000) - as the problem description. The account is numbered from 1 to N and 0 represent the original account.<br>Following N lines, the i<sup>th</sup> line means the i<sup>th</sup> account. Each line has four integers: V (0 ≤ V ≤ 1000) - the value of the i<sup>th</sup> account, F (0 ≤ F ≤ N) - which account did the i<sup>th</sup> account's forwarding account come from (0<sup>th</sup>  microblog is original account's microblog), S (0 ≤ S ≤ 1) - the status of flipped (0 means no changed, 1 means changed) and P (0 ≤ P ≤ 1) - the side the account supports without flipped (0 means LIKE, 1 means CANDLE).<br>The original microblog's account can't be flipped, and it hasn't the value and the support side.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each test case print an integer, represents the maximum result of the value of LIKE minus the value of CANDLE. If the value of CANDLE is larger than the LIKE, then just output &quot;HAHAHAOMG&quot; (without quote).<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">4 3 2
+5 0 0 0
+3 1 0 1
+4 2 1 0
+1 2 0 0</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">8</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href="/search.php?field=problem&key=2013+Asia+Changsha+Regional+Contest+&source=1&searchmode=source"> 2013 Asia Changsha Regional Contest  </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content></div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=4799'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=4799'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=4799">Discuss</a> | <a href='note/note.php?pid=4799'>Note</a><br></td></tr><tr>
+<td>
+	<table style="border:#1A5CC8 1px solid; font-size:14px" cellSpacing=0 cellPadding=1 width=100%>
+	<tr align=center>
+		<td class=footer_link height=45><a href="/">Home</a> | <a href=#top>Top</a></td>
+		<td style="padding:6px">
+			Hangzhou Dianzi University Online Judge 3.0<br>
+			Copyright &copy; 2005-2018 <a href=mailto:acm@hdu.edu.cn>HDU ACM Team</a>. All Rights Reserved.<br>
+			<a href="../about_us/developer.php">Designer & Developer </a>: <a>Wang Rongtao</a>&nbsp<a>LinLe</a>&nbsp<a href=mailto:gjavac@gmail.com >GaoJie</a>&nbsp<a href=mailto:gl8997@gmail.com >GanLu</a><br>
+			<span class=pagerunstatus>Total 0.000000(s) query 2, Server time : 2018-07-08 00:09:31, Gzip disabled</span>		</td>
+		<td class=footer_link>
+			<!-- <a href="javascript:history.go(-1);">Back</a> | <a href="javascript:history.forward();">Forward</a>-->
+			<a href="/admin">Administration</a>	
+		</td>
+	</tr>
+	</table>
+</td>
+</tr>
+</table>
+</body></html>

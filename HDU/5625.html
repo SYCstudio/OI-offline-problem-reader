@@ -1,0 +1,24 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Clarke and chemistry</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU5625. Clarke and chemistry</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：2000/1000 MS (Java/Others)</span> <span class="ui label">时间限制：65536/65536 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Clarke is a patient with multiple personality disorder. One day, Clarke turned into a junior student and took a chemistry exam.  <br>But he did not get full score in this exam. He checked his test paper and found a naive mistake, he was wrong with a simple chemical equation balancer.  <br>He was unhappy and wanted to make a program to solve problems like this.  <br>This chemical equation balancer follow the rules:  <br>Two valences $A$ combined by $|A|$ elements and $B$ combined by $|B|$ elements.  <br>We get a new valence $C$ by a combination reaction and the stoichiometric coefficient of $C$ is $1$. Please calculate the stoichiometric coefficient $a$ of $A$ and $b$ of $B$ that $aA + bB = C,\ \ a, b \in \text{N}^*$.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The first line contains an integer $T(1 \le T \le 10)$, the number of test cases.  <br>For each test case, the first line contains three integers $A, B, C(1 \le A, B, C \le 26)$, denotes $|A|, |B|, |C|$ respectively.  <br>Then $A+B+C$ lines follow, each line looks like $X\ c$, denotes the number of element $X$ of $A, B, C$ respectively is $c$. ($X$ is one of $26$ capital letters, guarantee $X$ of one valence only appear one time, $1 \le c \le 100$)</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For each test case, if we can balance the equation, print $a$ and $b$. If there are multiple answers, print the smallest one, $a$ is smallest then $b$ is smallest. Otherwise print NO.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">2
+2 3 5
+A 2
+B 2
+C 3
+D 3
+E 3
+A 4
+B 4
+C 9
+D 9
+E 9
+2 2 2
+A 4
+B 4
+A 3
+B 3
+A 9
+B 9</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">2 3
+NO
+
+Hint:
+The first test case, $a=2, b=3$ can make equation right.  
+The second test case, no any answer.</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=BestCoder+Round+%2372+%28div.2%29&source=1&searchmode=source"> BestCoder Round #72 (div.2) </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

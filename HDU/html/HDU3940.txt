@@ -1,0 +1,104 @@
+<html><head><meta name=keywords content="HDOJ ACM ICPC OJ C C++ Pascal Java"><meta http-equiv=Content-Type content="text/html;charset=gb2312"><link rel=stylesheet type=text/css href="/images/global.css" media=all><link rel=stylesheet type=text/css href="/css/diyinhead.css" media=all><link rel=stylesheet type=text/css href="/css/webinhead.css" media=all><script src="/js/global.js" type=text/javascript></script><script src="/js/register.js" type=text/javascript></script><script src="/js/MathJax/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script><title>Problem - 3940</title></head><body >
+<a name=top></a>
+<table align=center cellSpacing=0 cellPadding=0 width=980 border=0 style="word-wrap:break-word">
+<tr>
+	<td style="border:#1A5CC8 1px solid" align=center width=100%>
+		<a href="/">
+			<img src="/images/banner.jpg" width="100%" height=116 border=0>
+		</a>
+	</td>
+</tr>
+<tr>
+	<td style="border:#1A5CC8 1px solid">
+	<table cellSpacing=0 cellPadding=1 width="979px">
+	<tr bgcolor=#1A5CC8 align=center class=banner height=25>
+		<td>Online Judge</td>
+		<td>Online Exercise</td>
+		<td>Online Teaching</td>
+		<td>Online Contests</td>
+	<td>Exercise Author</td>
+	</tr>
+	<tr style="font-size:16px" align=center>
+		<td width=20% valign=top>
+		<a href="/faq.php" style="text-decoration: none">F.A.Q</a><br>
+		<a href="/friends" style="text-decoration: none">Hand In Hand</a><br>
+		<a href="/onlineuser.php" style="text-decoration: none">Online Acmers</a>	<br>
+		<!-- /onlineuser.php-->
+		
+		<a href="/forum" style="text-decoration: none">Forum | </a><a href="/discuss/public/list.php" style="text-decoration: none">Discuss</a><br>
+		<a href="/statistic/submit_graph.php" style="text-decoration: none">Statistical Charts</a><br>
+		</td>
+		<td width=20% valign=top>
+		<form action="/search.php" method=get>
+		<a href="/listproblem.php?vol=1" style="text-decoration: none">Problem Archive</a><br/>
+		<!--<a href="http://feeds.feedburner.com/Hdoj-problemset"><img src="/images/rss1.jpg" alt="problemset" style="vertical-align:text-bottom;"width=20 height=20></a><br>-->
+		<!--
+			 <a href="/submit.php">Submit Solution</a><br>
+		-->	
+		<a href="/status.php" style="text-decoration: none">Realtime Judge Status</a><br>
+
+		<a href="/ranklist.php" style="text-decoration: none">Authors Ranklist</a><br>
+		<input name=field value=author type=hidden><input class=text60 name=key>&nbsp;<input class=button40 type=submit value=Search>
+		
+		<!--
+			<input name=field value=problem type=hidden><input class=text60 name=key>&nbsp;<input class=button40 type=submit value=Search>
+		-->
+		</form>
+		</td>
+		<td width=20% valign=top>
+		 <form action='/search.php' method=get> 
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="text-decoration: none" href="http://code.hdu.edu.cn/">C/C++/Java Exams &nbsp;&nbsp;&nbsp;&nbsp;</a><br/>
+		<a style="text-decoration: none" href="/game">ACM Steps</a><br/>
+		<a href = "/ITJobs/">Go to Job</a><br/>	
+		<a href="/livecast" style="text-decoration: none">Contest LiveCast</a><br/>
+		<a style="text-decoration: none" href="/region">ICPC@China</a><br/>
+		<!-- <a href="/register.php">Register New Author</a><br> -->
+		<!-- <a href="/modifyuser.php">Update Your Information</a><br> -->
+		</form>
+		</td>
+		<td width=20% valign=top>
+		<a href="http://bestcoder.hdu.edu.cn" style="text-decoration: none; color: red; font-weight: bold;">Best Coder <sup style="color: gray;">beta</sup></a><br/><a href="/vip/contest_list.php" style="text-decoration: none">VIP</a> | <a href="/contests/contest_list.php" style="text-decoration: none">STD Contests</a><br /><a href="http://code.hdu.edu.cn/vcontest" style="text-decoration: none">Virtual Contests </a><br/>&nbsp;&nbsp;<a href="/diy/contest_list.php" style="text-decoration: none">&nbsp;&nbsp;DIY | </a><a href="/webcontest" style="text-decoration: none"><font color="">Web-DIY</font> <font size=1 color="gray"><sup>beta</sup></font></a><br/><a style="text-decoration: none" href="/recentcontest">Recent Contests</a><br/>		</td>
+		<td width=20%>
+					<form method=post action="/userloginex.php?action=login">
+			  <table width=168 border=0 align=center cellspacing=0>
+			  	<tr><td align=center colspan=2><a href="/qqlogin/oauth/login.php"><img src="/qqlogin/images/qqlogin.png" border="0" /></a></td></tr>
+				<tr><td width=68>Author ID&nbsp;</td><td align=right><input name=username type=text class=text90 maxlength=20></td></tr>
+				<tr><td>Password&nbsp;</td><td align=right><input name=userpass type=password class=text90 maxlength=20></td></tr>
+			  </table>
+			  <input name=login type=submit class=button40 value="Sign In">&nbsp;<a href="http://bestcoder.hdu.edu.cn/register.php?url=acm.hdu.edu.cn/userloginex.php?action=login" style="text-decoration: none">Register new ID</a>
+			</form>
+						</td>
+	</tr>
+	</table>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div align=center id=rollword><marquee scrollamount=2 width=600 scrolldelay=30 onMouseOver="javascript:this.stop();" onMouseOut="javascript:this.start();"><b style="margin-right:20px"></b></marquee></div>	</td>
+</tr>
+<tr><td align=center><h1 style='color:#1A5CC8'>The Angry Birds</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 125536/65536 K (Java/Others)<br>Total Submission(s): 964&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 503<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>“Lemme tell ya, these ain’t no ordinary finches we’re talkin’ about. These here are the Angry Birds, the ones that’s gonna kick you in the ‘nads. And they’re the ones on your side. They must be from Galapadapados, or sumptin’.” – Col. Angus, Bird Expert.<br>The survival of the Angry Birds is at stake. Dish out revenge on the green pigs who stole the Birds’ eggs. Use the unique destructive powers of the Angry Birds to lay waste to the pigs’ fortified castles.<br>There are 3 kinds of bird in Angry Birds Army -- the Red bird, the Yellow bird and the Blue bird. To destroy the pigs' fortified castles, birds will be shot by a sling. Different kind of birds has different flying routes after they are shot.<br>In this world, the acceleration of gravity is 9.8 m/(s^2);<br>1.The Red Bird: <br>The Red Bird's route is a normal parabola (抛物线) .<br><center><img style='max-width:100%;' src=../../data/images/C363-1001-1.jpg></center><br>2.The Yellow Bird:<br> The Yellow Bird can accelerate. The Yellow Bird's flying route is the same as The Red Bird before it accelerate. After The Yellow Bird accelerate, both its horizontal velocity and its vertical velocity will be doubled at once（the bird is still affected by gravity after accelerating）. <br><center><img style='max-width:100%;' src=../../data/images/C363-1001-2.jpg></center><br>3.The Blue Bird:<br>The Blue Bird can split itself to 3 birds. The Blue Bird's flying route is the same as The Red Bird before it splits itself. After it splitting, The Blue Bird split itself to 3 birds with different horizontal velocities (but they have same vertical velocities).<br><center><img style='max-width:100%;' src=../../data/images/C363-1001-3.jpg></center><br>As the Angry Bird Army's general, you must know the horizontal distance between the point(s) where the bird(s) touch the land and the sling.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The input consists of multiple test cases.<br>Each test case has only one line which has 3 types according to different kind of birds.<br><br>H Red Vx Vy<br>H Yellow Vx Vy t<br>H Blue Vx Vy t V1 V2 V3<br><br>H the height of the sling.<br>Vx and Vy are the horizontal and vertical velocities when they are shot.<br>t is the time when the Yellow Bird accelerate or the Blue Bird splits after they are shot.<br>V1,V2,V3 are the horizontal velocities of the 3 birds split by the Blue Bird.<br><br>Notice: If the bird accelerate or split after the bird reach the land,nothing will happen;<br><br>0&lt;=H,Vx,Vy,t,V1,V2,V3&lt;=1000<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>If the bird is the Red Bird or the Yellow Bird,please output the horizontal distance between the point(s) where the bird(s) touch the land and the sling.<br>If the bird is the Blue Bird,please output all the 3 birds's horizontal distance.<br>(If the bird accelerate or split after the bird reach the land,just output only one distance it reach the ground.)<br>The answer should be rounded after the third decimal place.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">1 Red 1 2
+2 Blue 3 4 1 1 2 3
+2 Blue 3 4 10 1 2 3
+5 Yellow 3 4 1</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">0.700
+3.166 3.333 3.499
+3.499
+4.874</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Author</div> <div class=panel_content>Hzhua</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href="/search.php?field=problem&key=2011+Multi-University+Training+Contest+11+-+Host+by+UESTC&source=1&searchmode=source"> 2011 Multi-University Training Contest 11 - Host by UESTC </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>xubiao</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3940'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3940'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3940">Discuss</a> | <a href='note/note.php?pid=3940'>Note</a><br></td></tr><tr>
+<td>
+	<table style="border:#1A5CC8 1px solid; font-size:14px" cellSpacing=0 cellPadding=1 width=100%>
+	<tr align=center>
+		<td class=footer_link height=45><a href="/">Home</a> | <a href=#top>Top</a></td>
+		<td style="padding:6px">
+			Hangzhou Dianzi University Online Judge 3.0<br>
+			Copyright &copy; 2005-2018 <a href=mailto:acm@hdu.edu.cn>HDU ACM Team</a>. All Rights Reserved.<br>
+			<a href="../about_us/developer.php">Designer & Developer </a>: <a>Wang Rongtao</a>&nbsp<a>LinLe</a>&nbsp<a href=mailto:gjavac@gmail.com >GaoJie</a>&nbsp<a href=mailto:gl8997@gmail.com >GanLu</a><br>
+			<span class=pagerunstatus>Total 0.000000(s) query 2, Server time : 2018-07-07 23:04:38, Gzip disabled</span>		</td>
+		<td class=footer_link>
+			<!-- <a href="javascript:history.go(-1);">Back</a> | <a href="javascript:history.forward();">Forward</a>-->
+			<a href="/admin">Administration</a>	
+		</td>
+	</tr>
+	</table>
+</td>
+</tr>
+</table>
+</body></html>

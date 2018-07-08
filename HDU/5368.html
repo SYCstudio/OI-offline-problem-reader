@@ -1,0 +1,25 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Bribery</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU5368. Bribery</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：8000/4000 MS (Java/Others)</span> <span class="ui label">时间限制：131072/131072 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">ZJiaQ is a solider. In his army,every solider have a boss who is also a solider . Now, AFA want to bribe some solider to attack ZJiaQ .Every solider have a ID, and evry day ,they will get a new ID.ZJiaQ want to avoid been attacked. The only way is that he bribe the boss of the solider or the boss of the boss of the solider or...<br>Once he bribe a boss ,the boss can stop one solider who is branch of him.In this army,everybody only can send money to his boss,if ZJiaQ want to send money to the boss of his boss.The money should pass through his boss and his boss will get 1 coin.<br>Now ZJiaQ want to know how much will he cost.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">There are multiply test case . For each case , first line contains a integer n (3 &lt; = n &lt; = 40000) the number of node is from 0 to n-1. next line contains n integers a0,a2…an-1 ( 1&lt;= ai &lt;= 100000 ) . Ai is the money of bribery for the solider whose ID is i . next line contains n-1 integers f1, f2 …fn-1 ( 0 &lt;= fi &lt; n ) . fi is the boss of solider i. next line contains a integer m (1&lt;= m&lt;=40000). Next q lines contain 3 integers l ,r ,p (0 &lt; l &lt; = r &lt; n,p &lt; l or p&gt;r),l,r means that AFA bribe soliders whose Id are between l and r.p is ZJiaQ's ID Now.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Output the Ans mod 10000007 of each query.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">3
+2 2 2
+0 0
+2
+1 1 2
+2 2 1
+
+
+10
+52 30 56 13 98 53 75 80 7 34
+3 0 0 3 2 2 9 1 0
+5
+2 9 1
+5 5 8
+2 2 1
+2 6 7
+2 7 1</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">2
+2
+
+
+331
+54
+53
+265
+278</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=BestCoder+Round+%2350+%28div.1%29+%28%24%29&source=1&searchmode=source"> BestCoder Round #50 (div.1) ($) </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

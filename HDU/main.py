@@ -4,8 +4,14 @@ import requests
 import re
 import codecs
 def getHtml(url): # 得到一个网页并转码为gbk
-    page = urllib.request.urlopen(url)
-    html = page.read()
+    for i in range(1,100):
+        try:
+            page = urllib.request.urlopen(url,timeout=1)
+            html = page.read()
+            print("OK")
+            break
+        except Exception as e:
+            print("请求超时，正在尝试重连")
     try:
         unicodehtml = html.decode("gbk")
     except:
@@ -20,11 +26,10 @@ def zhenghe(str1,id,imgre):# 整合?作用是调用上面的函数得到网页+�
 headers = {'User-Agent':
     'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) '
     'Chrome/51.0.2704.63 Safari/537.36'} # 浏览器伪装
-num =1013;
+num =input();
 Url = "http://acm.hdu.edu.cn/showproblem.php?pid="
-while num<=1013:
-    t = open("HDU%s.txt"%num,"w")
-    html=getHtml(Url+(str)(num));
-    t.write(html);
-    t.close()
-    num=num+1
+t = open("./html/HDU%s.txt"%num,"w")
+html=getHtml(Url+(str)(num));
+# html=getHtml("http://sycstudio.com")
+t.write(html);
+t.close()

@@ -1,0 +1,26 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Shoot the Airplane</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU4458. Shoot the Airplane</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：2000/1000 MS (Java/Others)</span> <span class="ui label">时间限制：32768/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">XXX is playing an interesting game which is based on a 2D plane. In this game, he is required to shoot an airplane. The airplane flies horizontally. The shape of it can be regarded as a simple polygon. Player has to shoot at point (0, 0) upward vertically. Because the bullet is very small, it can be regarded as a point. The airplane is hit only if the bullet goes into the airplane. The airplane is not hit if the bullet only touches the edge of the airplane. The gravity should be considered. The acceleration of gravity is g and its direction is downward vertically. So the speed of the bullet may be change during flying. But the speed of airplane is constant because it has engines. XXX wants to know the time it takes the bullet to hit the airplane after shooting.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">There are multiple cases.<br>In each case, there are three integers v (-10&lt;= v &lt;= 10), b (1 &lt;= b &lt;= 10), g (0 &lt;= g &lt;= 10) in the first line. v denotes the speed of airplane. The flying direction is from left to right if v is positive and the direction is from right to left if v is negative. b denotes the initial speed of bullet. g is the acceleration of gravity. Then the input will describe the position of the airplane when XXX shoots. In the second line, there is one integer n (3 &lt;= n &lt;= 20) which represents the number of vertexes of the airplane (polygon). In each of the next n lines, there are two integers x (-100 &lt;= x &lt;= 100), y (0 &lt;y&lt;= 100) which give the position of a vertex in order. There is a blank line after each case. The input ends with 0 0 0.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">If the airplane is hit, then output the time it takes the bullet to hit it after shooting in one line. The answer should be rounded to 2 digits after decimal point. If the airplane is not hit, then output “Miss!” in one line.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">-10 10 2
+9
+6 9
+10 9
+10 16
+25 16
+25 20
+10 20
+10 27
+6 27
+-10 18
+
+-10 10 2
+9
+6 9
+10 9
+10 16
+20 16
+20 20
+10 20
+10 27
+6 27
+-10 18
+
+0 0 0</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">2.00
+Miss!</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2012+Asia+Hangzhou+Regional+Contest&source=1&searchmode=source"> 2012 Asia Hangzhou Regional Contest </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

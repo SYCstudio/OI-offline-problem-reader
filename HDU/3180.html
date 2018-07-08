@@ -1,0 +1,23 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Furion's Sprout</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU3180. Furion's Sprout</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：2000/1000 MS (Java/Others)</span> <span class="ui label">时间限制：32768/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><img style='max-width:100%;' src=./data/images/C241-1006-1.gif><img style='max-width:100%;' src=./data/images/C241-1006-2.gif>  Furion is the leader of all Night Elves in DOTA. He has a powerful and interesting skill: Szzprout. After he used this skill, several trees will grow quickly to form a square and trap enemy in this square. Now, give you the size of square and map of DOTA, please trap as many enemies as you can. If there are several solutions, show me the topmost one. If there's still a tie, show me the leftmost one.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The first line contains an integer T indicating the number of test cases, and then follows T cases. The first line of each case contains three integer : X, the size of square, and N, the row number of map, and M, the column number of map. The rest of a case contains N lines, each contains M characters, which '.' indicating an empty grid, and 'x' indicating an grid occupied by an enemy.<br>0 &lt; T &lt;= 20, 1 &lt; N &lt;= 10, 1 &lt; M &lt;= 10, 1 &lt; x &lt;= min (N, M).<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Print N + 1 lines for each case. In the first line, print the number of trapped enemies Y in this format &quot;Trapped Y enemy(ies).”<br>Then print a map with N lines and each line contains M characters. In each grip:<br>a)  '.' stands for an empty grid;<br>b)  'T' stands for a grid occupied by a tree;<br>c)  'x' stands for a grip occupied by  an enemy;<br>d)  'I' stands for a grip occupied by a tree and an enemy meanwhile.<br>Print a blank line after each case.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">2
+
+2 2 6
+x.x.x.
+x.xx..
+
+3 6 3
+.x.
+xx.
+...
+.x.
+.xx
+..x</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">Trapped 3 enemy(ies).
+x.ITx.
+x.II..
+
+Trapped 4 enemy(ies).
+.x.
+xx.
+...
+TIT
+TxI
+TTI</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=HDU+2009-10+Programming+Contest&source=1&searchmode=source"> HDU 2009-10 Programming Contest </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

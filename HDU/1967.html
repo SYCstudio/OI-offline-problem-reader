@@ -1,0 +1,38 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Sudoku</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU1967. Sudoku</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：5000/1000 MS (Java/Others)</span> <span class="ui label">时间限制：65536/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Oh no! Bill just realized that the sudoku puzzle he had spent the last ten minutes trying to solve essentially was last week’s puzzle, only rotated counterclockwise. How cheap! Couldn’t the magazine afford to make a new one every week? Of course, he had no way of knowing about this before he started to solve it, as the holes to fill with digits were other than last week. Nevertheless, realizing that this week’s puzzle was a simple derivative of last week’s certainly took the fun out of solving the rest of it.<br><br><img style='max-width:100%;' src=data/images/1967-1.jpg><br><br>The sudoku board consists of 9*9 cells. These can be grouped into 3*3 regions of 3*3 cells each. Some of the cells are filled with a digit 1 through 9 while the rest of them are left empty. The aim of the game is to fill each empty cell with a digit 1 . . . 9 so that every row, every column and every region contains each of the numbers 1 . . . 9 exactly once. A proper sudoku puzzle always has exactly one solution.<br><br>Help Bill avoid unpleasant surprises by creating a program that checks whether an unsolved sudoku puzzle is in fact derived from an earlier puzzle by simple operations.<br><br>The allowed operations are:<br>1. Rotating the entire puzzle clockwise or counterclockwise.<br>2. Swapping two columns within a 3 * 9 column segment.<br>3. Swapping two rows within a 9 * 3 row segment.<br>4. Swapping entire row or column segments.<br>5. Applying a permutation f of the digits 1 . . . 9 to every cell (i.e. replace x by f (x) in every cell).<br><br>An operation is considered being performed on the sudoku solution (rather than on the unsolved puzzle) and always guarantees that if the board before the transformation was a solution to a sudoku puzzle, it still is afterwards. <br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The input starts with the number of test cases 0 &lt;= N &lt;= 50 on a single line.<br><br>Then for every test case follow nine lines describing last week’s puzzle solution, fromtop to bottom. Each line corresponds to a row in the puzzle and consists of nine digits (1 . . . 9), describing the contents of the cell from left to right.<br><br>Last week’s solution is followed by nine lines describing this week’s unsolved puzzle. Here, also, every line corresponds to a puzzle row and every digit (0 . . . 9) describes the contents of a cell. 0 indicates that the cell is empty. The rows are presented ordered from top to bottom, and within each row, the cells are ordered from left to right.<br><br>After every test case except the last one follows a blank line. Every unsolved puzzle is guaranteed to be uniquely solvable and last week’s solution is always a proper sudoku solution.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For every test case, output Yes if the sudoku puzzle can be derived from the given solved puzzle using the allowed operations, or No if this is not possible.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">2
+963174258
+178325649
+254689731
+821437596
+496852317
+735961824
+589713462
+317246985
+642598173
+060104050
+200000001
+008305600
+800407006
+006000300
+700901004
+500000002
+040508070
+007206900
+534678912
+672195348
+198342567
+859761423
+426853791
+713924856
+961537284
+287419635
+345286179
+010900605
+025060070
+870000902
+702050043
+000204000
+490010508
+107000056
+040080210
+208001090</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">Yes
+No</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=NWERC2006&source=1&searchmode=source"> NWERC2006 </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

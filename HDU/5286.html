@@ -1,0 +1,20 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>wyh2000 and sequence</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU5286. wyh2000 and sequence</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：6000/3000 MS (Java/Others)</span> <span class="ui label">时间限制：262144/131072 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Young theoretical computer scientist wyh2000 is concentrating on studying data structures.<br><br>In order to show his wisdom, he gives his students a hard problem.<br><br>Wyh2000 gives a sequence $A_1,A_2,\ldots,A_n$.He would ask his students $q$ times,each time he gives $l,r$.Suppose $[l, r]$ have $k$ different numbers $c_1,c_2,\ldots,c_k$,and $c_i$ appears $b_i$ times in the interval $[l, r]$,the students should tell him the value of $\sum_{i=1}^{k}c_i^{b_i}$ modulo $1000000007$,you should use online algorithm.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">In the first line, there is an integer $T$ indicates the number of test cases.<br><br>For each case, the first line contains two integers $n,q$,the second line contains $n$ integers $A_1,A_2,\ldots,A_n$.<br><br>In the next $q$ lines,each line contains 2 intergers $a,b$.Query parameters $l,r$ are obtained from the numbers $a,b$.$l=\min((a \oplus la)\%n+1,(b \oplus la)\%n+1),r=\max((a \oplus la)\%n+1,(b \oplus la)\%n+1)$<br><br>The $\oplus$ means xor,and $la$ equals the response for the previous query.$la=0$ when each case begin.<br><br>$T\leq5,1\leq A_i,a,b\leq10^9$<br><br>In the $i$th case,$1\leq n,q\leq i\times10000$</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Print a response for each query in a separate line.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">2
+5 3
+2 1 2 3 1
+10 14
+9 8
+8 7
+5 2
+2 3 3 2 2
+7 4
+3 6</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">8
+3
+6
+7
+13
+
+<div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div>
+In the first case，the inquiry intervals are $[1,5],[1,2],[2,5]$.
+In the second case，the inquiry intervals are $[3,5],[2,5]$.
+Don't add extra spaces after any line of your hack data.
+</div><i style='font-size:1px'> </i></div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=BestCoder+Round+%2348+%28%24%29&source=1&searchmode=source"> BestCoder Round #48 ($) </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

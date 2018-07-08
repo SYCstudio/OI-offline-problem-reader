@@ -1,0 +1,24 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Construct the Great Wall</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU4113. Construct the Great Wall</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：40000/20000 MS (Java/Others)</span> <span class="ui label">时间限制：32768/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><center><img style='max-width:100%;' src=./data/images/4113-1.jpg></center> <br>A defensive wall is a fortification used to protect a city or settlement from potential aggressors. From ancient to modern times, they were used to enclose settlements.<br>Generally, these are referred to as city walls or town walls.<br>Even though, our ancestors decided to build a Great Wall to protect the northern borders of the Chinese Empire against invasion by various nomadic groups.<br>The map is given as an rectangle area of size N × M. Each grid is an empty area, a city or an enemy. The Great Wall is a simple polygon build alone the edge of the grids, enclosing all the cities and keeping all the enemies out.<br>The Great Wall is not easy to build, so we should make the Great Wall as short as possible. Now it is your job to calculate the length of the shortest Great Wall so that it can protect all the cities from the enemies.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The first line contains an integer T(1 &lt;= T&lt;= 50), indicating the number of test cases.<br>Each test case contains several lines.<br>The first line contains two integer H,W(1 &lt;= H,W &lt;= 8), indicating the number of rows and columns of the map.<br>The followingH lines containsW chars, indicating the map. 'o' represents a city, '.' represents a empty area and 'x' represents an enemy.<br>You can assume that there will be at least one city on the map.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For each test case in the input, print one line: &quot;Case #X: Y&quot;, where X is the test case number (starting with 1) and Y is the length of the shortest Great Wall (-1 if impossible).</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">3
+3 3
+.o.
+.x.
+o.o
+4 4
+....
+.ox.
+.xo.
+....
+5 5
+.ooo.
+.x...
+..xoo
+x.xoo
+.ox.x</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">Case #1: 14
+Case #2: -1
+Case #3: 28
+<div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div>
+A simple polygon is a closed polygonal chain of line segments in the plane which do not have points in common other than the common vertices of pairs of consecutive segments.
+The solution for the first test case in sample is shown in Figure 1.
+There is no solution for the second test case because no matter how you build the Great Wall, it will always intersects with itself. (Figure 2).
+<center><img src='./data/images/4113-2.jpg'></center> 
+</div><i style='font-size:1px'> </i></div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2011+Asia+ChengDu+Regional+Contest&source=1&searchmode=source"> 2011 Asia ChengDu Regional Contest </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

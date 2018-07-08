@@ -1,0 +1,32 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Rotating Line</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU6179. Rotating Line</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：4000/2000 MS (Java/Others)</span> <span class="ui label">时间限制：152428/152428 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">There are n points and one line in the 2D plane. Three points can be collinear.<br>You can rotate the line anti-clockwise, but the rotation centre can be changed every time. The centre must be one of the n points.<br>Initially the centre is (0, 0) (of course, (0, 0) must be one of the n points), and the line coincides with y axis.<br>If there is only one point in the line, the line’s rotation centre must be this point.<br>If the line meets another points, the centre may change to the other point.<br>If there are k points in this line and the current rotation centre is the p-th point of them (of course, we assume that the k points have already sorted), the next rotation centre will be the (k-p+1)-th point of them.<br>If p = k – p + 1, we consider that the rotation centre is not changed.<br>In this problem, you must find the q-th rotation centre’s coordinate.<br>It is guaranteed that the q-th rotation centre always exists.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The first line contains an integer T (≤100), the number of test cases.<br>The first line of each test case contains an integer n (1 &lt;= n &lt;= 3000, sum of n over all test cases does not exceed 10000) , the number of points.<br>The i-th line of the following n lines contains two integers x, y (-100 &lt;= x, y &lt;= 100), the coordinate of the i-th point. One of these n points is (0, 0).<br>Every two points are different and three points can be collinear.<br>And the next line contains an integer Q, the number of queries (sum of Q over all test cases does not exceed 10000).<br>Then Q integers ($q_i$) follow, described above (0 &lt; $q_i $&lt;= 1e9).<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Each test case, you must output Q lines and each line contains a pair of integer,  the coordinate of qi-th rotation centre.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">1
+8
+0 0
+-1 0
+-1 2
+0 -1
+0 1
+0 2
+1 0
+2 0
+7
+1 2 3 4 5 6 7</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">-1 2
+1 0
+0 0
+0 1
+2 0
+-1 0
+0 1
+<div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div>
+<center><img src='./data/images/C767-1010-1.jpg'></center>
+Initial rotation centre is (0, 0), and the first rotation centre is (-1, 2), because this line meets (-1, 2) at first.
+
+Then the line meets 2 points (0, 1) and (1, 0), so that there are three points on the line. (-1, 2) is the 1st point of them, so the centre has to change to 3rd point (1, 0),
+ this is the second rotation centre.
+
+Then the line meets 3 points (-1, 0), (0, 0), (2, 0), so that there are four points on the line. The centre is 3rd point of them, so the next centre will be 2nd point (0, 0), 
+this is the third rotation centre.
+
+The fourth rotation centre is (0, 1) and the line meets 2 points (-1, 2) and (1, 0).
+
+The centre is 2nd point of 3 points, so the centre was not changed. Then the line meets (2, 0), so the fifth rotation centre is (2, 0).
+</div><i style='font-size:1px'> </i></div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2017+Multi-University+Training+Contest+-+Team+10&source=1&searchmode=source"> 2017 Multi-University Training Contest - Team 10 </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

@@ -1,0 +1,26 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Periodical Cicadas</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU6004. Periodical Cicadas</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：14000/7000 MS (Java/Others)</span> <span class="ui label">时间限制：80000/80000 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Nearly all cicadas spend years underground as juveniles, before emerging above ground for a short adult stage of several weeks to a few months.<br>The seven periodical cicada species are so named because, in any one location, all of the members of the population are developmentally synchronized they emerge as adults all at once every seven years.<br>The lifecycles of most periodical cicada species range from two to seventeen years, although some could be longer.<br>There is a forest which can be roughly divided into a matrix of size N ×M. The upper-left region is (1, 1) and the lower-right region is (N, M).<br>A population of periodical cicadas live within each region of the matrix. The population in region (i, j) emerged in year $a_{i,j}$ for the first time, and re-emerges every $b_{i,j}$ years. i.e. they are $b_{i,j}$ - periodical cicadas.<br>Given a selected rectangular area, entomologists wonder if there is a time when all cicadas in that area emerge together.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The first line of the input gives the number of test cases, T. T test cases follow. Each test cases begin with two integers N and M.<br>The following N lines each consists of M integers $a_{i,j}$ representing the year cicadas emerged in region (i, j) for the first time.<br>The following N more lines each consists of M integers $b_{i,j}$ representing the periodical cycle of the cicadas in that region.<br>Then comes a line with an integer Q representing the number of queries. The following Q lines each consists of 4 integers: $x_1, y_1, x_2, y_2,$  representing the upper-left and lower-right coordinate of the selected rectangular area.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For each test case, first output one line containing “Case #x:”, where x is the test case number (starting from 1).<br>The following Q lines each consists of an integer which is the year when all cicadas in the selected area emerge together for the first time or -1 if it’s impossible.<br><h2>limits</h2><br>$\bullet 1 ≤ T ≤ 10.$<br>$\bullet 1 ≤ N, M ≤ 200.$<br>$\bullet 0 ≤ a_{i,j} &lt; b_{i,j} ≤ 40.$<br>$\bullet 1 ≤ x_1 ≤ x_2 ≤ N.$<br>$\bullet 1 ≤ y_1 ≤ y_2 ≤ M.$<br>$\bullet$ 1 ≤ Q ≤ 500000.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">2
+3 4
+3 1 1 2
+1 1 2 1
+1 0 5 5
+5 4 2 3
+2 2 3 2
+4 2 6 6
+5
+2 2 2 2
+1 1 3 4
+1 4 2 4
+1 1 1 2
+2 2 3 4
+1 2
+0 1
+2 2
+1
+1 1 1 2</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">Case #1:
+1
+-1
+5
+13
+-1
+Case #2:
+-1</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2016+CCPC-Final&source=1&searchmode=source"> 2016 CCPC-Final </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

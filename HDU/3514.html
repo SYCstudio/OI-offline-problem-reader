@@ -1,0 +1,30 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Queen’s Case</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU3514. Queen’s Case</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：10000/5000 MS (Java/Others)</span> <span class="ui label">时间限制：131072/65536 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">A small country called Maltius was governed by a queen. The queen was known as an oppressive ruler.People in the country suffered from heavy taxes and forced labor. So some young people decided to form a revolutionary army and fight against the queen. Now, they besieged the palace and have just rushed into the entrance.<br><br>Your task is to write a program to determine whether the queen can escape or will be caught by the army.<br><br>Here is detailed description.<br>●&nbsp;&nbsp;The palace can be considered as grid squares.<br>●&nbsp;&nbsp;The queen and the army move alternately. The queen moves first.<br>●&nbsp;&nbsp;At each of their turns, they either move to an adjacent cell or stay at the same cell.<br>●&nbsp;&nbsp;Each of them must follow the optimal strategy.<br>●&nbsp;&nbsp;If the queen and the army are at the same cell, the queen will be caught by the army immediately.<br>●&nbsp;&nbsp;If the queen is at any of exit cells alone after the army’s turn, the queen can escape from the army.<br>●&nbsp;&nbsp;There may be cases in which the queen cannot escape but won’t be caught by the army forever,<br>under their optimal strategies.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The input describes a map of the palace. The first line of the input contains two integers W (1 &lt;= W &lt;= 30) and H (1 &lt;=H &lt;= 30), which indicate the width and height of the palace. The following H lines, each of which contains W characters, denote the map of the palace. “Q” indicates the queen,“A” the army,“E” an exit,“#” a wall and “.” a floor.<br><br>The map contains exactly one “Q”, exactly one “A” and at least one “E”. You can assume both the queen and the army can reach all the exits<br><br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Output “Queen can escape.”, “Army can catch Queen.” or “Queen can not escape and Army can not catch Queen.” in a line.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">2 2
+QE
+EA
+3 1
+QAE
+3 1
+AQE
+5 5
+..E..
+.###.
+A###Q
+.###.
+..E..
+5 1
+A.E.Q
+5 5
+A....
+####.
+..E..
+.####
+....Q</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">Queen can not escape and Army can not catch Queen.
+Army can catch Queen.
+Queen can escape.
+Queen can not escape and Army can not catch Queen.
+Army can catch Queen.
+Army can catch Queen.
+
+<div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div><i>On the first sample input, the queen can move to exit cells, but either way the queen will be caught at the next army’s turn. So the optimal 
+strategy for the queen is staying at the same cell. Then the army can move to exit cells as well, but again either way the army will miss the queen from 
+the other exit. So the optimal strategy for the army is also staying at the same cell. Thus the queen cannot escape but won’t be caught.</i></div><i style='font-size:1px'> </i></div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2010+ACM-ICPC+Multi-University+Training+Contest%A3%A88%A3%A9%A1%AA%A1%AAHost+by+ECNU&source=1&searchmode=source"> 2010 ACM-ICPC Multi-University Training Contest（8）——Host by ECNU </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

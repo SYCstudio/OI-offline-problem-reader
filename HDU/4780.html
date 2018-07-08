@@ -1,0 +1,37 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Candy Factory</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU4780. Candy Factory</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：4000/2000 MS (Java/Others)</span> <span class="ui label">时间限制：32768/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">&nbsp;&nbsp;A new candy factory opens in pku-town. The factory import M machines to produce high quality candies. These machines are numbered from 1 to M.<br>&nbsp;&nbsp;There are N candies need to be produced. These candies are also numbered from 1 to N. For each candy i , it can be produced in any machine j. It also has a producing time(s<sub>i</sub>,t<sub>i</sub>) , meaning that candy i must start producing at time s<sub>i</sub> and will finish at t<sub>i</sub>. Otherwise if the start time is p<sub>i</sub>(s<sub>i</sub> &lt; p<sub>i</sub> &lt; t<sub>i</sub>) then candy will still finish at t<sub>i</sub> but need additional  K*(p<sub>i</sub> - s<sub>i</sub>) cost. The candy can’t be produced if p<sub>i</sub> is greater than or equal to t<sub>i</sub>. Of course one machine can only produce at most one candy at a time and can’t stop once start producing.<br>&nbsp;&nbsp;On the other hand, at time 0 all the machines are in their initial state and need to be “set up” or changed before starting producing. To set up Machine j from its initial state to the state which is suitable for producing candiy i, the time required is C<sub>ij</sub> and cost is D<sub>ij</sub>. To change a machine from the state suitable for candy i<sub>1</sub> into the state suitable for candy i<sub>2</sub>, time required is E<sub>i1i2</sub> and cost is F<sub>i1i2</sub>.<br>&nbsp;&nbsp;As the manager of the factory you have to make a plan to produce all the N candies. While the sum of producing cost should be minimized.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">　　There are multiple test cases.<br>　　For each case, the first line contains three integers N(1&lt;=N&lt;=100), M(1&lt;=M&lt;=100), K(1&lt;=K&lt;=100) . The meaning is described above.<br>　　Then N lines follow, each line contains 2 integers s<sub>i</sub> and t<sub>i</sub>(0 &lt;= s<sub>i</sub> &lt; t<sub>i</sub> &lt;100000).<br>　　Then N lines follow, each line contains M integers, the j-th integer of the i-th line indicating C<sub>ij</sub>(1&lt;=C<sub>ij</sub>&lt;=100000) .<br>　　Then N lines follow, each line contains M integers, the j-th integer of the i-th line indicating D<sub>ij</sub>(1&lt;=D<sub>ij</sub>&lt;=100000) .<br>　　Then N lines follow, each line contains N integers, the i<sub>2</sub>-th integer of the i<sub>1</sub>-th line indicating E<sub>i1i2</sub>(1&lt;=E<sub>i1j2</sub>&lt;=100000) . <br>　　Then N lines follow, each line contains N integers, the i<sub>2</sub>-th integer of the i<sub>1</sub>-th line indicating F<sub>i1i2</sub>(1 &lt;= F<sub>i1j2</sub>&lt;=100000) . <br>　　Since the same candy will only be produced once, E<sub>ii</sub> and F<sub>ii</sub> are meaningless and will always be -1.<br>　　The input ends by N=0 M=0 K=0. Cases are separated with a blank line.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">&nbsp;&nbsp;For each test case, if all of M candies can be produced, output the sum of minimum producing cost in a single line. Otherwise output -1.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">3 2 1
+4 7
+2 4
+8 9
+4 4
+3 3
+3 3
+2 8
+12 3
+14 6
+-1 1 1
+1 -1 1
+1 1 -1
+-1 5 5
+5 -1 5
+5 5 -1
+
+1 1 2
+1 5
+5
+5
+-1
+-1
+
+0 0 0</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">11
+-1
+
+<div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div>
+For the first example, the answer can be achieved in the following way:
+<center><img src='./data/images/C486-1011-1.jpg'></center> 
+In the picture, S i represents setting up time for candy i, A i  represents changing time  for candy i  and P i represents producing time for candy i .
+So the total cost includes: 
+　　setting up machine 1 for candy 1, costs 2
+　　setting up machine 2 for candy 2, costs 3
+　　changing state from candy 2 to candy 3, costs 5
+　　late start of candy 2, costs 1 
+</div><i style='font-size:1px'> </i></div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2013+Asia+Hangzhou+Regional+Contest+&source=1&searchmode=source"> 2013 Asia Hangzhou Regional Contest  </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

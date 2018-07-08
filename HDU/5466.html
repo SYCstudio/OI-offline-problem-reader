@@ -1,0 +1,45 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Clarke and expression</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU5466. Clarke and expression</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：2000/1000 MS (Java/Others)</span> <span class="ui label">时间限制：65536/65536 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Clarke is a patient with multiple personality disorder. One day, Clarke turned into a coder and worked hard. He found type casting in c++ disgusting. If an expression is too long, an error will be extremely likely to be reported due to impossible casting, or a variable will be cast to a not expected type. One day the compiler malfunctioned(doge), so he wanted to complete the compiling work.  <br>Then he left the arduous work to you!  <br>Clarke's expressions are as followings. They are composed of 4 elements:types, variables, brackets and operators, where types and variables are strings consisting of lowercase letters, a bracket is either '(' or ')', and the only operator is '*'. When calculating, we should work from left to right, and deal with brackets first.<br>Expressions are followed two rules:  <br>1. $type(a)$: meaning casting variable $a$ to type $type$, getting a new variable.($type$ must be a type and $a$ must be a variable. Types and brackets will only appear here in pairs.)<br>2. $a*b$: meaning casting variable $b$ to the type of variable $a$ and then calculating, getting a new variable of $a$'s type. ($a$ and $b$ must be variables when we are dealing with '*')  <br><br>Now Clarke will give you an expression, variables and some rules of type casting, and need you to determine whether each expression is legal, and to tell him the type of the result of the expression if it is legal.<br><br>Illegal cases:<br>1. Distinct identifiers of the same name, or variables of nonexistent types.<br>2. A word neither a type nor a variable.<br>3. Impossible casting.<br>4. Expressions not following the rules listed above.<br><br>Some explanations and conventions:<br>1. A variable alone is a legal expression.<br>2. If $a$ in $type(a)$ is an expression, then get a new variable by calculating $a$ before performing the rule 1.<br>3. It is possible to cast type $type$ to type $type$.<br>4. The facts that type $C$ can be cast to type $B$ and that type $B$ can be cast to type $A$ do not mean that type $C$ can be cast to type $A$.<br>5. Expression $b*type(a)$ means first casting $a$ to type $type$, then casting it to the type of $b$ and finally getting a new variable of the type of $b$.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The first line contains a integer $T(1 \le T \le 10)$, denotes the number of test cases.  <br>For each test case:  <br>The first line contains a integer $n(1 \le n \le 500)$, denotes the number of variables.  <br>Then $n$ lines follow, line $i$ contains two string $value_i, valueType_i$, denote name and type of this variable.  <br>Then a new line contains an integer $m(1 \le m \le 500)$, denotes the number of types.  <br>Then $m$ lines follow, at line $i$, the first string $type_i$ denotes the name of this type, then an integer $k(0 \le k \le m)$ follow, denotes the number of $i$ can cast. Then $k$ number follow, each number $j$ denotes $i$ can cast to type $j$.  <br>The last line of this test case is an expression $E(1 \le |E| \le 500000)$ which only composed of types, variables, brackets and operators.  <br>Assume that $1 \le \sum_{i=1}^{m} |type_i| + \sum_{i=1}^{n} |value_i| \le 200000, 1 \le \sum_{i=1}^{n} |valueType_i| \le 200000$  </div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For each test case, print the type of this expression if this expression is legal. Otherwise print $-1$.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">5
+2
+a char
+b int
+2
+int 0
+char 1 1
+int(b*a)
+2
+a char
+b int
+2
+int 0
+char 1 1
+char(a*b)
+2
+a char
+b int
+2
+int 1 2
+char 1 1
+char(a*b)
+2
+a char
+b int
+2
+int 1 2
+char 1 1
+char*char(a*b)*((
+1
+a char
+1
+char 0
+char</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">int
+-1
+char
+-1
+-1
+
+Hint:
+case 1: cast $a$ to $b$ first, getting a new variable of type $int$. then this new variable cast to type $int$ again. Finally we get a new variable of type $int$.
+case 2: $b$'s type $int$ can not cast to $a$'s type $char$. So print $-1$
+case 3: cast $b$ to $a$ first, getting a new variable of type $char$. then this new variable cast to type $char$ again. Finally we get a new variable of type $char$.
+case 4: it does't follow the rule "Types and brackets will only appear here in pairs.".
+case 5: it does't follow the rule "Types and brackets will only appear here in pairs."</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=BestCoder+Round+%2356+%28div.2%29&source=1&searchmode=source"> BestCoder Round #56 (div.2) </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

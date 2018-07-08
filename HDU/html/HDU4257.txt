@@ -1,0 +1,106 @@
+<html><head><meta name=keywords content="HDOJ ACM ICPC OJ C C++ Pascal Java"><meta http-equiv=Content-Type content="text/html;charset=gb2312"><link rel=stylesheet type=text/css href="/images/global.css" media=all><link rel=stylesheet type=text/css href="/css/diyinhead.css" media=all><link rel=stylesheet type=text/css href="/css/webinhead.css" media=all><script src="/js/global.js" type=text/javascript></script><script src="/js/register.js" type=text/javascript></script><script src="/js/MathJax/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script><title>Problem - 4257</title></head><body >
+<a name=top></a>
+<table align=center cellSpacing=0 cellPadding=0 width=980 border=0 style="word-wrap:break-word">
+<tr>
+	<td style="border:#1A5CC8 1px solid" align=center width=100%>
+		<a href="/">
+			<img src="/images/banner.jpg" width="100%" height=116 border=0>
+		</a>
+	</td>
+</tr>
+<tr>
+	<td style="border:#1A5CC8 1px solid">
+	<table cellSpacing=0 cellPadding=1 width="979px">
+	<tr bgcolor=#1A5CC8 align=center class=banner height=25>
+		<td>Online Judge</td>
+		<td>Online Exercise</td>
+		<td>Online Teaching</td>
+		<td>Online Contests</td>
+	<td>Exercise Author</td>
+	</tr>
+	<tr style="font-size:16px" align=center>
+		<td width=20% valign=top>
+		<a href="/faq.php" style="text-decoration: none">F.A.Q</a><br>
+		<a href="/friends" style="text-decoration: none">Hand In Hand</a><br>
+		<a href="/onlineuser.php" style="text-decoration: none">Online Acmers</a>	<br>
+		<!-- /onlineuser.php-->
+		
+		<a href="/forum" style="text-decoration: none">Forum | </a><a href="/discuss/public/list.php" style="text-decoration: none">Discuss</a><br>
+		<a href="/statistic/submit_graph.php" style="text-decoration: none">Statistical Charts</a><br>
+		</td>
+		<td width=20% valign=top>
+		<form action="/search.php" method=get>
+		<a href="/listproblem.php?vol=1" style="text-decoration: none">Problem Archive</a><br/>
+		<!--<a href="http://feeds.feedburner.com/Hdoj-problemset"><img src="/images/rss1.jpg" alt="problemset" style="vertical-align:text-bottom;"width=20 height=20></a><br>-->
+		<!--
+			 <a href="/submit.php">Submit Solution</a><br>
+		-->	
+		<a href="/status.php" style="text-decoration: none">Realtime Judge Status</a><br>
+
+		<a href="/ranklist.php" style="text-decoration: none">Authors Ranklist</a><br>
+		<input name=field value=author type=hidden><input class=text60 name=key>&nbsp;<input class=button40 type=submit value=Search>
+		
+		<!--
+			<input name=field value=problem type=hidden><input class=text60 name=key>&nbsp;<input class=button40 type=submit value=Search>
+		-->
+		</form>
+		</td>
+		<td width=20% valign=top>
+		 <form action='/search.php' method=get> 
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="text-decoration: none" href="http://code.hdu.edu.cn/">C/C++/Java Exams &nbsp;&nbsp;&nbsp;&nbsp;</a><br/>
+		<a style="text-decoration: none" href="/game">ACM Steps</a><br/>
+		<a href = "/ITJobs/">Go to Job</a><br/>	
+		<a href="/livecast" style="text-decoration: none">Contest LiveCast</a><br/>
+		<a style="text-decoration: none" href="/region">ICPC@China</a><br/>
+		<!-- <a href="/register.php">Register New Author</a><br> -->
+		<!-- <a href="/modifyuser.php">Update Your Information</a><br> -->
+		</form>
+		</td>
+		<td width=20% valign=top>
+		<a href="http://bestcoder.hdu.edu.cn" style="text-decoration: none; color: red; font-weight: bold;">Best Coder <sup style="color: gray;">beta</sup></a><br/><a href="/vip/contest_list.php" style="text-decoration: none">VIP</a> | <a href="/contests/contest_list.php" style="text-decoration: none">STD Contests</a><br /><a href="http://code.hdu.edu.cn/vcontest" style="text-decoration: none">Virtual Contests </a><br/>&nbsp;&nbsp;<a href="/diy/contest_list.php" style="text-decoration: none">&nbsp;&nbsp;DIY | </a><a href="/webcontest" style="text-decoration: none"><font color="">Web-DIY</font> <font size=1 color="gray"><sup>beta</sup></font></a><br/><a style="text-decoration: none" href="/recentcontest">Recent Contests</a><br/>		</td>
+		<td width=20%>
+					<form method=post action="/userloginex.php?action=login">
+			  <table width=168 border=0 align=center cellspacing=0>
+			  	<tr><td align=center colspan=2><a href="/qqlogin/oauth/login.php"><img src="/qqlogin/images/qqlogin.png" border="0" /></a></td></tr>
+				<tr><td width=68>Author ID&nbsp;</td><td align=right><input name=username type=text class=text90 maxlength=20></td></tr>
+				<tr><td>Password&nbsp;</td><td align=right><input name=userpass type=password class=text90 maxlength=20></td></tr>
+			  </table>
+			  <input name=login type=submit class=button40 value="Sign In">&nbsp;<a href="http://bestcoder.hdu.edu.cn/register.php?url=acm.hdu.edu.cn/userloginex.php?action=login" style="text-decoration: none">Register new ID</a>
+			</form>
+						</td>
+	</tr>
+	</table>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div align=center id=rollword><marquee scrollamount=2 width=600 scrolldelay=30 onMouseOver="javascript:this.stop();" onMouseOut="javascript:this.start();"><b style="margin-right:20px"></b></marquee></div>	</td>
+</tr>
+<tr><td align=center><h1 style='color:#1A5CC8'>CosmoCraft</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 150&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 46<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>In the two-player game CosmoCraft you manage an economy in the hopes of producing an army capable of defeating your opponent. You manage the construction of workers, production facilities, and army units; the game revolves around balancing the resources you allocate to each. The game progresses in turns.<br><strong>1. </strong> Workers give you income at the rate of 1 dollar per turn. <br><strong>2. </strong> Production facilities let you produce either an army unit or a worker for the cost of 1 dollar. (only 1 army unit or worker can be produced per turn per facility) <br><strong>3. </strong> It costs 1 dollar to create a production facility. <br><strong>4. </strong> Your army, of course, lets you fight against your opponent. <br>You start off with n workers and k production facilities. The game progresses in turns – at each turn, you can spend the income you get from your workers on a mixture of workers, army, and creating production facilities. Workers produced this round do not give you income until the next round; likewise, production facilities do not become active until the next round. Any unspent income from the current round carries over to the next. <br>At the end of a round, you can take the total army you’ve produced and attack your opponent; if you have strictly more units than your opponent, the opponent loses immediately, and you retain the difference of the army sizes. Otherwise, your army is crushed and your opponent is left with the difference of the army sizes. (it would be wise for him to counter-attack after this, but you don’t lose immediately at least). The game ends after t turns, at which point both players will usually attack with the larger army reigning victorious. <br>You’re playing against your friend, and since you’ve played against him so many times you know exactly what he’s going to spend his money on at every turn, and exactly when he’s going to attack. Knowing this, you’ve decided that the best strategy is to play defensively – you just want to survive every attack, and amass as large an army in the meantime so you can counterattack (and hopefully win) at the end of the game. <br>What’s the largest army you can have at the end of the game, given that you must survive all your friend’s attacks? </div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>There will be several test cases in the input. Each test case will begin with a line with three integers: <br><strong>n k t </strong><br>where n (1≤<strong>n</strong>≤100) is the number of workers you start with, <strong>k</strong> (1≤<strong>k</strong>≤100) is the number of production facilities you have at the start, and <strong>t</strong> (1≤<strong>t</strong>≤10,000) is the number of turns. On the next line will be <strong>t</strong>-1 integers, <strong>a</strong><sub>i</sub> (0≤<strong>a</strong><sub>i</sub>≤Max signed 64-bit integer), separated by single spaces. The i<sup>th</sup> integer indicates the strength of the attack (that is, the number of army units your opponent is using in that attack) on turn i. The input will end with a line with three 0s. <br><div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div><br>Huge input, please ues c++.<br></div></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each test case output a single integer indicating the maximum number of armies you could have at the end of the game. Output -1 if it is impossible to survive. Output each integer on its own line, with no spaces, and do not print any blank lines between answers. While it is possible for some inputs to generate unreasonably large answers, all judge inputs yield answers which will fit in a signed 64-bit integer. </div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">8 4 6
+22 6 10 14 0
+4 3 3
+0 0
+6 9 7
+0 0 11 0 7 0
+0 0 0</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">-1
+11
+101</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href="/search.php?field=problem&key=The+University+of+Chicago+Invitational+Programming+Contest+2012&source=1&searchmode=source"> The University of Chicago Invitational Programming Contest 2012 </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>liuyiding</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=4257'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=4257'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=4257">Discuss</a> | <a href='note/note.php?pid=4257'>Note</a><br></td></tr><tr>
+<td>
+	<table style="border:#1A5CC8 1px solid; font-size:14px" cellSpacing=0 cellPadding=1 width=100%>
+	<tr align=center>
+		<td class=footer_link height=45><a href="/">Home</a> | <a href=#top>Top</a></td>
+		<td style="padding:6px">
+			Hangzhou Dianzi University Online Judge 3.0<br>
+			Copyright &copy; 2005-2018 <a href=mailto:acm@hdu.edu.cn>HDU ACM Team</a>. All Rights Reserved.<br>
+			<a href="../about_us/developer.php">Designer & Developer </a>: <a>Wang Rongtao</a>&nbsp<a>LinLe</a>&nbsp<a href=mailto:gjavac@gmail.com >GaoJie</a>&nbsp<a href=mailto:gl8997@gmail.com >GanLu</a><br>
+			<span class=pagerunstatus>Total 0.015600(s) query 2, Server time : 2018-07-07 23:41:28, Gzip disabled</span>		</td>
+		<td class=footer_link>
+			<!-- <a href="javascript:history.go(-1);">Back</a> | <a href="javascript:history.forward();">Forward</a>-->
+			<a href="/admin">Administration</a>	
+		</td>
+	</tr>
+	</table>
+</td>
+</tr>
+</table>
+</body></html>

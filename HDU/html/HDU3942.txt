@@ -1,0 +1,138 @@
+<html><head><meta name=keywords content="HDOJ ACM ICPC OJ C C++ Pascal Java"><meta http-equiv=Content-Type content="text/html;charset=gb2312"><link rel=stylesheet type=text/css href="/images/global.css" media=all><link rel=stylesheet type=text/css href="/css/diyinhead.css" media=all><link rel=stylesheet type=text/css href="/css/webinhead.css" media=all><script src="/js/global.js" type=text/javascript></script><script src="/js/register.js" type=text/javascript></script><script src="/js/MathJax/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script><title>Problem - 3942</title></head><body >
+<a name=top></a>
+<table align=center cellSpacing=0 cellPadding=0 width=980 border=0 style="word-wrap:break-word">
+<tr>
+	<td style="border:#1A5CC8 1px solid" align=center width=100%>
+		<a href="/">
+			<img src="/images/banner.jpg" width="100%" height=116 border=0>
+		</a>
+	</td>
+</tr>
+<tr>
+	<td style="border:#1A5CC8 1px solid">
+	<table cellSpacing=0 cellPadding=1 width="979px">
+	<tr bgcolor=#1A5CC8 align=center class=banner height=25>
+		<td>Online Judge</td>
+		<td>Online Exercise</td>
+		<td>Online Teaching</td>
+		<td>Online Contests</td>
+	<td>Exercise Author</td>
+	</tr>
+	<tr style="font-size:16px" align=center>
+		<td width=20% valign=top>
+		<a href="/faq.php" style="text-decoration: none">F.A.Q</a><br>
+		<a href="/friends" style="text-decoration: none">Hand In Hand</a><br>
+		<a href="/onlineuser.php" style="text-decoration: none">Online Acmers</a>	<br>
+		<!-- /onlineuser.php-->
+		
+		<a href="/forum" style="text-decoration: none">Forum | </a><a href="/discuss/public/list.php" style="text-decoration: none">Discuss</a><br>
+		<a href="/statistic/submit_graph.php" style="text-decoration: none">Statistical Charts</a><br>
+		</td>
+		<td width=20% valign=top>
+		<form action="/search.php" method=get>
+		<a href="/listproblem.php?vol=1" style="text-decoration: none">Problem Archive</a><br/>
+		<!--<a href="http://feeds.feedburner.com/Hdoj-problemset"><img src="/images/rss1.jpg" alt="problemset" style="vertical-align:text-bottom;"width=20 height=20></a><br>-->
+		<!--
+			 <a href="/submit.php">Submit Solution</a><br>
+		-->	
+		<a href="/status.php" style="text-decoration: none">Realtime Judge Status</a><br>
+
+		<a href="/ranklist.php" style="text-decoration: none">Authors Ranklist</a><br>
+		<input name=field value=author type=hidden><input class=text60 name=key>&nbsp;<input class=button40 type=submit value=Search>
+		
+		<!--
+			<input name=field value=problem type=hidden><input class=text60 name=key>&nbsp;<input class=button40 type=submit value=Search>
+		-->
+		</form>
+		</td>
+		<td width=20% valign=top>
+		 <form action='/search.php' method=get> 
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="text-decoration: none" href="http://code.hdu.edu.cn/">C/C++/Java Exams &nbsp;&nbsp;&nbsp;&nbsp;</a><br/>
+		<a style="text-decoration: none" href="/game">ACM Steps</a><br/>
+		<a href = "/ITJobs/">Go to Job</a><br/>	
+		<a href="/livecast" style="text-decoration: none">Contest LiveCast</a><br/>
+		<a style="text-decoration: none" href="/region">ICPC@China</a><br/>
+		<!-- <a href="/register.php">Register New Author</a><br> -->
+		<!-- <a href="/modifyuser.php">Update Your Information</a><br> -->
+		</form>
+		</td>
+		<td width=20% valign=top>
+		<a href="http://bestcoder.hdu.edu.cn" style="text-decoration: none; color: red; font-weight: bold;">Best Coder <sup style="color: gray;">beta</sup></a><br/><a href="/vip/contest_list.php" style="text-decoration: none">VIP</a> | <a href="/contests/contest_list.php" style="text-decoration: none">STD Contests</a><br /><a href="http://code.hdu.edu.cn/vcontest" style="text-decoration: none">Virtual Contests </a><br/>&nbsp;&nbsp;<a href="/diy/contest_list.php" style="text-decoration: none">&nbsp;&nbsp;DIY | </a><a href="/webcontest" style="text-decoration: none"><font color="">Web-DIY</font> <font size=1 color="gray"><sup>beta</sup></font></a><br/><a style="text-decoration: none" href="/recentcontest">Recent Contests</a><br/>		</td>
+		<td width=20%>
+					<form method=post action="/userloginex.php?action=login">
+			  <table width=168 border=0 align=center cellspacing=0>
+			  	<tr><td align=center colspan=2><a href="/qqlogin/oauth/login.php"><img src="/qqlogin/images/qqlogin.png" border="0" /></a></td></tr>
+				<tr><td width=68>Author ID&nbsp;</td><td align=right><input name=username type=text class=text90 maxlength=20></td></tr>
+				<tr><td>Password&nbsp;</td><td align=right><input name=userpass type=password class=text90 maxlength=20></td></tr>
+			  </table>
+			  <input name=login type=submit class=button40 value="Sign In">&nbsp;<a href="http://bestcoder.hdu.edu.cn/register.php?url=acm.hdu.edu.cn/userloginex.php?action=login" style="text-decoration: none">Register new ID</a>
+			</form>
+						</td>
+	</tr>
+	</table>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div align=center id=rollword><marquee scrollamount=2 width=600 scrolldelay=30 onMouseOver="javascript:this.stop();" onMouseOut="javascript:this.start();"><b style="margin-right:20px"></b></marquee></div>	</td>
+</tr>
+<tr><td align=center><h1 style='color:#1A5CC8'>Everyone Has His Wing Broken</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 10000/5000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 125536/65536 K (Java/Others)<br>Total Submission(s): 266&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 41<br><font color=red>Special Judge</font></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Long long ago, N gamblers (numbered from 1 to N) got together to gamble. At that time, the kinds of gamble were not that much diversified. The gamble can only be performed in a way that two people played against each other and the one who lost the game would have to give the winner $1. Furthermore, the one who lose all his money and lose for another time would get out and never come back. But he still has to pay $1 (He may sell his pants). After playing for quite a long time, they felt as if they had their wings broken, for everyone still here won nothing. <br>As one of the gamblers, mzry1992 wondered what really happened. Now mzry1992 wants you to tell him what happened between some pairs, for example how much does gambler A win from gambler B directly. But actually you do not know the real situation. So you could just tell him one of the possible situations.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>There are T cases and the first line of the input contains the  number T. The first line of each case consists of one integer N(2 ≤N≤500), indicating the number of gamblers. Then comes N  lines. The i-th line is a non-negative integer smaller than 101  indicating the i-th gambler's initial possess. The next line  contains one integer M(0≤M≤10000), indicating the number of  pairs of gamblers who gambled. The following M line contains  three integer A, B, t(1≤A, B≤N, 1≤t≤100), which means that the  gamble A and the gamble B played the game for t times. The  final part of each test case begins with an integer Q  (1≤Q≤200000). Then Q lines follows. Each line contains two  integers A, B. You are asked to answer how much gambler A  wins from B.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>Output the all the queries from mzry1992.For each test case, your answer should assume that all of the gambles could happen in the one situation. If there is no such situation, just output “Impossible!.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">3
+3
+7
+5
+9
+3
+1 2 7
+1 3 5
+2 3 9
+1
+1 2
+
+3
+1
+1
+20
+1
+1 2 2
+2
+1 2
+1 3
+
+3
+1
+1
+20
+1
+1 2 3
+2
+1 2
+1 3</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">Case 1:
+-5
+Case 2:
+0
+0
+Case 3:
+Impossible!
+
+<div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div>
+The gambles do not have to happen in the given order.
+</div><i style='font-size:1px'> </i></div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Author</div> <div class=panel_content>Sakuya</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href="/search.php?field=problem&key=2011+Multi-University+Training+Contest+11+-+Host+by+UESTC&source=1&searchmode=source"> 2011 Multi-University Training Contest 11 - Host by UESTC </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>xubiao</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3942'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3942'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3942">Discuss</a> | <a href='note/note.php?pid=3942'>Note</a><br></td></tr><tr>
+<td>
+	<table style="border:#1A5CC8 1px solid; font-size:14px" cellSpacing=0 cellPadding=1 width=100%>
+	<tr align=center>
+		<td class=footer_link height=45><a href="/">Home</a> | <a href=#top>Top</a></td>
+		<td style="padding:6px">
+			Hangzhou Dianzi University Online Judge 3.0<br>
+			Copyright &copy; 2005-2018 <a href=mailto:acm@hdu.edu.cn>HDU ACM Team</a>. All Rights Reserved.<br>
+			<a href="../about_us/developer.php">Designer & Developer </a>: <a>Wang Rongtao</a>&nbsp<a>LinLe</a>&nbsp<a href=mailto:gjavac@gmail.com >GaoJie</a>&nbsp<a href=mailto:gl8997@gmail.com >GanLu</a><br>
+			<span class=pagerunstatus>Total 0.000000(s) query 2, Server time : 2018-07-07 23:04:41, Gzip disabled</span>		</td>
+		<td class=footer_link>
+			<!-- <a href="javascript:history.go(-1);">Back</a> | <a href="javascript:history.forward();">Forward</a>-->
+			<a href="/admin">Administration</a>	
+		</td>
+	</tr>
+	</table>
+</td>
+</tr>
+</table>
+</body></html>

@@ -1,0 +1,24 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Boring Game</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU2419. Boring Game</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：10000/2000 MS (Java/Others)</span> <span class="ui label">时间限制：32768/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Brian's little sister Mary is fond of strange games involving lots of calculation. Unfortunately she's not so good at mathematics so Brian's often asked to calculate the values needed for her. Recently Brian's facing another such problem:<br>An undirected graph with N vertexes and M edges is first drawn by Mary. Then, Mary randomly assigns an integer value to each of the vertexes. After that, Mary will perform a sequence of operations on the graph, each operation being of one of the following type:<br>&nbsp;&nbsp;&nbsp;&nbsp;a)&nbsp;&nbsp;Among all vertexes connecting with vertex X via some edges, find the least value that is no less than value K. If such value cannot be found, zero will be returned instead.<br>&nbsp;&nbsp;&nbsp;&nbsp;b)&nbsp;&nbsp;Updates the value assigned to vertex X to K.<br>&nbsp;&nbsp;&nbsp;&nbsp;c)&nbsp;&nbsp;Erases an edge connecting vertex A and B from the graph.<br>Mary’s interested in the average value of all answers to type a) operations. Would you please help Brian to finish this boring task? <br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">There are multiple test cases in the input file. Each case starts with three integers, N, M, and Q (1 &lt;= N &lt;= 2 * 10<sup>4</sup>, 0 &lt;= M &lt;= 6 * 10<sup>4</sup>, 1 &lt;= Q &lt;= 3 * 10<sup>5</sup>). The next N lines describe the initial value assigned to each vertex. The next part of each test case consists of M lines, and describes the edges in the graph at the beginning. Vertexes are numbered from 1 to N. The last part of each test case describes the operations to be performed on the tree. For operations of a) type, a line similar to “F X K” will be given; for operations of b) type, a line with the format of “U X K” will be given; and for c) type, the description will be given in the format similar to “E A B”. You can assume that there will always be at least one a) type query. The absolute value assigned to any vertex at any time will not exceed 10000.<br>There is a blank line between two successive cases. Input ends with End-of-File. <br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For each test case, output one real number – the requested value with precision up to 0.001, in the format as indicated in the sample output. <br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">3 3 8
+4
+5
+8
+1 2
+2 3
+1 3
+F 1 4 
+E 1 3
+F 2 7
+E 2 3
+E 1 2
+F 2 7
+U 3 6
+F 3 3
+
+1 0 1
+0
+F 1 0</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">Case 1: 4.500
+Case 2: 0.000
+
+<div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div>
+For case 1, the answers for the queries are 4, 8, 0 and 6 respectively.
+</div><i style='font-size:1px'> </i></div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2008+Asia+Hangzhou+Regional+Contest+Online&source=1&searchmode=source"> 2008 Asia Hangzhou Regional Contest Online </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

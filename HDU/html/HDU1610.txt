@@ -1,0 +1,146 @@
+<html><head><meta name=keywords content="HDOJ ACM ICPC OJ C C++ Pascal Java"><meta http-equiv=Content-Type content="text/html;charset=gb2312"><link rel=stylesheet type=text/css href="/images/global.css" media=all><link rel=stylesheet type=text/css href="/css/diyinhead.css" media=all><link rel=stylesheet type=text/css href="/css/webinhead.css" media=all><script src="/js/global.js" type=text/javascript></script><script src="/js/register.js" type=text/javascript></script><script src="/js/MathJax/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script><title>Problem - 1610</title></head><body >
+<a name=top></a>
+<table align=center cellSpacing=0 cellPadding=0 width=980 border=0 style="word-wrap:break-word">
+<tr>
+	<td style="border:#1A5CC8 1px solid" align=center width=100%>
+		<a href="/">
+			<img src="/images/banner.jpg" width="100%" height=116 border=0>
+		</a>
+	</td>
+</tr>
+<tr>
+	<td style="border:#1A5CC8 1px solid">
+	<table cellSpacing=0 cellPadding=1 width="979px">
+	<tr bgcolor=#1A5CC8 align=center class=banner height=25>
+		<td>Online Judge</td>
+		<td>Online Exercise</td>
+		<td>Online Teaching</td>
+		<td>Online Contests</td>
+	<td>Exercise Author</td>
+	</tr>
+	<tr style="font-size:16px" align=center>
+		<td width=20% valign=top>
+		<a href="/faq.php" style="text-decoration: none">F.A.Q</a><br>
+		<a href="/friends" style="text-decoration: none">Hand In Hand</a><br>
+		<a href="/onlineuser.php" style="text-decoration: none">Online Acmers</a>	<br>
+		<!-- /onlineuser.php-->
+		
+		<a href="/forum" style="text-decoration: none">Forum | </a><a href="/discuss/public/list.php" style="text-decoration: none">Discuss</a><br>
+		<a href="/statistic/submit_graph.php" style="text-decoration: none">Statistical Charts</a><br>
+		</td>
+		<td width=20% valign=top>
+		<form action="/search.php" method=get>
+		<a href="/listproblem.php?vol=1" style="text-decoration: none">Problem Archive</a><br/>
+		<!--<a href="http://feeds.feedburner.com/Hdoj-problemset"><img src="/images/rss1.jpg" alt="problemset" style="vertical-align:text-bottom;"width=20 height=20></a><br>-->
+		<!--
+			 <a href="/submit.php">Submit Solution</a><br>
+		-->	
+		<a href="/status.php" style="text-decoration: none">Realtime Judge Status</a><br>
+
+		<a href="/ranklist.php" style="text-decoration: none">Authors Ranklist</a><br>
+		<input name=field value=author type=hidden><input class=text60 name=key>&nbsp;<input class=button40 type=submit value=Search>
+		
+		<!--
+			<input name=field value=problem type=hidden><input class=text60 name=key>&nbsp;<input class=button40 type=submit value=Search>
+		-->
+		</form>
+		</td>
+		<td width=20% valign=top>
+		 <form action='/search.php' method=get> 
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="text-decoration: none" href="http://code.hdu.edu.cn/">C/C++/Java Exams &nbsp;&nbsp;&nbsp;&nbsp;</a><br/>
+		<a style="text-decoration: none" href="/game">ACM Steps</a><br/>
+		<a href = "/ITJobs/">Go to Job</a><br/>	
+		<a href="/livecast" style="text-decoration: none">Contest LiveCast</a><br/>
+		<a style="text-decoration: none" href="/region">ICPC@China</a><br/>
+		<!-- <a href="/register.php">Register New Author</a><br> -->
+		<!-- <a href="/modifyuser.php">Update Your Information</a><br> -->
+		</form>
+		</td>
+		<td width=20% valign=top>
+		<a href="http://bestcoder.hdu.edu.cn" style="text-decoration: none; color: red; font-weight: bold;">Best Coder <sup style="color: gray;">beta</sup></a><br/><a href="/vip/contest_list.php" style="text-decoration: none">VIP</a> | <a href="/contests/contest_list.php" style="text-decoration: none">STD Contests</a><br /><a href="http://code.hdu.edu.cn/vcontest" style="text-decoration: none">Virtual Contests </a><br/>&nbsp;&nbsp;<a href="/diy/contest_list.php" style="text-decoration: none">&nbsp;&nbsp;DIY | </a><a href="/webcontest" style="text-decoration: none"><font color="">Web-DIY</font> <font size=1 color="gray"><sup>beta</sup></font></a><br/><a style="text-decoration: none" href="/recentcontest">Recent Contests</a><br/>		</td>
+		<td width=20%>
+					<form method=post action="/userloginex.php?action=login">
+			  <table width=168 border=0 align=center cellspacing=0>
+			  	<tr><td align=center colspan=2><a href="/qqlogin/oauth/login.php"><img src="/qqlogin/images/qqlogin.png" border="0" /></a></td></tr>
+				<tr><td width=68>Author ID&nbsp;</td><td align=right><input name=username type=text class=text90 maxlength=20></td></tr>
+				<tr><td>Password&nbsp;</td><td align=right><input name=userpass type=password class=text90 maxlength=20></td></tr>
+			  </table>
+			  <input name=login type=submit class=button40 value="Sign In">&nbsp;<a href="http://bestcoder.hdu.edu.cn/register.php?url=acm.hdu.edu.cn/userloginex.php?action=login" style="text-decoration: none">Register new ID</a>
+			</form>
+						</td>
+	</tr>
+	</table>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div align=center id=rollword><marquee scrollamount=2 width=600 scrolldelay=30 onMouseOver="javascript:this.stop();" onMouseOut="javascript:this.start();"><b style="margin-right:20px"></b></marquee></div>	</td>
+</tr>
+<tr><td align=center><h1 style='color:#1A5CC8'>Hotline</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/32768 K (Java/Others)<br>Total Submission(s): 166&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 6<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Every customer sometimes needs help with new and unusual products. Therefore, hotline service is very important for every company. We need a single phone number where the customer can always find a friendly voice ready to help with anything. On the other hand, many people are needed to serve as hotline operators, and human resources are always very expensive. Moreover, it is not easy to pretend &quot;friendly voice&quot; at 4am and explain to a drunken man that you are really unable to give him the number to House of Parliament. It was also found that some of the questions repeat very often and it is very annoying to answer them again and again. <br><br>ACM is a modern company, wanting to solve its hotline problem. They want to decrease the number of human operators by creating a complex software system that would be able to answer most common questions. The customer's voice is analysed by a special Voice Recognition Module (VRM) and converted to a plain text. The text is then taken by an Artificial Automatic Adaptive Answering Algorithm (AAAAA). The most common questions are recognised and answered automatically. The replies are then converted to a sound by Text-to-Speech Module (TTS). <br><br>You are to write the AAAAA module. Because your algorithm should be adaptive, it has no explicit knowledge base. But it must be able to listen to sentences in English and remember the mentioned facts. Whenever the question is asked about such a fact, the system has to answer it properly. The VRM and TTS modules are already implemented, so the input and output of AAAAA will be in the text form. <br><br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>There is a single positive integer T on the first line of input. It stands for the number of dialogues to follow. Each dialogue consists of zero or more lines, each of them containing one sentence: either statement or question. The statement ends with a dot character (.), the question ends with a question mark (?). No statement will appear more than once, however the questions can be repeated. There is one extra line after each dialogue. That line ends with an exclamation mark (!). <br><br>Sentences can contain words, spaces and punctuation characters (such as commas, colons, semicolons etc.). All words contain only letters of English alphabet and are case-sensitive. That means the same word is always written the same way, usually in lowercase. Acronyms, names and some other words can begin with capital letters. For simplicity, all sentences begin with a lowercase letter. Only if the first word should be written with a capital, the sentence begins with a capital letter. There are no unneeded spaces between words. No line will have more than 100 characters. There will be at most 100 statements per each test case. <br><br><br>Statements<br>Each statement has one of the following two forms (  denotes a space): <br>subject  predicate[s] [  object] . <br>subject  don't|doesn't  predicate [  object] . <br><br>The square brackets mark an optional part, the vertical line two possible variants. Subject is a single word, noun or pronoun in singular. Predicate is a verb (single word) denoting some activity. Object can be any text. Object does not contain any dots. Any pair &quot;verb + object&quot; determines unique activity. The same verb with different objects makes different independent activities, i.e. the different and independent meaning of the sentence. Sentence without any object can be considered as sentence with an empty object. The verb without an object has different and independent meaning than the same verb with any non-empty object. <br><br>The first variant of sentence denotes a positive statement. The word &quot;predicate[s]&quot; means verb that matches the subject of the sentence. If the subject is &quot;I&quot; or &quot;you&quot;, the verb has the same form as the infinitive. With any other subject, the letter &quot;s&quot; is appended on the end of the verb. Assume there are no irregular verbs. <br><br>The second variant is a negative statement. Verb &quot;don't&quot; or &quot;doesn't&quot; must also match the subject. The form &quot;don't&quot; is used with either &quot;I&quot; or &quot;you&quot;, &quot;doesn't&quot; is used in any other case. <br><br>A special generic subject &quot;everybody&quot; can be used. It means the activity holds for any subject. Other special subject is &quot;nobody&quot;. Such sentence also holds for any subject, but its meaning is negative. Both of these generic subjects can be used with the first variant only (without &quot;doesn't&quot;). The sentence &quot;nobody likes something&quot; is exactly equal to &quot;everybody doesn't like something&quot;, except the latter form will never occur in the input. <br><br><br>Questions<br>Each question has one of the following three forms: <br><br>1. <br>do|does  subject  predicate [  object] ? <br>2. <br>who  predicates [  object] ? <br>3. <br>what  do|does  subject do ? <br>The word &quot;do|does&quot; always matches the subject (&quot;do I?&quot;, &quot;do you?&quot;, &quot;does any other subject?&quot;). In the second type of question, predicate always matches the word &quot;who&quot;, i.e. the &quot;s&quot; is always appended. Generic subjects cannot be used in questions. <br><br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each dialogue, your program must output the line Dialogue #D:, where D is the sequence number of dialogue, starting with 1. Then print exactly three lines for every question: the first line repeats the question, the second line contains the answer, and the third line is empty. Print nothing for statements. After each dialogue, print the same line with an exclamation mark that was in the input. Then print one extra empty line. Empty line contains a new-line character only. <br><br>The answer must be properly formated to be accepted by a TTS module. Only the statements appearing in the input before the answer are used for the corresponding reply. If there is any contradiction among statements, the reply is always I am abroad.. If the question and statements consider the special subject &quot;you&quot;, it must be replaced with &quot;I&quot; in the answer. If the question considers special subject &quot;I&quot;, it must be replaced with &quot;you&quot; in the answer. The verb must always match the subject of the sentence. The exact form of the correct answer depends on the type of question. <br><br><br>1. does subject predicate [object] ?<br>If there is any positive statement about the mentioned subject (or generic subject &quot;everybody&quot;), predicate and object, the answer is: <br>yes,  subject  predicate[s] [  object] . <br><br>If there is any negative statement about the mentioned subject (or generic subject &quot;nobody&quot;), predicate and object, the answer is: <br>no,  subject  don't|doesn't  predicate [  object] . <br><br>Otherwise, the answer is: maybe. <br><br>Subject in the answer is always the same subject as the subject of the question. <br><br><br>2. who predicates [object] ?<br>If there is a positive statement considering any subject, the specified predicate and object, the answer is: <br>subject  predicate[s] [  object] . <br><br>If two or more subjects match the activity, replace the subject in the answer with enumeration of all such subjects, in the same order as the corresponding statements have appeared in the input. Subjects are separated with comma and space, last two subjects are separated with the word &quot;and&quot;. If &quot;everybody&quot; belongs to the group of enumerated subjects, do not enumerate subjects, and print &quot;everybody&quot; only. If the enumeration contains at least two subjects, the predicate matches the plural subject (i.e. verb is without trailing &quot;s&quot;), otherwise it matches the only subject. <br>subject1 ,  subject2  and  subject3 predicate [  object] . <br><br>If there is a negative statement considering the generic subject &quot;nobody&quot;, the specified predicate and object, the answer is: <br>nobody  predicates [  object] . <br><br>Otherwise, the answer is: I don't know. <br><br><br>3. what does subject do ?<br>If there are one or more sentences (both positive and negative) considering the specified subject (or a generic subject &quot;everybody&quot; or &quot;nobody&quot;), all verbs and objects from such sentences must be included in a reply in the same order as the corresponding sentences have appeared in the input. No verb-object pair can be included more than once (the eventual second appearance must be skipped). The verb-object pairs are separated by a comma followed by a space, the last verb is separated by a comma and the word &quot;and&quot;. Please note the comma is printed here although there was no comma when separating the subjects in the previous type of answer (see above). The negative answers have the same form as the statements, that means the verb &quot;don't&quot; or &quot;doesn't&quot; is used: <br>subject [  don't|doesn't]  predicate1[s] [  object1] , <br>[  don't|doesn't]  predicate2[s] [  object2] , <br> and [  don't|doesn't]  predicate3[s] [  object3] . <br>subject [  don't|doesn't]  predicate1[s] [  object1] , <br> and [  don't|doesn't]  predicate2[s] [  object2] . <br>subject [  don't|doesn't]  predicate[s] [  object] . <br><br>Otherwise, the answer is: I don't know. <br><br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">1
+I like hotdogs.
+nobody likes to work.
+everybody smiles.
+what do I do?
+who smiles?
+what do you do?
+does Joe smile?
+do I like to work?
+everybody hurts sometimes.
+who walks there?
+Michal walks there.
+who walks there?
+what does Michal do?
+do you understand?
+nobody walks there.
+do you understand now?
+bye!</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">Dialogue #1:
+what do I do?
+you like hotdogs, don't like to work, and smile.
+
+who smiles?
+everybody smiles.
+
+what do you do?
+I don't like to work, and smile.
+
+does Joe smile?
+yes, Joe smiles.
+
+do I like to work?
+no, you don't like to work.
+
+who walks there?
+I don't know.
+
+who walks there?
+Michal walks there.
+
+what does Michal do?
+Michal doesn't like to work, smiles, hurts sometimes, and walks there.
+
+do you understand?
+maybe.
+
+do you understand now?
+I am abroad.
+
+bye!</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href="/search.php?field=problem&key=Central+Europe+2000+Regional+Contest+&source=1&searchmode=source"> Central Europe 2000 Regional Contest  </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=1610'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=1610'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=1610">Discuss</a> | <a href='note/note.php?pid=1610'>Note</a><br></td></tr><tr>
+<td>
+	<table style="border:#1A5CC8 1px solid; font-size:14px" cellSpacing=0 cellPadding=1 width=100%>
+	<tr align=center>
+		<td class=footer_link height=45><a href="/">Home</a> | <a href=#top>Top</a></td>
+		<td style="padding:6px">
+			Hangzhou Dianzi University Online Judge 3.0<br>
+			Copyright &copy; 2005-2018 <a href=mailto:acm@hdu.edu.cn>HDU ACM Team</a>. All Rights Reserved.<br>
+			<a href="../about_us/developer.php">Designer & Developer </a>: <a>Wang Rongtao</a>&nbsp<a>LinLe</a>&nbsp<a href=mailto:gjavac@gmail.com >GaoJie</a>&nbsp<a href=mailto:gl8997@gmail.com >GanLu</a><br>
+			<span class=pagerunstatus>Total 0.000000(s) query 2, Server time : 2018-07-07 21:02:27, Gzip disabled</span>		</td>
+		<td class=footer_link>
+			<!-- <a href="javascript:history.go(-1);">Back</a> | <a href="javascript:history.forward();">Forward</a>-->
+			<a href="/admin">Administration</a>	
+		</td>
+	</tr>
+	</table>
+</td>
+</tr>
+</table>
+</body></html>

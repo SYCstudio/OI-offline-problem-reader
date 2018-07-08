@@ -1,0 +1,26 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Catch the Thief</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU3928. Catch the Thief</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：2000/1000 MS (Java/Others)</span> <span class="ui label">时间限制：122768/62768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">A thief stole a big diamond in a party. The diamond was in the door of the house. So everyone can tell if there is a diamond when he enter and exit the house.<br><br>The cop think that the thief must be one of the guests. So they have got the timetable of the entrance time and exit time of everyone. They are arranging how to ask them to know who is the thief. When ask somebody, the cop could know if the diamond was still being there when they entering and exiting.<br><br>Of course, thief will tell lie. To simplify the problem, the thief will always tell you that the diamond was there. To simplify the problem, we assume that the thief stole the diamond when he exit.<br><br>The cop want to ask as few people as possible. Please help them to find the minimum number of guests they have to ask.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The first line contains a single positive integer T( T &lt;= 100 ), indicates the number of test cases.<br>For each test case: First line contains an integer N(1&lt;=N&lt;=25), indicates the number of Guests<br>The Timetable of the party - 2N numbers, 1-N each one twice, the first appearance means he enter. the second appearance means he exit.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For each test case: output the case number as shown and the minimum number of guests they have to ask.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">4
+1
+1 1
+2
+1 1 2 2
+4
+1 1 2 2 3 3 4 4
+5
+1 4 4 2 5 5 3 3 2 1</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">Case #1: 0
+Case #2: 1
+Case #3: 2
+Case #4: 2
+
+<div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div>Case 1: Only one guest there. So the thief must be him
+
+Case 2: The data shows the timetable as below:
+in time 1, #1 enter the house;
+in time 2, #1 exit the house;
+in time 3, #2 enter the house;
+in time 4, #2 exit the house;
+The cop will only ask #2. If he answer YES/YES, the thief must be him; If he answer NO/NO, the thief must be #1.
+
+Case 3: There's a solution which cop only ask 2 times: The cop will ask #3 first, 
+If he answer YES/YES, the thief may be #3 or #4, then ask #4 to know who is the thief;
+If he answer NO/NO, the thief may be #1 or #2. then ask #2 to know who is the thief;
+he can't answer YES/NO or NO/YES.</div><i style='font-size:1px'> </i></div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2011+Multi-University+Training+Contest+9+-+Host+by+BJTU&source=1&searchmode=source"> 2011 Multi-University Training Contest 9 - Host by BJTU </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

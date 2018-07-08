@@ -1,0 +1,26 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Square</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU5079. Square</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：24000/12000 MS (Java/Others)</span> <span class="ui label">时间限制：262144/262144 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Nothing is more beautiful than square! So, given a grid of cells, each cell being black or white, it is reasonable to evaluate this grid’s beautifulness by the side length of its maximum continuous subsquare which fully consists of white cells.<br><br>Now you’re given an N × N grid, and the cells are all black. You can paint some cells white. But other cells are broken in the sense that they cannot be paint white. For each integer i between 0 and N inclusive, you want to find the number of different painting schemes such that the beautifulness is exactly i. Two painting schemes are considered different if and only if some cells have different colors. Painting nothing is considered to be a scheme.<br><br><center><img style='max-width:100%;' src=./data/images/C549-1010-1.jpg></center><br>For example, N = 3 and there are 4 broken cells as shouwn in Fig. J(a). There are 2 painting schemes for i=2 as shown in Fig. J(b) and J(c).<br><br>You just need to output the answer modulo 10<sup>9</sup> + 7.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The first line contains an integer T (T ≤ 10) denoting the number of the test cases.<br><br>For each test case, the first line contains an integer N (1 ≤ N ≤ 8), denoting the size of the grid is N × N . Then N lines follow, each line containing an N-character string of “o” and “*”, where “o” stands for a paintable cell and “*” for a broken cell.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For each test case, for each integer i between 0 and N inclusive, output the answer in a single line.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">2
+3
+oo*
+ooo
+***
+8
+oooooooo
+oooooooo
+oooooooo
+oooooooo
+oooooooo
+oooooooo
+oooooooo
+oooooooo</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">1
+29
+2
+0
+1
+401415247
+525424814
+78647876
+661184312
+550223786
+365317939
+130046
+1</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2014+Asia+AnShan+Regional+Contest&source=1&searchmode=source"> 2014 Asia AnShan Regional Contest </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

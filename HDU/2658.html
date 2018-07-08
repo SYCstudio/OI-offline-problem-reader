@@ -1,0 +1,26 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Firebirds' Logic Nation</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU2658. Firebirds' Logic Nation</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：2000/1000 MS (Java/Others)</span> <span class="ui label">时间限制：32768/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">In HDU, there is an little world created by GL, WYB, and CTW. This world lives some birds which are recognized as firebirds. Actually, the firebirds' world exists three kind of birds, respectively created by GL, WYB, CTW. So I will call them &quot;Gbird&quot;, &quot;Wbird&quot;, &quot;Cbird&quot; below.<br>What's more, these birds can talk to ACMers and have their own habit as follows:<br>Gbird are like GL, never tell truth. Wbird like to tell the truth in the day, but lie in the night. While Cbird are all honest, and never lie.<br>Now, some firebirds talk to you and tell you some statements, can you deduce what kind of these birds are, and whether it's day or night?<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The input contains several cases. Each description starts with two integer n and m respectively represent the number of birds and statements. Then following m lines each contain one statement. And one statement is begin with &quot;X: &quot;, X is the identity of speaker. Then follows the contents, like following kinds: <br><br>I am [not] ( Gbird | Wbird | Cbird | lying ).<br>X is [not] ( Gbird | Wbird | Cbird | lying ).<br>It is ( day | night ). <br><br>The word in [] may appear or not appear. The word in () mean that exactly one of the words separated by | must appear. X is the identity of birds, it's a uppecase character between 'A' and 'Z'. <br>0 &lt; n &lt; 27, 0 &lt; m &lt; 100, 'A' &lt;= X &lt;= 'Z'.<br>Input end with a case n = 0 and m = 0.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For each case, first output a line with &quot;Case #x:&quot;, x represent the number of case and start with 1. Then print &quot;You're kidding.&quot;, if the conversation cannot happen according to the rules or &quot;I messed up.&quot;, if no facts can be deduced. Otherwise print all the facts that can be deduced.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">1 1
+A: I am Cbird.
+1 1
+A: I am lying.
+3 4
+A: B is Wbird.
+B: C is Wbird.
+C: A is Wbird.
+C: I am Gbird.
+0 0</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">Case #1:
+I messed up.
+Case #2:
+You're kidding.
+Case #3:
+A is a Gbird.
+B is a Cbird.
+C is a Wbird.
+It is night.
+
+
+<div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div> hints：
+case 1: You cannot reduce anything from it.
+case 2: If A is lying, then it's telling a truth. If it's telling a truth, it's lying. So it cannot happen according to the rules.
+case 3: Gbird won't say itself is a Gbird, so C is lying(statement 4 is false). You can reduce that it is night and C is a Wbird.
+ So B is telling the truth(statement 2 is true). 
+It's a Cbird. A is not a Wbird(statement 3 is false) and is not a Cbird(statement 1 is false). So A is a Wbird.</div><i style='font-size:1px'> </i></div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=%BE%F6%D5%BD%C1%FA%BB%A2%C3%C5&source=1&searchmode=source"> 决战龙虎门 </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

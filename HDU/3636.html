@@ -1,0 +1,31 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Escape from Zirong forest</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU3636. Escape from Zirong forest</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：20000/10000 MS (Java/Others)</span> <span class="ui label">时间限制：32768/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Now SuSu and his companions arrived at Xiangling's hometown - ZiRong Forest. To drive SuSu out of these area, &quot;Piaorou Bro&quot; Lingduan set the forest on fire. To prevent the trees from burning down, SuSu must find the exit of the forest as quickly as possible and kill Lingduan. If he could not kill Lingduan in TIME seconds, the forest will suffer too much damage to be recovered. What was worse, there are some horrible monsters in the forest. SuSu would suffer a certain damage when he kill a monster on his way to the exit. For the purpose of save energy and to kill Lingduan more easily, the damage SuSu suffer from the monsters should be the fewer the better. Please help SuSu to find a reasonable path which can lead him to the exit in TIME seconds, and suffers the minimum damage at the same time.<br><center><img style='max-width:100%;' src=./data/images/C308_1005_1.png></center><br>To represents the ZiRong forest, we use a n * m maze:<br>'S' and 'L' represents the position of SuSu and Lingduan at the very beginning. Each of them appears in the maze once and only once.<br>'F' represents fire where SuSu can not step into.<br>A number (from 0 to 9) indicates there is one monster in this grid ,and it's attack is the corresponding number.<br><br>Every second SuSu can choose a direction and go forward 1 ~ K steps, and for all monsters' attack in the grids he passed by(if the grid do exist a monster), we accumulate them and get a sum. The damage SuSu will suffer is the square of this sum.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The first line of input should give the number of cases, T(1&lt;=T&lt;=50).<br>The first line of each case are four numbers N, M, TIME, K. (2 &lt;= N, M &lt;= 100, 1 &lt;= TIME, K &lt;= 100)<br>Followed by N lines each with M characters, described the ZiRong forest.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">If SuSu can reach the position &quot;Piaorou Bro&quot; stands in time, output the minimum damage.<br>Otherwise output &quot;胜败兵家事不期 卷土重来是大侠&quot;.<br>Following the case number (start with 1).</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">5
+3 3 2 2
+S19
+111
+F1L
+3 3 3 2
+S19
+111
+F1L
+5 4 5 1
+S111
+9FF1
+9FF1
+9111
+FFLF
+5 4 4 100
+S111
+9FF1
+9FF1
+9111
+FFLF
+5 4 100 1
+S111
+9FF1
+9FF1
+9111
+FFLF</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">Case 1: 101
+Case 2: 5
+Case 3: 胜败兵家事不期 卷土重来是大侠
+Case 4: 19
+Case 5: 7</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2010+ACM-ICPC+Multi-University+Training+Contest%A3%A819%A3%A9%A1%AA%A1%AAHost+by+HDU&source=1&searchmode=source"> 2010 ACM-ICPC Multi-University Training Contest（19）——Host by HDU </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

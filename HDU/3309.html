@@ -1,0 +1,30 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Roll The Cube</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU3309. Roll The Cube</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：3000/1000 MS (Java/Others)</span> <span class="ui label">时间限制：65536/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">This is a simple game.The goal of the game is to roll two balls to two holes each.<br>'B' -- ball<br>'H' -- hole<br>'.' -- land<br>'*' -- wall<br>Remember when a ball rolls into a hole, they(the ball and the hole) disappeared, that is , 'H' + 'B' = '.'.<br>Now you are controlling two balls at the same time.Up, down , left , right --- once one of these keys is pressed, balls exist roll to that direction, for example , you pressed up , two balls both roll up. <br>A ball will stay where it is if its next point is a wall, and balls can't be overlap.<br>Your code should give the minimun times you press the keys to achieve the goal.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">First there's an integer T(T&lt;=100) indicating the case number.<br>Then T blocks , each block has two integers n , m (n , m &lt;= 22) indicating size of the map.<br>Then n lines each with m characters.<br>There'll always be two balls(B) and two holes(H) in a map.<br>The boundary of the map is always walls(*).</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The minimum times you press to achieve the goal.<br>Tell me &quot;Sorry , sir , my poor program fails to get an answer.&quot; if you can never achieve the goal.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">4
+6 3
+***
+*B*
+*B*
+*H*
+*H*
+***
+
+4 4
+****
+*BB*
+*HH*
+****
+
+4 4
+****
+*BH*
+*HB*
+****
+
+5 6
+******
+*.BB**
+*.H*H*
+*..*.*
+******</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">3
+1
+2
+Sorry , sir , my poor program fails to get an answer.</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=HDOJ+Monthly+Contest+%A8C+2010.02.06+&source=1&searchmode=source"> HDOJ Monthly Contest – 2010.02.06  </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

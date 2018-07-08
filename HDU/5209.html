@@ -1,0 +1,25 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Magic Toy Brick</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU5209. Magic Toy Brick</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：8000/4000 MS (Java/Others)</span> <span class="ui label">时间限制：65536/65536 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Today is Young F's 3rd birthday. His father gives him a set of magic toy bricks as a birthday gift, which contains a total of $n$ bricks identified from $1$ to $n$. Young F can set the height of every brick as an arbitrary integer $h$, which ranges from 1 to m$\left(1\leq h\leq m \right)$. Young F loves the gift, and then he has fun with the bricks according to the following steps.<br><br>(1)step 1: take the No.1 toy brick, set its height $h1$ arbitrarily, place it at the beginning of the first row.<br><br>(2)step $i$ (assuming there has been $r$ rows formed by the previous $i-1$ toy bricks):take the No.i toy brick, and there are two operations which Young F can take:<br><br>(I) set its height $hi$ arbitrarily, place No.i toy brick at the beginning of the $r+1$ row to create a new row(row $r+1$)<br><br>(II)select an arbitrary row from the existed $r$ rows, set the height of new brick $hi$ so that $hi$ must be not less than the height of the last toy brick of selected row, then append No.i toy block to the selected row.<br><br>(3) operation ends when $n$ toy blocks are used out, and the whole bricks can form a certain shape.<br><br>Young F is curious about how many different shapes will be formed with the whole bricks in all possible operations.<br><br>For two shapes, if the number of the rows is same, and the number of the bricks in corresponding row is also same, and the ID as well as the height of the brick at the corresponding position is still same, the two shapes are considered as the same shape.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Multiple test cases, the first line contains an integer $T$(no more than $50$), indicating the number of cases.Each test case contains two integer $n\left(1\leq n\leq 1000 \right)$ and $m\left(1\leq m\leq 100000 \right)$, representing the number of bricks and the maximal height of toy bricks.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For each case，the output should occupies exactly one line. The output format is Case #$x$: $ans$, here $x$ is the data number begins at 1, $ans$ is the total number mod $1000000007$.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">2
+1 1
+2 2</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">Case #1: 1
+Case #2: 7
+
+<div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div>there are seven shapes in the second test case.$(x,y)$ indicates
+that No.$x$'s height is $y$.
+1、(1,1)(2,1)
+
+2、(1,1)(2,2)
+
+3、(1,2)(2,2)
+
+4、(1,1)  
+   (2,1)  
+
+5、(1,1) 
+   (2,2)
+
+6、(1,2)
+   (2,1)
+
+7、(1,2)
+   (2,2)
+</div><i style='font-size:1px'> </i></div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=BestCoder+Round+%2338+%28%24%29&source=1&searchmode=source"> BestCoder Round #38 ($) </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

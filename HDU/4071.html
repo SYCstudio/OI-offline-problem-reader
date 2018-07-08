@@ -1,0 +1,24 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Trick or Treat</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU4071. Trick or Treat</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：10000/5000 MS (Java/Others)</span> <span class="ui label">时间限制：32768/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Johnny and his friends have decided to spend Halloween night doing the usual candy collection from the households of their village. As the village is too big for a single group to collect the candy from all houses sequentially, Johnny and his friends have decided to split up so that each of them goes to a different house, collects the candy (or wreaks havoc if the residents don't give out candy), and returns to a meeting point arranged in advance.There are n houses in the village, the positions of which can be identified with their Cartesian coordinates on the Euclidean plane. Johnny's gang is also made up of n people (including Johnny himself). They have decided to distribute the candy after everybody comes back with their booty. The houses might be far away, but Johnny's interest is in eating the candy as soon as possible.Keeping in mind that, because of their response to the hospitality of some villagers, some children might be wanted by the local authorities, they have agreed to fix the meeting point by the river running through the village, which is the line y = 0. Note that there may be houses on both sides of the river, and some of the houses may be houseboats (y = 0). The walking speed of every child is 1 meter per second, and they can move along any direction on the plane.At exactly midnight, each child will knock on the door of the house he has chosen, collect the candy instantaneously, and walk back along the shortest route to the meeting point. Tell Johnny at what time he will be able to start eating the candy.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Each test case starts with a line indicating the number n of houses (1 &lt;=n &lt;= 50 000). The next n lines describe the positions of the houses; each of these lines contains two oating point numbers x and y (-200 000 &lt;= x; y &lt;=200 000), the coordinates of a house in meters. All houses are at dierent positions. A blank line follows each case. A line with n = 0 indicates the end of the input; do not write any output for this case.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For each test case, print two numbers in a line separated by a space: the coordinate x of the meeting point on the line y = 0 that minimizes the time the last child arrives, and this time itself (measured in seconds after midnight). Your answer should be accurate to within an absolute or relative error of 10<sup>-5</sup>.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">2
+1.5 1.5
+3 0
+
+1
+0 0
+
+4
+1 4
+4 4
+-3 3
+2 4
+
+5
+4 7
+-4 0
+7 -6
+-2 4
+8 -5
+
+0</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">1.500000000 1.500000000
+0.000000000 0.000000000
+1.000000000 5.000000000
+3.136363636 7.136363636</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2009+South+Western+European+Regional+Contest&source=1&searchmode=source"> 2009 South Western European Regional Contest </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

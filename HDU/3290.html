@@ -1,0 +1,23 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>The magic apple tree</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU3290. The magic apple tree</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：3000/1000 MS (Java/Others)</span> <span class="ui label">时间限制：65535/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Sailormoon girls all like eating many kinds of fruit, such as banana, grape, apple and so on.<br>One day, when they was walking on a orchard, they found a magic apple tree.The magic apple tree have many nodes,but there is only one root. Each notes has its label. It is labeled from 1.On the first day,only each leaf nodes(has no children nodes) have apples. Any other nodes have no apples. The number of apples that each leaf nodes have is just the label of this node.When all the immediate children of a node each has apples,this node will grow some apple on the next day. If a node has K immediate children node,the number of apple that this node grow on next day is just the number of apples that the (K + 1) / 2th smaller node has.The Xth smaller node means there are X – 1 nodes’ number of apples is less than this node’s number of apple.<br>Now you task is to calculate the number of apples that the root has at last.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">There are multiple test cases.<br>Each case contains a positive integer N, it means this tree has N nodes, labeled 1, 2, ... N(0 &lt; N &lt;= 20000).<br>The following N lines describe the children of all nodes in order of their labels. The (X + 1)th line in each test case starts with a number p (0 &lt;= p &lt;N), it means the Xth node has p immediate children nodes.then followed by p positive integer, means the label of immediate child node</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Print the number of apples that the root grow at last.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">7
+2 2 3
+2 5 4
+2 6 7
+0
+0
+0
+0
+
+12
+3 2 3 4
+0
+2 5 6
+3 7 8 9
+3 10 11 12
+0
+0
+0
+0
+0
+0
+0</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">4
+6</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2010+%A1%B0HDU-Sailormoon%A1%B1+Programming+Contest&source=1&searchmode=source"> 2010 “HDU-Sailormoon” Programming Contest </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

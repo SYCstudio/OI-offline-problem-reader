@@ -1,0 +1,109 @@
+<html><head><meta name=keywords content="HDOJ ACM ICPC OJ C C++ Pascal Java"><meta http-equiv=Content-Type content="text/html;charset=gb2312"><link rel=stylesheet type=text/css href="/images/global.css" media=all><link rel=stylesheet type=text/css href="/css/diyinhead.css" media=all><link rel=stylesheet type=text/css href="/css/webinhead.css" media=all><script src="/js/global.js" type=text/javascript></script><script src="/js/register.js" type=text/javascript></script><script src="/js/MathJax/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script><title>Problem - 4399</title></head><body >
+<a name=top></a>
+<table align=center cellSpacing=0 cellPadding=0 width=980 border=0 style="word-wrap:break-word">
+<tr>
+	<td style="border:#1A5CC8 1px solid" align=center width=100%>
+		<a href="/">
+			<img src="/images/banner.jpg" width="100%" height=116 border=0>
+		</a>
+	</td>
+</tr>
+<tr>
+	<td style="border:#1A5CC8 1px solid">
+	<table cellSpacing=0 cellPadding=1 width="979px">
+	<tr bgcolor=#1A5CC8 align=center class=banner height=25>
+		<td>Online Judge</td>
+		<td>Online Exercise</td>
+		<td>Online Teaching</td>
+		<td>Online Contests</td>
+	<td>Exercise Author</td>
+	</tr>
+	<tr style="font-size:16px" align=center>
+		<td width=20% valign=top>
+		<a href="/faq.php" style="text-decoration: none">F.A.Q</a><br>
+		<a href="/friends" style="text-decoration: none">Hand In Hand</a><br>
+		<a href="/onlineuser.php" style="text-decoration: none">Online Acmers</a>	<br>
+		<!-- /onlineuser.php-->
+		
+		<a href="/forum" style="text-decoration: none">Forum | </a><a href="/discuss/public/list.php" style="text-decoration: none">Discuss</a><br>
+		<a href="/statistic/submit_graph.php" style="text-decoration: none">Statistical Charts</a><br>
+		</td>
+		<td width=20% valign=top>
+		<form action="/search.php" method=get>
+		<a href="/listproblem.php?vol=1" style="text-decoration: none">Problem Archive</a><br/>
+		<!--<a href="http://feeds.feedburner.com/Hdoj-problemset"><img src="/images/rss1.jpg" alt="problemset" style="vertical-align:text-bottom;"width=20 height=20></a><br>-->
+		<!--
+			 <a href="/submit.php">Submit Solution</a><br>
+		-->	
+		<a href="/status.php" style="text-decoration: none">Realtime Judge Status</a><br>
+
+		<a href="/ranklist.php" style="text-decoration: none">Authors Ranklist</a><br>
+		<input name=field value=author type=hidden><input class=text60 name=key>&nbsp;<input class=button40 type=submit value=Search>
+		
+		<!--
+			<input name=field value=problem type=hidden><input class=text60 name=key>&nbsp;<input class=button40 type=submit value=Search>
+		-->
+		</form>
+		</td>
+		<td width=20% valign=top>
+		 <form action='/search.php' method=get> 
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="text-decoration: none" href="http://code.hdu.edu.cn/">C/C++/Java Exams &nbsp;&nbsp;&nbsp;&nbsp;</a><br/>
+		<a style="text-decoration: none" href="/game">ACM Steps</a><br/>
+		<a href = "/ITJobs/">Go to Job</a><br/>	
+		<a href="/livecast" style="text-decoration: none">Contest LiveCast</a><br/>
+		<a style="text-decoration: none" href="/region">ICPC@China</a><br/>
+		<!-- <a href="/register.php">Register New Author</a><br> -->
+		<!-- <a href="/modifyuser.php">Update Your Information</a><br> -->
+		</form>
+		</td>
+		<td width=20% valign=top>
+		<a href="http://bestcoder.hdu.edu.cn" style="text-decoration: none; color: red; font-weight: bold;">Best Coder <sup style="color: gray;">beta</sup></a><br/><a href="/vip/contest_list.php" style="text-decoration: none">VIP</a> | <a href="/contests/contest_list.php" style="text-decoration: none">STD Contests</a><br /><a href="http://code.hdu.edu.cn/vcontest" style="text-decoration: none">Virtual Contests </a><br/>&nbsp;&nbsp;<a href="/diy/contest_list.php" style="text-decoration: none">&nbsp;&nbsp;DIY | </a><a href="/webcontest" style="text-decoration: none"><font color="">Web-DIY</font> <font size=1 color="gray"><sup>beta</sup></font></a><br/><a style="text-decoration: none" href="/recentcontest">Recent Contests</a><br/>		</td>
+		<td width=20%>
+					<form method=post action="/userloginex.php?action=login">
+			  <table width=168 border=0 align=center cellspacing=0>
+			  	<tr><td align=center colspan=2><a href="/qqlogin/oauth/login.php"><img src="/qqlogin/images/qqlogin.png" border="0" /></a></td></tr>
+				<tr><td width=68>Author ID&nbsp;</td><td align=right><input name=username type=text class=text90 maxlength=20></td></tr>
+				<tr><td>Password&nbsp;</td><td align=right><input name=userpass type=password class=text90 maxlength=20></td></tr>
+			  </table>
+			  <input name=login type=submit class=button40 value="Sign In">&nbsp;<a href="http://bestcoder.hdu.edu.cn/register.php?url=acm.hdu.edu.cn/userloginex.php?action=login" style="text-decoration: none">Register new ID</a>
+			</form>
+						</td>
+	</tr>
+	</table>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div align=center id=rollword><marquee scrollamount=2 width=600 scrolldelay=30 onMouseOver="javascript:this.stop();" onMouseOut="javascript:this.start();"><b style="margin-right:20px"></b></marquee></div>	</td>
+</tr>
+<tr><td align=center><h1 style='color:#1A5CC8'>Colorful Points </h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 214&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 65<br><font color=red>Special Judge</font></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>    In this problem, all points are integer points located on the number axis.<br><br>    There is a set of colorful points P, where point P<sub>k</sub> has color k and is located at k,1&lt;=k&lt;=n. Colors of points in set P are pairwise different.<br><br>    Now, we want to color another set of points Q, where point Q<sub>k</sub> is located at –n+k, 1&lt;=k&lt;=n. Every point in set Q must be colored with one of colors 1, 2, …, n, and all colors must be used at least once. After we finish coloring all points in set Q, we will shift them right by the speed of one unit per second, which means that point Q<sub>1</sub> changes its location to –n+2, point Q<sub>2</sub> changes its location to –n+3, …, point Q<sub>n</sub> changes its location to 1 in the 1<sup>st</sup> second; and point Q<sub>1</sub> changes its location to –n+3, point Q<sub>2</sub> changes its location to –n+4, …, point Q<sub>n</sub> changes its location to 2 in the 2<sup>nd</sup> second and so on. We will end the process after 2*n seconds (Q<sub>1</sub> -&gt; n+1, Q<sub>2</sub> -&gt; n+2, Q<sub>n</sub> -&gt; 2*n).<br><br>    We define two parameters here. Let A<sub>k</sub> represent the number of different pairs of points coincide in the k-th second. A pair of points coincides in the k-th second means that a point from set Q has the same location with that of a point from set P in the k-th second, such as point Q<sub>n</sub> changes its location to 1 which is the same as that of point P<sub>1</sub> in the 1<sup>st</sup> second, so the pair (Q<sub>n</sub>, P<sub>1</sub>) is a pair of points coincides in the 1<sup>st</sup> second, and pairs (Q<sub>n-1</sub>, P<sub>1</sub>) and (Q<sub>n</sub>, P<sub>2</sub>) are two different pairs of points coincide in the 2<sup>nd</sup> second and so on. Let B<sub>k</sub> represent the number of pairs of points which have the same color among all the pairs of points coincide in the k-th second. To help you understand A<sub>k</sub> and B<sub>k</sub> better, we give an example below:<br><br>    e.g. Let n = 3, and we color point Q<sub>3</sub> with color 2, pointQ<sub>2</sub> with color 3, point Q<sub>1</sub> with color 1. In the 1<sup>st</sup> second, (Q<sub>3</sub>, P<sub>1</sub>) is the only pair of points coincide, but the color of point Q<sub>3</sub> is different from that of point P<sub>1</sub>, so A<sub>1</sub> = 1 and B<sub>1</sub> = 0; In the 2<sup>nd</sup> second, (Q<sub>3</sub>, P<sub>2</sub>) and (Q<sub>2</sub>, P<sub>1</sub>) are the only two pairs of points coincide, and point Q<sub>3</sub> and point P<sub>2</sub> have a same color while point Q<sub>2</sub> and point P<sub>1</sub> have a different color, so A<sub>2</sub> = 2 and B<sub>2</sub> = 1; In the 3<sup>rd</sup> second, there are three pairs of points coincide, which are (Q<sub>1</sub>, P<sub>1</sub>) with a same color and (Q<sub>2</sub>, P<sub>2</sub>), (Q<sub>3</sub>, P<sub>3</sub>) with a different color, so A<sub>3</sub> = 3 and B<sub>3</sub> = 1; In the 4<sup>th</sup> second, A<sub>4</sub> = 2 and B<sub>4</sub> = 1; In the 5<sup>th</sup> second, A<sub>5</sub> = 1 and B<sub>5</sub> = 0; In the 6<sup>th</sup> second, A<sub>6</sub> = 0 and B<sub>6</sub> = 0.<br><br>    We define another parameter C, where C=max{A<sub>k</sub> - B<sub>k</sub>}, 1&lt;=k&lt;=2*n. If you have finished coloring all the points in set Q, parameter C is easy to be calculated, and different ways of coloring may lead to different Cs. Among all the Cs, there is a minimum one. In this problem, your job is to calculate the minimum C and give a way of coloring which leads to the minimum C.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>At the beginning, there is an integer T indicating the total number of test cases.<br>Every test case occupies a single line with only one integer n.<br>　　T &lt;= 100;<br>　　1 &lt;= n &lt;= 100000;<br>Most ns are less than 1000.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For every test case, print “Case #k: ” firstly, where k indicates the index of the test case and begins from 1. Then output the minimum C. Finally give a way of coloring which leads to the minimum C in the next line (give the color of points in the order of Q<sub>1</sub>, Q<sub>2</sub>, …, Q<sub>n</sub> and separate them with a single blank), and each way leads to minimum C will be correct. See sample for more details.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">4
+1
+2
+3
+4</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">Case #1: 0
+1
+Case #2: 1
+1 2
+Case #3: 2
+1 2 3
+Case #4: 2
+1 2 4 3</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href="/search.php?field=problem&key=2012+Multi-University+Training+Contest+10&source=1&searchmode=source"> 2012 Multi-University Training Contest 10 </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>zhuyuanchen520</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=4399'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=4399'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=4399">Discuss</a> | <a href='note/note.php?pid=4399'>Note</a><br></td></tr><tr>
+<td>
+	<table style="border:#1A5CC8 1px solid; font-size:14px" cellSpacing=0 cellPadding=1 width=100%>
+	<tr align=center>
+		<td class=footer_link height=45><a href="/">Home</a> | <a href=#top>Top</a></td>
+		<td style="padding:6px">
+			Hangzhou Dianzi University Online Judge 3.0<br>
+			Copyright &copy; 2005-2018 <a href=mailto:acm@hdu.edu.cn>HDU ACM Team</a>. All Rights Reserved.<br>
+			<a href="../about_us/developer.php">Designer & Developer </a>: <a>Wang Rongtao</a>&nbsp<a>LinLe</a>&nbsp<a href=mailto:gjavac@gmail.com >GaoJie</a>&nbsp<a href=mailto:gl8997@gmail.com >GanLu</a><br>
+			<span class=pagerunstatus>Total 0.000000(s) query 2, Server time : 2018-07-07 23:45:01, Gzip disabled</span>		</td>
+		<td class=footer_link>
+			<!-- <a href="javascript:history.go(-1);">Back</a> | <a href="javascript:history.forward();">Forward</a>-->
+			<a href="/admin">Administration</a>	
+		</td>
+	</tr>
+	</table>
+</td>
+</tr>
+</table>
+</body></html>

@@ -1,0 +1,19 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Jump</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU4862. Jump</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：2000/1000 MS (Java/Others)</span> <span class="ui label">时间限制：32768/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">   There are n*m grids, each grid contains a number, ranging from 0-9. Your initial energy is zero. You can play up to K times the game, every time you can choose any one of the grid as a starting point (but not traveled before) then you can choose a grid on the right or below the current grid to jump, but it has not traveled before. Every time you can jump as many times as you want, as long as you do not violate rules. If you are from (x1, y1) to (x2, y2), then you consume |x1-x2|+|y1-y2|-1 energies. Energy can be negative. <br>   However, in a jump, if you start position and end position has same numbers S, then you can increase the energy value by S. <br>   Give me the maximum energy you can get. Notice that you have to go each grid exactly once and you don’t have to play exactly K times.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">   The first line is an integer T, stands for the number of the text cases.<br>   Then T cases followed and each case begin with three numbers N, M and K. Means there are N rows and M columns, you have K times to play.<br>   Then N lines follow, each line is a string which is made up by M numbers.<br>   The grids only contain numbers from 0 to 9.<br>   (T&lt;=100, N&lt;=10，M&lt;=10，K&lt;=100)</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">   Each case, The first you should output “Case x : ”,(x starting at 1),then output The maximum number of energy value you can get. If you can’t reach every grid in no more than K times, just output -1.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">5
+1 5 1
+91929
+1 5 2
+91929
+1 5 3
+91929
+3 3 3
+333
+333
+333
+3 3 2
+333
+333
+333</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">Case 1 : 0
+Case 2 : 15
+Case 3 : 16
+Case 4 : 18
+Case 5 : -1</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2014+Multi-University+Training+Contest+1&source=1&searchmode=source"> 2014 Multi-University Training Contest 1 </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

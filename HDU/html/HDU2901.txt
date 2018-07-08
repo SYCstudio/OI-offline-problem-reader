@@ -1,0 +1,108 @@
+<html><head><meta name=keywords content="HDOJ ACM ICPC OJ C C++ Pascal Java"><meta http-equiv=Content-Type content="text/html;charset=gb2312"><link rel=stylesheet type=text/css href="/images/global.css" media=all><link rel=stylesheet type=text/css href="/css/diyinhead.css" media=all><link rel=stylesheet type=text/css href="/css/webinhead.css" media=all><script src="/js/global.js" type=text/javascript></script><script src="/js/register.js" type=text/javascript></script><script src="/js/MathJax/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script><title>Problem - 2901</title></head><body >
+<a name=top></a>
+<table align=center cellSpacing=0 cellPadding=0 width=980 border=0 style="word-wrap:break-word">
+<tr>
+	<td style="border:#1A5CC8 1px solid" align=center width=100%>
+		<a href="/">
+			<img src="/images/banner.jpg" width="100%" height=116 border=0>
+		</a>
+	</td>
+</tr>
+<tr>
+	<td style="border:#1A5CC8 1px solid">
+	<table cellSpacing=0 cellPadding=1 width="979px">
+	<tr bgcolor=#1A5CC8 align=center class=banner height=25>
+		<td>Online Judge</td>
+		<td>Online Exercise</td>
+		<td>Online Teaching</td>
+		<td>Online Contests</td>
+	<td>Exercise Author</td>
+	</tr>
+	<tr style="font-size:16px" align=center>
+		<td width=20% valign=top>
+		<a href="/faq.php" style="text-decoration: none">F.A.Q</a><br>
+		<a href="/friends" style="text-decoration: none">Hand In Hand</a><br>
+		<a href="/onlineuser.php" style="text-decoration: none">Online Acmers</a>	<br>
+		<!-- /onlineuser.php-->
+		
+		<a href="/forum" style="text-decoration: none">Forum | </a><a href="/discuss/public/list.php" style="text-decoration: none">Discuss</a><br>
+		<a href="/statistic/submit_graph.php" style="text-decoration: none">Statistical Charts</a><br>
+		</td>
+		<td width=20% valign=top>
+		<form action="/search.php" method=get>
+		<a href="/listproblem.php?vol=1" style="text-decoration: none">Problem Archive</a><br/>
+		<!--<a href="http://feeds.feedburner.com/Hdoj-problemset"><img src="/images/rss1.jpg" alt="problemset" style="vertical-align:text-bottom;"width=20 height=20></a><br>-->
+		<!--
+			 <a href="/submit.php">Submit Solution</a><br>
+		-->	
+		<a href="/status.php" style="text-decoration: none">Realtime Judge Status</a><br>
+
+		<a href="/ranklist.php" style="text-decoration: none">Authors Ranklist</a><br>
+		<input name=field value=author type=hidden><input class=text60 name=key>&nbsp;<input class=button40 type=submit value=Search>
+		
+		<!--
+			<input name=field value=problem type=hidden><input class=text60 name=key>&nbsp;<input class=button40 type=submit value=Search>
+		-->
+		</form>
+		</td>
+		<td width=20% valign=top>
+		 <form action='/search.php' method=get> 
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="text-decoration: none" href="http://code.hdu.edu.cn/">C/C++/Java Exams &nbsp;&nbsp;&nbsp;&nbsp;</a><br/>
+		<a style="text-decoration: none" href="/game">ACM Steps</a><br/>
+		<a href = "/ITJobs/">Go to Job</a><br/>	
+		<a href="/livecast" style="text-decoration: none">Contest LiveCast</a><br/>
+		<a style="text-decoration: none" href="/region">ICPC@China</a><br/>
+		<!-- <a href="/register.php">Register New Author</a><br> -->
+		<!-- <a href="/modifyuser.php">Update Your Information</a><br> -->
+		</form>
+		</td>
+		<td width=20% valign=top>
+		<a href="http://bestcoder.hdu.edu.cn" style="text-decoration: none; color: red; font-weight: bold;">Best Coder <sup style="color: gray;">beta</sup></a><br/><a href="/vip/contest_list.php" style="text-decoration: none">VIP</a> | <a href="/contests/contest_list.php" style="text-decoration: none">STD Contests</a><br /><a href="http://code.hdu.edu.cn/vcontest" style="text-decoration: none">Virtual Contests </a><br/>&nbsp;&nbsp;<a href="/diy/contest_list.php" style="text-decoration: none">&nbsp;&nbsp;DIY | </a><a href="/webcontest" style="text-decoration: none"><font color="">Web-DIY</font> <font size=1 color="gray"><sup>beta</sup></font></a><br/><a style="text-decoration: none" href="/recentcontest">Recent Contests</a><br/>		</td>
+		<td width=20%>
+					<form method=post action="/userloginex.php?action=login">
+			  <table width=168 border=0 align=center cellspacing=0>
+			  	<tr><td align=center colspan=2><a href="/qqlogin/oauth/login.php"><img src="/qqlogin/images/qqlogin.png" border="0" /></a></td></tr>
+				<tr><td width=68>Author ID&nbsp;</td><td align=right><input name=username type=text class=text90 maxlength=20></td></tr>
+				<tr><td>Password&nbsp;</td><td align=right><input name=userpass type=password class=text90 maxlength=20></td></tr>
+			  </table>
+			  <input name=login type=submit class=button40 value="Sign In">&nbsp;<a href="http://bestcoder.hdu.edu.cn/register.php?url=acm.hdu.edu.cn/userloginex.php?action=login" style="text-decoration: none">Register new ID</a>
+			</form>
+						</td>
+	</tr>
+	</table>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div align=center id=rollword><marquee scrollamount=2 width=600 scrolldelay=30 onMouseOver="javascript:this.stop();" onMouseOut="javascript:this.start();"><b style="margin-right:20px"></b></marquee></div>	</td>
+</tr>
+<tr><td align=center><h1 style='color:#1A5CC8'>Message</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 464&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 141<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>When little Sascha grew up, she lost her bad habit of pronouncing words in ways that were most easy for her, but did not always match the correct-pronunciation. However, she never lost the linguistic creativity she used to show as a little girl. When the Earth Allied Forces (EAF) discovered she also had brilliant mathematical insights and a knack for puzzles and secret messages,she was immediately offered the position of Head of the EAF Intelligence Department.<br><br> Sascha's current task is interpreting intercepted internal messages of the hostile Mars Feder-ation. Although Martian messages always consist of just one word, her task turns out not to be easy, as two factors in uence the content of the intercepted message: <br><br>a) Extraterrestrial environment conditions are so bad that errors can occur in intercepted messages, causing them to be quite obfuscated compared to the originally sent text. If such errors occur, the erroneous characters will be characters from the Martian alphabet, just as the original characters. <br><br>b) Furthermore, linguistic characteristics play an important role. In Martian, there are relations between two subsequent characters: for a given character, some characters are more likely predecessors than others (note that something similar occurs in English: for example, a `h' in a word will more likely have been preceded by a 't' than by a `q'). <br><br>Fortunately, probabilities that a received character y actually was sent as an original Martian character x is known for all alphabet characters, as well as the probabilities that a certain character xi occurs in a clean Martian word if it was preceded by a Martian character x(i-1).<br><br>Given all these probabilities, Sascha wants to  nd the so-called maximum likelihood text for a received message, which is the most likely message the Martians originally sent. As senior pro-grammer in the EAF Intelligence Department, you must write a program for her, achieving this goal for several intercepted messages in several local Martian dialects. <br><br>To give a simple example, consider a local Martian alphabet only consisting of the characters ‘a’ and ‘b’ and let the receiving error probabilities and character succession probabilities be as shown in Table 2. If the intercepted message just consists of an `a', this can either originally have been an `a' or a `b'. With no previous characters available, only the error probabilities are considered: it then turns out that the maximum likelihood message is an `a' as well, with probability 0.9.<br><br><center><img style='max-width:100%;' src=../../../data/images/contest199-b.JPG></center><br><center>Table 2: Example Receiving Error Probabilities (left) and Character Succession Probabilities(right).</center><br><br>To extend the example, if the intercepted message was `ab', we also need the character succession probabilities. The probability that the original message was `aa' is<br><br> <center>p(received `a' indeed was originally sent as `a') </center><br><center>*p(received 'b' was originally sent as `a') *p(character `a' succeeds previous `a')</center><br> <center>= 0.9 * 0.1 * 0.8:</center><br><br>Similarly, the probability that the original message was `bb', `ab' or `ba' are 0.1 * 0.9 * 0.95, 0.9* 0.9 * 0.05 and 0.1 * 0.1 *0.2, respectively. Hence, the maximum likelihood message now is `bb'. In all cases asked for, there will always be a unique maximum likelihood message.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The _rst line of input consists of the integer number n, the number of test cases;<br><br>Then, for each test case:<br><br>- An integer number a (0 &lt; a &lt; 30), which is the number of characters in the local Martian alphabet; <br><br>- A line containing the a unique characters c1; c2; ..... ; ca of the local Martian alphabet,separated by single spaces. Whitespace characters will not occur in the alphabet;<br>-  a lines, specifying receiving error probabilities for the a alphabet characters in the orderin which they were presented. The ith line corresponds to the error probabilities for the original alphabet character ci and contains:<br><br>*  a floating point numbers ei1; ei2; .....; eia, separated by single spaces. Number eij(0 &lt;=eij &lt;= 1) indicates the probability that an observed character cj originally was sent as the character ci (hence <img style='max-width:100%;' src=../../../data/images/contest199-b-1.JPG>);  <br><br>- a lines, specifying character succession probabilities for the a alphabet characters in theorder in which they were presented. The ith line corresponds to the character succession probabilities for cases where the original alphabet character ci was the immediate predecessor and contains: <br><br>*  a  floating point numbers si1; si2; .... ; sia, separated by single spaces. Number sij indicates the probability that a certain character cj has character ci as immediate predecessor (hence <img style='max-width:100%;' src=../../../data/images/contest199-b-2.JPG>  ); <br><br>- An integer number w (0 &lt; w &lt; 50), indicating the number of intercepted messages in the local Martian alphabet specified; <br><br>- Then, for each intercepted message:<br><br>-  A line containing the intercepted message. These messages are non-empty, case-sensitive and will not exceed 300 characters in length.<br><br>Given _oating point numbers never have more than 10 decimal numbers following the separator  '.'</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each message in each test case, the output will consist of a single line with a single string: the maximum likelihood original Martian message given the intercepted message.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">1
+2
+a b
+0.9 0.1
+0.1 0.9
+0.8 0.05
+0.2 0.95
+2
+a
+ab</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">a
+bb</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href="/search.php?field=problem&key=BAPC+2008&source=1&searchmode=source"> BAPC 2008 </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=2901'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=2901'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=2901">Discuss</a> | <a href='note/note.php?pid=2901'>Note</a><br></td></tr><tr>
+<td>
+	<table style="border:#1A5CC8 1px solid; font-size:14px" cellSpacing=0 cellPadding=1 width=100%>
+	<tr align=center>
+		<td class=footer_link height=45><a href="/">Home</a> | <a href=#top>Top</a></td>
+		<td style="padding:6px">
+			Hangzhou Dianzi University Online Judge 3.0<br>
+			Copyright &copy; 2005-2018 <a href=mailto:acm@hdu.edu.cn>HDU ACM Team</a>. All Rights Reserved.<br>
+			<a href="../about_us/developer.php">Designer & Developer </a>: <a>Wang Rongtao</a>&nbsp<a>LinLe</a>&nbsp<a href=mailto:gjavac@gmail.com >GaoJie</a>&nbsp<a href=mailto:gl8997@gmail.com >GanLu</a><br>
+			<span class=pagerunstatus>Total 0.015600(s) query 2, Server time : 2018-07-07 22:10:34, Gzip disabled</span>		</td>
+		<td class=footer_link>
+			<!-- <a href="javascript:history.go(-1);">Back</a> | <a href="javascript:history.forward();">Forward</a>-->
+			<a href="/admin">Administration</a>	
+		</td>
+	</tr>
+	</table>
+</td>
+</tr>
+</table>
+</body></html>

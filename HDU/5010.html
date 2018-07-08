@@ -1,0 +1,61 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Get the Nut</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU5010. Get the Nut</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：2000/1000 MS (Java/Others)</span> <span class="ui label">时间限制：65536/65536 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">   Squirrely has lost his lifetime collection of acorns in an unfortunate geyser accident and now he needs your help! Roll the animals around and get Squirrely to the Acorn, but beware! Not all animals are fluffy as they appear to be. Start from your home forest, and continue through the harsh weather of the snow, the scary swamp and the vast wild west! In your journey you will encounter great dangers, but don’t worry! You and Squirrely will be a great team. <br><br>   Get the Nut is a very cute game as mentioned above. Now Squirrely is in a forest, which can be divided into 6 rows and 8 columns, 48 grids in total. Squirrely wants to get the nut in another grid. However, it is much more difficult than you can image because the forest is full of danger. There are two kinds of other animal in the forest: Mouse and Pig. Pigs are very vicious, they will kill and eat any other animal (except Pigs, of course) in the adjacent grids. Here “adjacent” means two grids share a common edge. Once any other animal enter grids adjacent to a Pig, it will stop and be eaten. Once an animal is adjacent to the nut, it will stop and eat the nut. So if Squirrely is eaten by a Pig or the nut is eaten by a Pig or a Mouse, the game is over and you fail. At the beginning of the game, each animal occupies one grid. For each step, you can choose one animal to roll in either up, down, left or right direction, the animal will keep rolling until it reach the border of the forest or hit a tree or an animal. Your task is to calculate the minimal number of steps should be made that Squirrely can get the nut.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">   There are multiple test cases. Please process till EOF. <br><br>   Each test case gives the map of the forest, which has 6 rows and 8 columns. Each grid of the map is one of the following six characters:<br><br>   1. '.' - the empty area which every animal can stay or go through<br>   2. '#' - the tree which is an obstacle<br>   3. 'S' - the Squirrely<br>   4. 'M' - a Mouse<br>   5. 'P' - a Pig<br>   6. 'N' - the nut which the Squirrely want to get<br><br>   You should notice that there is one blank line before every test case. You may assume that there is one and only one nut in the forest and the number of animals in the forest will not exceed 5, and the input guarantees that there are at most 32 empty grids(including the original grids occupied by animals) in the map.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">   For each test case, output a positive integer indicating the desired answer. You may assume that there is always exists a solution to get the nut, and the minimal number of steps should be made will not exceed 30.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">#......N
+###.####
+###M####
+###.####
+###.####
+###S####
+
+########
+###.####
+##.....#
+#S.M.P.N
+########
+########
+
+########
+S...M.##
+####M.##
+####M.##
+###P..##
+####N.##
+
+P.....M#
+...##..#
+P..##..#
+.###...#
+..N#...#
+.###..S#</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">4
+4
+5
+15
+
+<div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div>
+1. When a Mouse or Squirrely is adjacent to a Pig and a nut at the same time, it will be eaten by the Pig &#64257;rst. 
+2. At the beginning of the game, it’s guaranteed that you can’t win or fail at once.
+<b>3. When being able to eat or be eaten, the animal will stop and finish the eating process.</b>
+
+<center><img src='./data/images/C543-1004-1.jpg'></center>
+
+<b>Sample Explanations</b>
+
+<b>Case #1:</b>
+1. roll the Mouse at grid (3, 4) up to grid (1, 4). 
+2. roll the Mouse at grid (1, 4) left to grid (1, 2). 
+3. roll Squirrely at grid (6, 4) up to grid (1, 4). 
+4. roll Squirrely at grid (1, 4) right to grid(1, 7) and he can get the nut.
+
+<b>Case #2:</b>
+1. roll the Pig at grid (4, 6) up to grid (3, 6).
+2. roll the Pig at grid (3, 6) left to grid (3, 4), why grid (3, 4)? Because it will stop to eat the Mouse at grid (4, 4).
+3. roll the Pig at grid (3, 4) up to grid (2, 4), you must roll the Pig to grid (2, 4), otherwise, Squirrely will certainly be eaten by the Pig! 
+4. just roll Squirrely at grid (4, 2) right to grid (4, 7) and he can get the nut.
+
+<b>Case #3:</b>
+1. roll the Mouse at grid (4, 5) down to grid (5, 5), and it is eaten by the Pig, notice that the Mouse at grid(5, 5) can not eat the nut because the Mouse will be eaten by the Pig before it can eat the nut! 
+2. roll the Mouse at grid (3, 5) down. 
+3. roll the Mouse at grid (2, 5) down. 
+4. roll Squirrely at grid (2, 1) right to grid (2, 6). 
+5. roll Squirrely at grid (2, 6) down to grid (6, 6) and he can get the nut.
+
+
+</div><i style='font-size:1px'> </i></div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2014+ACM%2FICPC+Asia+Regional+Xi%27an+Online&source=1&searchmode=source"> 2014 ACM/ICPC Asia Regional Xi'an Online </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

@@ -1,0 +1,19 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>行路难</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU5260. 行路难</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：6000/3000 MS (Java/Others)</span> <span class="ui label">时间限制：32768/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">度度熊非常仰慕诗仙太白。这一天，它决定追寻仙人的踪迹，找到沧海中仙山之所在。<br><br>沧海之中有很多个岛屿，由于这些岛屿都和诗仙有一种神奇而莫名的关系，当你在一个岛屿上默念一句诗时，就会传送到另一个岛屿上去。度度熊现在在岛屿A上，它希望通过默念一系列诗句，能够被传送到岛屿B上。<br><br>如果可以，它还希望这些诗句连起来，字典序可以最小。此言尤美，是邪？</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">第一行一个整数T，表示T组数据。<br><br>每组数据的第一行包含四个整数$N (2 \leq N \leq 50), M (0 \leq M \leq 500)$，A，B。表示N个岛屿，和M个神奇的诗句传送方法，以及度度熊的起点和目的地$(0 \leq A, B &lt; N, A \ne B)$。<br><br>然后的M行，每行两个数字$s, t (0 \leq s, t &lt; N)$和一个字符串S（字符串只包含小写字母，$1 \leq S的长度 \leq 6$)，表示默念S可以从s传送到t，注意s和t可以相同。并且可能有多种传送方法从一个岛屿到另一个岛屿，另外，如果在一个岛屿上默念一句诗可以传送到多个岛屿上，你可以随心，选择任意一个。</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">对于每组测试数据输出两行：<br><br>第一行输出&quot;Case #i:&quot;，其中 I 代表第 I 组测试数据。<br><br>然后输出可以完成传送的方法连接起来后字典序最小的传送诗句，如果不存在，无论是不存在字典序最小的，还是不存在这样的传送方法，都输出&quot;Tough way!&quot;（没有引号）。</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">3
+2 2 0 1
+0 0 b
+0 1 a
+2 2 0 1
+0 0 a
+0 1 b
+4 4 0 1
+0 3 hi
+0 2 hey
+3 1 rishi
+2 1 jude</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">Case #1:
+a
+Case #2:
+Tough way!
+Case #3:
+heyjude
+
+<div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div>对于样例2，可以无限的利用a使字典序更小。</div><i style='font-size:1px'> </i></div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2015%C4%EA%B0%D9%B6%C8%D6%AE%D0%C7%B3%CC%D0%F2%C9%E8%BC%C6%B4%F3%C8%FC+-+%B8%B4%C8%FC&source=1&searchmode=source"> 2015年百度之星程序设计大赛 - 复赛 </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

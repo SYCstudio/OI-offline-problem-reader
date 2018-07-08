@@ -1,0 +1,103 @@
+<html><head><meta name=keywords content="HDOJ ACM ICPC OJ C C++ Pascal Java"><meta http-equiv=Content-Type content="text/html;charset=gb2312"><link rel=stylesheet type=text/css href="/images/global.css" media=all><link rel=stylesheet type=text/css href="/css/diyinhead.css" media=all><link rel=stylesheet type=text/css href="/css/webinhead.css" media=all><script src="/js/global.js" type=text/javascript></script><script src="/js/register.js" type=text/javascript></script><script src="/js/MathJax/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script><title>Problem - 3066</title></head><body >
+<a name=top></a>
+<table align=center cellSpacing=0 cellPadding=0 width=980 border=0 style="word-wrap:break-word">
+<tr>
+	<td style="border:#1A5CC8 1px solid" align=center width=100%>
+		<a href="/">
+			<img src="/images/banner.jpg" width="100%" height=116 border=0>
+		</a>
+	</td>
+</tr>
+<tr>
+	<td style="border:#1A5CC8 1px solid">
+	<table cellSpacing=0 cellPadding=1 width="979px">
+	<tr bgcolor=#1A5CC8 align=center class=banner height=25>
+		<td>Online Judge</td>
+		<td>Online Exercise</td>
+		<td>Online Teaching</td>
+		<td>Online Contests</td>
+	<td>Exercise Author</td>
+	</tr>
+	<tr style="font-size:16px" align=center>
+		<td width=20% valign=top>
+		<a href="/faq.php" style="text-decoration: none">F.A.Q</a><br>
+		<a href="/friends" style="text-decoration: none">Hand In Hand</a><br>
+		<a href="/onlineuser.php" style="text-decoration: none">Online Acmers</a>	<br>
+		<!-- /onlineuser.php-->
+		
+		<a href="/forum" style="text-decoration: none">Forum | </a><a href="/discuss/public/list.php" style="text-decoration: none">Discuss</a><br>
+		<a href="/statistic/submit_graph.php" style="text-decoration: none">Statistical Charts</a><br>
+		</td>
+		<td width=20% valign=top>
+		<form action="/search.php" method=get>
+		<a href="/listproblem.php?vol=1" style="text-decoration: none">Problem Archive</a><br/>
+		<!--<a href="http://feeds.feedburner.com/Hdoj-problemset"><img src="/images/rss1.jpg" alt="problemset" style="vertical-align:text-bottom;"width=20 height=20></a><br>-->
+		<!--
+			 <a href="/submit.php">Submit Solution</a><br>
+		-->	
+		<a href="/status.php" style="text-decoration: none">Realtime Judge Status</a><br>
+
+		<a href="/ranklist.php" style="text-decoration: none">Authors Ranklist</a><br>
+		<input name=field value=author type=hidden><input class=text60 name=key>&nbsp;<input class=button40 type=submit value=Search>
+		
+		<!--
+			<input name=field value=problem type=hidden><input class=text60 name=key>&nbsp;<input class=button40 type=submit value=Search>
+		-->
+		</form>
+		</td>
+		<td width=20% valign=top>
+		 <form action='/search.php' method=get> 
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="text-decoration: none" href="http://code.hdu.edu.cn/">C/C++/Java Exams &nbsp;&nbsp;&nbsp;&nbsp;</a><br/>
+		<a style="text-decoration: none" href="/game">ACM Steps</a><br/>
+		<a href = "/ITJobs/">Go to Job</a><br/>	
+		<a href="/livecast" style="text-decoration: none">Contest LiveCast</a><br/>
+		<a style="text-decoration: none" href="/region">ICPC@China</a><br/>
+		<!-- <a href="/register.php">Register New Author</a><br> -->
+		<!-- <a href="/modifyuser.php">Update Your Information</a><br> -->
+		</form>
+		</td>
+		<td width=20% valign=top>
+		<a href="http://bestcoder.hdu.edu.cn" style="text-decoration: none; color: red; font-weight: bold;">Best Coder <sup style="color: gray;">beta</sup></a><br/><a href="/vip/contest_list.php" style="text-decoration: none">VIP</a> | <a href="/contests/contest_list.php" style="text-decoration: none">STD Contests</a><br /><a href="http://code.hdu.edu.cn/vcontest" style="text-decoration: none">Virtual Contests </a><br/>&nbsp;&nbsp;<a href="/diy/contest_list.php" style="text-decoration: none">&nbsp;&nbsp;DIY | </a><a href="/webcontest" style="text-decoration: none"><font color="">Web-DIY</font> <font size=1 color="gray"><sup>beta</sup></font></a><br/><a style="text-decoration: none" href="/recentcontest">Recent Contests</a><br/>		</td>
+		<td width=20%>
+					<form method=post action="/userloginex.php?action=login">
+			  <table width=168 border=0 align=center cellspacing=0>
+			  	<tr><td align=center colspan=2><a href="/qqlogin/oauth/login.php"><img src="/qqlogin/images/qqlogin.png" border="0" /></a></td></tr>
+				<tr><td width=68>Author ID&nbsp;</td><td align=right><input name=username type=text class=text90 maxlength=20></td></tr>
+				<tr><td>Password&nbsp;</td><td align=right><input name=userpass type=password class=text90 maxlength=20></td></tr>
+			  </table>
+			  <input name=login type=submit class=button40 value="Sign In">&nbsp;<a href="http://bestcoder.hdu.edu.cn/register.php?url=acm.hdu.edu.cn/userloginex.php?action=login" style="text-decoration: none">Register new ID</a>
+			</form>
+						</td>
+	</tr>
+	</table>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div align=center id=rollword><marquee scrollamount=2 width=600 scrolldelay=30 onMouseOver="javascript:this.stop();" onMouseOut="javascript:this.start();"><b style="margin-right:20px"></b></marquee></div>	</td>
+</tr>
+<tr><td align=center><h1 style='color:#1A5CC8'>火拼双扣</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 95&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 10<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>小明是一个不求上进的孩子，非常喜欢玩QQ游戏的双扣，但是小明的老婆却喜欢玩火拼双扣，没办法，谁让小明家是老婆最大呢，小明只能每天陪着老婆玩火拼双扣了。<br>在这里呢，小明还是先唠叨下火拼双扣的规则，以统一一下游戏规则，也避免了有些要求上进的同学没玩过不知道游戏规则。<br>由于题目的需求，规则我们只讲合法牌型和出牌大小。<br>1.牌型<br>单张：任意一张单牌。<br>顺子：任意五张或者五张以上点数相连的牌， 2 和小王不能出现在顺子中。<br>对子：任意两张点数相同的牌。<br>连对：三对或三对以上点数相连的牌，如： 556677 。 2 和小王不能出现在连对中。<br>三张：任意三张点数相同的牌。<br>连三张：三个或三个以上点数相连的三张牌，如： 5556 66777 。 2 和小王不能出现在连对中。<br>炸弹：四张或四张以上点数相同的牌，如： 6666 6 。<br>三王炸弹：任意三个王的牌型。<br>天王炸弹：四张王牌。<br>X 相炸弹： X 张同样的牌组成的炸弹（ 4&lt;=X&lt;=8 ）。如： 777777 （ 6 相炸弹）。<br>X 相 Y 连环 炸弹： Y 组点数相连 (3&lt;=Y&lt;=6) 且牌数同为 X 的炸弹。如 777778888 8999 99 （ 5 相 3 连环 炸弹） 2 和小王不能出现在此牌型中。<br>大王的特殊作用<br>大王（包括两个大王）和别的牌型一起出的时候，可以做任意一张满足牌型需要的万能牌。如果大 王可 以替代的牌存在一种以上的选择的时候，则选择大的牌型为优先。<br>例如：<br>7777 ＋大王＝ 77777<br>45678 ＋大王＝ 456789 （注意不是 3456 78 ）<br>77899 ＋大王＝ 778899<br>77 ＋ 8 ＋ 9 ＋大王＋大王＝ 778899<br>2 ． 牌型的比较<br>特殊的牌型或者特殊牌型的组合，都对应相应的星级。手中有几星级的牌，关系到游戏中的翻倍分数、贡献分数；同时星级也是特殊牌型大小比较的标准。<br>星级的分类和定义：<br>特殊牌型：<br>三王炸弹： 6 星级。<br>天王炸弹： 7 星级。<br>根据单个炸弹牌型分：<br>X 相炸弹：等同于 X 星级。如： 6666 66 为 6 相炸弹等同于 6 星级。<br>根据 X 相 Y 连环 炸弹牌型分：星级＝ X+Y<br>具体对应星级如下：<br>4 相 3 连环 炸弹： 7 星。<br>4 相 4 连环 炸弹： 8 星。<br>4 相 5 连环 炸弹： 9 星。<br>4 相 6 连环 炸弹： 10 星。<br>5 相 3 连环 炸弹： 8 星。<br>5 相 4 连环 炸弹： 9 星。<br>5 相 5 连环 炸弹： 10 星。<br>6 相 3 连环 炸弹： 9 星。<br>6 相 4 连环 炸弹： 10 星。<br>7 相 3 连环 炸弹： 10 星。<br>8 相 3 连环 炸弹： 11 星。<br>点数的大小：<br>从大至小以次为：F（大王）、f（小王）、 2 、 A 、 K 、 Q 、 J 、 T(10) 、 9 、 8 、 7 、 6 、 5 、 4 、 3<br>炸弹：<br>炸弹大于任何其他非炸弹的牌型。<br>同为炸弹的牌型，先按照星级比较大小；如果星级相同，则按照牌的数量比较大小，数量越少的越大；如过数量相同，则按照牌型中最大牌的点数比较大小。<br>特殊：天王炸弹是 7 星牌里面最大的牌型，三王炸弹是 6 星牌里面最小的牌型。<br>由于小明打牌很差劲，所以他每次都是点提示出牌,而且小明是不会用连环炸弹的，因为他觉得这样太浪费，现在就要你来完成简单的提示功能，我们的提示功能简单到只要你输出有没有可能出牌，如果有可能出牌，输出“yes”，否则输出“no”。<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>有多组case，数据的第一行输入一个正整数n(2&lt;n&lt;100)表示case数，下面每个case两行，第一行代表对手出的牌（牌数不超过8张），第二行代表小明手上的牌，两行都是有字母“F（大王）、f（小王）、 2 、 A 、 K 、 Q 、 J 、 T（10） 、 9 、 8 、 7 、 6 、 5 、 4 、 3”组成，保证不出现别的字母，而且保证对手出的牌是合法的牌型，并且符合所有的牌是从两幅标准的扑克中抽取。</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>每个case输出一行，如果小明能压到对方，输出“yes”，否则输出“no”。</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">2
+34567
+456789
+333
+4444</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">yes
+yes</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href="/search.php?field=problem&key=2009+Multi-University+Training+Contest+16+-+Host+by+NIT&source=1&searchmode=source"> 2009 Multi-University Training Contest 16 - Host by NIT </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3066'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3066'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3066">Discuss</a> | <a href='note/note.php?pid=3066'>Note</a><br></td></tr><tr>
+<td>
+	<table style="border:#1A5CC8 1px solid; font-size:14px" cellSpacing=0 cellPadding=1 width=100%>
+	<tr align=center>
+		<td class=footer_link height=45><a href="/">Home</a> | <a href=#top>Top</a></td>
+		<td style="padding:6px">
+			Hangzhou Dianzi University Online Judge 3.0<br>
+			Copyright &copy; 2005-2018 <a href=mailto:acm@hdu.edu.cn>HDU ACM Team</a>. All Rights Reserved.<br>
+			<a href="../about_us/developer.php">Designer & Developer </a>: <a>Wang Rongtao</a>&nbsp<a>LinLe</a>&nbsp<a href=mailto:gjavac@gmail.com >GaoJie</a>&nbsp<a href=mailto:gl8997@gmail.com >GanLu</a><br>
+			<span class=pagerunstatus>Total 0.000000(s) query 2, Server time : 2018-07-07 22:15:50, Gzip disabled</span>		</td>
+		<td class=footer_link>
+			<!-- <a href="javascript:history.go(-1);">Back</a> | <a href="javascript:history.forward();">Forward</a>-->
+			<a href="/admin">Administration</a>	
+		</td>
+	</tr>
+	</table>
+</td>
+</tr>
+</table>
+</body></html>

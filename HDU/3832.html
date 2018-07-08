@@ -1,0 +1,24 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Earth Hour</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU3832. Earth Hour</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：2000/1000 MS (Java/Others)</span> <span class="ui label">时间限制：125536/65536 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Earth Hour is an annual international event created by the WWF (World Wide Fund for Nature/World Wildlife Fund), held on the last Saturday of March, that asks households and businesses to turn off their non-essential lights and electrical appliances for one hour to raise awareness towards the need to take action on climate change. <br>To respond to the event of this year, the manager of Hunan University campus decides to turn off some street lights at night. Each street light can be viewed as a point in a plane, which casts flash in a circular area with certain radius.<br>What's more, if two illuminated circles share one intersection or a point, they can be regarded as connected.<br>Now the manager wants to turn off as many lights as possible, guaranteeing that the illuminated area of the library, the study room and the dormitory are still connected(directly or indirectly). So, at least the lights in these three places will not be turned off.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The first line contains a single integer T, which tells you there are T cases followed.<br>In each case:<br>The first line is an integer N( 3&lt;=N&lt;=200 ), means there are N street lights at total.<br>Then there are N lines: each line contain 3 integers, X,Y,R,( 1&lt;=X,Y,R&lt;=1000 ), means the light in position(X,Y) can illuminate a circle area with the radius of R. Note that the 1st of the N lines is corresponding to the library, the 2nd line is corresponding to the study room, and the 3rd line is corresponding to the dorm.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">One case per line, output the maximal number of lights that can be turned off.<br>Note that if none of the lights is turned off and the three places are still not connected. Just output -1.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">3
+5
+1 1 1
+1 4 1
+4 1 1
+2 2 1
+3 3 1
+7
+1 1 1
+4 1 1
+2 4 1
+1 3 1
+3 1 1
+3 3 1
+4 3 1
+6
+1 1 1
+5 1 1
+5 5 1
+3 1 2
+5 3 2
+3 3 1</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">-1
+2
+1</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2011+Multi-University+Training+Contest+1+-+Host+by+HNU&source=1&searchmode=source"> 2011 Multi-University Training Contest 1 - Host by HNU </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

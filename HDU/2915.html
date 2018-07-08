@@ -1,0 +1,42 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Top Spinning</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU2915. Top Spinning</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：3000/1000 MS (Java/Others)</span> <span class="ui label">时间限制：32768/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Spinning tops are one of the most popular and the most traditional toys. Not only spinning them, but also making one’s own is a popular enjoyment.<br><br>One of the easiest way to make a top is to cut out a certain shape from a cardboard and pierce an axis stick through its center of mass. Professionally made tops usually have three dimensional shapes, but in this problem we consider only two dimensional ones.<br><br>Usually, tops have rotationally symmetric shapes, such as a circle, a rectangle (with 2-fold rotational symmetry) or a regular triangle (with 3-fold symmetry). Although such symmetries are useful in determining their centers of mass, they are not definitely required; an asymmetric top also spins quite well if its axis is properly pierced at the center of mass.<br><br><br>When a shape of a top is given as a path to cut it out from a cardboard of uniform thickness, your task is to find its center of mass to make it spin well. Also, you have to determine whether the center of mass is on the part of the cardboard cut out. If not, you cannot pierce the axis stick, of course.<br><br>Java Spicific : Submitted Java programs may not use classes implementing the interface “java.awt.Shape”. You may use them for your debugging purposes.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The input consists of multiple datasets, each of which describes a counterclockwise path on a cardboard to cut out a top. A path is indicated by a sequence of command lines, each of which specifies a line segment or an arc.<br><br><br>In the description of commands below, the current position is the position to start the next cut, if any. After executing the cut specified by a command, the current position is moved to the end position of the cut made.<br><br>The commands given are one of those listed below. The command name starts from the first column of a line and the command and its arguments are separated by a space. All the command arguments are integers. <br><br>start x y<br>Specifies the start position of a path. This command itself does not specify any cutting; it only sets the current position to be (x; y).<br><br>line x y<br><br>Specifies a linear cut along a straight line from the current position to the position (x; y), which is not identical to the current position.<br><br>arc x y r<br><br>Specifies a round cut along a circular arc. The arc starts from the current position and ends at (x; y), which is not identical to the current position. The arc has a radius of |r|.<br><br>When r is negative, the center of the circle is to the left side of the direction of this round cut; when it is positive, it is to the right side (Figure 7). The absolute value of r is greater than the half distance of the two ends of the arc. Among two arcs connecting the start and the end positions with the specified radius, the arc specified is one with its central angle less than 180 degrees. <br><br>close<br>Closes a path by making a linear cut to the initial start position and terminates a dataset. If the current position is already at the start position, this command simply indicates the end of a dataset.<br><br>The figure below gives an example of a command sequence and its corresponding path. Note that, in this case, the given radius -r is negative and thus the center of the arc is to the left of the arc. The arc command should be interpreted as shown in this figure and, not the other way around on the same circle.<br><br><center><img style='max-width:100%;' src=./data/images/con207-h-1.JPG></center> <br><br>A dataset starts with a start command and ends with a close command.<br><br>The end of the input is specified by a line with a command end.There are at most 100 commands in a dataset and at most 100 datasets are in the input.<br><br>Absolute values of all the coordinates and radii are less than or equal to 100.You may assume that the path does not cross nor touch itself. You may also assume that paths will never expand beyond edges of the cardboard, or, in other words, the cardboard is virtually<br>infinitely large.<br><br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For each of the dataset, output a line containing x- and y-coordinates of the center of mass of the top cut out by the path specified, and then a character ‘+’ or ‘-’ indicating whether this center is on the top or not, respectively. Two coordinates should be in decimal fractions. There should be a space between two coordinates and between the y-coordinate and the character ‘+’ or ‘-’. No other characters should be output. The coordinates may have errors less than 10&amp;#8722;3.<br><br>You may assume that the center of mass is at least 10&amp;#8722;3 distant from the path.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">start 0 0
+arc 2 2 -2
+line 2 5
+arc 0 3 -2
+close
+start -1 1
+line 2 1
+line 2 2
+line -2 2
+arc -3 1 -1
+line -3 -2
+arc -2 -3 -1
+line 2 -3
+line 2 -2
+line -1 -2
+line -1 -1
+arc -1 0 2
+close
+start 0 0
+line 3 0
+line 5 -1
+arc 4 -2 -1
+line 6 -2
+line 6 1
+line 7 3
+arc 8 2 -1
+line 8 4
+line 5 4
+line 3 5
+arc 4 6 -1
+line 2 6
+line 2 3
+line 1 1
+arc 0 2 -1
+close
+end</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">1.00000 2.50000 +
+-1.01522 -0.50000 -
+4.00000 2.00000 +
+HINT
+<center><img src=./data/images/con207-h-2.JPG'></center> 
+<center><img src=./data/images/con207-h-3.JPG'></center> 
+<center><img src=./data/images/con207-h-4.JPG'></center> </div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2008+Asia+Regional+Aizu&source=1&searchmode=source"> 2008 Asia Regional Aizu </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

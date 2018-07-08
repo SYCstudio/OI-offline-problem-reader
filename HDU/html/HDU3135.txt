@@ -1,0 +1,129 @@
+<html><head><meta name=keywords content="HDOJ ACM ICPC OJ C C++ Pascal Java"><meta http-equiv=Content-Type content="text/html;charset=gb2312"><link rel=stylesheet type=text/css href="/images/global.css" media=all><link rel=stylesheet type=text/css href="/css/diyinhead.css" media=all><link rel=stylesheet type=text/css href="/css/webinhead.css" media=all><script src="/js/global.js" type=text/javascript></script><script src="/js/register.js" type=text/javascript></script><script src="/js/MathJax/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script><title>Problem - 3135</title></head><body >
+<a name=top></a>
+<table align=center cellSpacing=0 cellPadding=0 width=980 border=0 style="word-wrap:break-word">
+<tr>
+	<td style="border:#1A5CC8 1px solid" align=center width=100%>
+		<a href="/">
+			<img src="/images/banner.jpg" width="100%" height=116 border=0>
+		</a>
+	</td>
+</tr>
+<tr>
+	<td style="border:#1A5CC8 1px solid">
+	<table cellSpacing=0 cellPadding=1 width="979px">
+	<tr bgcolor=#1A5CC8 align=center class=banner height=25>
+		<td>Online Judge</td>
+		<td>Online Exercise</td>
+		<td>Online Teaching</td>
+		<td>Online Contests</td>
+	<td>Exercise Author</td>
+	</tr>
+	<tr style="font-size:16px" align=center>
+		<td width=20% valign=top>
+		<a href="/faq.php" style="text-decoration: none">F.A.Q</a><br>
+		<a href="/friends" style="text-decoration: none">Hand In Hand</a><br>
+		<a href="/onlineuser.php" style="text-decoration: none">Online Acmers</a>	<br>
+		<!-- /onlineuser.php-->
+		
+		<a href="/forum" style="text-decoration: none">Forum | </a><a href="/discuss/public/list.php" style="text-decoration: none">Discuss</a><br>
+		<a href="/statistic/submit_graph.php" style="text-decoration: none">Statistical Charts</a><br>
+		</td>
+		<td width=20% valign=top>
+		<form action="/search.php" method=get>
+		<a href="/listproblem.php?vol=1" style="text-decoration: none">Problem Archive</a><br/>
+		<!--<a href="http://feeds.feedburner.com/Hdoj-problemset"><img src="/images/rss1.jpg" alt="problemset" style="vertical-align:text-bottom;"width=20 height=20></a><br>-->
+		<!--
+			 <a href="/submit.php">Submit Solution</a><br>
+		-->	
+		<a href="/status.php" style="text-decoration: none">Realtime Judge Status</a><br>
+
+		<a href="/ranklist.php" style="text-decoration: none">Authors Ranklist</a><br>
+		<input name=field value=author type=hidden><input class=text60 name=key>&nbsp;<input class=button40 type=submit value=Search>
+		
+		<!--
+			<input name=field value=problem type=hidden><input class=text60 name=key>&nbsp;<input class=button40 type=submit value=Search>
+		-->
+		</form>
+		</td>
+		<td width=20% valign=top>
+		 <form action='/search.php' method=get> 
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="text-decoration: none" href="http://code.hdu.edu.cn/">C/C++/Java Exams &nbsp;&nbsp;&nbsp;&nbsp;</a><br/>
+		<a style="text-decoration: none" href="/game">ACM Steps</a><br/>
+		<a href = "/ITJobs/">Go to Job</a><br/>	
+		<a href="/livecast" style="text-decoration: none">Contest LiveCast</a><br/>
+		<a style="text-decoration: none" href="/region">ICPC@China</a><br/>
+		<!-- <a href="/register.php">Register New Author</a><br> -->
+		<!-- <a href="/modifyuser.php">Update Your Information</a><br> -->
+		</form>
+		</td>
+		<td width=20% valign=top>
+		<a href="http://bestcoder.hdu.edu.cn" style="text-decoration: none; color: red; font-weight: bold;">Best Coder <sup style="color: gray;">beta</sup></a><br/><a href="/vip/contest_list.php" style="text-decoration: none">VIP</a> | <a href="/contests/contest_list.php" style="text-decoration: none">STD Contests</a><br /><a href="http://code.hdu.edu.cn/vcontest" style="text-decoration: none">Virtual Contests </a><br/>&nbsp;&nbsp;<a href="/diy/contest_list.php" style="text-decoration: none">&nbsp;&nbsp;DIY | </a><a href="/webcontest" style="text-decoration: none"><font color="">Web-DIY</font> <font size=1 color="gray"><sup>beta</sup></font></a><br/><a style="text-decoration: none" href="/recentcontest">Recent Contests</a><br/>		</td>
+		<td width=20%>
+					<form method=post action="/userloginex.php?action=login">
+			  <table width=168 border=0 align=center cellspacing=0>
+			  	<tr><td align=center colspan=2><a href="/qqlogin/oauth/login.php"><img src="/qqlogin/images/qqlogin.png" border="0" /></a></td></tr>
+				<tr><td width=68>Author ID&nbsp;</td><td align=right><input name=username type=text class=text90 maxlength=20></td></tr>
+				<tr><td>Password&nbsp;</td><td align=right><input name=userpass type=password class=text90 maxlength=20></td></tr>
+			  </table>
+			  <input name=login type=submit class=button40 value="Sign In">&nbsp;<a href="http://bestcoder.hdu.edu.cn/register.php?url=acm.hdu.edu.cn/userloginex.php?action=login" style="text-decoration: none">Register new ID</a>
+			</form>
+						</td>
+	</tr>
+	</table>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div align=center id=rollword><marquee scrollamount=2 width=600 scrolldelay=30 onMouseOver="javascript:this.stop();" onMouseOut="javascript:this.start();"><b style="margin-right:20px"></b></marquee></div>	</td>
+</tr>
+<tr><td align=center><h1 style='color:#1A5CC8'>And Now For Something Completely Different!</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 10000/5000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 122&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 3<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Bart and Lisa Simpson have many chores, but they don't always do them well. So their father began keeping score, giving them credit only if a chore was done right. After a month, he showed them his record keeping.<br><br><center><img style='max-width:100%;' src=../../../data/images/C238-1008-1.JPG></center><br>This showed that Bart had done 3 out of 4 chores correctly and Lisa had done 2 out of 3 chores correctly. Then for a second month, Bart and Lisa did chores and the record keeping looked like this:<br><br><center><img style='max-width:100%;' src=../../../data/images/C238-1008-2.JPG></center><br>The father made the following chart to support the hypothesis that Bart was doing the most chores:<br><br><center><img style='max-width:100%;' src=../../../data/images/C238-1008-3.JPG></center><br>Lisa looked at the tables then said,&quot;No no no, that's not right, I've done more.&quot; Bart pointed at the statistics and said, &quot;Numbers don't lie.&quot; Lisa said, &quot;But look, I've done 5 chores and you've only done 4. You just look good because you always run away before somebody asks you to do something. The total should give me 55% of the total chores done right.&quot; Bart laughed and ran away. Now Lisa needs your help to show the unfairness of these chore evaluations. She wants a program which computes the averages over the entire dataset and displays where the before and after averages support the opposite hypothesis than would be indicated by considering the total dataset. To be fair, she only wants to consider record keeping times when both she and Bart have chores assigned both before and after the record keeping.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The first line of each test case contains one integer N (2 &lt;= N &lt;= 50000) the number of chore records. Each of the next N lines in each test case contains either &quot;Bart&quot; or &quot;Lisa&quot; followed by an integer, 0 or 1. The name shows who was assigned a chore, and the integer is a value of 1 if it was done correctly, or a 0 if it was not. Both Bart and Lisa will have chores assigned to them in each dataset. Input ends when N = 0.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>Write on the first line of the output for each test case, the test case number, and the number of chores correctly performed by Bart (<b>CB</b>) and Lisa (<b>CL</b>) in the following format:<br><br>Case <b><i>&lt;case number&gt;</i></b>: Bart did <b><i>&lt;CB&gt;</i></b> and Lisa did <b><i>&lt;CL&gt;</i></b><br><br>If Bart and Lisa do the same number of chores over the entire dataset, there is no trend to oppose. In that case, print &quot;Bart and Lisa accomplished same number of chores&quot;. If Bart and Lisa do a different number of chores over the entire dataset, determine if there are any places in the dataset where taking the averages of all results before and after a record keeping break would produce results which would indicate a trend opposing the trend over the entire dataset. If there are no such cases, print on the next line, &quot;Simpson's paradox not detected&quot;. Otherwise, print on the next line &quot;Trend measured in 2 parts is reversed&quot; and on every following line print the following:<br><br>After chore <b><i>&lt;chore number&gt;</i></b>:&nbsp; <b><i>&lt;B<sub>Before</sub>&gt;</i></b>%&nbsp; <b><i>&lt;L<sub>Before</sub>&gt;</i></b>%&nbsp; <b><i>&lt;B<sub>After</sub>&gt;</i></b>%&nbsp; <b><i>&lt;L<sub>After</sub>&gt;</i></b>%<br><br>where <b><i>B<sub>Before</sub></i></b> is Bart's correctly performed chore percentage before the record keeping, <b><i>L<sub>Before</sub></i></b> is Lisa's correctly performed chore percentage before the record keeping, <b><i>B<sub>After</sub></i></b> is Bart's correctly performed chore percentage after the first record keeping until the end of the dataset, and <b><i>L<sub>After</sub></i></b> is Lisa's correctly performed chore percentage after the first record keeping until the end of the dataset. Note that chores are numbered from 1 to N in order of appearance in the dataset. All percentages must be rounded to the nearest .0001. Print a blank line between the outputs for two consecutive test cases.<br><br><b>Clarification:</b> Because Lisa wants a program which &quot;displays where the before and after averages support the opposite hypothesis than would be indicated by considering the total dataset&quot;, then any averages which, after rounding, are <b>printed</b> as equal must be disregarded.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">16
+Bart 1
+Bart 0
+Bart 1
+Lisa 0
+Lisa 1
+Lisa 1
+Bart 1
+Bart 0
+Bart 1
+Lisa 0
+Lisa 1
+Lisa 1
+Lisa 0
+Lisa 1
+Lisa 0
+Lisa 0
+2
+Lisa 1
+Bart 1
+2
+Lisa 0
+Bart 1
+0</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">Case 1: Bart did 4 and Lisa did 5
+Trend measured in 2 parts is reversed
+After chore 4: 66.6667% 0.0000% 66.6667% 55.5556%
+After chore 5: 66.6667% 50.0000% 66.6667% 50.0000%
+After chore 7: 75.0000% 66.6667% 50.0000% 42.8571%
+Case 2: Bart did 1 and Lisa did 1
+Bart and Lisa accomplished same number of chores
+Case 3: Bart did 1 and Lisa did 0
+Simpson's paradox not detected</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href="/search.php?field=problem&key=2006+ACM-ICPC+Pacific+Northwest+Region&source=1&searchmode=source"> 2006 ACM-ICPC Pacific Northwest Region </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>chenrui</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3135'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3135'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3135">Discuss</a> | <a href='note/note.php?pid=3135'>Note</a><br></td></tr><tr>
+<td>
+	<table style="border:#1A5CC8 1px solid; font-size:14px" cellSpacing=0 cellPadding=1 width=100%>
+	<tr align=center>
+		<td class=footer_link height=45><a href="/">Home</a> | <a href=#top>Top</a></td>
+		<td style="padding:6px">
+			Hangzhou Dianzi University Online Judge 3.0<br>
+			Copyright &copy; 2005-2018 <a href=mailto:acm@hdu.edu.cn>HDU ACM Team</a>. All Rights Reserved.<br>
+			<a href="../about_us/developer.php">Designer & Developer </a>: <a>Wang Rongtao</a>&nbsp<a>LinLe</a>&nbsp<a href=mailto:gjavac@gmail.com >GaoJie</a>&nbsp<a href=mailto:gl8997@gmail.com >GanLu</a><br>
+			<span class=pagerunstatus>Total 0.000000(s) query 2, Server time : 2018-07-07 22:17:34, Gzip disabled</span>		</td>
+		<td class=footer_link>
+			<!-- <a href="javascript:history.go(-1);">Back</a> | <a href="javascript:history.forward();">Forward</a>-->
+			<a href="/admin">Administration</a>	
+		</td>
+	</tr>
+	</table>
+</td>
+</tr>
+</table>
+</body></html>

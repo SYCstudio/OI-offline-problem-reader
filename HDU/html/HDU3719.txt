@@ -1,0 +1,151 @@
+<html><head><meta name=keywords content="HDOJ ACM ICPC OJ C C++ Pascal Java"><meta http-equiv=Content-Type content="text/html;charset=gb2312"><link rel=stylesheet type=text/css href="/images/global.css" media=all><link rel=stylesheet type=text/css href="/css/diyinhead.css" media=all><link rel=stylesheet type=text/css href="/css/webinhead.css" media=all><script src="/js/global.js" type=text/javascript></script><script src="/js/register.js" type=text/javascript></script><script src="/js/MathJax/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script><title>Problem - 3719</title></head><body >
+<a name=top></a>
+<table align=center cellSpacing=0 cellPadding=0 width=980 border=0 style="word-wrap:break-word">
+<tr>
+	<td style="border:#1A5CC8 1px solid" align=center width=100%>
+		<a href="/">
+			<img src="/images/banner.jpg" width="100%" height=116 border=0>
+		</a>
+	</td>
+</tr>
+<tr>
+	<td style="border:#1A5CC8 1px solid">
+	<table cellSpacing=0 cellPadding=1 width="979px">
+	<tr bgcolor=#1A5CC8 align=center class=banner height=25>
+		<td>Online Judge</td>
+		<td>Online Exercise</td>
+		<td>Online Teaching</td>
+		<td>Online Contests</td>
+	<td>Exercise Author</td>
+	</tr>
+	<tr style="font-size:16px" align=center>
+		<td width=20% valign=top>
+		<a href="/faq.php" style="text-decoration: none">F.A.Q</a><br>
+		<a href="/friends" style="text-decoration: none">Hand In Hand</a><br>
+		<a href="/onlineuser.php" style="text-decoration: none">Online Acmers</a>	<br>
+		<!-- /onlineuser.php-->
+		
+		<a href="/forum" style="text-decoration: none">Forum | </a><a href="/discuss/public/list.php" style="text-decoration: none">Discuss</a><br>
+		<a href="/statistic/submit_graph.php" style="text-decoration: none">Statistical Charts</a><br>
+		</td>
+		<td width=20% valign=top>
+		<form action="/search.php" method=get>
+		<a href="/listproblem.php?vol=1" style="text-decoration: none">Problem Archive</a><br/>
+		<!--<a href="http://feeds.feedburner.com/Hdoj-problemset"><img src="/images/rss1.jpg" alt="problemset" style="vertical-align:text-bottom;"width=20 height=20></a><br>-->
+		<!--
+			 <a href="/submit.php">Submit Solution</a><br>
+		-->	
+		<a href="/status.php" style="text-decoration: none">Realtime Judge Status</a><br>
+
+		<a href="/ranklist.php" style="text-decoration: none">Authors Ranklist</a><br>
+		<input name=field value=author type=hidden><input class=text60 name=key>&nbsp;<input class=button40 type=submit value=Search>
+		
+		<!--
+			<input name=field value=problem type=hidden><input class=text60 name=key>&nbsp;<input class=button40 type=submit value=Search>
+		-->
+		</form>
+		</td>
+		<td width=20% valign=top>
+		 <form action='/search.php' method=get> 
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="text-decoration: none" href="http://code.hdu.edu.cn/">C/C++/Java Exams &nbsp;&nbsp;&nbsp;&nbsp;</a><br/>
+		<a style="text-decoration: none" href="/game">ACM Steps</a><br/>
+		<a href = "/ITJobs/">Go to Job</a><br/>	
+		<a href="/livecast" style="text-decoration: none">Contest LiveCast</a><br/>
+		<a style="text-decoration: none" href="/region">ICPC@China</a><br/>
+		<!-- <a href="/register.php">Register New Author</a><br> -->
+		<!-- <a href="/modifyuser.php">Update Your Information</a><br> -->
+		</form>
+		</td>
+		<td width=20% valign=top>
+		<a href="http://bestcoder.hdu.edu.cn" style="text-decoration: none; color: red; font-weight: bold;">Best Coder <sup style="color: gray;">beta</sup></a><br/><a href="/vip/contest_list.php" style="text-decoration: none">VIP</a> | <a href="/contests/contest_list.php" style="text-decoration: none">STD Contests</a><br /><a href="http://code.hdu.edu.cn/vcontest" style="text-decoration: none">Virtual Contests </a><br/>&nbsp;&nbsp;<a href="/diy/contest_list.php" style="text-decoration: none">&nbsp;&nbsp;DIY | </a><a href="/webcontest" style="text-decoration: none"><font color="">Web-DIY</font> <font size=1 color="gray"><sup>beta</sup></font></a><br/><a style="text-decoration: none" href="/recentcontest">Recent Contests</a><br/>		</td>
+		<td width=20%>
+					<form method=post action="/userloginex.php?action=login">
+			  <table width=168 border=0 align=center cellspacing=0>
+			  	<tr><td align=center colspan=2><a href="/qqlogin/oauth/login.php"><img src="/qqlogin/images/qqlogin.png" border="0" /></a></td></tr>
+				<tr><td width=68>Author ID&nbsp;</td><td align=right><input name=username type=text class=text90 maxlength=20></td></tr>
+				<tr><td>Password&nbsp;</td><td align=right><input name=userpass type=password class=text90 maxlength=20></td></tr>
+			  </table>
+			  <input name=login type=submit class=button40 value="Sign In">&nbsp;<a href="http://bestcoder.hdu.edu.cn/register.php?url=acm.hdu.edu.cn/userloginex.php?action=login" style="text-decoration: none">Register new ID</a>
+			</form>
+						</td>
+	</tr>
+	</table>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div align=center id=rollword><marquee scrollamount=2 width=600 scrolldelay=30 onMouseOver="javascript:this.stop();" onMouseOut="javascript:this.start();"><b style="margin-right:20px"></b></marquee></div>	</td>
+</tr>
+<tr><td align=center><h1 style='color:#1A5CC8'>Snooker Referee</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 6000/3000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/65536 K (Java/Others)<br>Total Submission(s): 163&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 50<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Snooker is a cue sport that is played on a large baize-covered table with pockets in each of the four corners and in the middle of each of the long side cushions. It is played using a cue and snooker balls: one white cue ball, 15 red balls worth one point each, and six balls of different colors: yellow (2 points), green (3), brown (4), blue (5), pink (6) and black (7). A player (or team) wins a frame (individual game) of snooker by scoring more points than the opponent(s), using the cue ball to pot the red and colored balls. In this problem, your job is the referee of snooker. You should score both players, ask the correct player to play next, as well as place some of the balls back to the table if necessary. The rules of snooker needed for this problem are following. (We ignore some fouls about incorrectly hitting the cue ball here. We assume that the cue ball is never snookered after a foul, so free ball will never occur. We also assume that both players will make their best attempts to hit the ball on, so you do not need to declare a miss when they do not hit the ball on first.) <br><br><center><img style='max-width:100%;' src=../../data/images/3719-1.jpg></center><br><br>At the beginning of each frame the balls are set up by the referee as illustrated above. This will be followed by a break-off shot, the white cue ball can be placed anywhere inside the D (it is called in-hand, which also happens when the cue ball is potted). Players take turns in visiting the table. A break is the number of points scored by a player in one single visit to the table. A player's turn and break end when he fails to pot a ball, when he does something against the rules of the game, which is called a foul, or when a frame has ended.<br>The ball or balls that can be hit first by the white are called the ball(s)<br>&quot;on&quot; for that particular stroke. The ball(s) &quot;on&quot; differ from shot to shot:<br>a red ball, if potted, must be followed by a color, and so on until a break<br>ends; if a red is not potted, any red ball remains the ball &quot;on&quot;. Only<br>a ball or balls &quot;on&quot; may be potted legally by a player. If a ball not &quot;on&quot;<br>is potted, this is a foul.<br>The game of snooker generally consists of two phases. The first phase is the situation in which there are still red balls on the table. In the first phase, at the beginning of a player's turn, the balls &quot;on&quot; are all remaining red balls. The player must therefore attempt to first hit and pot one or more red balls. For every red ball potted, the player will receive 1 point. When a red has been potted, it will stay off the table and the player can continue his break. If no red has been potted or a foul has been made, the other player will come into play. In case one or more red balls have been potted, the player can continue his break. This time one of the six colors (yellow, green, brown, blue, pink and black) is the ball &quot;on&quot;. Only one of these can be the ball &quot;on&quot;<br>and the rules of the game state that a player must nominate his desired color to the referee, although it is often clear which ball the striker is playing and it is not necessary to nominate. When the nominated color is potted, the player will be awarded the correct number of points (yellow, 2; green, 3; brown, 4; blue, 5; pink, 6; black, 7). The color is then taken out of the pocket by the referee and placed on its original spot. Because only one of the colors is the ball &quot;on&quot;, it is a foul to first hit multiple colors at the same time, or pot more than one color. If a player fails to pot a ball &quot;on&quot;, it being a red or nominated color, the other player will come into play and the balls &quot;on&quot; are always the reds, as long as there are still reds on the table. The alternation between red balls and colors ends when all reds have been potted and a color is potted after the last red, or a failed attempt to do so is made. Then the second phase begins. All six colors have to be potted in ascending order of their points value (yellow, green, brown, blue, pink, black). Each becomes the ball &quot;on&quot; in that order. During this phase, when potted, the colors stay down and are not replaced on the table, unless a foul is made when potting the color, in which case the color is respotted.<br>When only the black is left, the first score or foul ends the frame, and the player who has scored most points has won it. However, if the score is tied after that, the black is respotted, the players draw lots for choice of playing, the next player plays from in-hand, and the next score or foul ends the frame. When a foul is made during a shot, the player's turn is ended and he will receive no points for the foul shot. The other player will receive penalty<br>points. Colors illegally potted are respotted (while reds are not), and if the cue ball is potted, the next player will play from in-hand. Fouls concerned in this problem are:<br><br>。failing to hit any other ball with the cue ball<br>。first hitting a ball &quot;not-on&quot; with the cue ball<br>。potting a ball &quot;not-on&quot;<br>。potting the white (in-off)<br><br>Penalty points are at least 4 points and at most 7 points. The number of penalty points is the value of the ball &quot;on&quot;, or any of the &quot;foul&quot; balls, whichever is highest. When more than one foul is made, the penalty is not the added total - only the most highly valued foul is counted. As players usually do not nominate a color explicitly when hitting the colors, please be tolerant and assume that he always nominate the ball with the lowest score when it cannot be deduced from the ball first hit (i.e. when the cue ball does not hit any ball or hit a red first). If a player commits a foul, and his opponent considers that the position left is unattractive, he may request that the offender play again from the resulting position.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The input file contains multiple test cases. The first line of the input file is a single integer T (T ≤ 200), the number of test cases. For each test case (frame), the first line contains the names of the two players separated by a whitespace. The first player will take the break-off shot. Each name is made up of no more than 20 English letters, and the two names are different.<br>After that, the input mainly consists of lines that describe a stroke each (with two exceptions stated later). A stroke is described by the color of the ball first hit by the cue ball (or &quot;None&quot; if the cue ball does not hit any ball), followed by zero or more colors of the balls potted, all separated by whitespaces. For example, a line &quot;Red Red White Red&quot; means the cue ball first hit a red ball, and 2 reds are potted as well as the cue ball itself; and a line &quot;None&quot; means the cue ball does not hit any ball thus no ball is potted. You can assume that all strokes are legal according to the balls remain on the table, and the cue ball will not hit two or more ball first simultaneously. A line &quot;Play again&quot; may appear if and only if the last stroke is a foul. It means the other player request that the offender play again from the resulting position.<br>If a score or foul occurs when only the black is left, and the score is tied after that, a line with either player's name will follow. That means the player will play next as a result of the lot. The case end when the frame ends. There is a blank line before every test case.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each frame, print a line in the format &quot;Frame K&quot; first, where K is the index of this case starts from 1. Then use the output to indicate the referee's behaviors:<br><br>。When a frame begins, print a line in the format &quot;PlayerName's turn, in-hand&quot;, where PlayerName is the name of the player who take the break-off shot.<br><br>。After each stroke, print a line &quot;Foul!&quot; first if it is a foul. Then print a line with current score in the format &quot;ScoreA : ScoreB&quot;, where ScoreA is the score of the player who take the break-off shot, and ScoreB is the other player's score. After that, if the frame continue fairly (i.e. not only black is<br>left before the stroke, or it is not a score or foul when only black is left), and some ball(s) should be respotted. Print a line with the word &quot;Respot&quot; following by the color(s) of the ball(s), all separated by whitespace. If more than one ball should be respotted, print their colors in ascending order of their values. Do not print anything if no ball needed to be respotted.<br>At last (when the frame continue fairly and any necessary ball has been respotted), if the last player's break ends, print a line in the format &quot;PlayerName's turn&quot; to ask the other player to play next, where PlayerName is the next player's name. If the next player should play from in-hand, print &quot;PlayerName's turn, in-hand&quot; instead.<br><br>。After a foul, if the other player request that the offender play again, just print a line &quot;PlayerName's turn&quot; or &quot;PlayerName's turn, in-hand&quot; according to whether the cue ball is in-hand, where PlayerName is the offender's name. Note that the requester is actually requesting in his turn, after you asked him to play next.<br><br>。If a score or foul occurs when only the black is left, and the score is tied after that, print a line &quot;Tie&quot; after the score. Then print two lines &quot;Respot Black&quot; and &quot;PlayerName's turn, in-hand&quot; to respot the black and play from in-hand, where PlayerName is the next player's name (determined by the lot).<br><br>。When the frame ends, print a line &quot;PlayerName wins&quot; after the score,<br>where PlayerName is the winner's name.<br><br>Print a blank line between every two successive cases.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">1
+Zero Maxbreak
+Red White
+Red Red
+Black Black
+Red Red
+Black Black
+Red Red
+Black Black
+Red Red
+Black Black
+Red Red
+Black Black
+Red Red
+Black Black
+Red Red
+Black Black
+Red Red
+Black Black
+Red Red
+Black Black
+Red Red
+Black Black
+Red Red
+Black Black
+Red Red
+Black Black</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">Frame 1
+Zero's turn, in-hand
+Foul!
+0 : 4
+Maxbreak's turn, in-hand
+0 : 5
+0 : 12
+Respot Black
+0 : 13
+0 : 20
+Respot Black
+0 : 21
+0 : 28
+Respot Black
+0 : 29
+0 : 36
+Respot Black
+0 : 37
+0 : 44
+Respot Black
+0 : 45
+0 : 52
+Respot Black
+0 : 53
+0 : 60
+Respot Black
+0 : 61
+0 : 68</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Author</div> <div class=panel_content>XIAO, Dong</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href="/search.php?field=problem&key=2010+Asia+Chengdu+Regional+Contest&source=1&searchmode=source"> 2010 Asia Chengdu Regional Contest </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>zhouzeyong</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3719'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3719'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3719">Discuss</a> | <a href='note/note.php?pid=3719'>Note</a><br></td></tr><tr>
+<td>
+	<table style="border:#1A5CC8 1px solid; font-size:14px" cellSpacing=0 cellPadding=1 width=100%>
+	<tr align=center>
+		<td class=footer_link height=45><a href="/">Home</a> | <a href=#top>Top</a></td>
+		<td style="padding:6px">
+			Hangzhou Dianzi University Online Judge 3.0<br>
+			Copyright &copy; 2005-2018 <a href=mailto:acm@hdu.edu.cn>HDU ACM Team</a>. All Rights Reserved.<br>
+			<a href="../about_us/developer.php">Designer & Developer </a>: <a>Wang Rongtao</a>&nbsp<a>LinLe</a>&nbsp<a href=mailto:gjavac@gmail.com >GaoJie</a>&nbsp<a href=mailto:gl8997@gmail.com >GanLu</a><br>
+			<span class=pagerunstatus>Total 0.000000(s) query 2, Server time : 2018-07-07 22:53:04, Gzip disabled</span>		</td>
+		<td class=footer_link>
+			<!-- <a href="javascript:history.go(-1);">Back</a> | <a href="javascript:history.forward();">Forward</a>-->
+			<a href="/admin">Administration</a>	
+		</td>
+	</tr>
+	</table>
+</td>
+</tr>
+</table>
+</body></html>

@@ -1,0 +1,54 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Jumping the Queue </title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU2557. Jumping the Queue </h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：2000/1000 MS (Java/Others)</span> <span class="ui label">时间限制：32768/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The beginning of a winter break near Spring Festival is always the beginning of a peak period of transportation. If you have ever tried to get a train ticket at that time, you must have witnessed the endless queues in front of every ticket box window. If a guy has seen his friend in a queue, then it is very much likely that this lucky guy might go straight to his friend and ask for a favor. This is called &quot;jumping the queue&quot;. It is unfair to the rest of the people in the line, but, it is life. Your task is to write a program that simulates such a queue with people jumping in every now and then, assume that, if one in the queue has several friends asking for favors, he would arrange their requests in a queue of his own.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">There will contain one or more test cases. Each test case begins with the number of groups n (1&lt;= n &lt;=1000). Then n group descriptions follow, each one consisting of the number of friends belonging to the group and those people's distinct names. A group is a friend group. People in one group are friend with each other. A name is a string of up to 4 characters chosen from {A, B, ..., Z, a, b, ..., z}. A group may consist of up to 1000 friends. You may assume that there is no one belong to two different groups. <br>Finally, a list of commands follows. There are three different kinds of commands: <br><br>● <b>ENQUEUE X</b> - Mr. or Ms. X goes into the queue <br>● <b>DEQUEUE</b> - the first person gets the ticket and leave the queue <br>● <b>STOP</b> - end of test case <br><br>The input will be terminated by a value of 0 for n.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For each test case, first print a line saying &quot;Scenario #k&quot;, where k is the number of the test case. Then, for each <b>DEQUEUE</b> command, print the person who just gets a ticket on a single line. Print a blank line between two test cases, but no extra line at the end of output.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">2
+3 Ann Bob Joe
+3 Zoe Jim Fat
+ENQUEUE Ann
+ENQUEUE Zoe
+ENQUEUE Bob
+ENQUEUE Jim
+ENQUEUE Joe
+ENQUEUE Fat
+DEQUEUE
+DEQUEUE
+DEQUEUE
+DEQUEUE
+DEQUEUE
+DEQUEUE
+STOP
+2
+5 Anny Jack Jean Bill Jane
+6 Eva Mike Ron Sony Geo Zoro
+ENQUEUE Anny
+ENQUEUE Eva
+ENQUEUE Jack
+ENQUEUE Jean
+ENQUEUE Bill
+ENQUEUE Jane
+DEQUEUE
+DEQUEUE
+ENQUEUE Mike
+ENQUEUE Ron
+DEQUEUE
+DEQUEUE
+DEQUEUE
+DEQUEUE
+STOP 
+0</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">Scenario #1 
+Ann
+Bob
+Joe
+Zoe
+Jim
+Fat
+
+Scenario #2 
+Anny
+Jack
+Jean
+Bill
+Jane
+Eva
+
+<div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div>
+You must maintain a hash table to store the names of the people, otherwise the efficiency of your program will not be acceptable since Judge's input file
+ is as large as about 12.5MB.
+</div><i style='font-size:1px'> </i></div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2008+HZNU+Programming+Contest&source=1&searchmode=source"> 2008 HZNU Programming Contest </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

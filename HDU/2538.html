@@ -1,0 +1,17 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>确定排名</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU2538. 确定排名</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：5000/1000 MS (Java/Others)</span> <span class="ui label">时间限制：32768/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">今年的NBA西部的竞争是如此激烈，以至于在最后一轮之前，前8的球队里多达6只球队还没有确定自己的排名。在本题中，给出了在最后一轮之前各只球队的胜场数以及最后一轮的对阵情况，要求给出各只球队排在第几名的概率。假设每场比赛两方获胜的概率各是50%。<br>在本题中，与NBA不同的是，排名的唯一标准是胜场数，当几只球队胜场数相同时，算这几只球队并列排在(可能)最靠前的位置上。<br><img style='max-width:100%;' src=./data/images/2538-1.JPG><br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">输入包含多组数据。第一行是一个整数N(2&lt;=N&lt;=24，偶数)，表示球队的数目，N=0代表输入结束。随后有1行包含N个整数，分别代表N只球队的胜场数（不超过200）。每组数据的最后一行是N只球队最后一轮的对阵情况(格式参考样例)，球队的序号从1开始，共有N/2场比赛，每只球队出现且仅出现一次。</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">对每组数据，输出N行，每行有N个小数，第i行的第j个数代表序号为i的队排在第j名的概率。<br>误差不超过0.001的结果都将被视为正确。<br><br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">2
+2 0
+1-2
+4
+3 2 1 0
+1-2 3-4
+0</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">1.0000 0.0000
+0.0000 1.0000
+1.0000 0.0000 0.0000 0.0000
+0.5000 0.5000 0.0000 0.0000
+0.0000 0.2500 0.7500 0.0000
+0.0000 0.0000 0.5000 0.5000
+
+提示：
+建议输出保留到小数点后4位。
+输出格式要求不是很严格，只要保证能够区分出每个数，而且结果都正确，就应该会被判为正确。
+输出数据较多，尽量用printf代替cout。</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=UESTC+6th+Programming+Contest+Online&source=1&searchmode=source"> UESTC 6th Programming Contest Online </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

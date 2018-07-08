@@ -1,0 +1,20 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Hyperspace</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU4666. Hyperspace</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：20000/10000 MS (Java/Others)</span> <span class="ui label">时间限制：65535/65535 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The great Mr.Smith has invented a hyperspace particle generator. The device is very powerful. The device can generate a hyperspace. In the hyperspace, particle may appear and disappear randomly. At the same time a great amount of energy was generated.<br>However, the device is in test phase, often in a unstable state. Mr.Smith worried that it may cause an explosion while testing it. The energy of the device is related to the maximum manhattan distance among particle.<br>Particles may appear and disappear any time. Mr.Smith wants to know the maxmium manhattan distance among particles when particle appears or disappears.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The input contains several test cases, terminated by EOF.<br>In each case: In the first line, there are two integer q(number of particle appear and disappear event, ≤60000) and k(dimensions of the hyperspace that the hyperspace the device generated, ≤5). Then follows q lines. In each line, the first integer ‘od’ represents the event: od = 0 means this is an appear<br>event. Then follows k integer(with absolute value less then 4 × 10<sup>7</sup>). od = 1 means this is an disappear event. Follows a integer p represents the disappeared particle appeared in the pth event.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Each test case should contains q lines. Each line contains a integer represents the maximum manhattan distance among paticles.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">10 2
+0 208 403
+0 371 -180
+1 2
+0 1069 -192
+0 418 -525
+1 5
+1 1
+0 2754 635
+0 -2491 961
+0 2954 -2516</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">0
+746
+0
+1456
+1456
+1456
+0
+2512
+5571
+8922</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2013+Multi-University+Training+Contest+7&source=1&searchmode=source"> 2013 Multi-University Training Contest 7 </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

@@ -1,0 +1,20 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>To the moon</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU4348. To the moon</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：4000/2000 MS (Java/Others)</span> <span class="ui label">时间限制：65536/65536 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><strong>Background</strong><br>To The Moon is a independent game released in November 2011, it is a role-playing adventure game powered by RPG Maker.<br>The premise of To The Moon is based around a technology that allows us to permanently reconstruct the memory on dying man. In this problem, we'll give you a chance, to implement the logic behind the scene.<br><br>You‘ve been given N integers A<sub>[1]</sub>, A<sub>[2]</sub>,..., A<sub>[N]</sub>. On these integers, you need to implement the following operations:<br><strong>1.</strong>  C l r d: Adding a constant d for every {A<sub>i</sub> | l &lt;= i &lt;= r}, and increase the time stamp by 1, this is the only operation that will cause the time stamp increase. <br><strong>2.</strong>  Q l r: Querying the current sum of {A<sub>i</sub> | l &lt;= i &lt;= r}.<br><strong>3.</strong>  H l r t: Querying a history sum of {A<sub>i</sub> | l &lt;= i &lt;= r} in time t.<br><strong>4.</strong>  B t: Back to time t. And once you decide return to a past, you can never be access to a forward edition anymore.<br> .. N, M ≤ 10<sup>5</sup>, |A<sub>[i]</sub>| ≤ 10<sup>9</sup>, 1 ≤ l ≤ r ≤ N, |d| ≤ 10<sup>4</sup> .. the system start from time 0, and the first modification is in time 1, t ≥ 0, and won't introduce you to a future state. </div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">n m<br>A<sub>1</sub> A<sub>2</sub> ... A<sub>n</sub><br>... (here following the m operations. )</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">... (for each query, simply print the result. )</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">10 5
+1 2 3 4 5 6 7 8 9 10
+Q 4 4
+Q 1 10
+Q 2 4
+C 3 6 3
+Q 2 4
+
+2 4
+0 0
+C 1 1 1
+C 2 2 -1
+Q 1 2
+H 1 2 1</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">4
+55
+9
+15
+
+0
+1</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2012+Multi-University+Training+Contest+5&source=1&searchmode=source"> 2012 Multi-University Training Contest 5 </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

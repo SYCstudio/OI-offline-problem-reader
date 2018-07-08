@@ -1,0 +1,112 @@
+<html><head><meta name=keywords content="HDOJ ACM ICPC OJ C C++ Pascal Java"><meta http-equiv=Content-Type content="text/html;charset=gb2312"><link rel=stylesheet type=text/css href="/images/global.css" media=all><link rel=stylesheet type=text/css href="/css/diyinhead.css" media=all><link rel=stylesheet type=text/css href="/css/webinhead.css" media=all><script src="/js/global.js" type=text/javascript></script><script src="/js/register.js" type=text/javascript></script><script src="/js/MathJax/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script><title>Problem - 5246</title></head><body >
+<a name=top></a>
+<table align=center cellSpacing=0 cellPadding=0 width=980 border=0 style="word-wrap:break-word">
+<tr>
+	<td style="border:#1A5CC8 1px solid" align=center width=100%>
+		<a href="/">
+			<img src="/images/banner.jpg" width="100%" height=116 border=0>
+		</a>
+	</td>
+</tr>
+<tr>
+	<td style="border:#1A5CC8 1px solid">
+	<table cellSpacing=0 cellPadding=1 width="979px">
+	<tr bgcolor=#1A5CC8 align=center class=banner height=25>
+		<td>Online Judge</td>
+		<td>Online Exercise</td>
+		<td>Online Teaching</td>
+		<td>Online Contests</td>
+	<td>Exercise Author</td>
+	</tr>
+	<tr style="font-size:16px" align=center>
+		<td width=20% valign=top>
+		<a href="/faq.php" style="text-decoration: none">F.A.Q</a><br>
+		<a href="/friends" style="text-decoration: none">Hand In Hand</a><br>
+		<a href="/onlineuser.php" style="text-decoration: none">Online Acmers</a>	<br>
+		<!-- /onlineuser.php-->
+		
+		<a href="/forum" style="text-decoration: none">Forum | </a><a href="/discuss/public/list.php" style="text-decoration: none">Discuss</a><br>
+		<a href="/statistic/submit_graph.php" style="text-decoration: none">Statistical Charts</a><br>
+		</td>
+		<td width=20% valign=top>
+		<form action="/search.php" method=get>
+		<a href="/listproblem.php?vol=1" style="text-decoration: none">Problem Archive</a><br/>
+		<!--<a href="http://feeds.feedburner.com/Hdoj-problemset"><img src="/images/rss1.jpg" alt="problemset" style="vertical-align:text-bottom;"width=20 height=20></a><br>-->
+		<!--
+			 <a href="/submit.php">Submit Solution</a><br>
+		-->	
+		<a href="/status.php" style="text-decoration: none">Realtime Judge Status</a><br>
+
+		<a href="/ranklist.php" style="text-decoration: none">Authors Ranklist</a><br>
+		<input name=field value=author type=hidden><input class=text60 name=key>&nbsp;<input class=button40 type=submit value=Search>
+		
+		<!--
+			<input name=field value=problem type=hidden><input class=text60 name=key>&nbsp;<input class=button40 type=submit value=Search>
+		-->
+		</form>
+		</td>
+		<td width=20% valign=top>
+		 <form action='/search.php' method=get> 
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="text-decoration: none" href="http://code.hdu.edu.cn/">C/C++/Java Exams &nbsp;&nbsp;&nbsp;&nbsp;</a><br/>
+		<a style="text-decoration: none" href="/game">ACM Steps</a><br/>
+		<a href = "/ITJobs/">Go to Job</a><br/>	
+		<a href="/livecast" style="text-decoration: none">Contest LiveCast</a><br/>
+		<a style="text-decoration: none" href="/region">ICPC@China</a><br/>
+		<!-- <a href="/register.php">Register New Author</a><br> -->
+		<!-- <a href="/modifyuser.php">Update Your Information</a><br> -->
+		</form>
+		</td>
+		<td width=20% valign=top>
+		<a href="http://bestcoder.hdu.edu.cn" style="text-decoration: none; color: red; font-weight: bold;">Best Coder <sup style="color: gray;">beta</sup></a><br/><a href="/vip/contest_list.php" style="text-decoration: none">VIP</a> | <a href="/contests/contest_list.php" style="text-decoration: none">STD Contests</a><br /><a href="http://code.hdu.edu.cn/vcontest" style="text-decoration: none">Virtual Contests </a><br/>&nbsp;&nbsp;<a href="/diy/contest_list.php" style="text-decoration: none">&nbsp;&nbsp;DIY | </a><a href="/webcontest" style="text-decoration: none"><font color="">Web-DIY</font> <font size=1 color="gray"><sup>beta</sup></font></a><br/><a style="text-decoration: none" href="/recentcontest">Recent Contests</a><br/>		</td>
+		<td width=20%>
+					<form method=post action="/userloginex.php?action=login">
+			  <table width=168 border=0 align=center cellspacing=0>
+			  	<tr><td align=center colspan=2><a href="/qqlogin/oauth/login.php"><img src="/qqlogin/images/qqlogin.png" border="0" /></a></td></tr>
+				<tr><td width=68>Author ID&nbsp;</td><td align=right><input name=username type=text class=text90 maxlength=20></td></tr>
+				<tr><td>Password&nbsp;</td><td align=right><input name=userpass type=password class=text90 maxlength=20></td></tr>
+			  </table>
+			  <input name=login type=submit class=button40 value="Sign In">&nbsp;<a href="http://bestcoder.hdu.edu.cn/register.php?url=acm.hdu.edu.cn/userloginex.php?action=login" style="text-decoration: none">Register new ID</a>
+			</form>
+						</td>
+	</tr>
+	</table>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div align=center id=rollword><marquee scrollamount=2 width=600 scrolldelay=30 onMouseOver="javascript:this.stop();" onMouseOut="javascript:this.start();"><b style="margin-right:20px"></b></marquee></div>	</td>
+</tr>
+<tr><td align=center><h1 style='color:#1A5CC8'>超级赛亚ACMer</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 3218&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 874<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>百小度是一个ACMer，也是一个超级赛亚人，每个ACMer都有一个战斗力，包括百小度。&amp;#8232;所谓超级赛亚人的定义，是说如果在对抗中刚好接近极限状态，那就会激发斗志，实力提升.<br><br>具体来说，就是百小度现在要接受一些ACMer的挑战了，这些ACMer有n个人，第i个人的战斗力是a[i]。<br><br>&amp;#8232;百小度接下来可以自主安排与这n个ACMer的PK顺序，他要想在PK赛中赢过另外一个ACMer，就必须使得自己的战斗力不小于对方（平局情况他会按照百小度字典上的规则把自己排在第一).<br><br>如果百小度的战斗力大于对方，那么百小度就会轻易获胜，得不到锻炼并且骄傲起来，他以后的战斗力将保持在这个值，再也不会发生改变。&amp;#8232;如果百小度的战斗力等于对方，那么百小度在获胜的同时也会感到很吃力，但是这会激发百小度的斗志，使得他刻苦刷题，在下场PK赛之前，战斗力最多提升k点（即可以提升0~k点任意值）.<br><br>k是百小度的潜力提升上限，会被给定一个初始值，这个潜力提升上限k在后面的比赛中会下降.<br><br>每战胜一个ACMer，这个潜力上限k将减少1（因为超级赛亚人百小度也会感到累），但k最低只会减少到0，即不会出现战斗力下降的情况。也就是第一次比赛如果激发了百小度的斗志，他能把战斗力提升0~k的任一值，如果第二次比赛继续被激发斗志，他能在第一次提升后的基础上，把战斗力再提升$0$ ~ $max(0, k-1)$,依次类推…<br><br>m是百小度的初始战斗力上限，也就是百小度第一次进行PK赛的时候，可以选择0~m的任意一个值作为他的战斗力.<br><br>现在希望你编写程序，判断一下百小度是否战胜所有的ACMer.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>输入包含多组数据（数据不超过500组)<br><br>第一行一个整数T，表示T组数据<br><br>对于每组数据，第一行包括三个整数$n, m, k(1 \leq n \leq 10^4, 1 \leq m, k \leq 10^8)$<br><br>第二行包括n个正整数，表示彪形大汉的战斗力（战斗力为不超过$10^{12}$的正整数）</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>对于每组数据，先输出一行Case #i: $(1 \leq i \leq T)$<br><br>如果百小度能打败所有的ACMer，再输出&quot;why am I so diao?&quot;<br><br>否则再输出&quot;madan!&quot;</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">2
+5 11 3
+15 13 10 9 8
+5 11 3
+8 9 10 13 16</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">Case #1:
+why am I so diao?
+Case #2:
+madan!
+
+<div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div>第一组样例解释
+5个ACMer，初始战斗力选择范围是[0,11],接下来每场战斗力提升上限是3,2,1,0,0,...,0
+百小度首先使得自己的初始战斗力为10，打败战斗力为10的第一个ACMer，
+然后选择战斗力提升3，变成13，打败战斗力为13的第二个ACMer，
+然后选择战斗力提升2，变成15，打败战斗力为15的第三个ACMer，
+之后再以任意顺序打败剩下的ACMer</div><i style='font-size:1px'> </i></div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href="/search.php?field=problem&key=2015%C4%EA%B0%D9%B6%C8%D6%AE%D0%C7%B3%CC%D0%F2%C9%E8%BC%C6%B4%F3%C8%FC+-+%B3%F5%C8%FC%281%29&source=1&searchmode=source"> 2015年百度之星程序设计大赛 - 初赛(1) </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>hujie</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=5246'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=5246'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=5246">Discuss</a> | <a href='note/note.php?pid=5246'>Note</a><br></td></tr><tr>
+<td>
+	<table style="border:#1A5CC8 1px solid; font-size:14px" cellSpacing=0 cellPadding=1 width=100%>
+	<tr align=center>
+		<td class=footer_link height=45><a href="/">Home</a> | <a href=#top>Top</a></td>
+		<td style="padding:6px">
+			Hangzhou Dianzi University Online Judge 3.0<br>
+			Copyright &copy; 2005-2018 <a href=mailto:acm@hdu.edu.cn>HDU ACM Team</a>. All Rights Reserved.<br>
+			<a href="../about_us/developer.php">Designer & Developer </a>: <a>Wang Rongtao</a>&nbsp<a>LinLe</a>&nbsp<a href=mailto:gjavac@gmail.com >GaoJie</a>&nbsp<a href=mailto:gl8997@gmail.com >GanLu</a><br>
+			<span class=pagerunstatus>Total 0.000000(s) query 2, Server time : 2018-07-08 10:52:05, Gzip disabled</span>		</td>
+		<td class=footer_link>
+			<!-- <a href="javascript:history.go(-1);">Back</a> | <a href="javascript:history.forward();">Forward</a>-->
+			<a href="/admin">Administration</a>	
+		</td>
+	</tr>
+	</table>
+</td>
+</tr>
+</table>
+</body></html>

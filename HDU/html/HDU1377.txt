@@ -1,0 +1,119 @@
+<html><head><meta name=keywords content="HDOJ ACM ICPC OJ C C++ Pascal Java"><meta http-equiv=Content-Type content="text/html;charset=gb2312"><link rel=stylesheet type=text/css href="/images/global.css" media=all><link rel=stylesheet type=text/css href="/css/diyinhead.css" media=all><link rel=stylesheet type=text/css href="/css/webinhead.css" media=all><script src="/js/global.js" type=text/javascript></script><script src="/js/register.js" type=text/javascript></script><script src="/js/MathJax/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script><title>Problem - 1377</title></head><body >
+<a name=top></a>
+<table align=center cellSpacing=0 cellPadding=0 width=980 border=0 style="word-wrap:break-word">
+<tr>
+	<td style="border:#1A5CC8 1px solid" align=center width=100%>
+		<a href="/">
+			<img src="/images/banner.jpg" width="100%" height=116 border=0>
+		</a>
+	</td>
+</tr>
+<tr>
+	<td style="border:#1A5CC8 1px solid">
+	<table cellSpacing=0 cellPadding=1 width="979px">
+	<tr bgcolor=#1A5CC8 align=center class=banner height=25>
+		<td>Online Judge</td>
+		<td>Online Exercise</td>
+		<td>Online Teaching</td>
+		<td>Online Contests</td>
+	<td>Exercise Author</td>
+	</tr>
+	<tr style="font-size:16px" align=center>
+		<td width=20% valign=top>
+		<a href="/faq.php" style="text-decoration: none">F.A.Q</a><br>
+		<a href="/friends" style="text-decoration: none">Hand In Hand</a><br>
+		<a href="/onlineuser.php" style="text-decoration: none">Online Acmers</a>	<br>
+		<!-- /onlineuser.php-->
+		
+		<a href="/forum" style="text-decoration: none">Forum | </a><a href="/discuss/public/list.php" style="text-decoration: none">Discuss</a><br>
+		<a href="/statistic/submit_graph.php" style="text-decoration: none">Statistical Charts</a><br>
+		</td>
+		<td width=20% valign=top>
+		<form action="/search.php" method=get>
+		<a href="/listproblem.php?vol=1" style="text-decoration: none">Problem Archive</a><br/>
+		<!--<a href="http://feeds.feedburner.com/Hdoj-problemset"><img src="/images/rss1.jpg" alt="problemset" style="vertical-align:text-bottom;"width=20 height=20></a><br>-->
+		<!--
+			 <a href="/submit.php">Submit Solution</a><br>
+		-->	
+		<a href="/status.php" style="text-decoration: none">Realtime Judge Status</a><br>
+
+		<a href="/ranklist.php" style="text-decoration: none">Authors Ranklist</a><br>
+		<input name=field value=author type=hidden><input class=text60 name=key>&nbsp;<input class=button40 type=submit value=Search>
+		
+		<!--
+			<input name=field value=problem type=hidden><input class=text60 name=key>&nbsp;<input class=button40 type=submit value=Search>
+		-->
+		</form>
+		</td>
+		<td width=20% valign=top>
+		 <form action='/search.php' method=get> 
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="text-decoration: none" href="http://code.hdu.edu.cn/">C/C++/Java Exams &nbsp;&nbsp;&nbsp;&nbsp;</a><br/>
+		<a style="text-decoration: none" href="/game">ACM Steps</a><br/>
+		<a href = "/ITJobs/">Go to Job</a><br/>	
+		<a href="/livecast" style="text-decoration: none">Contest LiveCast</a><br/>
+		<a style="text-decoration: none" href="/region">ICPC@China</a><br/>
+		<!-- <a href="/register.php">Register New Author</a><br> -->
+		<!-- <a href="/modifyuser.php">Update Your Information</a><br> -->
+		</form>
+		</td>
+		<td width=20% valign=top>
+		<a href="http://bestcoder.hdu.edu.cn" style="text-decoration: none; color: red; font-weight: bold;">Best Coder <sup style="color: gray;">beta</sup></a><br/><a href="/vip/contest_list.php" style="text-decoration: none">VIP</a> | <a href="/contests/contest_list.php" style="text-decoration: none">STD Contests</a><br /><a href="http://code.hdu.edu.cn/vcontest" style="text-decoration: none">Virtual Contests </a><br/>&nbsp;&nbsp;<a href="/diy/contest_list.php" style="text-decoration: none">&nbsp;&nbsp;DIY | </a><a href="/webcontest" style="text-decoration: none"><font color="">Web-DIY</font> <font size=1 color="gray"><sup>beta</sup></font></a><br/><a style="text-decoration: none" href="/recentcontest">Recent Contests</a><br/>		</td>
+		<td width=20%>
+					<form method=post action="/userloginex.php?action=login">
+			  <table width=168 border=0 align=center cellspacing=0>
+			  	<tr><td align=center colspan=2><a href="/qqlogin/oauth/login.php"><img src="/qqlogin/images/qqlogin.png" border="0" /></a></td></tr>
+				<tr><td width=68>Author ID&nbsp;</td><td align=right><input name=username type=text class=text90 maxlength=20></td></tr>
+				<tr><td>Password&nbsp;</td><td align=right><input name=userpass type=password class=text90 maxlength=20></td></tr>
+			  </table>
+			  <input name=login type=submit class=button40 value="Sign In">&nbsp;<a href="http://bestcoder.hdu.edu.cn/register.php?url=acm.hdu.edu.cn/userloginex.php?action=login" style="text-decoration: none">Register new ID</a>
+			</form>
+						</td>
+	</tr>
+	</table>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div align=center id=rollword><marquee scrollamount=2 width=600 scrolldelay=30 onMouseOver="javascript:this.stop();" onMouseOut="javascript:this.start();"><b style="margin-right:20px"></b></marquee></div>	</td>
+</tr>
+<tr><td align=center><h1 style='color:#1A5CC8'>A Well-Formed Problem</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/32768 K (Java/Others)<br>Total Submission(s): 294&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 28<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>XML, eXtensible Markup Language, is poised to become the lingua franca of structured data communication for the foreseeable future, due in part to its strict formatting requirements. XML parsers must report anything that violates the rules of a well-formed XML document. An XML document is said to be well-formed if it meets all of the wellformedness constraints as defined by the World Wide Web Consortium (W3C) XML specification.<br><br>XML documents are composed of units called elements, that contain either character data and/or other elements.<br><br>Elements may also contain within their declaration values called attributes. Consider the following XML document: <br><br>&lt;?xml version=&quot;1.0&quot;?&gt;<br>&lt;customer&gt;<br>       &lt;name&gt;<br>               &lt;first&gt;John&lt;/first&gt;<br>               &lt;last&gt;Doe&lt;/last&gt;<br>       &lt;/name&gt;<br>       &lt;address&gt;<br>               &lt;street&gt;<br>                       &lt;number&gt;15&lt;/number&gt;<br>                       &lt;direction&gt;West&lt;/direction&gt;<br>                       &lt;name&gt;34th&lt;/name&gt;<br>               &lt;/street&gt;<br>               &lt;city&gt;New York&lt;/city&gt;<br>               &lt;state-code&gt;NY&lt;/state-code&gt;<br>               &lt;zip-code format=&quot;PLUS4&quot;&gt;10001-0001&lt;/zip-code&gt;<br>               &lt;country-code&gt;USA&lt;/country-code&gt;<br>       &lt;/address&gt;<br>       &lt;orders/&gt;<br>&lt;/customer&gt;<br><br>The bold identifiers contained within angle brackets are the elements of the document. The italicized identifier &quot;format&quot; within the &quot;zip-code&quot; element is an attribute of that element. All elements, with the exception of &quot;orders&quot;, have a start and an end declaration, also called a tags. The &quot;orders&quot; element is an empty element, as indicated by the &quot;/&gt;&quot; sequence that closes the element, and does not require a separate end-tag. The first line is a processing instruction for an XML parser and is not considered an element of the document.<br><br>The rules for a well-formed document are:<br><br>1. There is exactly one element that is not contained within any other element. This element is identified as the &quot;root&quot; or &quot;document&quot; element. In the example above, &quot;customer&quot; is the document element.<br><br>2. The structure of an XML document must nest properly. An element's start-tag must be paired with a closing end-tag if it is a non-empty element.<br><br>3. The name in an element~{!/~}s end-tag must match the element type in the start-tag. For example, an element opened with &lt;address&gt; must be closed by &lt;/address&gt;.<br><br>4. No attribute may appear more than once in the same start-tag or empty-element tag.<br><br>5. A parsed element must not contain a recursive reference to itself. For example, it is improper to include another address element within an address element.<br><br>6. A named attribute must have an associated value.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The input file will contain a series of XML documents. The start of each document is identified by a line containing only the processing instruction &quot;&lt;?xml version=&quot;1.0&quot;?&gt;&quot;. The end of the input is identified by a line containing only the text &quot;&lt;?end?&gt;&quot; (this is not a true XML processing instruction, just a sentinel used to mark the end of the input for this problem). As with all XML documents, white space between elements and attributes should be ignored. You may make the following assuptions with regard to the input.<br><br>The only processing instruction that will be present is the XML version rocessing instruction, and it will always appear only at the beginning of each document in the input.<br><br>Element and attribute names are case-sensitive. For example, &lt;Address&gt; and &lt;address&gt; are considered to be different.<br><br>Element and attribute names will use only alpha-numeric characters and the dash &quot;-&quot; character.<br><br>XML comments will not appear in the input.<br><br>Values for attributes will always be properly enclosed in double quotes.<br><br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each input XML document, output a line containing the text ~{!0~}well-formed~{!1~} if the document is well-formed, ~{!0~}non well-formed~{!1~} otherwise.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">&lt;?xml version="1.0"?>
+&lt;acm-contest-problem>
+        &lt;title>A Well-Formed Problem&lt;/title>
+        &lt;text>XML, eXtensible Markup Language, is poised to become the lingua franca of
+structured data communication for the foreseeable future. [...]&lt;/text>
+        &lt;input>probleme.in&lt;/input>
+        &lt;output>probleme.out&lt;/output>
+&lt;/acm-contest-problem>
+&lt;?xml version="1.0"?>
+&lt;shopping-list>
+        &lt;items>
+                &lt;item quantity="1" quantity="1">Gallon of milk&lt;/item>
+                &lt;item>Frozen pizza
+        &lt;/items>
+&lt;/Shopping-list>
+&lt;errand-list>
+        &lt;errand>Get some cash at the ATM
+                &lt;errand>Pick up dry cleaning&lt;/errand>
+        &lt;/errand>
+&lt;/errand-list>
+&lt;?end?></div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">well-formed
+non well-formed</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href="/search.php?field=problem&key=Greater+New+York+2000&source=1&searchmode=source"> Greater New York 2000 </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>Eddy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=1377'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=1377'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=1377">Discuss</a> | <a href='note/note.php?pid=1377'>Note</a><br></td></tr><tr>
+<td>
+	<table style="border:#1A5CC8 1px solid; font-size:14px" cellSpacing=0 cellPadding=1 width=100%>
+	<tr align=center>
+		<td class=footer_link height=45><a href="/">Home</a> | <a href=#top>Top</a></td>
+		<td style="padding:6px">
+			Hangzhou Dianzi University Online Judge 3.0<br>
+			Copyright &copy; 2005-2018 <a href=mailto:acm@hdu.edu.cn>HDU ACM Team</a>. All Rights Reserved.<br>
+			<a href="../about_us/developer.php">Designer & Developer </a>: <a>Wang Rongtao</a>&nbsp<a>LinLe</a>&nbsp<a href=mailto:gjavac@gmail.com >GaoJie</a>&nbsp<a href=mailto:gl8997@gmail.com >GanLu</a><br>
+			<span class=pagerunstatus>Total 0.000000(s) query 2, Server time : 2018-07-07 20:56:38, Gzip disabled</span>		</td>
+		<td class=footer_link>
+			<!-- <a href="javascript:history.go(-1);">Back</a> | <a href="javascript:history.forward();">Forward</a>-->
+			<a href="/admin">Administration</a>	
+		</td>
+	</tr>
+	</table>
+</td>
+</tr>
+</table>
+</body></html>

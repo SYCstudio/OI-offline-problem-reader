@@ -1,0 +1,41 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Isabella's Message</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU4119. Isabella's Message</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：2000/1000 MS (Java/Others)</span> <span class="ui label">时间限制：32768/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Isabella and Steve are very good friends, and they often write letters to each other. They exchange funny experiences, talk about people around, share their feelings and write about almost everything through the letters. When the letters are delivered, they are quite afraid that some other people(maybe their parents) would peek. So they encrypted the letter, and only they know how to decrypt it. This guarantees their privacy.<br>The encrypted message is an N * N matrix, and each grid contains a character.<br>Steve uses a special mask to work as a key. The mask is N * N(where N is an even number) matrix with N*N/4 holes of size 1 * 1 on it.<br>The decrypt process consist of the following steps:<br>1. Put the mask on the encrypted message matrix<br>2. Write down the characters you can see through the holes, from top to down, then from left to right.<br>3. Rotate the mask by 90 degrees clockwise.<br>4. Go to step 2, unless you have wrote down all the N*N characters in the message matrix.<br>5. Erase all the redundant white spaces in the message.<br>For example, you got a message shown in figure 1, and you have a mask looks like figure 2. The decryption process is shown in figure 3, and finally you may get a message &quot;good morning&quot;.<br><center><img style='max-width:100%;' src=./data/images/4119-1.jpg></center> <br>You can assume that the mask is always carefully chosen that each character in the encrypted message will appear exactly once during decryption.<br>     However, in the first step of decryption, there are several ways to put the mask on the message matrix, because the mask can be rotated (but not flipped). So you may get different results such as &quot;od morning go&quot; (as showed in figure 4), and you may also get other messages like &quot;orning good m&quot;, &quot;ng good morni&quot;.<br><center><img style='max-width:100%;' src=./data/images/4119-2.jpg></center> <br>Steve didn't know which direction of the mask should be chosen at the beginning, but after he tried all possibilities, he found that the message &quot;good morning&quot; is the only one he wanted because he couldn't recognize some words in the other messages. So he will always consider the message he can understand the correct one. Whether he can understand a message depends whether he knows all the words in the message. If there are more than one ways to decrypt the message into an understandable one, he will choose the lexicographically smallest one. The way to compare two messages is to compare the words of two messages one by one, and the first pair of different words in the two messages will determine the lexicographic order of them.<br>Isabella sends letters to Steve almost every day. As decrypting Isabella's message takes a lot of time, and Steve can wait no longer to know the content of the message, he asked you for help. Now you are given the message he received, the mask, and the list of words he already knew, can you write a program to help him decrypt it?</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The first line contains an integer T(1 &lt;= T &lt;= 100), indicating the number of test cases.<br>Each test case contains several lines.<br>The first line contains an even integer N(2 &lt;= N &lt;= 50), indicating the size of the matrix.<br>The following N lines each contains exactly N characters, reresenting the message matrix. The message only contains lowercase letters and periods('.'), where periods represent the white spaces.<br>You can assume the matrix contains at least one letter.<br>The followingN lines each containsN characters, representing the mask matrix. The asterisk('*') represents a hole, and period('.') otherwise. The next line contains an integer M(1 &lt;= M &lt;= 100), the number of words he knew.<br>Then the following M lines each contains a string represents a word. The words only contain lowercase letters, and its length will not exceed 20.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For each test case in the input, print one line: &quot;Case #X: Y&quot;, where X is the test case number (starting with 1) and Y is Isabella's message.<br>If Steve cannot understand the message, just print the Y as &quot;FAIL TO DECRYPT&quot;.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">3
+4
+o.do
+.ng.
+grmn
+o.i.
+.*..
+*.*.
+....
+*...
+2
+good
+morning
+4
+..lf
+eoyv
+oeou
+vrer
+..*.
+.*..
+....
+*.*.
+5
+i
+you
+the
+love
+forever
+4
+.sle
+s.c.
+e.fs
+..uu
+*...
+.*..
+...*
+..*.
+1
+successful</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">Case #1: good morning
+Case #2: love you forever
+Case #3: FAIL TO DECRYPT</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2011+Asia+ChengDu+Regional+Contest&source=1&searchmode=source"> 2011 Asia ChengDu Regional Contest </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

@@ -1,0 +1,23 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Flight Planning</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU3145. Flight Planning</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：30000/15000 MS (Java/Others)</span> <span class="ui label">时间限制：65536/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><br><center><img style='max-width:100%;' src=./data/images/3145-1.jpg></center><br>The airline company NCPC Airways has flights to and from <i>n</i> cities, numbered from 1 to <i>n</i>, around the entire world. However, they only have <i>n</i> - 1 different flights (operating in both directions), so in order to travel between any two cities you might have to take several flights. In fact, since the management has made sure that it's possible to travel between any pair of cities, there is exactly one set of flights a passenger have to take in order to travel between two cities (assuming you want to use the same airline).<br><br>Recently many of NCPC Airways frequent flyers have complained that they have had to change flights too often to get to their final destination. Since NCPC Airways doesn't want to loose their customers to other airline companies, but still keep the nice property of their flights, they have decided to cancel one of their current flights and replace it with another flight. Help the company by writing a program which finds the best flight to cancel and the best new flight to add so that the maximum number of flight changes a passenger might have to make when travelling between any pair of cities in which NCPC Airways operates is minimized.<br><br><i>The input will be constructed so that it is always possible to improve the maximum number of flight changes needed.</i></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><font color=red>Input contains multiple test cases.</font><br>The first line in the input contains the integer <i>n</i> (4 &lt;= <i>n</i> &lt;= 2500), the number of cities NCPC Airways operates in. Then follow <i>n</i> - 1 lines specifying the flights. Each flight is given as a pair of cities <i>a</i> and <i>b</i> (1 &lt;= <i>a</i>, <i>b</i> &lt;= <i>n</i>).</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><font color=red>For each case,</font> the output should consist of three lines. The first line should contain an integer, the minimum number of flights needed to take when travelling between any pair of cities after changing one of the flights. The second line should contain two integers, specifying the two cities between which the flight should be canceled. The third line should contain two integers, specifying the two cities where a new flight should be added.<br><br>If there are more than one optimal solution, any one of them will be accepted.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">4
+1 2
+2 3
+3 4
+14
+1 2
+1 8
+2 3
+2 4
+8 9
+8 10
+8 11
+4 5
+4 6
+4 7
+10 12
+10 13
+13 14</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">2
+3 4
+2 4
+5
+1 8
+2 10</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=NCPC+2009&source=1&searchmode=source"> NCPC 2009 </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

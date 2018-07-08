@@ -1,12 +1,13 @@
 # OI-offline-problem-reader
+Thanks to XZYQVQ's [BZPRO](https://github.com/konnyakuxzy/BZPRO). It gived me insperation do make this repositorie.  
+感谢 XZYQCQ 的 [BZPRO](https://github.com/konnyakuxzy/BZPRO)，从那里我得到了开始这个项目的灵感，并从那里借鉴了页面设计和基本爬虫模式。
+## V0.0.1
+[2018.7.8]  
+now we support [HDU](http://acm.hdu.edu.cn/) [1000-6297]  
 
-Just for collecting problems from some famous OJs.
-
-in building.
-
-OJ will be add in fulture:
+## OJ will be add in fulture:
 - [ ] POJ
-- [ ] HDU `building`
+- [x] HDU
 - [ ] ZOJ
 - [ ] BZOJ
 - [ ] Luogu
@@ -15,6 +16,7 @@ OJ will be add in fulture:
 - [ ] Codeforces
 - [ ] Atcoder
 
-Other things maybe to do
+## To do
 - [ ] Search supported
-- [ ] UI supported [semantic](https://semantic-ui.com/)
+- [x] UI supported [semantic](https://semantic-ui.com/)
+- [ ] mathjax supported

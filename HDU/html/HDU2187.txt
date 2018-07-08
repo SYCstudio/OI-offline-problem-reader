@@ -1,0 +1,101 @@
+<html><head><meta name=keywords content="HDOJ ACM ICPC OJ C C++ Pascal Java"><meta http-equiv=Content-Type content="text/html;charset=gb2312"><link rel=stylesheet type=text/css href="/images/global.css" media=all><link rel=stylesheet type=text/css href="/css/diyinhead.css" media=all><link rel=stylesheet type=text/css href="/css/webinhead.css" media=all><script src="/js/global.js" type=text/javascript></script><script src="/js/register.js" type=text/javascript></script><script src="/js/MathJax/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script><title>Problem - 2187</title></head><body >
+<a name=top></a>
+<table align=center cellSpacing=0 cellPadding=0 width=980 border=0 style="word-wrap:break-word">
+<tr>
+	<td style="border:#1A5CC8 1px solid" align=center width=100%>
+		<a href="/">
+			<img src="/images/banner.jpg" width="100%" height=116 border=0>
+		</a>
+	</td>
+</tr>
+<tr>
+	<td style="border:#1A5CC8 1px solid">
+	<table cellSpacing=0 cellPadding=1 width="979px">
+	<tr bgcolor=#1A5CC8 align=center class=banner height=25>
+		<td>Online Judge</td>
+		<td>Online Exercise</td>
+		<td>Online Teaching</td>
+		<td>Online Contests</td>
+	<td>Exercise Author</td>
+	</tr>
+	<tr style="font-size:16px" align=center>
+		<td width=20% valign=top>
+		<a href="/faq.php" style="text-decoration: none">F.A.Q</a><br>
+		<a href="/friends" style="text-decoration: none">Hand In Hand</a><br>
+		<a href="/onlineuser.php" style="text-decoration: none">Online Acmers</a>	<br>
+		<!-- /onlineuser.php-->
+		
+		<a href="/forum" style="text-decoration: none">Forum | </a><a href="/discuss/public/list.php" style="text-decoration: none">Discuss</a><br>
+		<a href="/statistic/submit_graph.php" style="text-decoration: none">Statistical Charts</a><br>
+		</td>
+		<td width=20% valign=top>
+		<form action="/search.php" method=get>
+		<a href="/listproblem.php?vol=1" style="text-decoration: none">Problem Archive</a><br/>
+		<!--<a href="http://feeds.feedburner.com/Hdoj-problemset"><img src="/images/rss1.jpg" alt="problemset" style="vertical-align:text-bottom;"width=20 height=20></a><br>-->
+		<!--
+			 <a href="/submit.php">Submit Solution</a><br>
+		-->	
+		<a href="/status.php" style="text-decoration: none">Realtime Judge Status</a><br>
+
+		<a href="/ranklist.php" style="text-decoration: none">Authors Ranklist</a><br>
+		<input name=field value=author type=hidden><input class=text60 name=key>&nbsp;<input class=button40 type=submit value=Search>
+		
+		<!--
+			<input name=field value=problem type=hidden><input class=text60 name=key>&nbsp;<input class=button40 type=submit value=Search>
+		-->
+		</form>
+		</td>
+		<td width=20% valign=top>
+		 <form action='/search.php' method=get> 
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="text-decoration: none" href="http://code.hdu.edu.cn/">C/C++/Java Exams &nbsp;&nbsp;&nbsp;&nbsp;</a><br/>
+		<a style="text-decoration: none" href="/game">ACM Steps</a><br/>
+		<a href = "/ITJobs/">Go to Job</a><br/>	
+		<a href="/livecast" style="text-decoration: none">Contest LiveCast</a><br/>
+		<a style="text-decoration: none" href="/region">ICPC@China</a><br/>
+		<!-- <a href="/register.php">Register New Author</a><br> -->
+		<!-- <a href="/modifyuser.php">Update Your Information</a><br> -->
+		</form>
+		</td>
+		<td width=20% valign=top>
+		<a href="http://bestcoder.hdu.edu.cn" style="text-decoration: none; color: red; font-weight: bold;">Best Coder <sup style="color: gray;">beta</sup></a><br/><a href="/vip/contest_list.php" style="text-decoration: none">VIP</a> | <a href="/contests/contest_list.php" style="text-decoration: none">STD Contests</a><br /><a href="http://code.hdu.edu.cn/vcontest" style="text-decoration: none">Virtual Contests </a><br/>&nbsp;&nbsp;<a href="/diy/contest_list.php" style="text-decoration: none">&nbsp;&nbsp;DIY | </a><a href="/webcontest" style="text-decoration: none"><font color="">Web-DIY</font> <font size=1 color="gray"><sup>beta</sup></font></a><br/><a style="text-decoration: none" href="/recentcontest">Recent Contests</a><br/>		</td>
+		<td width=20%>
+					<form method=post action="/userloginex.php?action=login">
+			  <table width=168 border=0 align=center cellspacing=0>
+			  	<tr><td align=center colspan=2><a href="/qqlogin/oauth/login.php"><img src="/qqlogin/images/qqlogin.png" border="0" /></a></td></tr>
+				<tr><td width=68>Author ID&nbsp;</td><td align=right><input name=username type=text class=text90 maxlength=20></td></tr>
+				<tr><td>Password&nbsp;</td><td align=right><input name=userpass type=password class=text90 maxlength=20></td></tr>
+			  </table>
+			  <input name=login type=submit class=button40 value="Sign In">&nbsp;<a href="http://bestcoder.hdu.edu.cn/register.php?url=acm.hdu.edu.cn/userloginex.php?action=login" style="text-decoration: none">Register new ID</a>
+			</form>
+						</td>
+	</tr>
+	</table>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div align=center id=rollword><marquee scrollamount=2 width=600 scrolldelay=30 onMouseOver="javascript:this.stop();" onMouseOut="javascript:this.start();"><b style="margin-right:20px"></b></marquee></div>	</td>
+</tr>
+<tr><td align=center><h1 style='color:#1A5CC8'>悼念512汶川大地震遇难同胞——老人是真饿了</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 1000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 17018&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 7137<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>时间：2008年5月16日（震后第4天）<br>地点：汶川县牛脑寨<br>人物：羌族老奶奶<br><br>【转载整理】牛脑寨是一个全村600多人的羌族寨子，震后几天，这里依然能常常听到隆隆的声音，那是对面山上石头不断滑落的声音。在完成整个突击队的抢修移动基站的任务后，我提着相机开始记录这里的受创情况。<br>突然，我的视线里出现一个羌族老人，这让我无比的震惊，要知道，那是一个极陡的坡，这个佝偻着腰的老人是怎么艰难地爬上来的？她上来做什么？<br><center><img style='max-width:100%;' src=../../../data/images/C132-1002-1.JPG></center><br>老人背后是极陡的坡，她只有一只眼睛有依稀的视力，望着满地废墟，她徘徊了很久。家在哪里，她极力地用很低的视力找寻着。她曾经的家就在旁边，但是满目废墟已经让老人看不出来。她举目远眺，期望那里能看到家的一点点痕迹。原来家就在旁边，左手抓住一个房橼，努力让自己站住，地震过去三天了，她第一次回到曾经的家。<br><center><img style='max-width:100%;' src=../../../data/images/C132-1002-2.JPG></center><br>一个倒塌的柜子，里面装着一丝希望，老人很吃力地搬动掩盖在柜子上的薪柴。老人找到一把木匠用的刨子，老泪纵横，或许有哪个逝去的亲人是木匠。睹物思人，逝者已矣。<br><center><img style='max-width:100%;' src=../../../data/images/C132-1002-3.JPG></center><br>继续找，一把散碎的挂面出现在我的眼前。她颤颤巍巍地捞起铺满灰尘的挂面，再次流出了眼泪...... <br>看着她仔细地把挂面放进胸前的围腰里，我顿然感觉到，这是老人在得到外援之前赖以生存的口粮了，如果不是交通中断，外部救援进不来，老人家又何必拖着80多岁的躯体，强忍失去亲人的痛苦，重新回到这夺取她亲人生命的废墟，寻找这点点挂面？老人是真饿了......<br><center><img style='max-width:100%;' src=../../../data/images/C132-1002-4.JPG></center><br>老人佝偻着腰，低声喃喃地念着那两句话“你们走了，我可怎么活”，拿着那对我们身处城市的人们微不足道的挂面，远去了......<br><br>PS: 拍完这组照片后我才知道，5月14号军用运输飞机第一次给汶川空投救援物资就掉在牛脑寨，受灾的村民们没有占为己有，而是汗流浃背地走了两个小时背到山下的县城交给政府。<br>--------------------------------------------------------------------------------------------------------<br><br>对于幸存的灾民来说，最急待解决的显然是温饱问题，救灾部队一边在组织人员全力打通交通，一边在组织采购粮食。现在假设下拨了一定数量的救灾经费要去市场采购大米（散装）。如果市场有m种大米，各种大米的单价和重量已知，请问，为了满足更多灾民的需求，最多能采购多少重量的大米呢？<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>输入数据首先包含一个正整数C，表示有C组测试用例，每组测试用例的第一行是两个整数n和m（0&lt;n&lt;=1000,0&lt;m&lt;=1000）,分别表示经费的金额和大米的种类，然后是m行数据，每行包含2个整数p和h(1&lt;=p&lt;=25,1&lt;=h&lt;=100)，分别表示单价和对应大米的重量。</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>对于每组测试数据，请输出能够购买大米的最多重量（你可以假设经费买不光所有的大米）。<br>每个实例的输出占一行，保留2位小数。</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">1
+7 2
+3 3
+4 4</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">2.33</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Author</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href="/search.php?field=problem&key=2008-06-18%A1%B6+ACM%B3%CC%D0%F2%C9%E8%BC%C6%A1%B7%C6%DA%C4%A9%BF%BC%CA%D4%A1%AA%A1%AA%CB%C4%B4%A8%BC%D3%D3%CD%A3%A1%D6%D0%B9%FA%BC%D3%D3%CD%A3%A1&source=1&searchmode=source"> 2008-06-18《 ACM程序设计》期末考试——四川加油！中国加油！ </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=2187'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=2187'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=2187">Discuss</a> | <a href='note/note.php?pid=2187'>Note</a><br></td></tr><tr>
+<td>
+	<table style="border:#1A5CC8 1px solid; font-size:14px" cellSpacing=0 cellPadding=1 width=100%>
+	<tr align=center>
+		<td class=footer_link height=45><a href="/">Home</a> | <a href=#top>Top</a></td>
+		<td style="padding:6px">
+			Hangzhou Dianzi University Online Judge 3.0<br>
+			Copyright &copy; 2005-2018 <a href=mailto:acm@hdu.edu.cn>HDU ACM Team</a>. All Rights Reserved.<br>
+			<a href="../about_us/developer.php">Designer & Developer </a>: <a>Wang Rongtao</a>&nbsp<a>LinLe</a>&nbsp<a href=mailto:gjavac@gmail.com >GaoJie</a>&nbsp<a href=mailto:gl8997@gmail.com >GanLu</a><br>
+			<span class=pagerunstatus>Total 0.000000(s) query 2, Server time : 2018-07-07 21:16:43, Gzip disabled</span>		</td>
+		<td class=footer_link>
+			<!-- <a href="javascript:history.go(-1);">Back</a> | <a href="javascript:history.forward();">Forward</a>-->
+			<a href="/admin">Administration</a>	
+		</td>
+	</tr>
+	</table>
+</td>
+</tr>
+</table>
+</body></html>

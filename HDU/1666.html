@@ -1,0 +1,36 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>The Floor Bricks</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU1666. The Floor Bricks</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：9000/3000 MS (Java/Others)</span> <span class="ui label">时间限制：32768/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Robert decided to decorate his new room with a cool pattern on the floor, composed with colorful floor bricks. After several days' work, he finally felt satisfied with the pattern he created with the odd shaped bricks. Soon, he found a problem. As the border of the pattern is not a perfect rectangle, the floor is not filled with bricks completely. However, since the shapes of the bricks are quite odd, it is not an easy work to fill the floor with these bricks completely. (Although a brick with a unit size is provided, this kind of brick is quite expensive usually. Fig.1 shows an example of a set of bricks) As Robert was very proud of his brick pattern, he refuses to modify even one brick in his pattern in order to satisfy the need of filling the floor completely. Instead, he asked you to find solutions for him to fill the rest part of the floor completely with the given bricks so that the Gils needed to buy these bricks are minimized. Of course, the bricks can not overlap each other to fill the floor. Please note that the bricks can be rotated, but cannot be flipped over. In addition, you may assume that all kinds of bricks can be contained within a 3×3 square box. <br><br><center><img style='max-width:100%;' src=./data/images/1666-1.jpg></center><br>As the pattern of bricks covers most areas of the floor, the uncovered part of the floor is actually located at the bottom border of the rectangular shaped floor. Therefore, an uncovered part like the one in Fig.2 can be described with a series of integers, which represents the number of square blocks missed in each column, starting from the left. Thus, the shape in Fig.2 can be described with 11 integers: 2 2 1 2 3 5 2 3 3 4 1. In addition, you may assume that these integers are no larger than 5. Fig.3 shows a solution to fill the floor with the brick set in Fig.1 that costs minimal Gils. <br><center><img style='max-width:100%;' src=./data/images/1666-2.jpg></center><br><center><img style='max-width:100%;' src=./data/images/1666-3.jpg></center><br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The input consists of at most 20 test cases. The first line of each test case contains an integer n ( 1&lt;=n&lt;=1000), which is the width of the floor. The second line contains n integers, separated by single spaces. These integers describe the shape of the uncovered floor as mentioned above. The third line contains an integer m ( 1&lt;=m&lt;=100), which is the number of bricks available. After this is the detailed description of the m bricks. <br><br>Each brick description consists of 4 lines. The first line is a positive integer, which is the price of that brick in Gils. After this line, there are three lines, each consisting of three characters, which describe the shape of the brick. A dot character represents a space in the shape and a sharp character # represents a square block in the shape. You can be sure that the blocks are always connected to form the brick. <br><br>There is a line containing a zero after the last test case, which signifies the end of the input and should not be processed. <br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For each test case, output a line `Need at least g Gil(s).', where g is the minimal Gils needed to fill the floor with the given bricks. If the floor cannot be filled with the given bricks, output `Impossible.' instead. Do not output blank lines between cases. <br><br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">11
+1 4 3 3 2 5 3 2 1 2 2
+4
+2
+#..
+#..
+##.
+3
+.#.
+.##
+.#.
+5
+...
+#..
+##.
+9
+...
+.#.
+...
+1
+1
+1
+1
+..#
+...
+...
+1
+1
+1
+1
+.##
+...
+...
+0</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">Need at least 28 Gil(s).
+Need at least 1 Gil(s).
+Impossible.</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2004+Asia+Regional+Shanghai+&source=1&searchmode=source"> 2004 Asia Regional Shanghai  </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

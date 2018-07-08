@@ -1,0 +1,22 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>An easy problem</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU5475. An easy problem</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：8000/5000 MS (Java/Others)</span> <span class="ui label">时间限制：65536/65536 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">One day, a useless calculator was being built by Kuros. Let's assume that number X is showed on the screen of calculator. At first, X = 1. This calculator only supports two types of operation.<br>1. multiply X with a number.<br>2. divide X with a number which was multiplied before.<br>After each operation, please output the number X modulo M.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The first line is an integer T($1 \leq T \leq 10$), indicating the number of test cases.<br>For each test case, the first line are two integers Q and M. Q is the number of operations and M is described above. ($1 \leq Q \leq 10^5, 1 \leq M \leq 10^9$)<br>The next Q lines, each line starts with an integer x indicating the type of operation.<br>if x is 1, an integer y is given, indicating the number to multiply. ($0 &lt; y \leq 10^9$)<br>if x is 2, an integer n is given. The calculator will divide the number which is multiplied in the nth operation. (the nth operation must be a type 1 operation.)<br><br>It's guaranteed that in type 2 operation, there won't be two same n.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For each test case, the first line, please output &quot;Case #x:&quot; and x is the id of the test cases starting from 1.<br>Then Q lines follow, each line please output an answer showed by the calculator.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">1
+10 1000000000
+1 2
+2 1
+1 2
+1 10
+2 3
+2 4
+1 6
+1 7
+1 12
+2 7</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">Case #1:
+2
+1
+2
+20
+10
+1
+6
+42
+504
+84</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2015+ACM%2FICPC+Asia+Regional+Shanghai+Online&source=1&searchmode=source"> 2015 ACM/ICPC Asia Regional Shanghai Online </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

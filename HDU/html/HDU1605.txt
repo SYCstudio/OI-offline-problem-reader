@@ -1,0 +1,130 @@
+<html><head><meta name=keywords content="HDOJ ACM ICPC OJ C C++ Pascal Java"><meta http-equiv=Content-Type content="text/html;charset=gb2312"><link rel=stylesheet type=text/css href="/images/global.css" media=all><link rel=stylesheet type=text/css href="/css/diyinhead.css" media=all><link rel=stylesheet type=text/css href="/css/webinhead.css" media=all><script src="/js/global.js" type=text/javascript></script><script src="/js/register.js" type=text/javascript></script><script src="/js/MathJax/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script><title>Problem - 1605</title></head><body >
+<a name=top></a>
+<table align=center cellSpacing=0 cellPadding=0 width=980 border=0 style="word-wrap:break-word">
+<tr>
+	<td style="border:#1A5CC8 1px solid" align=center width=100%>
+		<a href="/">
+			<img src="/images/banner.jpg" width="100%" height=116 border=0>
+		</a>
+	</td>
+</tr>
+<tr>
+	<td style="border:#1A5CC8 1px solid">
+	<table cellSpacing=0 cellPadding=1 width="979px">
+	<tr bgcolor=#1A5CC8 align=center class=banner height=25>
+		<td>Online Judge</td>
+		<td>Online Exercise</td>
+		<td>Online Teaching</td>
+		<td>Online Contests</td>
+	<td>Exercise Author</td>
+	</tr>
+	<tr style="font-size:16px" align=center>
+		<td width=20% valign=top>
+		<a href="/faq.php" style="text-decoration: none">F.A.Q</a><br>
+		<a href="/friends" style="text-decoration: none">Hand In Hand</a><br>
+		<a href="/onlineuser.php" style="text-decoration: none">Online Acmers</a>	<br>
+		<!-- /onlineuser.php-->
+		
+		<a href="/forum" style="text-decoration: none">Forum | </a><a href="/discuss/public/list.php" style="text-decoration: none">Discuss</a><br>
+		<a href="/statistic/submit_graph.php" style="text-decoration: none">Statistical Charts</a><br>
+		</td>
+		<td width=20% valign=top>
+		<form action="/search.php" method=get>
+		<a href="/listproblem.php?vol=1" style="text-decoration: none">Problem Archive</a><br/>
+		<!--<a href="http://feeds.feedburner.com/Hdoj-problemset"><img src="/images/rss1.jpg" alt="problemset" style="vertical-align:text-bottom;"width=20 height=20></a><br>-->
+		<!--
+			 <a href="/submit.php">Submit Solution</a><br>
+		-->	
+		<a href="/status.php" style="text-decoration: none">Realtime Judge Status</a><br>
+
+		<a href="/ranklist.php" style="text-decoration: none">Authors Ranklist</a><br>
+		<input name=field value=author type=hidden><input class=text60 name=key>&nbsp;<input class=button40 type=submit value=Search>
+		
+		<!--
+			<input name=field value=problem type=hidden><input class=text60 name=key>&nbsp;<input class=button40 type=submit value=Search>
+		-->
+		</form>
+		</td>
+		<td width=20% valign=top>
+		 <form action='/search.php' method=get> 
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="text-decoration: none" href="http://code.hdu.edu.cn/">C/C++/Java Exams &nbsp;&nbsp;&nbsp;&nbsp;</a><br/>
+		<a style="text-decoration: none" href="/game">ACM Steps</a><br/>
+		<a href = "/ITJobs/">Go to Job</a><br/>	
+		<a href="/livecast" style="text-decoration: none">Contest LiveCast</a><br/>
+		<a style="text-decoration: none" href="/region">ICPC@China</a><br/>
+		<!-- <a href="/register.php">Register New Author</a><br> -->
+		<!-- <a href="/modifyuser.php">Update Your Information</a><br> -->
+		</form>
+		</td>
+		<td width=20% valign=top>
+		<a href="http://bestcoder.hdu.edu.cn" style="text-decoration: none; color: red; font-weight: bold;">Best Coder <sup style="color: gray;">beta</sup></a><br/><a href="/vip/contest_list.php" style="text-decoration: none">VIP</a> | <a href="/contests/contest_list.php" style="text-decoration: none">STD Contests</a><br /><a href="http://code.hdu.edu.cn/vcontest" style="text-decoration: none">Virtual Contests </a><br/>&nbsp;&nbsp;<a href="/diy/contest_list.php" style="text-decoration: none">&nbsp;&nbsp;DIY | </a><a href="/webcontest" style="text-decoration: none"><font color="">Web-DIY</font> <font size=1 color="gray"><sup>beta</sup></font></a><br/><a style="text-decoration: none" href="/recentcontest">Recent Contests</a><br/>		</td>
+		<td width=20%>
+					<form method=post action="/userloginex.php?action=login">
+			  <table width=168 border=0 align=center cellspacing=0>
+			  	<tr><td align=center colspan=2><a href="/qqlogin/oauth/login.php"><img src="/qqlogin/images/qqlogin.png" border="0" /></a></td></tr>
+				<tr><td width=68>Author ID&nbsp;</td><td align=right><input name=username type=text class=text90 maxlength=20></td></tr>
+				<tr><td>Password&nbsp;</td><td align=right><input name=userpass type=password class=text90 maxlength=20></td></tr>
+			  </table>
+			  <input name=login type=submit class=button40 value="Sign In">&nbsp;<a href="http://bestcoder.hdu.edu.cn/register.php?url=acm.hdu.edu.cn/userloginex.php?action=login" style="text-decoration: none">Register new ID</a>
+			</form>
+						</td>
+	</tr>
+	</table>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div align=center id=rollword><marquee scrollamount=2 width=600 scrolldelay=30 onMouseOver="javascript:this.stop();" onMouseOut="javascript:this.start();"><b style="margin-right:20px"></b></marquee></div>	</td>
+</tr>
+<tr><td align=center><h1 style='color:#1A5CC8'>Gears on a Board</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/32768 K (Java/Others)<br>Total Submission(s): 157&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 2<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>An engineering firm called ``Gears R Us&quot; needs a program which can evaluate the operation of gears on a board. The board is a two-dimensional mounting plane which allows gears with two levels of teeth (an inside radius closest to the board and an outside radius away from the board). The gears rotate around the center of their diameter and interact by turning an adjacent gear which it touches (either on the inside or outside radiuss) with a equal tangential velocity. Angular velocity is the same for both the inside and outside radius gears. <br><br>``Gears R Us&quot; uses square mounting boards which have a 300×300 grid of mounting holes on 1 cm centers. When viewing the board, the lower left of the board is position x = 1, y = 1; the upper right of the board is position x = 300, y = 300. The gears mount only on mounting holes and are available with integer inside and outside radii between 1 and 100. The ``motor&quot; gear is the only original source of energy of any board and is actually a gear (powered from behind the board) subject to all the restrictions described for gears above. The following diagram shows a sample configuration. <br><br><img style='max-width:100%;' src=/data/images/1605-1.png><br><br>In the above example, the motor is at location x = 20, y = 100; the inside and outside radii of the gears the motor drives are both 5 centimeters, and the motor is rotating to the left (counter-clockwise) at 300 RPM's. By observation and computation, you can see that the motor touches (without overlapping) the inside radius of Gear #1. The inside radius of Gear #1 touches the inside radius of Gear #2 and Gear #3. The outside radius of Gear #3 touches the outside radius of Gear #4; the inside radius of Gear #4 touches the inside radius of Gear #5. <br><br><br>Given the data in the above example, it is possible to compute that Gear #1 rotates to the right (clockwise) at 83.33 RPM's; Gear #2 rotates to the left (counter-clockwise) at 187.50 RPM's; Gear #3 rotates to the left at 150.00 RPM's; Gear #4 rotates to the right at 281.25 RPM's; and Gear #5 rotates to the left at 33.75 RPM's. <br><br><br>Although this example does not include any off-nominal conditions, ``Gears R Us&quot; needs your program to isolate two error conditions. The first error occurs when two or more gears would overlap at either the inner or outter radius. The second error condition occurs when any gear is being driven at two or more different speeds. It is valid for two or more gears to drive another gear at the same speed (and in the same direction). <br><br><br>It is possible for a warning condition to occur when 1 or more gears are idle (ie rotation = 0.0). If this condition occurs, your program will have to print a warning message as described below. <br><br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>Input to your program consists of an undetermined number of configurations to be analyzed. Each set starts with a single line of six integers. <br><br>The first two integers are the x, y coordinates of the motor (1 &lt;= x, y &lt;= 300); the next two integers are the inside and outside radii of the motor gear respectively (1 &lt;= ir, or &lt;= 100); the fifth integer is the rotational velocity (1 &lt;= abs(AV) &lt;= 1000) of the motor in RPM's (negative representing counter-clockwise rotation and positive representing clockwise rotation); the sixth integer is the number of gears (1 &lt;= NG &lt;= 20) excluding the motor that are mounted on the board. <br><br><br>Each of the following NG lines contain exactly 4 integers representing gears 1 through NG respectively. The first two integers represent the x, y coordinates (1 &lt;= x, y &lt;= 300) of the gear and the second pair of integers represent the inside and outside radii of the gear respectively (1 &lt;= ir, or &lt;= 100). <br><br><br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each input set, your program should print either a list of the gears and the rotation value for each or one of two error messages. The first line of each output set should be a line containing only ``Simulation #X&quot; where X is the simulation number (starting with 1) and is left-justified starting in column 13. <br><br>If there are no errors, lines 2 through NG+1 of the output set should contain the gear number right-justified in columns 1 and 2, a colon in column 3, either a `L' for counter-clockwise rotation of the gear or a `R' for clockwise rotation in column 5, and the magnitude of the rotation always printed with two digits to the right of the decimal point and are left-justified starting in column 7. If any gear has rotation of magnitude zero, you should print the message ``Warning -- Idle Gear&quot; in columns 5 through 24 instead of the rotation direction and magnitude. <br><br><br>If there is an error, your program should print only the first line containing ``Simulation #X&quot; and a second line containing only one of two error messages left-justified in column 1. If there is an overlapping of two or more gears at either in inner or outter radii, your program should print the message ``Error -- Overlapping Gears&quot;. If there is any gear which is being driven by two or more different vectors, your program should print the message ``Error -- Conflicting Gear Rotation&quot;. Your program should give precedence to the overlapping error condition. <br><br><br>The last line of output for each output set should be an empty line. <br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">20 100 5 5 -300 5
+43 100 18 10
+43 74 8 4
+71 100 10 15
+94 100 3 8
+122 100 25 6
+20 100 5 5 -300 5
+43 100 18 10
+43 74 8 4
+71 100 10 10
+89 100 3 8
+105 100 25 6
+20 100 5 5 -300 5
+43 100 18 10
+43 74 8 4
+71 100 10 10
+89 100 3 8
+125 100 25 6</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">Simulation #1
+ 1: R 83.33
+ 2: L 187.50
+ 3: L 150.00
+ 4: R 281.25
+ 5: L 33.75
+
+Simulation #2
+Error -- Overlapping Gears
+
+Simulation #3
+ 1: R 83.33
+ 2: L 187.50
+ 3: L 150.00
+ 4: R 187.50
+ 5: Warning -- Idle Gear</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href="/search.php?field=problem&key=South+Central+USA+1996&source=1&searchmode=source"> South Central USA 1996 </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=1605'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=1605'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=1605">Discuss</a> | <a href='note/note.php?pid=1605'>Note</a><br></td></tr><tr>
+<td>
+	<table style="border:#1A5CC8 1px solid; font-size:14px" cellSpacing=0 cellPadding=1 width=100%>
+	<tr align=center>
+		<td class=footer_link height=45><a href="/">Home</a> | <a href=#top>Top</a></td>
+		<td style="padding:6px">
+			Hangzhou Dianzi University Online Judge 3.0<br>
+			Copyright &copy; 2005-2018 <a href=mailto:acm@hdu.edu.cn>HDU ACM Team</a>. All Rights Reserved.<br>
+			<a href="../about_us/developer.php">Designer & Developer </a>: <a>Wang Rongtao</a>&nbsp<a>LinLe</a>&nbsp<a href=mailto:gjavac@gmail.com >GaoJie</a>&nbsp<a href=mailto:gl8997@gmail.com >GanLu</a><br>
+			<span class=pagerunstatus>Total 0.000000(s) query 2, Server time : 2018-07-07 21:02:18, Gzip disabled</span>		</td>
+		<td class=footer_link>
+			<!-- <a href="javascript:history.go(-1);">Back</a> | <a href="javascript:history.forward();">Forward</a>-->
+			<a href="/admin">Administration</a>	
+		</td>
+	</tr>
+	</table>
+</td>
+</tr>
+</table>
+</body></html>

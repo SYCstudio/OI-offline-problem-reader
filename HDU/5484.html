@@ -1,0 +1,18 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Monitor the Alpacas</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU5484. Monitor the Alpacas</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：17000/8500 MS (Java/Others)</span> <span class="ui label">时间限制：65536/65536 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Coach Zhang has an infinite ranch with N alpacas on it. The alpacas are so lazy that they never move. The $i$-th ($1≤i≤N$) alpaca is located at the point ($X_i,Y_i$).<br>Coach Zhang wants to monitor all the alpacas. He found $M$ points where cameras can be placed in his ranch. Coach Zhang only needs to place one camera at a point if he thinks it necessary. An alpaca is monitored when it is on one of the cameras, on the segment between two cameras, or in the triangle formed by three cameras.<br>Now Coach Zhang wants to know the minimum number of cameras required to monitor all the alpacas.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The first line of input contains an integer $T$, which represents the number of test cases ($T≤20$).<br>Each test case starts with a line containing $N$ and $M$ ($1≤N≤100000,1≤M≤500$).<br>Each of the next N+M lines contains two integers $X$ and $Y$ ($|X|,|Y|≤10^9$). The first $N$ lines represent the alpacas’ positions and the last $M$ lines indicate the points that cameras can be placed.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For each test case, output a single line consisting of “Case #X: Y”. $X$ is the test case number starting from 1. $Y$ is the minimum number of cameras required to monitor all the alpacas. If it is impossible to monitor all the alpacas, you should output -1 instead.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">3
+1 1
+0 0
+0 0
+4 4
+0 0
+1 0
+0 1
+-1 0
+0 1
+1 0
+0 -1
+-1 0
+1 1
+0 0
+0 1</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">Case #1: 1
+Case #2: 3
+Case #3: -1</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2015+ACM%2FICPC+Asia+Regional+Hefei+Online&source=1&searchmode=source"> 2015 ACM/ICPC Asia Regional Hefei Online </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

@@ -1,0 +1,50 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Tower Defence</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU3958. Tower Defence</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：20000/10000 MS (Java/Others)</span> <span class="ui label">时间限制：32768/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Tower Defence is a popular classic game. During the game,  there will appear some monsters at the entry and each will find a shortest path to the exit.  Your task is puting some warriors on the map to kill the monsters before they reach exit.<br><center><img style='max-width:100%;' src=./data/images/C361_1008_1.jpg></center><br>You could put warrior(infinite) on the map to change the pathes of monsters. Of course, the longer the path is, the more advantageous to you. <br>Now, giving you the information of the map, how do you put the warriors to make the monsters move on the longest path?<br>The meaning of each character in the map:<br>'S' represents the entry of the map, one and only one;<br>'T' represents the exit of the map, one and only one;<br>'.' represents the grid that monster could move on;<br>'B' represents the barrier that monster couldn't move on;<br>'W' represents the warrior that you put.(could only put on '.')</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The first line is a number T(1&lt;=T&lt;=30), represents the number of case. The next T blocks follow each indicates a case.<br>The first line of each case contains two integers N, M (3&lt;=N&lt;=20 , 3&lt;=M&lt;=9)<br>Then N lines follow, each line contains M chars represent the map, include 'S','T','.','B'.<br>I promise there must be at least one way from entry to exit.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For each case, first line output the number of case with the longest distance from S to T.(as shown in the sample output)<br>Then output any one of these ways, using the same format for the map as in the input. Output a blank line after each case.(Special judge.If you not output a blank line after each case, you will get Wrong Answer) </div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">4
+3 3
+S..
+...
+..T
+
+5 5
+S....
+.B.B.
+.....
+.B.B.
+....T
+
+5 5
+S...T
+..B..
+..B..
+..B..
+.....
+
+5 5
+S...T
+..B..
+..B..
+..B..
+..B..</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">Case 1: 5
+S..
+...
+..T
+
+Case 2: 17
+S....
+WBWB.
+.....
+.BWBW
+....T
+
+Case 3: 17
+S.W.T
+W.B.W
+..B..
+.WBW.
+.....
+
+Case 4: 5
+S...T
+..B..
+..B..
+..B..
+..B..</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2011+Alibaba+Programming+Contest&source=1&searchmode=source"> 2011 Alibaba Programming Contest </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

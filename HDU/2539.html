@@ -1,0 +1,26 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>点球大战</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU2539. 点球大战</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：2000/1000 MS (Java/Others)</span> <span class="ui label">时间限制：32768/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">在足球比赛中，有不少赛事，例如世界杯淘汰赛和欧洲冠军联赛淘汰赛中，当比赛双方经过正规比赛和加时赛之后仍然不分胜负时，需要进行点球大战来决定谁能够获得最终的胜利。点球大战的规则非常简单，两方轮流派出球员罚点球，每方各罚5个。当5轮点球结束以后如果仍然不分胜负，则进入一轮定胜负的阶段。两方各派一名球员罚点球，直到有一方罚进而另一方没有进为止。<br>在北美职业冰球联赛中，也有点球大战。与足球的规则不同的是，它只先罚3轮点球，随后就进入一轮定胜负的阶段，而其他的规则完全一样。<br>在本题中，输入将给出每次点球是否罚进，而你的任务则是输出一个“比分板”。<br><br><br><img style='max-width:100%;' src=./data/images/2539-1.JPG><br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">输入包含多组数据。每组数据的第一行包含一个整数N(1&lt;=N&lt;=18)，表示双方总共罚了多少个点球，N=0表示输入结束。随后有N行，每行是一个如下形式的字符串：<br>XXXX good：表示这个点球罚进<br>或者XXXX no good：表示这个点球没有罚进<br>其中XXXX表示球员名字（全部由字母和空格组成，保证不会出现歧义）<br>每一行保证不超过100个字符。<br>XXXX和good以及XXXX和no、no和good之间保证有且只有1个空格。<br>good、no good都是小写。本题是大小写相关的。<br>数据不保证点球大战一定结束，也不保证在结束以后立即结束这组数据（即：不用判断点球大战是否结束，只用把罚进的点球往比分上加即可）。<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">对每组数据，输出一个比分板。一个点球如果罚进，则在对应的地方标上’O’，如果没有进则标上’X’。先罚球的队伍的信息在上面，后罚的在下面。最右边标上两队的比分。具体格式参考样例输出。注意如果一轮点球只罚了一个，则后面那个点球对应的地方写上’-’。</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">6
+Riise good
+Ballack good
+Gerrard no good
+Lampard no good
+Fernando Torres good
+Malouda good
+9
+Christiano Ronaldo no good
+Messi no good
+Giggs good
+Abidal no good
+Carrick good
+Ronaldinho good
+Rooney good
+Henry no good
+Tevez good
+0</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">1 2 3 Score
+O X O 2
+O X O 2
+1 2 3 4 5 Score
+X O O O O 4
+X X O X - 1
+
+提示：
+空格数要和样例输出一样，否则很可能会被判为“格式错误”(Presentation Error)。</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=UESTC+6th+Programming+Contest+Online&source=1&searchmode=source"> UESTC 6th Programming Contest Online </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

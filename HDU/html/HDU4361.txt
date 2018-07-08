@@ -1,0 +1,107 @@
+<html><head><meta name=keywords content="HDOJ ACM ICPC OJ C C++ Pascal Java"><meta http-equiv=Content-Type content="text/html;charset=gb2312"><link rel=stylesheet type=text/css href="/images/global.css" media=all><link rel=stylesheet type=text/css href="/css/diyinhead.css" media=all><link rel=stylesheet type=text/css href="/css/webinhead.css" media=all><script src="/js/global.js" type=text/javascript></script><script src="/js/register.js" type=text/javascript></script><script src="/js/MathJax/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script><title>Problem - 4361</title></head><body >
+<a name=top></a>
+<table align=center cellSpacing=0 cellPadding=0 width=980 border=0 style="word-wrap:break-word">
+<tr>
+	<td style="border:#1A5CC8 1px solid" align=center width=100%>
+		<a href="/">
+			<img src="/images/banner.jpg" width="100%" height=116 border=0>
+		</a>
+	</td>
+</tr>
+<tr>
+	<td style="border:#1A5CC8 1px solid">
+	<table cellSpacing=0 cellPadding=1 width="979px">
+	<tr bgcolor=#1A5CC8 align=center class=banner height=25>
+		<td>Online Judge</td>
+		<td>Online Exercise</td>
+		<td>Online Teaching</td>
+		<td>Online Contests</td>
+	<td>Exercise Author</td>
+	</tr>
+	<tr style="font-size:16px" align=center>
+		<td width=20% valign=top>
+		<a href="/faq.php" style="text-decoration: none">F.A.Q</a><br>
+		<a href="/friends" style="text-decoration: none">Hand In Hand</a><br>
+		<a href="/onlineuser.php" style="text-decoration: none">Online Acmers</a>	<br>
+		<!-- /onlineuser.php-->
+		
+		<a href="/forum" style="text-decoration: none">Forum | </a><a href="/discuss/public/list.php" style="text-decoration: none">Discuss</a><br>
+		<a href="/statistic/submit_graph.php" style="text-decoration: none">Statistical Charts</a><br>
+		</td>
+		<td width=20% valign=top>
+		<form action="/search.php" method=get>
+		<a href="/listproblem.php?vol=1" style="text-decoration: none">Problem Archive</a><br/>
+		<!--<a href="http://feeds.feedburner.com/Hdoj-problemset"><img src="/images/rss1.jpg" alt="problemset" style="vertical-align:text-bottom;"width=20 height=20></a><br>-->
+		<!--
+			 <a href="/submit.php">Submit Solution</a><br>
+		-->	
+		<a href="/status.php" style="text-decoration: none">Realtime Judge Status</a><br>
+
+		<a href="/ranklist.php" style="text-decoration: none">Authors Ranklist</a><br>
+		<input name=field value=author type=hidden><input class=text60 name=key>&nbsp;<input class=button40 type=submit value=Search>
+		
+		<!--
+			<input name=field value=problem type=hidden><input class=text60 name=key>&nbsp;<input class=button40 type=submit value=Search>
+		-->
+		</form>
+		</td>
+		<td width=20% valign=top>
+		 <form action='/search.php' method=get> 
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="text-decoration: none" href="http://code.hdu.edu.cn/">C/C++/Java Exams &nbsp;&nbsp;&nbsp;&nbsp;</a><br/>
+		<a style="text-decoration: none" href="/game">ACM Steps</a><br/>
+		<a href = "/ITJobs/">Go to Job</a><br/>	
+		<a href="/livecast" style="text-decoration: none">Contest LiveCast</a><br/>
+		<a style="text-decoration: none" href="/region">ICPC@China</a><br/>
+		<!-- <a href="/register.php">Register New Author</a><br> -->
+		<!-- <a href="/modifyuser.php">Update Your Information</a><br> -->
+		</form>
+		</td>
+		<td width=20% valign=top>
+		<a href="http://bestcoder.hdu.edu.cn" style="text-decoration: none; color: red; font-weight: bold;">Best Coder <sup style="color: gray;">beta</sup></a><br/><a href="/vip/contest_list.php" style="text-decoration: none">VIP</a> | <a href="/contests/contest_list.php" style="text-decoration: none">STD Contests</a><br /><a href="http://code.hdu.edu.cn/vcontest" style="text-decoration: none">Virtual Contests </a><br/>&nbsp;&nbsp;<a href="/diy/contest_list.php" style="text-decoration: none">&nbsp;&nbsp;DIY | </a><a href="/webcontest" style="text-decoration: none"><font color="">Web-DIY</font> <font size=1 color="gray"><sup>beta</sup></font></a><br/><a style="text-decoration: none" href="/recentcontest">Recent Contests</a><br/>		</td>
+		<td width=20%>
+					<form method=post action="/userloginex.php?action=login">
+			  <table width=168 border=0 align=center cellspacing=0>
+			  	<tr><td align=center colspan=2><a href="/qqlogin/oauth/login.php"><img src="/qqlogin/images/qqlogin.png" border="0" /></a></td></tr>
+				<tr><td width=68>Author ID&nbsp;</td><td align=right><input name=username type=text class=text90 maxlength=20></td></tr>
+				<tr><td>Password&nbsp;</td><td align=right><input name=userpass type=password class=text90 maxlength=20></td></tr>
+			  </table>
+			  <input name=login type=submit class=button40 value="Sign In">&nbsp;<a href="http://bestcoder.hdu.edu.cn/register.php?url=acm.hdu.edu.cn/userloginex.php?action=login" style="text-decoration: none">Register new ID</a>
+			</form>
+						</td>
+	</tr>
+	</table>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div align=center id=rollword><marquee scrollamount=2 width=600 scrolldelay=30 onMouseOver="javascript:this.stop();" onMouseOut="javascript:this.start();"><b style="margin-right:20px"></b></marquee></div>	</td>
+</tr>
+<tr><td align=center><h1 style='color:#1A5CC8'>Dead or alive</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 10000/5000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/32768 K (Java/Others)<br>Total Submission(s): 172&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 86<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Go is a board game for two players that originated in China more than 2,500 years ago. The game is noted for being rich in strategy despite its relatively simple rules.<br>&nbsp;&nbsp;The two players alternately place black and white playing pieces, called &quot;stones&quot;, on the vacant intersections (called &quot;points&quot;) of a grid of 19×19 lines (beginners often play on smaller 9×9 and 13×13 boards).The object of the game is to use one's stones to surround a larger total area of the board than the opponent. Once placed on the board, stones may not be moved, but are removed from play if captured. When a game concludes, the controlled points (territory) are counted along with captured stones to determine who has more points. Games may also be won by resignation.<br><br>Rules of Go:<br>&nbsp;&nbsp;Basic rules:<br>&nbsp;&nbsp;Two players, Black and White, take turns placing a stone (game piece) of their own color on a vacant point (intersection) of the grid on a Go board. Black moves first. The official grid comprises 19×19 lines, though the rules can be applied to any grid size. 13×13 and 9×9 boards are popular choices to teach beginners. Once placed, a stone may not be moved to a different point.<br>&nbsp;&nbsp;Vertically and horizontally adjacent stones of the same color form a chain (also called a string or group) that cannot subsequently be subdivided and, in effect, becomes a single larger stone. Only stones connected to one another by the lines on the board create a chain; stones that are diagonally adjacent are not connected. Chains may be expanded by placing additional stones on adjacent intersections, and can be connected together by placing a stone on an intersection that is adjacent to two or more chains of the same color.<br>&nbsp;&nbsp;A vacant point adjacent to a stone is called a liberty for that stone. Stones in a chain share their liberties. A chain of stones must have at least one liberty to remain on the board. When a chain is surrounded by opposing stones so that it has no liberties, it is captured and removed from the board.<br>&nbsp;&nbsp;In the following figure, if White plays at A, the black chain loses its last liberty. It is captured and removed from the board. Note the resulting shape for White is good, meaning highly resistant to capture.<br><center><img style='max-width:100%;' src=../../data/images/C404-1002-1.jpg></center><br>        In the following figure,there are one black chain and two white chains, with their liberties marked with dots. Liberties are shared among all stones of a chain and can be counted. Here the black group has 5 liberties, while the two white chains have 4 liberties each.<br><center><img style='max-width:100%;' src=../../data/images/C404-1002-2.jpg></center><br>　　The ko rule:<br>　　Players are not allowed to make a move that returns the game to the previous position. This rule, called the ko rule, prevents unending repetition. See the example in the following figure: Black has just played the stone marked 1, capturing a white stone at the intersection marked with a circle. If White were now allowed to play on the marked intersection, that move would capture the black stone marked 1 and recreate the situation before Black made the move marked 1. Allowing this could result in an unending cycle of captures by both players. The ko rule therefore prohibits White from playing at the marked intersection immediately. Instead White must play elsewhere; Black can then end the ko by filling at the marked intersection, creating a five-stone black chain. If White wants to continue the ko (that specific repeating position), White tries to find a play elsewhere on the board that Black must answer; if Black answers, then White can retake the ko. A repetition of such exchanges is called a ko fight..<br><center><img style='max-width:100%;' src=../../data/images/C404-1002-3.jpg></center><br>　　Playing stones with no liberties:<br>　　A player may not place a stone such that it or its group immediately has no liberties, unless doing so immediately deprives an enemy group of its final liberty. In the latter case, the enemy group is captured, leaving the new stone with at least one liberty. This rule is responsible for the all-important difference between one and two eyes(described later): if a group with only one eye is fully surrounded on the outside, it can be killed with a stone placed in its single eye.<br>　　In the following figure, White cannot play at A because that point has no liberties,but Black can play at A because it can make two White stones be captured.<br><center><img style='max-width:100%;' src=../../data/images/C404-1002-4.jpg></center><br>　　Life and death:<br>　　While not actually mentioned in the rules of Go, the concept of a living group of stones is necessary for a practical understanding of the game.<br>　　When a group of stones is mostly surrounded and has no options to connect with friendly stones elsewhere, the status of the group is either alive, dead or unsettled. A group of stones is said to be alive if it cannot be captured, even if the opponent is allowed to move first. Conversely, a group of stones is said to be dead if it cannot avoid capture, even if the owner of the group is allowed the first move. Otherwise, the group is said to be unsettled: in such a situation, the player that moves first may be able to either make it alive if he is the owner, or kill it if he is the group owner's opponent.<br>　　To be alive, a group must be able to create at least two &quot;eyes&quot; if threatened. An eye is an empty point that is surrounded by friendly stones, where the opponent can never play due to the suicide rule. If two such eyes exist, the opponent can never capture a group of stones, because it always has at least two liberties. One eye is not enough for life, because a point that would normally be suicide may be played upon if doing so fills the last liberty of opposing stones, thereby capturing those stones. <br>　　In the following figure,all the circled points are eyes. The two black groups in the upper corners are alive, as both have at least two eyes. The groups in the lower corners are dead, as both have only one eye. The group in the lower left may seem to have two eyes, but the surrounded empty point without a circle is not actually an eye. White can play there and take a black stone. Such a point is often called a false eye.<br><center><img style='max-width:100%;' src=../../data/images/C404-1002-5.jpg></center><br>　　                                                                 ——All the above content from wikipedia<br>　　<br>　　Now give you a situation on the upper-left corner of the 19×19 board,can you tell me a particular stone is dead or alive.<br>　　Notice,Black play first and the two players will choose the optimal strategy.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The first line contains a single positive integer N( N &lt;= 15 ), indicates the number of test cases.<br>For each test case:<br>The first line contains four integers n,m,x,y(1&lt;n,m&lt;10,1&lt;=x&lt;=n,1&lt;=y&lt;=m),n and m describe the size of upper-left corner,x and y describe the position of the particular stone.<br>The following n lines each contain m characters, with a '.' indicating a vacant point and an uppercase 'B' indicating Black stone and an uppercase 'W' indicating White stone.<br>The number of vacant points in the input of each test case will not exceed 10.<br>The input just contain the upper-left corner with n rows and m columns,but the board is 19×19. You can assume that stones on the n-th row or m-th column are always alive and at the beginning no stones are captured and the point at x-th row and y-th column will not be a vacant point.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each test case,if the particular stone are dead finally,output “dead!”,otherwise output “alive!”</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">2
+3 3 2 2
+..B
+.WB
+BBB
+3 3 1 2
+.BB
+B.B
+BB.</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">dead!
+alive!</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Author</div> <div class=panel_content>FZU</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href="/search.php?field=problem&key=2012+Multi-University+Training+Contest+7&source=1&searchmode=source"> 2012 Multi-University Training Contest 7 </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>zhuyuanchen520</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=4361'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=4361'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=4361">Discuss</a> | <a href='note/note.php?pid=4361'>Note</a><br></td></tr><tr>
+<td>
+	<table style="border:#1A5CC8 1px solid; font-size:14px" cellSpacing=0 cellPadding=1 width=100%>
+	<tr align=center>
+		<td class=footer_link height=45><a href="/">Home</a> | <a href=#top>Top</a></td>
+		<td style="padding:6px">
+			Hangzhou Dianzi University Online Judge 3.0<br>
+			Copyright &copy; 2005-2018 <a href=mailto:acm@hdu.edu.cn>HDU ACM Team</a>. All Rights Reserved.<br>
+			<a href="../about_us/developer.php">Designer & Developer </a>: <a>Wang Rongtao</a>&nbsp<a>LinLe</a>&nbsp<a href=mailto:gjavac@gmail.com >GaoJie</a>&nbsp<a href=mailto:gl8997@gmail.com >GanLu</a><br>
+			<span class=pagerunstatus>Total 0.015600(s) query 2, Server time : 2018-07-07 23:43:59, Gzip disabled</span>		</td>
+		<td class=footer_link>
+			<!-- <a href="javascript:history.go(-1);">Back</a> | <a href="javascript:history.forward();">Forward</a>-->
+			<a href="/admin">Administration</a>	
+		</td>
+	</tr>
+	</table>
+</td>
+</tr>
+</table>
+</body></html>

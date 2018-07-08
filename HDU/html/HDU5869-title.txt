@@ -1,0 +1,1 @@
+Different GCD Subarray Query

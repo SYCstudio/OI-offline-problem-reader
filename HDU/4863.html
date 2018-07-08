@@ -1,0 +1,20 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Centroid of a Tree</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU4863. Centroid of a Tree</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：2000/1000 MS (Java/Others)</span> <span class="ui label">时间限制：32768/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">   Given a tree T with N vertices, your task is calculating the number of the connected sub-tree of T, which has the same centroid as T.<br>   In order to define the centroid, some integer value will be associated to every vertex. Let's consider the vertex k. If we remove the vertex k from the tree (along with its adjacent edges), the remaining graph will have only N-1 vertices and may be composed of more than one connected components. Each of these components is (obviously) a tree. The value associated to vertex k is the largest number of vertices contained by some connected component in the remaining graph, after the removal of vertex k. All the vertices for which the associated value is minimum are considered centroids.<br>   A graph can have an arbitrary number of centroids. However,it can be proved that for trees, there are only two possibilities:<br>   1. The tree has precisely one centroid.<br>   2. The tree has precisely two centroids. In this case, the two centroids are adjacent.<br>   Note that in case 2, we just consider that T has two centroids, you should only count the sub-tree which has the two same centroids as T.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">   The first line of the date is an integer T, which is the number of the text cases.<br>   Then T cases follow each case starts of a number N descript above.<br>   Then N-1 lines follow, each line contains two integers x and y, which means that there is a edge between x and y in tree T, you can assume that the index of T is from 1 to N.<br>   1 &lt;= T &lt;= 50, 1 &lt;= N &lt;= 200,</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">   For each case, output the case number first, then output the number of the connected sub-tree which has the same centroid as T.<br>   Give your answer modulo 10007.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">5
+1
+2
+1 2
+3
+1 2
+1 3
+4
+1 2
+1 3
+1 4
+5
+1 2
+1 3
+1 4
+4 5</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">Case 1: 1
+Case 2: 1
+Case 3: 2
+Case 4: 5
+Case 5: 6</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2014+Multi-University+Training+Contest+1&source=1&searchmode=source"> 2014 Multi-University Training Contest 1 </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

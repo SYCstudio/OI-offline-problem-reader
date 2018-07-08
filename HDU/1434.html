@@ -1,0 +1,20 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>幸福列车</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU1434. 幸福列车</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：20000/10000 MS (Java/Others)</span> <span class="ui label">时间限制：131070/65535 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">一批幸福的列车即将从杭州驶向幸福的终点站——温州，身为总列车长的linle有一些奇怪的癖好。<br><br>他会记录下全部乘客的名字（name）和他们的人品值（RP），根据这些将他们排序，并不时地从某辆列车里踢出人品最不好（RP值最低）的一个人，当两个人人品一样不好时，他就会踢出名字难听的人（linle认为按字典顺序，排在越在后面的人名字越难听）。<br><br>当然出于列车行驶需要，他还会不时的发布一些命令，比如让某个乘客上车，合并某两辆列车等。<br><br>linle的上一任秘书***因为不能高效地执行他的这些命令而被炒鱿鱼，他现在正在寻觅新的秘书人选，你能不能胜任呢？（谢绝男士，待遇丰厚~~~）<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">本题包含多组测试，请处理到文件结束。<br>对于每一组测试，第一行包含两个整数 N ，M ，表示一共有N( N&lt;=10000 ) 辆列车，执行M( M&lt;=10000 )次操作。<br>接下来有 N （从1开始记数）辆列车的信息，每辆列车先有一个数字 Xi(1 &lt;= Xi &lt;= 100 )，表示该列车有Xi个乘客，接下来Xi行乘客信息，每个乘客包含名字（20个字符以内，不包含空白符）和人品（0&lt;= RP &lt;=30000）。<br>再接下来有 M 行操作信息，一共有3种操作，分别为<br><br>GETON Xi name RP  表示有一个叫name的人品为RP的人登上第Xi列车<br><br>JOIN Xi Xj          表示有将第Xj辆列车合并到Xi辆列车<br><br>GETOUT Xi        表示从第Xi辆列车踢出一个人品最差的人<br><br>测试数据保证每个操作均合法，即不会将已经被合并到其他列车的列车再进行合并，也不会从一辆空列车里踢出乘客<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">对于每个 GETOUT 命令，输出被踢出的那个人的名字<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">3 5
+2
+xhd 0
+zl 1
+2
+8600 1
+ll 2
+1
+Ignatius 3
+GETOUT 1
+JOIN 1 2
+GETOUT 1
+GETON 3 hoho 2
+GETOUT 3</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">xhd
+zl
+hoho
+
+<div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div>
+Huge input, scanf is recommended. 
+</div><i style='font-size:1px'> </i></div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=+ACM%CA%EE%C6%DA%BC%AF%D1%B5%B6%D3%C1%B7%CF%B0%C8%FC%A3%A8%CB%C4%A3%A9&source=1&searchmode=source">  ACM暑期集训队练习赛（四） </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

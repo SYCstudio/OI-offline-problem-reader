@@ -1,0 +1,27 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Looploop</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU4453. Looploop</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：2000/1000 MS (Java/Others)</span> <span class="ui label">时间限制：32768/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">XXX gets a new toy named Looploop. The toy has N elements arranged in a loop, an arrow pointing to one of the elements, and two preset parameters k1 and k2. Every element has a number on it.<br><br><center><img style='max-width:100%;' src=./data/images/4453-1.jpg></center> <br><br>The figure above shows a Looploop of 6 elments. Let's assuming the preset parameter k1 is 3, and k2 is 4.<br>XXX can do six operations with the toy. <br><br>1: add x <br>Starting from the arrow pointed element, add x to the number on the clockwise first k2 elements.<br><br><center><img style='max-width:100%;' src=./data/images/4453-2.jpg></center> <br><br>2: reverse<br>Starting from the arrow pointed element, reverse the first k1 clockwise elements.<br><br><center><img style='max-width:100%;' src=./data/images/4453-3.jpg></center> <br><br>3: insert x <br>Insert a new element with number x to the right (along clockwise) of the arrow pointed element.<br><br><center><img style='max-width:100%;' src=./data/images/4453-4.jpg></center> <br><br>4: delete <br>Delete the element the arrow pointed and then move the arrow to the right element.<br><br><center><img style='max-width:100%;' src=./data/images/4453-5.jpg></center> <br><br>5: move x <br>x can only be 1 or 2. If x = 1 , move the arrow to the left(along the counterclockwise) element, if x = 2 move the arrow to the right element.<br><br><center><img style='max-width:100%;' src=./data/images/4453-6.jpg></center> <br><br>6: query<br>Output the number on the arrow pointed element in one line.<br><br><center><img style='max-width:100%;' src=./data/images/4453-7.jpg></center> <br><br>XXX wants to give answers to every query in a serial of operations.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">There are multiple test cases.<br>For each test case the first line contains N,M,k1,k2(2≤k1&lt;k2≤N≤10<sup>5</sup>, M≤10<sup>5</sup>) indicating the initial number of elements, the total number of operations XXX will do and the two preset parameters of the toy. <br>Second line contains N integers ai(-10<sup>4</sup>≤ai≤10<sup>4</sup>) representing the N numbers on the elements in Looploop along clockwise direction. The arrow points to first element in input at the beginning. <br>Then m lines follow, each line contains one of the six operations described above.<br>It is guaranteed that the &quot;x&quot; in the &quot;add&quot;,&quot;insert&quot; and &quot;move&quot; operations is always integer and its absolute value ≤104. The number of elements will never be less than N during the operations. <br>The input ends with a line of 0 0 0 0.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For each test case, output case number in the first line(formatted as the sample output). Then for each query in the case, output the number on the arrow pointed element in a single line.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">5 1 2 4
+3 4 5 6 7
+query
+5 13 2 4
+1 2 3 4 5
+move 2
+query
+insert 8
+reverse
+query
+add 2
+query
+move 1
+query
+move 1
+query
+delete
+query
+0 0 0 0</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">Case #1:
+3
+Case #2:
+2
+8
+10
+1
+5
+1</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2012+Asia+Hangzhou+Regional+Contest&source=1&searchmode=source"> 2012 Asia Hangzhou Regional Contest </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

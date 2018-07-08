@@ -1,0 +1,37 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Football Manager</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU4924. Football Manager</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：6000/3000 MS (Java/Others)</span> <span class="ui label">时间限制：262144/262144 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">   Football Manager is a series of football management simulation games developed by Sports Interactive and published by Sega. In this game, you will play a role of a football club manager and conduct your team to chase championship titles. As a football team manager, you need to take responsibilities for tactics developing, training arrangements, on-pitch commanding, player trading, etc. One of the most important things is to select your starting line-up.<br><br>   According to the rules of football matches, there should be 11 players in your starting line-up, where one of them must be a goalkeeper. Besides the goalkeeper (GK), there’re three classes of positions: defender (DF), midfielder (MF), and striker  (ST).<br><br>   When a manager is selecting his starting line-up, he usually determines the formation first. The football formation is usually noted like “4-4-2”“4-5-1”“4-3- 3”, etc. For example, the “4-5-1” formation denotes that there are 4 defenders, 5 midfielders and 1 striker. Note that every player has his preferred positions, and they will always refuse to appear at positions he does not prefer, while some excellent players may be qualified for several positions. For example, C. Ronaldo can play as both a striker and a midfielder.<br><br>   In the game, players have two important attributes <b>for each of his preferred positions</b>: CA (current ability) and PA (potential ability).  The CA of the line-up is defined as the sum of the 11 players’ CA in the formation. Similar to CA, the PA of the line-up equals to the sum of 11 players’ PA. Then your task is to select the proper players to reach maximum CA of your line-up. When a tie occurs, the one of maximum PA is required.<br><br>   Beyond these requirements and limits, the relationships between players also make sense to the CA of your line-up. Every player may like or dislike some of his teammates. When he and the one he likes are both on the pitch, the CA of the line-up will be increased by a specific value. On the contrary, when someone and his disliked player occurs on the pitch concurrently, the line-up’s CA will be decreased. Be careful that the like and dislike relationships between players are unidirectional. Not surprisingly, Plane.Gao likes Messi very much while Messi may not know Plane.Gao at all.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">   The input contains multiple test cases. The first line of input gives the number of test cases T (1&lt;=T&lt;=20).<br><br>   For each test case, the first line contains an integer N (1&lt;=N&lt;=20), the total number of players in your team.<br><br>Each of the following N lines describe a player in the following format:<br>&lt;SquadNum&gt;  &lt;PositionNum&gt;  &lt;pos<sub>1</sub>&gt;  &lt;CA<sub>1</sub>&gt;  &lt;PA<sub>1</sub>&gt;  &lt;pos<sub>2</sub>&gt;  &lt;CA<sub>2</sub>&gt; &lt;PA<sub>2</sub>&gt; . . .  &lt;pos<sub>num</sub>&gt;&lt;CA<sub>num</sub>&gt;&lt;PA<sub>num</sub>&gt;<br>Here:<br>&lt;SquadNum&gt; denotes the player’s unique squad number (between 1 and 99, inclusive).<br>&lt;PositionNum&gt; denotes the number of positions he preferred.<br>&lt;pos<sub>1</sub>&gt; &lt;pos<sub>2</sub>&gt; . . . &lt;pos<sub>num</sub>&gt; are strings chosen in {GK, DF, MF, ST},denoting all his preferred positions.<br>&lt;CA<sub>i</sub>&gt; denotes his CA at &lt;pos<sub>i</sub>&gt;.<br>&lt;PA<sub>i</sub>&gt; denotes his PA at &lt;pos<sub>i</sub>&gt;.<br>(0&lt;=|P A<sub>i</sub>|,|C A<sub>i</sub>|&lt;=1000,<b>note P A and CA can be negative here.</b>)<br>After the description of the player list, the following line will give an integer M (0&lt;=M&lt;=N (N - 1)), which indicates the number of relationships between the teammates. Then each of the following M lines is shown in the following format:<br>&lt;SquadNum<sub>A</sub>&gt; &lt;SquadNum<sub>B</sub> &gt; Like/Dislike &lt;value&gt;<br>Here:<br>&lt;SquadNum<sub>A</sub>&gt; denotes Player A’s Squad Number.<br>&lt;SquadNum<sub>B</sub>&gt; denotes Player B’s Squad Number. <br>Like/Dislike denotes the property of the relationship.<br>&lt;value&gt; denotes that when both of them appear in your starting line-up, the CA of line-up will be increased/decreased by value(0&lt;=value&lt;=100).<br>No two relationships of the same pair of teammates will occur.<br>The last line of each test case shows the formation that you have determined. We guarantee that the formation is legal.<br>You may take the sample for more details.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">   For each test case, you should output two integers in a line, the best CA and PA of your line-up. If you can even not round up your line-up, please output “Poor Manager!” (without quotes)<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">2
+15
+1 1 GK 150 160
+2 1 DF 150 160
+3 1 DF 150 160
+4 1 DF 150 160
+5 1 DF 150 160
+6 1 MF 150 160
+7 1 MF 150 160
+8 1 MF 150 160
+9 1 ST 150 160
+10 1 MF 150 160
+11 1 ST 150 160
+12 1 GK 130 150
+13 1 DF 130 150
+14 1 MF 130 150
+15 1 ST 130 150
+2
+15 9 Like 10
+2 13 Dislike 20
+4-4-2
+
+11
+1 1 GK 150 160
+2 1 DF 150 160
+3 1 DF 150 160
+4 1 DF 150 160
+5 1 DF 150 160
+6 1 MF 150 160
+7 1 MF 150 160
+8 1 MF 150 160
+9 1 ST 150 160
+10 1 MF 150 160
+11 1 ST 150 160
+0
+4-3-3</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">1650 1760
+Poor Manager!</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2014+Multi-University+Training+Contest+6&source=1&searchmode=source"> 2014 Multi-University Training Contest 6 </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

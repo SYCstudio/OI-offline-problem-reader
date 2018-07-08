@@ -1,0 +1,26 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Debug</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU6236. Debug</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：2000/1000 MS (Java/Others)</span> <span class="ui label">时间限制：262144/262144 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Recently, Alice and Bob are working on a quantum computation model. In this model, all the variables are uncertain, and could be changed during any time. Fortunately, there are some techniques to construct the input data to make these variables show some certain feature at certain time. In other words, all condition statement can be controlled respectively from the input data.<br><br>To test some algorithms in this model, Alice wrote some codes to run on a prototype machine. As this machine requires a lots of resource to work, Alice wanted Bob to make a plan to debug these codes efficiently. Bob analysed the model and the machine, and found that in every unit of time, they can test exactly one program and exactly one input data. Bob want to minimize the time to debug the program. Now he asks for your help.<br><br>For your convenience, Bob would give you a simple edition of the codes. The new codes consist of some keywords, labels, and necessarily separative signs. Followings are formulas of sentence:<br>    1） A label can be any combination of letters and number except keywords.<br>    2） A label sentence is written as a label and a following colon without separative sign.<br>    3） An atomic sentence is written as a keyword STATEMENT.<br>    4） A jump sentence is written as a keyword GOTO and a following label, donating that the machine will jump to the label sentence which is with the same label. It is guaranteed that the each label sentence exists only once.<br>    5） A condition sentence would be donated as a keyword IF and a following jump sentence. You can control the machine to execute the jump sentence or not through the input data. Also, you can have difference choose on the same condition sentence even if the input is the same.<br>    6） A end sentence is written as a keyword END, donating that the code is over. End sentence exists once and at the end of a program. However, you can terminate the program at any position you want.<br>Additionally, separative signs could be space, tab or line break. Upper case letters and lower case letters are considered as different letters. The program would run starting at the first sentence and ending at the end sentence or your termination. To make sure the code is correct, you need to let every atomic sentence run at least once. Can you find the least time Bob need to debug this code?<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The first line is the number of test cases. For each test case, there is the code as described before. Each case contains no more than $100$ labels, $100$ atomic sentence, and $500$ others sentences.<br><br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For each test case, output a line containing the minimum time Bob need. If there is no solution, output $-1$.<br><br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">3
+STATEMENT
+IF GOTO L1
+STATEMENT
+GOTO L2
+L1:
+STATEMENT
+L2:
+END
+STATEMENT
+IF GOTO L1
+STATEMENT
+GOTO L2
+L1: IF GOTO L1
+L2:
+END
+STATEMENT
+L0:
+IF GOTO L1
+STATEMENT
+GOTO L2
+L1: STATEMENT
+L2: IF GOTO L0
+END</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">2
+1
+1</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2017%D6%D0%B9%FA%B4%F3%D1%A7%C9%FA%B3%CC%D0%F2%C9%E8%BC%C6%BE%BA%C8%FC-%B9%FE%B6%FB%B1%F5%D5%BE-%D6%D8%CF%D6%C8%FC%A3%A8%B8%D0%D0%BB%B9%FE%C0%ED%B9%A4%A3%A9&source=1&searchmode=source"> 2017中国大学生程序设计竞赛-哈尔滨站-重现赛（感谢哈理工） </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

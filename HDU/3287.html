@@ -1,0 +1,24 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Theta Puzzle</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU3287. Theta Puzzle</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：2000/1000 MS (Java/Others)</span> <span class="ui label">时间限制：32768/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The Theta Puzzle consists of a base with 6 positions at the vertices of a regular hexagon and another position at the center, connected as shown in the figure below. There are six tokens labeled A, B, C, D, E and F. A single move of the puzzle is to move a token to an adjacent empty position (along an allowed connection – the line segments in the diagram below). The idea of the puzzle is to start with an initial arrangement of tokens with the center empty and, by a sequence of moves, get to the configuration in the figure below.<br><center><img style='max-width:100%;' src=./data/images/C264-1009-1.jpg></center> <br>An initial position for the puzzle is given by a permutation of the letters A through F. The first letter starts at A in the figure, the next at B and so on.<br>A sequence of moves is specified by listing the labels of tokens to be moved, in the order they are to be moved.<br>For example, to solve the puzzle FACDBE, use the moves BEFAB.<br><center><img style='max-width:100%;' src=./data/images/C264-1009-2.jpg></center> <br>Note: Not all starting permutations can be solved.<br>Write a program which, given an initial permutation, either finds the shortest sequence of moves to solve the puzzle or determines that there is no solution.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The first line of input contains a single integer P, (1 ≤ P ≤ 1000), which is the number of data sets that follow. Each data set is a single line that contains the data set number, followed by a space, followed by a permutation of the letters A through F giving the initial puzzle position.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For each data set there is a single line of output. If there is no solution, the line contains a decimal integer giving the data set number followed by a single space, followed by the string <b>NO SOLUTION</b>.<br>If there is a solution, the line contains a decimal integer giving the data set number followed by a single space, followed by the number of moves in the solution, followed by a single space, followed by the solution as a string of the letters A through F. If the number of moves is zero (0), you should still output the space after the 0, even though there is no string of letters.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">12
+1 FACDBE
+2 ABCDEF
+3 ADCEFB
+4 ADCEBF
+5 FEDCBA
+6 FEDCAB
+7 ECBFAD
+8 ECBFDA
+9 DCEBFA
+10 DCEBAF
+11 CBEADF
+12 BDEAFC</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">1 5 BEFAB
+2 0 
+3 19 DABFECABFEDBACDEFAB
+4 NO SOLUTION
+5 29 BCDEBCAFBCAFBCEDFAECBAFDCBAFE
+6 NO SOLUTION
+7 19 CBFACBFACDEFACDEFAB
+8 NO SOLUTION
+9 13 CDAFBEDCBEDCB
+10 NO SOLUTION
+11 21 DAEBDAEBDCFEBDCABEFAB
+12 16 FAEDBCAFBCAFEDCB</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2009+Greater+New+York+Regional&source=1&searchmode=source"> 2009 Greater New York Regional </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

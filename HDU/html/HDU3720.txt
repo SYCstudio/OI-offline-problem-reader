@@ -1,0 +1,148 @@
+<html><head><meta name=keywords content="HDOJ ACM ICPC OJ C C++ Pascal Java"><meta http-equiv=Content-Type content="text/html;charset=gb2312"><link rel=stylesheet type=text/css href="/images/global.css" media=all><link rel=stylesheet type=text/css href="/css/diyinhead.css" media=all><link rel=stylesheet type=text/css href="/css/webinhead.css" media=all><script src="/js/global.js" type=text/javascript></script><script src="/js/register.js" type=text/javascript></script><script src="/js/MathJax/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script><title>Problem - 3720</title></head><body >
+<a name=top></a>
+<table align=center cellSpacing=0 cellPadding=0 width=980 border=0 style="word-wrap:break-word">
+<tr>
+	<td style="border:#1A5CC8 1px solid" align=center width=100%>
+		<a href="/">
+			<img src="/images/banner.jpg" width="100%" height=116 border=0>
+		</a>
+	</td>
+</tr>
+<tr>
+	<td style="border:#1A5CC8 1px solid">
+	<table cellSpacing=0 cellPadding=1 width="979px">
+	<tr bgcolor=#1A5CC8 align=center class=banner height=25>
+		<td>Online Judge</td>
+		<td>Online Exercise</td>
+		<td>Online Teaching</td>
+		<td>Online Contests</td>
+	<td>Exercise Author</td>
+	</tr>
+	<tr style="font-size:16px" align=center>
+		<td width=20% valign=top>
+		<a href="/faq.php" style="text-decoration: none">F.A.Q</a><br>
+		<a href="/friends" style="text-decoration: none">Hand In Hand</a><br>
+		<a href="/onlineuser.php" style="text-decoration: none">Online Acmers</a>	<br>
+		<!-- /onlineuser.php-->
+		
+		<a href="/forum" style="text-decoration: none">Forum | </a><a href="/discuss/public/list.php" style="text-decoration: none">Discuss</a><br>
+		<a href="/statistic/submit_graph.php" style="text-decoration: none">Statistical Charts</a><br>
+		</td>
+		<td width=20% valign=top>
+		<form action="/search.php" method=get>
+		<a href="/listproblem.php?vol=1" style="text-decoration: none">Problem Archive</a><br/>
+		<!--<a href="http://feeds.feedburner.com/Hdoj-problemset"><img src="/images/rss1.jpg" alt="problemset" style="vertical-align:text-bottom;"width=20 height=20></a><br>-->
+		<!--
+			 <a href="/submit.php">Submit Solution</a><br>
+		-->	
+		<a href="/status.php" style="text-decoration: none">Realtime Judge Status</a><br>
+
+		<a href="/ranklist.php" style="text-decoration: none">Authors Ranklist</a><br>
+		<input name=field value=author type=hidden><input class=text60 name=key>&nbsp;<input class=button40 type=submit value=Search>
+		
+		<!--
+			<input name=field value=problem type=hidden><input class=text60 name=key>&nbsp;<input class=button40 type=submit value=Search>
+		-->
+		</form>
+		</td>
+		<td width=20% valign=top>
+		 <form action='/search.php' method=get> 
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="text-decoration: none" href="http://code.hdu.edu.cn/">C/C++/Java Exams &nbsp;&nbsp;&nbsp;&nbsp;</a><br/>
+		<a style="text-decoration: none" href="/game">ACM Steps</a><br/>
+		<a href = "/ITJobs/">Go to Job</a><br/>	
+		<a href="/livecast" style="text-decoration: none">Contest LiveCast</a><br/>
+		<a style="text-decoration: none" href="/region">ICPC@China</a><br/>
+		<!-- <a href="/register.php">Register New Author</a><br> -->
+		<!-- <a href="/modifyuser.php">Update Your Information</a><br> -->
+		</form>
+		</td>
+		<td width=20% valign=top>
+		<a href="http://bestcoder.hdu.edu.cn" style="text-decoration: none; color: red; font-weight: bold;">Best Coder <sup style="color: gray;">beta</sup></a><br/><a href="/vip/contest_list.php" style="text-decoration: none">VIP</a> | <a href="/contests/contest_list.php" style="text-decoration: none">STD Contests</a><br /><a href="http://code.hdu.edu.cn/vcontest" style="text-decoration: none">Virtual Contests </a><br/>&nbsp;&nbsp;<a href="/diy/contest_list.php" style="text-decoration: none">&nbsp;&nbsp;DIY | </a><a href="/webcontest" style="text-decoration: none"><font color="">Web-DIY</font> <font size=1 color="gray"><sup>beta</sup></font></a><br/><a style="text-decoration: none" href="/recentcontest">Recent Contests</a><br/>		</td>
+		<td width=20%>
+					<form method=post action="/userloginex.php?action=login">
+			  <table width=168 border=0 align=center cellspacing=0>
+			  	<tr><td align=center colspan=2><a href="/qqlogin/oauth/login.php"><img src="/qqlogin/images/qqlogin.png" border="0" /></a></td></tr>
+				<tr><td width=68>Author ID&nbsp;</td><td align=right><input name=username type=text class=text90 maxlength=20></td></tr>
+				<tr><td>Password&nbsp;</td><td align=right><input name=userpass type=password class=text90 maxlength=20></td></tr>
+			  </table>
+			  <input name=login type=submit class=button40 value="Sign In">&nbsp;<a href="http://bestcoder.hdu.edu.cn/register.php?url=acm.hdu.edu.cn/userloginex.php?action=login" style="text-decoration: none">Register new ID</a>
+			</form>
+						</td>
+	</tr>
+	</table>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div align=center id=rollword><marquee scrollamount=2 width=600 scrolldelay=30 onMouseOver="javascript:this.stop();" onMouseOut="javascript:this.start();"><b style="margin-right:20px"></b></marquee></div>	</td>
+</tr>
+<tr><td align=center><h1 style='color:#1A5CC8'>Arranging Your Team</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 6000/3000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 1722&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 561<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Your country has qualified for the FIFA 2010 South Africa World Cup. As the coach, you have made up the 23 men squad. Now you must select 11 of them as the starters. As is well known, there are four positions in soccer: goalkeeper, defender, midfielder and striker. Your favorite formation is 4-4-2, that is, you should choose 4 defenders, 4 midfielders, 2 strikers, and of course, 1 goalkeeper. As a retired ACMer, you want to write a program to help you make decision. Each person's ability has been evaluated as a positive integer. And what's more, for some special pairs of persons, if the two people are both on the field, there will be an additional effect (positive or negative). Now you should choose the 11 persons to make the total value maximum.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>There are multiple test cases, separated by an empty line. The first 23 lines of each test case indicate each person's name S<sub>i</sub>, ability value V<sub>i</sub>, and position. The length of each name is no more than 30, and there are no whitespaces in the names. All the names are different. The ability values are positive integers and no more than 100. The position is one of &quot;goalkeeper&quot;, &quot;defender&quot;, &quot;midfielder&quot; and &quot;striker&quot;.<br><br>Then an integer M indicates that there are M special pairs. Each of the following M lines contains S<sub>i</sub>, S<sub>j</sub> and C<sub>ij</sub>, means that if S<sub>i</sub> and S<sub>j</sub> are both on the field, the additional profit is C<sub>ij</sub>. (-100 ≤ C<sub>ij</sub> ≤ 100). S<sub>i</sub> and S<sub>j</sub> are different strings, and must be in the previous 23 names. All the (S<sub>i</sub>, S<sub>j</sub>) pairs<br>are different.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>Output one line for each test case, indicating the maximum total ability values, that is, the total ability values of the 11 persons plus the additional effects. If you cannot choose a 4-4-2 formation, output &quot;impossible&quot; instead.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">Buffon 90 goalkeeper
+De_Sanctis 80 goalkeeper
+Marchetti 80 goalkeeper
+Zambrotta 90 defender
+Cannavaro 90 defender
+Chiellini 90 defender
+Maggio 90 defender
+Bonucci 80 defender
+Criscito 80 defender
+Bocchetti 80 defender
+Pirlo 90 midfielder
+Gattuso 90 midfielder
+De_Rossi 90 midfielder
+Montolivo 90 midfielder
+Camoranesi 80 midfielder
+Palombo 80 midfielder
+Marchisio 80 midfielder
+Pepe 80 midfielder
+Iaquinta 90 striker
+Di_Natale 90 striker
+Gilardino 80 striker
+Quagliarella 80 striker
+Pazzini 80 striker
+1
+Pirlo Quagliarella 50
+
+ZhangSan01 50 goalkeeper
+ZhangSan02 50 defender
+ZhangSan03 50 defender
+ZhangSan04 50 defender
+ZhangSan05 50 defender
+ZhangSan06 50 defender
+ZhangSan07 50 defender
+ZhangSan08 50 defender
+ZhangSan09 50 defender
+ZhangSan10 50 defender
+ZhangSan11 50 defender
+ZhangSan12 50 defender
+ZhangSan13 50 defender
+ZhangSan14 50 defender
+ZhangSan15 50 defender
+ZhangSan16 50 midfielder
+ZhangSan17 50 midfielder
+ZhangSan18 50 midfielder
+ZhangSan19 50 midfielder
+ZhangSan20 50 midfielder
+ZhangSan21 50 midfielder
+ZhangSan22 50 midfielder
+ZhangSan23 50 midfielder
+0</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">1030
+impossible</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href="/search.php?field=problem&key=2010+Asia+Tianjin+Regional+Contest&source=1&searchmode=source"> 2010 Asia Tianjin Regional Contest </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>zhouzeyong</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3720'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3720'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3720">Discuss</a> | <a href='note/note.php?pid=3720'>Note</a><br></td></tr><tr>
+<td>
+	<table style="border:#1A5CC8 1px solid; font-size:14px" cellSpacing=0 cellPadding=1 width=100%>
+	<tr align=center>
+		<td class=footer_link height=45><a href="/">Home</a> | <a href=#top>Top</a></td>
+		<td style="padding:6px">
+			Hangzhou Dianzi University Online Judge 3.0<br>
+			Copyright &copy; 2005-2018 <a href=mailto:acm@hdu.edu.cn>HDU ACM Team</a>. All Rights Reserved.<br>
+			<a href="../about_us/developer.php">Designer & Developer </a>: <a>Wang Rongtao</a>&nbsp<a>LinLe</a>&nbsp<a href=mailto:gjavac@gmail.com >GaoJie</a>&nbsp<a href=mailto:gl8997@gmail.com >GanLu</a><br>
+			<span class=pagerunstatus>Total 0.000000(s) query 2, Server time : 2018-07-07 22:53:05, Gzip disabled</span>		</td>
+		<td class=footer_link>
+			<!-- <a href="javascript:history.go(-1);">Back</a> | <a href="javascript:history.forward();">Forward</a>-->
+			<a href="/admin">Administration</a>	
+		</td>
+	</tr>
+	</table>
+</td>
+</tr>
+</table>
+</body></html>

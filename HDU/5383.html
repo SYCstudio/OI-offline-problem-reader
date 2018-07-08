@@ -1,0 +1,34 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Yu-Gi-Oh!</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU5383. Yu-Gi-Oh!</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：4000/2000 MS (Java/Others)</span> <span class="ui label">时间限制：65536/65536 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">&quot;Yu-Gi-Oh!&quot;, also known as &quot;Dueling Monsters&quot;, is a popular trading card game which has nearly 20 years history. Next year, YGO will reach its 20th birthday.<br><br>Stilwell has $n$ monsters on the desk, each monster has its $level_i$ and $ATK_i$. There are two kinds of monsters, Tuner monsters and Non-Tuner monsters.<br><br>Now, Stilwell plans to finish some &quot;Synchro Summon&quot;, and &quot;Synchro Summon&quot; is a kind of special summon following these rules (a little different from the standard YGO rules):<br><br>(1) A &quot;Synchro Summon&quot; needs two monsters as the material of this summon, and they must be one Tuner monster and one Non-Tuner monster.<br>    In other words, we can cost one Tuner monster and one Non-Tuner monster to get a Synchro monster (&quot;cost&quot; means remove form the desk, &quot;get&quot; means put on to the desk).<br><br>(2) To simplify this problem, Synchro monsters are neither Tuner monsters nor Non-Tuner monsters.<br><br>(3) The level sum of two material must be equal to the level of Synchro monster we summon.<br>    For example:<br>     A Level 3 Tuner monster $+$ A Level 2 Non-Tuner monster $=$ A Level 5 Synchro Monster<br>     A Level 2 Tuner monster $+$ A Level 4 Non-Tuner monster $=$ A Level 6 Synchro Monster<br>     A Level 4 Tuner monster $+$ A Level 4 Non-Tuner monster $=$ A Level 8 Synchro Monster<br><br>(4) The material of some Synchro monster has some limits, the material must contain some specific monster.<br>    For example:<br>     A Level 5 Synchro Monster $\alpha$ requires A Level 3 Tuner monster $\alpha$ to be its material<br>     A Level 6 Synchro Monster $\beta$ requires A Level 4 Non-Tuner monster $\beta$ to be its material<br>     A Level 8 Synchro Monster $\gamma$ requires A Level 4 Tuner monster $\gamma$ $+$ A Level 4 Non-Tuner monster $\gamma$ to be its material<br>     A Level 5 Synchro Monster $\varphi$ doesn't require any monsters to be its material<br>    Then<br>     A Level 3 Tuner monster $\alpha$ $+$ A Level 2 Non-Tuner monster $=$ A Level 5 Synchro Monster $\alpha$<br>     A Level 3 Tuner monster $\delta$ $+$ A Level 2 Non-Tuner monster $\neq$ A Level 5 Synchro Monster $\alpha$<br>     A Level 2 Tuner monster $+$ A Level 4 Non-Tuner monster $\beta$ $=$ A Level 6 Synchro Monster $\beta$<br>     A Level 3 Tuner monster $+$ A Level 3 Non-Tuner monster $\zeta$ $\neq$ A Level 6 Synchro Monster $\beta$<br>     A Level 4 Tuner monster $\gamma$ $+$ A Level 4 Non-Tuner monster $\gamma$ $=$ A Level 8 Synchro Monster $\gamma$<br>     A Level 4 Tuner monster $\sigma$ $+$ A Level 4 Non-Tuner monster $\gamma$ $\neq$ A Level 8 Synchro Monster $\gamma$<br>     A Level 4 Tuner monster $\gamma$ $+$ A Level 4 Non-Tuner monster $\phi$ $\neq$ A Level 8 Synchro Monster $\gamma$<br>     A Level 3 Tuner monster $+$ A Level 2 Non-Tuner monster $=$ A Level 5 Synchro Monster $\varphi$<br>     A Level 3 Tuner monster $\alpha$ $+$ A Level 2 Non-Tuner monster $=$ A Level 5 Synchro Monster $\varphi$<br><br>Stilwell has $m$ kinds of Synchro Monster cards, the quantity of each Synchro Monster cards is infinity.<br><br>Now, given $level_i$ and $ATK_i$ of every card on desk and every kind of Synchro Monster cards. Please finish some Synchro Summons (maybe zero) to maximum $\sum ATK_i$ of the cards on desk.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The first line of the input contains a single number $T$, the number of test cases.<br><br>For each test case, the first line contains two integers $n$, $m$.<br><br>Next $n$ lines, each line contains three integers $tuner_i$, $level_i$, and $ATK_i$, describe a monster on the desk. If this monster is a Tuner monster, then $tuner_i=1$, else $tuner_i=0$ for Non-Tuner monster.<br><br>Next $m$ lines, each line contains integers $level_j$, $ATK_j$, $r_j$, and following $r_j$ integers are the required material of this Synchro Monster (the integers given are the identifier of the required material).<br>The input data guarantees that the required material list is available, two Tuner monsters or two Non-Tuner monsters won't be required. If $r_i=2$ the level sum of two required material will be equal to the level of Synchro Monster.<br><br>$T\leq 10$, $n,m\leq 300$, $1\leq level_i\leq 12$, $0\leq ATK_i\leq 5000$, $0\leq r_i\leq 2$</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">$T$ lines, find the maximum $\sum ATK_i$ after some Synchro Summons.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">5
+2 2
+1 3 1300
+0 2 900
+5 2300 1 1
+8 2500 0
+2 1
+1 3 1300
+1 2 900
+5 2300 1 1
+3 1
+1 3 1300
+0 2 900
+0 2 800
+5 2300 1 1
+3 1
+1 1 233
+0 1 233
+0 1 200
+2 466 2 1 2
+6 3
+1 3 1300
+0 2 900
+0 5 1350
+1 4 1800
+0 10 4000
+0 10 1237
+5 2300 1 1
+8 3000 0
+6 2800 0</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">2300
+2200
+3200
+666
+11037</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2015+Multi-University+Training+Contest+8&source=1&searchmode=source"> 2015 Multi-University Training Contest 8 </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

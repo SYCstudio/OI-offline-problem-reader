@@ -1,0 +1,44 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Simple Library Management System</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU1497. Simple Library Management System</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：4000/2000 MS (Java/Others)</span> <span class="ui label">时间限制：32768/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">After AC all the hardest problems in the world , the ACboy 8006 now has nothing to do . One day he goes to an old library to find a part-time job .It is also a big library which has N books and M users.The user's id is from 1 to M , and the book id is from 1 to N . According to the library rules , every user are only allowed to borrow 9 books .But what surprised him is that there is no computer in the library , and everything is just recorded in paper ! How terrible , I must be crazy after working some weeks , he thinks .So he wants to change the situation .<br><br>In the other hand , after 8006's fans  know it , they all collect money and buy many computers for the library .<br><br>Besides the hardware , the library needs a management program . Though it is just a piece of cake for 8006 , the library turns to you , a excellent programer,for help .<br><br>What they need is just a simple library management program . It is just a console program , and have only three commands : Borrow the book , Return the book , Query the user .<br><br>1.The Borrow command has two parameters : The user id and the book id<br>The format is : &quot;B ui bi&quot;    (1&lt;=ui&lt;=M , 1&lt;=bi&lt;=N)<br>The program must first check the book bi wether it's in the library . If it is not , just print &quot;The book is not in the library now&quot; in a line . <br>If it is , then check the user ui .<br>If the user has borrowed 9 books already, print &quot;You are not allowed to borrow any more&quot; .<br>Else let the user ui borrow the book , and print &quot;Borrow success&quot;.<br><br>2.The Return command only has one parameter : The book id<br>The format is : &quot;R bi&quot; (1&lt;=bi&lt;=N)<br>The program must first check the book bi whether it's in the library . If it is , just print &quot;The book is already in the library&quot; . Otherwise , you can return the book , and print &quot;Return success&quot;.<br><br>3.The Query command has one parameter : The user id<br>The format is : &quot;Q ui&quot; (1&lt;=ui&lt;=M)<br>If the number of books which the user ui has borrowed is 0 ,just print &quot;Empty&quot; , otherwise print the books' id which he borrows in increasing order in a line.Seperate two books with a blank.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The input file contains a series of test cases . Please process to the end of file . The first line contains two integers M and N ( 1&lt;= M &lt;= 1000 , 1&lt;=N&lt;=100000),the second line contains a integer C means the number of commands(1&lt;=C&lt;=10000). Then it comes C lines . Each line is a command which is described above.You can assum all the books are in the library at the beginning of each cases.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For each command , print the message which described above .<br>Please output a blank line after each test.<br>If you still have some questions , see the Sample .<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">5 10
+9
+R 1
+B 1 5
+B 1 2
+Q 1
+Q 2
+R 5
+Q 1
+R 2
+Q 1
+5 10
+9
+R 1
+B 1 5
+B 1 2
+Q 1
+Q 2
+R 5
+Q 1
+R 2
+Q 1</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">The book is already in the library
+Borrow success
+Borrow success
+2 5
+Empty
+Return success
+2
+Return success
+Empty
+
+The book is already in the library
+Borrow success
+Borrow success
+2 5
+Empty
+Return success
+2
+Return success
+Empty
+
+
+<div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div>Hint</div><i style='font-size:1px'> </i>
+Huge input, the function scanf() may work better than cin</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=%A1%B02006%D0%A3%D4%B0%CE%C4%BB%AF%BB%EE%B6%AF%D4%C2%A1%B1%D6%AE%A1%B0%D0%A3%C7%EC%B1%AD%A1%B1%B4%F3%D1%A7%C9%FA%B3%CC%D0%F2%C9%E8%BC%C6%BE%BA%C8%FC%F4%DF%BA%BC%D6%DD%B5%E7%D7%D3%BF%C6%BC%BC%B4%F3%D1%A7%B5%DA%CB%C4%BD%EC%B4%F3%D1%A7%C9%FA%B3%CC%D0%F2%C9%E8%BC%C6%BE%BA%C8%FC+&source=1&searchmode=source"> “2006校园文化活动月”之“校庆杯”大学生程序设计竞赛暨杭州电子科技大学第四届大学生程序设计竞赛  </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

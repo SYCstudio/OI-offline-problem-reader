@@ -1,0 +1,23 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Graph Reconstruction</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU4797. Graph Reconstruction</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：2000/1000 MS (Java/Others)</span> <span class="ui label">时间限制：32768/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Let there be a simple graph with N vertices but we just know the degree of each vertex. Is it possible to reconstruct the graph only by these information?<br>A simple graph is an undirected graph that has no loops (edges connected at both ends to the same vertex) and no more than one edge between any two different vertices. The degree of a vertex is the number of edges that connect to it.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">There are multiple cases. Each case contains two lines. The first line contains one integer N (2 ≤ N ≤ 100), the number of vertices in the graph. The second line contains N integers in which the i<sup>th</sup> item is the degree of i<sup>th</sup> vertex and each degree is between 0 and N-l(inclusive).</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">If the graph can be uniquely determined by the vertex degree information, output &quot;UNIQUE&quot; in the first line. Then output the graph.<br>If there are two or more different graphs can induce the same degree for all vertices, output &quot;MULTIPLE&quot; in the first line. Then output two different graphs in the following lines to proof.<br>If the vertex degree sequence cannot deduce any graph, just output &quot;IMPOSSIBLE&quot;. The output format of graph is as follows:<br>N    E<br>u1   u2   ...   uE<br>v1   v2   ...   vE<br>Where N is the number of vertices and E is the number of edges, and {ui,vi} is the i<sup>th</sup> edge of the graph. The order of edges and the order of vertices in the edge representation is not important since we would use special judge to verify your answer. The number of each vertex is labeled from 1 to N. See sample output for more detail.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">1
+0
+6
+5 5 5 4 4 3
+6
+5 4 4 4 4 3
+6
+3 4 3 1 2 0</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">UNIQUE
+1 0
+
+
+UNIQUE
+6 13
+3 3 3 3 3 2 2 2 2 1 1 1 5
+2 1 5 4 6 1 5 4 6 5 4 6 4
+MULTIPLE
+6 12
+1 1 1 1 1 5 5 5 6 6 2 2
+5 4 3 2 6 4 3 2 4 3 4 3
+6 12
+1 1 1 1 1 5 5 5 6 6 3 3
+5 4 3 2 6 4 3 2 4 3 4 2
+IMPOSSIBLE</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2013+Asia+Changsha+Regional+Contest+&source=1&searchmode=source"> 2013 Asia Changsha Regional Contest  </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

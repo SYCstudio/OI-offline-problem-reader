@@ -1,0 +1,20 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Difference</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU4598. Difference</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：2000/1000 MS (Java/Others)</span> <span class="ui label">时间限制：65535/65535 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">A graph is a difference if every vertex vi can be assigned a real number ai and there exists a positive real number T such that<br>(a) |a<sub>i</sub>| &lt; T for all i and <br>(b) (v<sub>i</sub>, v<sub>j</sub>) in E &lt;=&gt; |a<sub>i</sub> - a<sub>j</sub>| &gt;= T,<br>where E is the set of the edges. <br>Now given a graph, please recognize it whether it is a difference. </div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The first line of input contains one integer TC(1&lt;=TC&lt;=25), the number of test cases.<br>Then  TC  test  cases  follow.  For  each  test case,  the  first  line  contains  one  integer N(1&lt;=N&lt;=300),  the  number  of  vertexes  in  the  graph.  Then  N  lines  follow,  each  of  the  N line contains a string of length N. The j-th character in the i-th line is &quot;1&quot; if (v<sub>i</sub>, v<sub>j</sub>) in E, and it is &quot;0&quot; otherwise. The i-th character in the i-th line will be always &quot;0&quot;. It is guaranteed that the j-th character in the i-th line will be the same as the i-th character in the j-th line.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For each test case, output a string in one line. Output &quot;Yes&quot; if the graph is a difference, and &quot;No&quot; if it is not a difference. </div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">3 
+4 
+0011 
+0001 
+1000 
+1100 
+4 
+0111 
+1001 
+1001 
+1110 
+3 
+000
+000 
+000</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">Yes 
+No 
+Yes
+<div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div>
+In sample 1, it can let T=3 and a[sub]1[/sub]=-2, a[sub]2[/sub]=-1, a[sub]3[/sub]=1, a[sub]4[/sub]=2. 
+</div><i style='font-size:1px'> </i></div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2013+ACM-ICPC%BC%AA%C1%D6%CD%A8%BB%AF%C8%AB%B9%FA%D1%FB%C7%EB%C8%FC%A1%AA%A1%AA%CC%E2%C4%BF%D6%D8%CF%D6&source=1&searchmode=source"> 2013 ACM-ICPC吉林通化全国邀请赛——题目重现 </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

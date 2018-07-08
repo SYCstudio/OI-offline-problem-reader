@@ -1,0 +1,27 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Alice and Bob's Trip</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU3660. Alice and Bob's Trip</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：4000/2000 MS (Java/Others)</span> <span class="ui label">时间限制：32768/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Alice and Bob are going on a trip. Alice is a lazy girl who wants to minimize the total travelling distance, while Bob as an active boy wants to maximize it. At the same time, they cannot let the value to be less than a given integer L since that will make them miss too much pleasure, and they cannot let the value to be greater than a given integer R since they don't want to get too exhausted.<br>  The city they are visiting has n spots and the spots are connected by directed edges. The spots are connected in such a way that they form a tree and the root will always be at spot 0. They take turns to select which edge to go. Both of them choose optimally. Bob will go first.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">There are multiple test cases. For every test case, the first line has three integers, n, L and R (1&lt;=n&lt;=500000, 0&lt;=L, R&lt;=1000000000). The next n-1 lines each has three integers a, b and c, indicating that there is an edge going from spot a to spot b with length c (1&lt;=c&lt;=1000). The spots are labeled from 0 to n-1.<br>  There is a blank line after each test case.<br>  Proceed to the end of file.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">If the total distance is not within the range [L, R], print &quot;Oh, my god!&quot; on a single line. Otherwise, print the most value Bob can get. </div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">3 2 4
+0 1 1
+0 2 5
+
+7 2 8
+0 1 1
+0 2 1
+1 3 1
+1 4 10
+2 5 1
+2 6 5
+
+7 4 8
+0 1 1
+0 2 1
+1 3 1
+1 4 2
+2 5 1
+2 6 5
+
+4 2 6
+0 1 1
+1 2 1
+1 3 5</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">Oh, my god!
+2
+6
+2</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2010+Asia+Regional+Harbin&source=1&searchmode=source"> 2010 Asia Regional Harbin </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

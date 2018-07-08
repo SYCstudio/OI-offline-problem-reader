@@ -1,0 +1,24 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Ball </title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU2692. Ball </h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：60000/20000 MS (Java/Others)</span> <span class="ui label">时间限制：62768/62768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Members of Wuhan University ACM Team are fond of playing little games. Ball game is one of them, which is  <br>played with a ball on a rectangle board. The ball should be rolled from the start point to the end point. The  <br>game board is surrounded by walls and contains rectangular obstacles with known dimensions. Obstacles will  <br>not overlap with each other. The ball cannot leave the board, nor can it fly. <br><br>Now, you're one of the competitors. Can you find the radius of the largest ball to complete the task? </div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The input consists of multiple test cases. The first line of input contains an integer T, which is the number of  <br>test cases.Each test case is on several lines. The first line contains four integers: N, L, W, H, indicating the  <br>number of obstacles; the length, width of the board; and the height of walls.  <br><br>The coordinate of the lower-left corner is (0,0), the upper-right one is (L, W). <br><br>Each of the following N lines consists of five integers: Xi, Yi, Li, Wi, Hi, indicating the coordinate of the  <br>lower-left corner of an obstracle and it's length, width and height. So the upper-right corner of the obstracle  <br>is (Xi + Li, Yi + Wi).  <br><br>The last line of a test case consists of four integers: Sx, Sy, Tx, Ty  which indicate the coordinates of  <br>start point:(Sx, Sy), and end point:(Tx, Ty). <br><br>[Technical Specification] <br>T is an integer, and T &lt;= 50. <br>N is an integer, and 0 &lt;= N &lt;=10. <br>All integers EXCEPT N are in the range [1, 1000]. <br>You can assume those obstracles? sides are parallel to OX, OY and OZ axis, the start point and end point are  <br>rightful(not outside the board or inside an obstracle). <br>All part of an obstracle is in the board. <br>The integers on the same line are separated by ONE space.  <br>The test cases are separated by ONE empty line.  <br>NO other spaces or lines will appear in the test data. </div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For each test case, print a single line consists of the radius of the largest ball, rounded to two fractional  <br>digits. Output '0.00'(without quotes) if there is no ball can reach its end point from the start point.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">4 
+3 1000 1000 42 
+102 101 3 2 468 
+106 104 2 3 335 
+100 107 4 1 501 
+101 106 106 100 
+
+4 1000 1000 170 
+108 103 2 3 725 
+105 109 4 1 479 
+101 104 1 4 359 
+103 101 2 2 963 
+100 100 105 106 
+
+2 1000 1000 465 
+102 100 2 3 706 
+106 103 2 3 146 
+100 103 110 103 
+
+0 1000 1000 282 
+100 100 102 102 </code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">1.00 
+1.58 
+2.00 
+100.00 </div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=The+4th+Baidu+Cup+Central+China+Invitational+Programming+Contest&source=1&searchmode=source"> The 4th Baidu Cup Central China Invitational Programming Contest </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

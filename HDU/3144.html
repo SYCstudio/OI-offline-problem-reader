@@ -1,0 +1,19 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Gokigen Naname</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU3144. Gokigen Naname</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：2000/1000 MS (Java/Others)</span> <span class="ui label">时间限制：32768/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><i>Gokigen Naname</i> is a Japanese puzzle game played on a square grid in which numbers in circles appear at some of the intersections on the grid.<br><br>The objective is to draw diagonal lines in each cell of the grid, such that the number in each circle equals the number of lines extending from that circle. Additionally, it is forbidden for the diagonal lines to form an enclosed loop.<br><br><center><img style='max-width:100%;' src=./data/images/3144-1.jpg>&nbsp;&nbsp;&nbsp;&nbsp;<img style='max-width:100%;' src=./data/images/3144-2.jpg></center><br>The first figure shows the start position of a puzzle. The second figure shows the solution to the same puzzle. A <i>Gokigen Naname</i> puzzle always has exactly one solution.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The first line of the input contains a single integer <i>n</i> (2 &lt;= <i>n</i> &lt;= 7), the number of cells along each of the sides in the square grid. Then follow <i>n</i> + 1 lines containing the contents of the intersections of the grid cells. Each such line will contain a string of <i>n</i>+1 characters, either a digit between 0 and 4, inclusive, or a period ('.') indicating that there is no number at this intersection (arbitrarily many lines may connect to it).</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The output should contain <i>n</i> lines, each line containing exactly <i>n</i> characters. Each character should either be a slash or a backslash, denoting how the corresponding grid cell is filled.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">3
+1.1.
+...0
+.3..
+..2.
+5
+.21...
+..33.0
+......
+..33..
+0..33.
+....11</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">\//
+\\\
+/\/
+/\\//
+//\\\
+\\\//
+\/\\/
+///\\</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=NCPC+2009&source=1&searchmode=source"> NCPC 2009 </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

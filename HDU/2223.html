@@ -1,0 +1,23 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Visit relatives</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU2223. Visit relatives</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：2000/1000 MS (Java/Others)</span> <span class="ui label">时间限制：65536/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">When Wiskey return home, many relatives he need to visit, and he will buy some gifts before he visit his relatives. There is a map which has N places; Wiskey's house is labeled 0. He has T tasks which from u to v, it mean Wiskey could go to v when he bought a gift at u before.<br>Wiskey always start at 0, and must end with 0.<br>Tell him how many minimum total places he went when he finished all tasks.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">First line will contain one integer mean how many cases will follow by; the number of cases wills less than 20.<br>In each case will contain three integers N means the number of places, M roads and T tasks. (1 &lt;= N &lt;= 20, 0 &lt;= M &lt;= 100, 0 &lt;= T &lt;= 5).<br>First, M roads will be follow; the road is bi-connected.<br>Second, T tasks will be follow; you are remember the u must went earlier than v, then what makes the task will be finished.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Print the minimum total number of places he went.<br>If Wiskey can't finish all tasks, please print -1.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">1
+7 11 5
+0 1
+0 2
+1 2
+1 4
+0 3
+3 4
+4 6
+2 6
+6 5
+3 5
+4 5
+1 2
+1 3
+2 0
+1 4
+5 3</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">7
+
+<div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div>
+One way is 0-1-2-0-1-4-5-3-0, the length is 8, and it finished all tasks.
+The way is 0-1-2-1-4-5-3-0 which is minimum length.
+</div><i style='font-size:1px'> </i></div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"></div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

@@ -1,0 +1,106 @@
+<html><head><meta name=keywords content="HDOJ ACM ICPC OJ C C++ Pascal Java"><meta http-equiv=Content-Type content="text/html;charset=gb2312"><link rel=stylesheet type=text/css href="/images/global.css" media=all><link rel=stylesheet type=text/css href="/css/diyinhead.css" media=all><link rel=stylesheet type=text/css href="/css/webinhead.css" media=all><script src="/js/global.js" type=text/javascript></script><script src="/js/register.js" type=text/javascript></script><script src="/js/MathJax/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script><title>Problem - 4581</title></head><body >
+<a name=top></a>
+<table align=center cellSpacing=0 cellPadding=0 width=980 border=0 style="word-wrap:break-word">
+<tr>
+	<td style="border:#1A5CC8 1px solid" align=center width=100%>
+		<a href="/">
+			<img src="/images/banner.jpg" width="100%" height=116 border=0>
+		</a>
+	</td>
+</tr>
+<tr>
+	<td style="border:#1A5CC8 1px solid">
+	<table cellSpacing=0 cellPadding=1 width="979px">
+	<tr bgcolor=#1A5CC8 align=center class=banner height=25>
+		<td>Online Judge</td>
+		<td>Online Exercise</td>
+		<td>Online Teaching</td>
+		<td>Online Contests</td>
+	<td>Exercise Author</td>
+	</tr>
+	<tr style="font-size:16px" align=center>
+		<td width=20% valign=top>
+		<a href="/faq.php" style="text-decoration: none">F.A.Q</a><br>
+		<a href="/friends" style="text-decoration: none">Hand In Hand</a><br>
+		<a href="/onlineuser.php" style="text-decoration: none">Online Acmers</a>	<br>
+		<!-- /onlineuser.php-->
+		
+		<a href="/forum" style="text-decoration: none">Forum | </a><a href="/discuss/public/list.php" style="text-decoration: none">Discuss</a><br>
+		<a href="/statistic/submit_graph.php" style="text-decoration: none">Statistical Charts</a><br>
+		</td>
+		<td width=20% valign=top>
+		<form action="/search.php" method=get>
+		<a href="/listproblem.php?vol=1" style="text-decoration: none">Problem Archive</a><br/>
+		<!--<a href="http://feeds.feedburner.com/Hdoj-problemset"><img src="/images/rss1.jpg" alt="problemset" style="vertical-align:text-bottom;"width=20 height=20></a><br>-->
+		<!--
+			 <a href="/submit.php">Submit Solution</a><br>
+		-->	
+		<a href="/status.php" style="text-decoration: none">Realtime Judge Status</a><br>
+
+		<a href="/ranklist.php" style="text-decoration: none">Authors Ranklist</a><br>
+		<input name=field value=author type=hidden><input class=text60 name=key>&nbsp;<input class=button40 type=submit value=Search>
+		
+		<!--
+			<input name=field value=problem type=hidden><input class=text60 name=key>&nbsp;<input class=button40 type=submit value=Search>
+		-->
+		</form>
+		</td>
+		<td width=20% valign=top>
+		 <form action='/search.php' method=get> 
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="text-decoration: none" href="http://code.hdu.edu.cn/">C/C++/Java Exams &nbsp;&nbsp;&nbsp;&nbsp;</a><br/>
+		<a style="text-decoration: none" href="/game">ACM Steps</a><br/>
+		<a href = "/ITJobs/">Go to Job</a><br/>	
+		<a href="/livecast" style="text-decoration: none">Contest LiveCast</a><br/>
+		<a style="text-decoration: none" href="/region">ICPC@China</a><br/>
+		<!-- <a href="/register.php">Register New Author</a><br> -->
+		<!-- <a href="/modifyuser.php">Update Your Information</a><br> -->
+		</form>
+		</td>
+		<td width=20% valign=top>
+		<a href="http://bestcoder.hdu.edu.cn" style="text-decoration: none; color: red; font-weight: bold;">Best Coder <sup style="color: gray;">beta</sup></a><br/><a href="/vip/contest_list.php" style="text-decoration: none">VIP</a> | <a href="/contests/contest_list.php" style="text-decoration: none">STD Contests</a><br /><a href="http://code.hdu.edu.cn/vcontest" style="text-decoration: none">Virtual Contests </a><br/>&nbsp;&nbsp;<a href="/diy/contest_list.php" style="text-decoration: none">&nbsp;&nbsp;DIY | </a><a href="/webcontest" style="text-decoration: none"><font color="">Web-DIY</font> <font size=1 color="gray"><sup>beta</sup></font></a><br/><a style="text-decoration: none" href="/recentcontest">Recent Contests</a><br/>		</td>
+		<td width=20%>
+					<form method=post action="/userloginex.php?action=login">
+			  <table width=168 border=0 align=center cellspacing=0>
+			  	<tr><td align=center colspan=2><a href="/qqlogin/oauth/login.php"><img src="/qqlogin/images/qqlogin.png" border="0" /></a></td></tr>
+				<tr><td width=68>Author ID&nbsp;</td><td align=right><input name=username type=text class=text90 maxlength=20></td></tr>
+				<tr><td>Password&nbsp;</td><td align=right><input name=userpass type=password class=text90 maxlength=20></td></tr>
+			  </table>
+			  <input name=login type=submit class=button40 value="Sign In">&nbsp;<a href="http://bestcoder.hdu.edu.cn/register.php?url=acm.hdu.edu.cn/userloginex.php?action=login" style="text-decoration: none">Register new ID</a>
+			</form>
+						</td>
+	</tr>
+	</table>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div align=center id=rollword><marquee scrollamount=2 width=600 scrolldelay=30 onMouseOver="javascript:this.stop();" onMouseOut="javascript:this.start();"><b style="margin-right:20px"></b></marquee></div>	</td>
+</tr>
+<tr><td align=center><h1 style='color:#1A5CC8'>Microblog Subscription</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 10000/5000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65535/32768 K (Java/Others)<br>Total Submission(s): 163&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 20<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Jia Baoyu was the best programmer in his big family—the Family of Jia, which is why he was regarded as the most charming gentleman among girls. Recently he was designing a new microblog to target the requirements of sharing information in his family. In his system, a microblog can be regarded as a document contains no more than 2000 words.<br>By asked to other member’s in the Family of Jia, he decided to release a function of “subscription” in his microblog. Let’s describe this function more specifically:<br>A user can submit a query to describe subscription requirement. A query contains a match type, a match distance constraint and a set of not more than 5 English words. After the user submitted the query, he/she will receive all the new microblog that satisfies the query in his/her “Feeds stream”. If a microblog satisfies a query, it should match all the words in the query. And a microblog matches a word X when there is at least a word in microblog that matches the word X. Note that the match constraint is applied independently for each word in the query.<br>There are three types of word matching: exact match, approximate match under a Hamming distance constraint  and approximate match under an edit distance. The definitions of these three matches is are follows:<br><strong>Exact match: </strong>two words are exactly the same;<br><strong>Approximate match under Hamming distance D constraint:</strong>two words with the same length have at most D positions at which corresponding letters are different.<br><strong>Approximate match under edit distance D constraint:</strong>one word can be changed into the other word in at most D single-letter edits, including insertion, deletion and substitution.<br>For example, Lin Daiyu submitted a query: edit distance match with distance 1, and the word set “flower poem tear”. Then she will receive the microblog “I wrote a pom full of tears after I saw Daiyu buried the flowers”. In this case, “flower” can be matched with “flowers” in 1 edit distance, “tear” can be matched with “tears” and “poem” can be matched with “pom” (obviously it was a typo).<br>After a user submitted a query, he/she could delete the query in anytime. After that he/she would not receive microblogs that satisfy this query.<br>Now please help Jia Baoyu to accomplish this function.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The first line of input file contains an integer representing the following number of lines.<br>Each of the following line has three formats:<br><strong>s [id] [type] [dist] [k] [word_1] [word_2] … [word_k]</strong><br>The line that starts with lowercase ‘s’ means adding a query into system. [id] is an integer between 1 to 1000 representing the id of the query. [type] is an integer between 0 to 2 representing the match type (0 means exact match, 1 means hamming distance match and 2 means edit distance match). [dist] is an integer representing the distance constraint (Note that the distance is always 0 for exact match). This distance constraint is at most 2. [k] means the number of following words (0&lt;k&lt;=5). [word_i] represents a word in this query. All the items are separated by a space.<br><strong>e [id]</strong><br>The line that starts with lowercase ‘e’ means deleting a query from system. [id] is the id of that query. We guarantee that the id always exist and has not deleted before.<br><strong>m [id] [k] [word_1] [word_2] … [word_k]</strong><br>The line that starts with lowercase ‘m’ means a microblog. [id] is an integer between 1 to 100 which means the id of the microblog. [k] is an integer meaning the number of words that follows (0&lt;k&lt;=2000). [word_i] represents a word in this microblog. All the items are separated by a space.<br>The length of a word is less than or equal to 30, and there are no blanks in a word. The number of total queries is less than or equal to 1000, while the number of total microblogs is less than or equal to 100.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each microblog in the input file, output all the matched active queries when it published. The “active” means that query has been submitted and not deleted yet. The format is:<br><strong>[id] [k] [q_1] [q_2] … [q_k]</strong><br>[id] means the id of this microblog. [k] means the number of queries that it satisfies. [q_i] means a query id. Query ids must be sorted increasingly.<br>The order of microblog in output file must be the same as it is displayed in the input file.<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">6
+s 1 1 2 1 bkple
+m 2 1 apple
+s 2 0 0 2 apple banana
+m 1 2 apple banana
+e 1
+m 3 2 apple banana</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">2 1 1
+1 2 1 2
+3 1 2</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href="/search.php?field=problem&key=2013ACM-ICPC%BA%BC%D6%DD%C8%FC%C7%F8%C8%AB%B9%FA%D1%FB%C7%EB%C8%FC&source=1&searchmode=source"> 2013ACM-ICPC杭州赛区全国邀请赛 </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content></div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=4581'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=4581'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=4581">Discuss</a> | <a href='note/note.php?pid=4581'>Note</a><br></td></tr><tr>
+<td>
+	<table style="border:#1A5CC8 1px solid; font-size:14px" cellSpacing=0 cellPadding=1 width=100%>
+	<tr align=center>
+		<td class=footer_link height=45><a href="/">Home</a> | <a href=#top>Top</a></td>
+		<td style="padding:6px">
+			Hangzhou Dianzi University Online Judge 3.0<br>
+			Copyright &copy; 2005-2018 <a href=mailto:acm@hdu.edu.cn>HDU ACM Team</a>. All Rights Reserved.<br>
+			<a href="../about_us/developer.php">Designer & Developer </a>: <a>Wang Rongtao</a>&nbsp<a>LinLe</a>&nbsp<a href=mailto:gjavac@gmail.com >GaoJie</a>&nbsp<a href=mailto:gl8997@gmail.com >GanLu</a><br>
+			<span class=pagerunstatus>Total 0.000000(s) query 2, Server time : 2018-07-07 23:50:16, Gzip disabled</span>		</td>
+		<td class=footer_link>
+			<!-- <a href="javascript:history.go(-1);">Back</a> | <a href="javascript:history.forward();">Forward</a>-->
+			<a href="/admin">Administration</a>	
+		</td>
+	</tr>
+	</table>
+</td>
+</tr>
+</table>
+</body></html>

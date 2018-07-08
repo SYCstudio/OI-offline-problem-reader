@@ -1,0 +1,55 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Code Merging</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU3252. Code Merging</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：4000/2000 MS (Java/Others)</span> <span class="ui label">时间限制：32768/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><b>Background</b><br><br>Version control is the art of managing changes to information. It has long been a critical tool for programmers, who typically spend their time making small changes to software and then undoing those changes the next day. But the usefulness of version control software extends far beyond the bounds of the software development world. Anywhere you can find people using computers to manage information that changes often, there is room for version control.<br><br>Some version control systems are also software configuration management (SCM) systems. These systems are specifically tailored to manage trees of source code, and have many features that are specific to software development-such as natively understanding programming languages, or supplying tools for building software.<br><br>One nice feature that many SCM systems provide is called &quot;Code Merging&quot;, which allows a code to be modified simultaneously by two coders. As long as they work on DIFFERENT parts of the code, modifications could be merged gracefully.<br><br>Consider the following code:<br><br>void idle(){}<br>void goShoppingWithGirlFriend(){...}<br>void playGames(){...}<br>int main()<br>{<br>    if (today.isSunday())<br>        idle();<br>}<br><br>Mr. T added a function &quot;greeting Pan Xi&quot; by changing the original code into:<br><br>void greetingPX(){ printf(&quot;greeting Pan Xi&quot;); }<br>void idle(){}<br>void goShoppingWithGirlFriend(){...}<br>void playGames(){...}<br>int main()<br>{<br>    if (today.isSunday())<br>        idle();<br>}<br><br>At the same time, Mr. L added a function &quot;greeting Xue Xiaoyuan&quot; by changing the original code into:<br><br>void idle(){}<br>void goShoppingWithGirlFriend(){...}<br>void playGames(){...}<br>void greetingXXY(){ printf(&quot;greeting Xue Xiaoyuan&quot;); }<br>int main()<br>{<br>    if (today.isSunday())<br>        idle();<br>}<br><br>Note that two modifications are made in different parts of the code, so smart SCMs can happily merge them, preserving both new functionalities:<br><br>void greetingPX(){ printf(&quot;greeting Pan Xi&quot;); }<br>void idle(){}<br>void goShoppingWithGirlFriend(){...}<br>void playGames(){...}<br>void greetingXXY(){ printf(&quot;greeting Xue Xiaoyuan&quot;); }<br>int main()<br>{<br>    if (today.isSunday())<br>        idle();<br>}<br><br>Amazing, right?<br><br>But life's not always easy. If someone else changed the last part into:<br><br>if(today.isSunday())<br>    playGames();<br><br>And another anonymous coder wrote the following:<br><br>if(today.isSunday())<br>    goShoppingWithGirlFriend();<br><br>I bet no SCM in the world really knows what to do - it totally depends on the coder, though Mr. T and Mr. L both prefer the latter.<br><br><b>Task</b><br><br>In this problem, your task is to implement the following code merging algorithm:<br><br>    * Each line of a code is considered as an atomic element, so the algorithm actually takes as input two sequences A and B.<br>    * Calculates the longest common subsequence (LCS) of these two sequences, denoted by (a1,b1), (a2,b2), ..., (ak,bk), i.e. The ai-th line of code A matches the bi-th line of code B, and k is the length of the LCS. By &quot;matching&quot;, two lines should be exactly the same, including whitespace characters.<br>    * By the definition of LCS, a1&lt;a2&lt;a3&lt;...&lt;ak, b1&lt;b2&lt;b3&lt;...&lt;bk, which are called match points. We split both sequences into k+1 so-called diff-sections by their own match points, then merge each pair of diff-sections one by one.<br>    * Print the merged diff-sections, separated by the lines in the LCS.<br><br>IMPORTANT: in order for the result to be stable, the integer sequence (a1, b1, a2, b2, ..., ak, bk) should be lexicographically smallest. Thus, the output of the algorithm is always unique.<br><br>For people who're still confused, here is some more technical information: let M[i] be the i-th match-point, i.e., M[i] = A[ai] = B[bi], DA[i] be the i-th diff-section of A, i.e. DA[i] = {A[ai-1+1 ... ai-1]} (note that a0=0, ak+1=len(A)+1). It's not hard to see that code A can be rewritten as: DA[1], M[1], DA[2], M[2], ..., DA[k], M[k], DA[k+1]. We can define DB[i] similarly.<br><br>With these symbols, we can easily express the final output of this problem as:<br><br>merge(DA[1],DB[1])<br>M[1]<br>merge(DA[2],DB[2])<br>M[2]<br>merge(DA[3],DB[3])<br>M[3]<br>...<br>M[k]<br>merge(DA[k+1],DB[k+1])<br><br>Where merge(DA[i],DB[i]) is calculated as follows:<br><br>    * If one of DA[i] and DB[i] is empty, return the other (though it can be again empty)<br>    * otherwise, report a conflict, showing content of the diff-sections in both codes (see sample output below). </div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The first line contains a single integer T (T &lt;= 20), the number of test cases. Each case contains code A followed by code B. Both codes end with a line containing 9 character #CODE-END (excluding the newline character). Each code contains at most 1000 lines, each line contains no more than 200 characters, and is guaranteed to be followed by a newline character. </div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For each test case, print the case number in a separate line, then the merged code. The output of each case should be followed by an empty line, including the last test case. </div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">2
+void greetingPX(){ printf("greeting Pan Xi"); }
+void idle(){}
+void goShoppingWithGirlFriend(){...}
+void playGames(){...}
+int main()
+{
+    if (today.isSunday())
+        idle();
+}
+#CODE-END
+void idle(){}
+void goShoppingWithGirlFriend(){...}
+void playGames(){...}
+void greetingXXY(){ printf("greeting Xue Xiaoyuan"); }
+int main()
+{
+    if (today.isSunday())
+        idle();
+}
+#CODE-END
+int main()
+{
+    if(today.isSunday())
+        playGames();
+}
+#CODE-END
+int main()
+{
+    if(today.isSunday())
+        goShoppingWithGirlFriend();
+}
+#CODE-END</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">Case 1:
+void greetingPX(){ printf("greeting Pan Xi"); }
+void idle(){}
+void goShoppingWithGirlFriend(){...}
+void playGames(){...}
+void greetingXXY(){ printf("greeting Xue Xiaoyuan"); }
+int main()
+{
+    if (today.isSunday())
+        idle();
+}
+
+Case 2:
+int main()
+{
+    if(today.isSunday())
+//**** CONFLICT STARTS ****//
+//code in A:
+        playGames();
+//code in B:
+        goShoppingWithGirlFriend();
+//***** CONFLICT ENDS *****//
+}</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2009+Asia+Regional+Ningbo+Online&source=1&searchmode=source"> 2009 Asia Regional Ningbo Online </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

@@ -1,0 +1,96 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>The Wolves and the Sheep</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU1105. The Wolves and the Sheep</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：20000/10000 MS (Java/Others)</span> <span class="ui label">时间限制：65536/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Nalim, Ocis and Remmarguts are playing on grass, and they feel very hungry now. As baby wolves, they decide to capture a little sheep to eat. Fortunately, they immediately discover a sheep roaming around the grass. However, what they found is the queen of the sheep ---- Mmxl, who has extraordinary speed that can compare with the wolves, and is very clever! Can you judge whether the baby wolves will capture Mmxl!<br><br>There are some rules to follow:<br>The grass field is a rectangular area that consist of R * C grids. And some obstacles like stones or trees exist. The actions of the baby wolves and Mmxl are taken in rounds. In each round, baby wolves take actions first, and then Mmxl follows. In the baby wolves’ turn, the three wolves will make a decision, and choose one of them to move (a move means moving from a grid to a neighboring grid). There must be a wolf to move, unless none of them can move. In the Mmxl's turn, she will always move. If she cannot move, she is captured. Baby wolves and Mmxl cannot move to the grids on which there are obstacles, and they are always on different grids. Baby wolves will never get out of the rectangular area. Once Mmxl gets away from the grass, she is never captured. <br><br>You should notice that the only situation that Mmxl is captured is that she cannot move, but is not that in wolves’ turn, some wolf is in the neighboring grid of Mmxl’s.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Input contains multiple test cases. Each test case starts with two numbers R and C (1 &lt;= R, C &lt;= 10) in one line. Then R lines follow, each line has C characters, which describes the grass field. A '.' denotes an empty grid, an 'X' denotes an obstacle, a 'W' denotes a baby wolf, and a 'S' denotes the Mmxl. There are exactly three 'W' and one 'S'. Every test case will be followed by a blank line.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">There is only one line for each test case. If lovely Mmxl will not be captured in finity rounds, print &quot;Lucky Mmxl is safe:)&quot;. If the wicked baby wolves are able to capture Mmxl, print &quot;Poor Mmxl is in danger:(&quot;.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">3 5
+XXW.X
+XWSWX
+XXX.X
+ 
+4 5
+XXWXX
+XWSWX
+XX.XX
+XX.XX
+ 
+7 6
+XXXXXX
+XWWW.X
+X....X
+X....X
+X....X
+X...SX
+XXXXXX
+ 
+7 7
+XXXXXXX
+XWWW..X
+X.....X
+X..X..X
+X.....X
+X....SX
+XXXXXXX
+ 
+7 7
+XXXXXXX
+XWWW..X
+X.....X
+X..XX.X
+X.....X
+X....SX
+XXXXXXX
+ 
+10 10
+WWW.......
+..........
+..........
+..........
+..........
+.....S....
+..........
+..........
+..........
+..........
+ 
+9 9
+XXXXXXXXX
+X...X...X
+XW.....WX
+X.X...X.X
+X..X.X..X
+X...S...X
+XXXXXXXXX
+XWXXXXXXX
+XXXXXXXXX
+ 
+9 9
+XXXXXXXXX
+X.......X
+XW.....WX
+X.X...X.X
+X..X.X..X
+X...S...X
+XXXXXXXXX
+XWXXXXXXX
+XXXXXXXXX
+ 
+9 9
+XXXXXXXXX
+....X....
+XW.....WX
+X.X...X.X
+X..X.X..X
+X...S...X
+XXXXXXXXX
+XWXXXXXXX
+XXXXXXXXX
+ 
+3 3
+WX.
+XSX
+WXW</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">Lucky Mmxl is safe:)
+Lucky Mmxl is safe:)
+Poor Mmxl is in danger:(
+Lucky Mmxl is safe:)
+Poor Mmxl is in danger:(
+Lucky Mmxl is safe:)
+Poor Mmxl is in danger:(
+Lucky Mmxl is safe:)
+Lucky Mmxl is safe:)
+Poor Mmxl is in danger:(</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"></div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

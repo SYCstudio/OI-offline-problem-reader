@@ -1,0 +1,27 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Sudoku</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU5547. Sudoku</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：3000/1000 MS (Java/Others)</span> <span class="ui label">时间限制：65535/65535 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Yi Sima was one of the best counselors of Cao Cao. He likes to play a funny game himself. It looks like the modern Sudoku, but smaller.<br><br>Actually, Yi Sima was playing it different. First of all, he tried to generate a $4×4$ board with every row contains 1 to 4, every column contains 1 to 4. Also he made sure that if we cut the board into four $2×2$ pieces, every piece contains 1 to 4.<br><br>Then, he removed several numbers from the board and gave it to another guy to recover it. As other counselors are not as smart as Yi Sima, Yi Sima always made sure that the board only has one way to recover.<br><br>Actually, you are seeing this because you've passed through to the Three-Kingdom Age. You can recover the board to make Yi Sima happy and be promoted. Go and do it!!!</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The first line of the input gives the number of test cases, $T(1≤T≤100)$. $T$ test cases follow. Each test case starts with an empty line followed by 4 lines. Each line consist of 4 characters. Each character represents the number in the corresponding cell (one of '1', '2', '3', '4'). '*' represents that number was removed by Yi Sima.<br><br>It's guaranteed that there will be exactly one way to recover the board.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For each test case, output one line containing <b>Case #x:</b>, where $x$ is the test case number (starting from 1). Then output 4 lines with 4 characters each. indicate the recovered board.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">3
+****
+2341
+4123
+3214
+*243
+*312
+*421
+*134
+*41*
+**3*
+2*41
+4*2*</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">Case #1:
+1432
+2341
+4123
+3214
+Case #2:
+1243
+4312
+3421
+2134
+Case #3:
+3412
+1234
+2341
+4123</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=The+2015+China+Collegiate+Programming+Contest&source=1&searchmode=source"> The 2015 China Collegiate Programming Contest </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

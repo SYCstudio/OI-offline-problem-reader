@@ -1,0 +1,28 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Ball</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU5821. Ball</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：2000/1000 MS (Java/Others)</span> <span class="ui label">时间限制：65536/65536 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">ZZX has a sequence of boxes numbered $1,2,...,n$. Each box can contain at most one ball.<br><br>You are given the initial configuration of the balls. For $1 \leq i \leq n$, if the $i$-th box is empty then $a[i]=0$, otherwise the i-th box contains exactly one ball, the color of which is a[i], a positive integer. Balls with the same color cannot be distinguished.<br><br>He will perform m operations in order. At the i-th operation, he collects all the balls from boxes l[i],l[i]+1,...,r[i]-1,r[i], and then arbitrarily put them back to these boxes. (Note that each box should always contain at most one ball)<br><br>He wants to change the configuration of the balls from a[1..n] to b[1..n] (given in the same format as a[1..n]), using these operations. Please tell him whether it is possible to achieve his goal.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">First line contains an integer t. Then t testcases follow. <br>In each testcase: First line contains two integers n and m. Second line contains a[1],a[2],...,a[n]. Third line contains b[1],b[2],...,b[n]. Each of the next m lines contains two integers l[i],r[i].<br><br>1&lt;=n&lt;=1000,0&lt;=m&lt;=1000, sum of n over all testcases &lt;=2000, sum of m over all testcases &lt;=2000.<br><br>0&lt;=a[i],b[i]&lt;=n.<br><br>1&lt;=l[i]&lt;=r[i]&lt;=n.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For each testcase, print &quot;Yes&quot; or &quot;No&quot; in a line.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">5
+4 1
+0 0 1 1
+0 1 1 1
+1 4
+4 1
+0 0 1 1
+0 0 2 2
+1 4
+4 2
+1 0 0 0
+0 0 0 1
+1 3
+3 4
+4 2
+1 0 0 0
+0 0 0 1
+3 4
+1 3
+5 2
+1 1 2 2 0
+2 2 1 1 0
+1 3
+2 4</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">No
+No
+Yes
+No
+Yes</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2016+Multi-University+Training+Contest+8&source=1&searchmode=source"> 2016 Multi-University Training Contest 8 </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

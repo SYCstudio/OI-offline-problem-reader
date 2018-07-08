@@ -1,0 +1,118 @@
+<html><head><meta name=keywords content="HDOJ ACM ICPC OJ C C++ Pascal Java"><meta http-equiv=Content-Type content="text/html;charset=gb2312"><link rel=stylesheet type=text/css href="/images/global.css" media=all><link rel=stylesheet type=text/css href="/css/diyinhead.css" media=all><link rel=stylesheet type=text/css href="/css/webinhead.css" media=all><script src="/js/global.js" type=text/javascript></script><script src="/js/register.js" type=text/javascript></script><script src="/js/MathJax/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script><title>Problem - 3136</title></head><body >
+<a name=top></a>
+<table align=center cellSpacing=0 cellPadding=0 width=980 border=0 style="word-wrap:break-word">
+<tr>
+	<td style="border:#1A5CC8 1px solid" align=center width=100%>
+		<a href="/">
+			<img src="/images/banner.jpg" width="100%" height=116 border=0>
+		</a>
+	</td>
+</tr>
+<tr>
+	<td style="border:#1A5CC8 1px solid">
+	<table cellSpacing=0 cellPadding=1 width="979px">
+	<tr bgcolor=#1A5CC8 align=center class=banner height=25>
+		<td>Online Judge</td>
+		<td>Online Exercise</td>
+		<td>Online Teaching</td>
+		<td>Online Contests</td>
+	<td>Exercise Author</td>
+	</tr>
+	<tr style="font-size:16px" align=center>
+		<td width=20% valign=top>
+		<a href="/faq.php" style="text-decoration: none">F.A.Q</a><br>
+		<a href="/friends" style="text-decoration: none">Hand In Hand</a><br>
+		<a href="/onlineuser.php" style="text-decoration: none">Online Acmers</a>	<br>
+		<!-- /onlineuser.php-->
+		
+		<a href="/forum" style="text-decoration: none">Forum | </a><a href="/discuss/public/list.php" style="text-decoration: none">Discuss</a><br>
+		<a href="/statistic/submit_graph.php" style="text-decoration: none">Statistical Charts</a><br>
+		</td>
+		<td width=20% valign=top>
+		<form action="/search.php" method=get>
+		<a href="/listproblem.php?vol=1" style="text-decoration: none">Problem Archive</a><br/>
+		<!--<a href="http://feeds.feedburner.com/Hdoj-problemset"><img src="/images/rss1.jpg" alt="problemset" style="vertical-align:text-bottom;"width=20 height=20></a><br>-->
+		<!--
+			 <a href="/submit.php">Submit Solution</a><br>
+		-->	
+		<a href="/status.php" style="text-decoration: none">Realtime Judge Status</a><br>
+
+		<a href="/ranklist.php" style="text-decoration: none">Authors Ranklist</a><br>
+		<input name=field value=author type=hidden><input class=text60 name=key>&nbsp;<input class=button40 type=submit value=Search>
+		
+		<!--
+			<input name=field value=problem type=hidden><input class=text60 name=key>&nbsp;<input class=button40 type=submit value=Search>
+		-->
+		</form>
+		</td>
+		<td width=20% valign=top>
+		 <form action='/search.php' method=get> 
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="text-decoration: none" href="http://code.hdu.edu.cn/">C/C++/Java Exams &nbsp;&nbsp;&nbsp;&nbsp;</a><br/>
+		<a style="text-decoration: none" href="/game">ACM Steps</a><br/>
+		<a href = "/ITJobs/">Go to Job</a><br/>	
+		<a href="/livecast" style="text-decoration: none">Contest LiveCast</a><br/>
+		<a style="text-decoration: none" href="/region">ICPC@China</a><br/>
+		<!-- <a href="/register.php">Register New Author</a><br> -->
+		<!-- <a href="/modifyuser.php">Update Your Information</a><br> -->
+		</form>
+		</td>
+		<td width=20% valign=top>
+		<a href="http://bestcoder.hdu.edu.cn" style="text-decoration: none; color: red; font-weight: bold;">Best Coder <sup style="color: gray;">beta</sup></a><br/><a href="/vip/contest_list.php" style="text-decoration: none">VIP</a> | <a href="/contests/contest_list.php" style="text-decoration: none">STD Contests</a><br /><a href="http://code.hdu.edu.cn/vcontest" style="text-decoration: none">Virtual Contests </a><br/>&nbsp;&nbsp;<a href="/diy/contest_list.php" style="text-decoration: none">&nbsp;&nbsp;DIY | </a><a href="/webcontest" style="text-decoration: none"><font color="">Web-DIY</font> <font size=1 color="gray"><sup>beta</sup></font></a><br/><a style="text-decoration: none" href="/recentcontest">Recent Contests</a><br/>		</td>
+		<td width=20%>
+					<form method=post action="/userloginex.php?action=login">
+			  <table width=168 border=0 align=center cellspacing=0>
+			  	<tr><td align=center colspan=2><a href="/qqlogin/oauth/login.php"><img src="/qqlogin/images/qqlogin.png" border="0" /></a></td></tr>
+				<tr><td width=68>Author ID&nbsp;</td><td align=right><input name=username type=text class=text90 maxlength=20></td></tr>
+				<tr><td>Password&nbsp;</td><td align=right><input name=userpass type=password class=text90 maxlength=20></td></tr>
+			  </table>
+			  <input name=login type=submit class=button40 value="Sign In">&nbsp;<a href="http://bestcoder.hdu.edu.cn/register.php?url=acm.hdu.edu.cn/userloginex.php?action=login" style="text-decoration: none">Register new ID</a>
+			</form>
+						</td>
+	</tr>
+	</table>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div align=center id=rollword><marquee scrollamount=2 width=600 scrolldelay=30 onMouseOver="javascript:this.stop();" onMouseOut="javascript:this.start();"><b style="margin-right:20px"></b></marquee></div>	</td>
+</tr>
+<tr><td align=center><h1 style='color:#1A5CC8'>Taunt Generation Simulator</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 4000/2000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 60&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 0<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>In all the annals of knighthood, no personality trait has been in more dire need than the fortitude to withstand the diplomatically deleterious effects of a vicious, relentless taunting. Tasked with strengthening the mental endurance of Camelot’s knights, King Arthur's court decided that instructional taunting must be applied, yet it could not be delivered by the chivalrous administration. Thus, Sir Lancelot commanded a local anarcho-syndicalist peasant to write a program that generates taunts (a.k.a. mudslinging) thereby producing a script to test the patience of knights in a training environment. To prevent unbridled creativity in taunting from spoiling the otherwise stately proceedings of a nobleman’s education, the following rules designed by committee (The Round Table) must be adhered to:<br><pre><br>&lt;taunt&gt; ::= &lt;sentence&gt; | &lt;taunt&gt; &lt;sentence&gt; | &lt;noun&gt;! | &lt;sentence&gt;<br>&lt;sentence&gt; ::= &lt;past-rel&gt; &lt;noun-phrase&gt; | &lt;present-rel&gt; &lt;noun-phrase&gt; | &lt;past-rel&gt; &lt;article&gt; &lt;noun&gt;<br>&lt;noun-phrase&gt; ::= &lt;article&gt; &lt;modified-noun&gt;<br>&lt;modified-noun&gt; ::= &lt;noun&gt; | &lt;modifier&gt; &lt;noun&gt;<br>&lt;modifier&gt; ::= &lt;adjective&gt; | &lt;adverb&gt; &lt;adjective&gt;<br>&lt;present-rel&gt; ::= your &lt;present-person&gt; &lt;present-verb&gt;<br>&lt;past-rel&gt; ::= your &lt;past-person&gt; &lt;past-verb&gt;<br>&lt;present-person&gt; ::= steed | king | first-born<br>&lt;past-person&gt; ::= mother | father | grandmother | grandfather | godfather<br>&lt;noun&gt; ::= hamster | coconut | duck | herring | newt | peril | chicken | vole | parrot | mouse | twit<br>&lt;present-verb&gt; ::= is | “masquerades as”<br>&lt;past-verb&gt; ::= was | personified<br>&lt;article&gt; ::= a<br>&lt;adjective&gt; ::= silly | wicked | sordid | naughty | repulsive | malodorous | ill-tempered<br>&lt;adverb&gt; ::= conspicuously | categorically | positively | cruelly | incontrovertibly</pre><br>Note that all phrases in double quotes are to be treated as one word for taunt simulation output.<br><br>The number of taunts elicited at any given time is derived from the number of words spoken by the knight. For every three words (or fraction thereof) delivered by the knight, the generator produces one or more taunts in a theater-style script format. In the event that 2 taunts must be produced on a single line, they will be counted as 2 taunts towards the total required. By a mandate from the masses, a word will always contain at least one alphabetic character, and will be separated from other words by at least 1 space.<br><br>In exception to the above rules, whenever the program finds the holy grail, which is to say, the letters t-h-e-h-o-l-y-g-r-a-i-l (case insensitive) in that order in a line of input, then the first taunt generated will be displayed by the program as &quot;(A childish hand gesture)&quot;.<br><br>To ensure all royal quality assurance criteria are met, the program must be demonstrated by a simulation showing the taunts produced from a series of inputs. Each taunt is generated by applying the taunt generation rules until all of the &lt;...&gt; have been replaced with appropriate words. In most cases, you will face a choice of alternate rules for expanding a phrase name. In these cases, you should make a choice as follows: Suppose that this is the <b><i>k<sup>th</sup></i></b> such choice that you have faced for that rule since the start of program execution, and that you must choose one of <b><i>n</i></b> rules for expanding a given kind of phrase. Let the rules for that phrase be numbered from <b><i>1…n</i></b> in the order of appearance above, and then choose rule number <b><i>((k-1) mod n) + 1</i></b>.<br><br>Well, get on with it!</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The input will consist of an unspecified number of lines. Each line will contain a statement uttered by a knight consisting of letters, digits, the characters &quot;,.-!?&quot; and whitespace. Each line of input will be more than 1 character and less than 72 characters in length. All words will be separated by whitespace. Each statement will contain at least one word.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For every line of input, print a block of output containing the following:<br><ul><li>A single line containing &quot;Knight:&quot;, a space, and the input. Any appearance of whitespace inside the input will be replaced by a single space.</li><br><li>All taunts (as explained in the above rules) prefaced by &quot;Taunter:&quot; and a space, the taunt, and a period. Each word should be separated from neighboring words by a single space.</li><br><li>A blank line</li></ul>Each taunt should begin with a capital letter, and no extra characters should be added.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">Hello!
+Are you feeling alright?
+Is there someone else I could talk to?
+Anyone at all?
+We seek the holy grail . . .</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">Knight: Hello!
+Taunter: Your mother was a hamster.
+
+Knight: Are you feeling alright?
+Taunter: Coconut! Your steed is a silly duck.
+
+Knight: Is there someone else I could talk to?
+Taunter: Your father personified a herring.
+Taunter: Your grandmother was a newt.
+Taunter: Peril! Your king masquerades as a conspicuously wicked chicken.
+
+Knight: Anyone at all?
+Taunter: Your grandfather personified a vole.
+
+Knight: We seek the holy grail . . .
+Taunter: (A childish hand gesture).
+Taunter: Your godfather was a parrot.</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href="/search.php?field=problem&key=2006+ACM-ICPC+Pacific+Northwest+Region&source=1&searchmode=source"> 2006 ACM-ICPC Pacific Northwest Region </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>chenrui</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3136'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3136'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3136">Discuss</a> | <a href='note/note.php?pid=3136'>Note</a><br></td></tr><tr>
+<td>
+	<table style="border:#1A5CC8 1px solid; font-size:14px" cellSpacing=0 cellPadding=1 width=100%>
+	<tr align=center>
+		<td class=footer_link height=45><a href="/">Home</a> | <a href=#top>Top</a></td>
+		<td style="padding:6px">
+			Hangzhou Dianzi University Online Judge 3.0<br>
+			Copyright &copy; 2005-2018 <a href=mailto:acm@hdu.edu.cn>HDU ACM Team</a>. All Rights Reserved.<br>
+			<a href="../about_us/developer.php">Designer & Developer </a>: <a>Wang Rongtao</a>&nbsp<a>LinLe</a>&nbsp<a href=mailto:gjavac@gmail.com >GaoJie</a>&nbsp<a href=mailto:gl8997@gmail.com >GanLu</a><br>
+			<span class=pagerunstatus>Total 0.000000(s) query 2, Server time : 2018-07-07 22:17:37, Gzip disabled</span>		</td>
+		<td class=footer_link>
+			<!-- <a href="javascript:history.go(-1);">Back</a> | <a href="javascript:history.forward();">Forward</a>-->
+			<a href="/admin">Administration</a>	
+		</td>
+	</tr>
+	</table>
+</td>
+</tr>
+</table>
+</body></html>

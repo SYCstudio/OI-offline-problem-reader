@@ -1,0 +1,132 @@
+<html><head><meta name=keywords content="HDOJ ACM ICPC OJ C C++ Pascal Java"><meta http-equiv=Content-Type content="text/html;charset=gb2312"><link rel=stylesheet type=text/css href="/images/global.css" media=all><link rel=stylesheet type=text/css href="/css/diyinhead.css" media=all><link rel=stylesheet type=text/css href="/css/webinhead.css" media=all><script src="/js/global.js" type=text/javascript></script><script src="/js/register.js" type=text/javascript></script><script src="/js/MathJax/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script><title>Problem - 2536</title></head><body >
+<a name=top></a>
+<table align=center cellSpacing=0 cellPadding=0 width=980 border=0 style="word-wrap:break-word">
+<tr>
+	<td style="border:#1A5CC8 1px solid" align=center width=100%>
+		<a href="/">
+			<img src="/images/banner.jpg" width="100%" height=116 border=0>
+		</a>
+	</td>
+</tr>
+<tr>
+	<td style="border:#1A5CC8 1px solid">
+	<table cellSpacing=0 cellPadding=1 width="979px">
+	<tr bgcolor=#1A5CC8 align=center class=banner height=25>
+		<td>Online Judge</td>
+		<td>Online Exercise</td>
+		<td>Online Teaching</td>
+		<td>Online Contests</td>
+	<td>Exercise Author</td>
+	</tr>
+	<tr style="font-size:16px" align=center>
+		<td width=20% valign=top>
+		<a href="/faq.php" style="text-decoration: none">F.A.Q</a><br>
+		<a href="/friends" style="text-decoration: none">Hand In Hand</a><br>
+		<a href="/onlineuser.php" style="text-decoration: none">Online Acmers</a>	<br>
+		<!-- /onlineuser.php-->
+		
+		<a href="/forum" style="text-decoration: none">Forum | </a><a href="/discuss/public/list.php" style="text-decoration: none">Discuss</a><br>
+		<a href="/statistic/submit_graph.php" style="text-decoration: none">Statistical Charts</a><br>
+		</td>
+		<td width=20% valign=top>
+		<form action="/search.php" method=get>
+		<a href="/listproblem.php?vol=1" style="text-decoration: none">Problem Archive</a><br/>
+		<!--<a href="http://feeds.feedburner.com/Hdoj-problemset"><img src="/images/rss1.jpg" alt="problemset" style="vertical-align:text-bottom;"width=20 height=20></a><br>-->
+		<!--
+			 <a href="/submit.php">Submit Solution</a><br>
+		-->	
+		<a href="/status.php" style="text-decoration: none">Realtime Judge Status</a><br>
+
+		<a href="/ranklist.php" style="text-decoration: none">Authors Ranklist</a><br>
+		<input name=field value=author type=hidden><input class=text60 name=key>&nbsp;<input class=button40 type=submit value=Search>
+		
+		<!--
+			<input name=field value=problem type=hidden><input class=text60 name=key>&nbsp;<input class=button40 type=submit value=Search>
+		-->
+		</form>
+		</td>
+		<td width=20% valign=top>
+		 <form action='/search.php' method=get> 
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="text-decoration: none" href="http://code.hdu.edu.cn/">C/C++/Java Exams &nbsp;&nbsp;&nbsp;&nbsp;</a><br/>
+		<a style="text-decoration: none" href="/game">ACM Steps</a><br/>
+		<a href = "/ITJobs/">Go to Job</a><br/>	
+		<a href="/livecast" style="text-decoration: none">Contest LiveCast</a><br/>
+		<a style="text-decoration: none" href="/region">ICPC@China</a><br/>
+		<!-- <a href="/register.php">Register New Author</a><br> -->
+		<!-- <a href="/modifyuser.php">Update Your Information</a><br> -->
+		</form>
+		</td>
+		<td width=20% valign=top>
+		<a href="http://bestcoder.hdu.edu.cn" style="text-decoration: none; color: red; font-weight: bold;">Best Coder <sup style="color: gray;">beta</sup></a><br/><a href="/vip/contest_list.php" style="text-decoration: none">VIP</a> | <a href="/contests/contest_list.php" style="text-decoration: none">STD Contests</a><br /><a href="http://code.hdu.edu.cn/vcontest" style="text-decoration: none">Virtual Contests </a><br/>&nbsp;&nbsp;<a href="/diy/contest_list.php" style="text-decoration: none">&nbsp;&nbsp;DIY | </a><a href="/webcontest" style="text-decoration: none"><font color="">Web-DIY</font> <font size=1 color="gray"><sup>beta</sup></font></a><br/><a style="text-decoration: none" href="/recentcontest">Recent Contests</a><br/>		</td>
+		<td width=20%>
+					<form method=post action="/userloginex.php?action=login">
+			  <table width=168 border=0 align=center cellspacing=0>
+			  	<tr><td align=center colspan=2><a href="/qqlogin/oauth/login.php"><img src="/qqlogin/images/qqlogin.png" border="0" /></a></td></tr>
+				<tr><td width=68>Author ID&nbsp;</td><td align=right><input name=username type=text class=text90 maxlength=20></td></tr>
+				<tr><td>Password&nbsp;</td><td align=right><input name=userpass type=password class=text90 maxlength=20></td></tr>
+			  </table>
+			  <input name=login type=submit class=button40 value="Sign In">&nbsp;<a href="http://bestcoder.hdu.edu.cn/register.php?url=acm.hdu.edu.cn/userloginex.php?action=login" style="text-decoration: none">Register new ID</a>
+			</form>
+						</td>
+	</tr>
+	</table>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div align=center id=rollword><marquee scrollamount=2 width=600 scrolldelay=30 onMouseOver="javascript:this.stop();" onMouseOut="javascript:this.start();"><b style="margin-right:20px"></b></marquee></div>	</td>
+</tr>
+<tr><td align=center><h1 style='color:#1A5CC8'>Winner and loser</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 5000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 90&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 2<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>棒球是美国的国球，是一项集力量、智慧于一体的运动。在棒球比赛中，两只球队轮流进攻，防守的一方有9名球员，其中负责向击球员投球的人称为投手，而进攻方的球员轮流试图用球棒将投手投出的球击打出去，并且争取跑垒得分。双方各进攻一次的过程叫一局，一方进攻一次叫做一个半局。一场棒球比赛通常进行9局，如果9局之后双方得分相同，就进入1局定胜负的延长赛，直到分出胜负为止。先进攻的一方是这场比赛的客队。如果第9局的上半局结束以后，客队仍然落后，则比赛胜负已定，不进行第9局的下半局比赛。比赛中可以替换球员，不过和足球类似，被替换下场的球员将不可以再上场。<br>在棒球运动中，投手通常是一个队最重要的球员。一名投手的好坏可以直接决定一场比赛的胜负，因此，对每一场棒球比赛，需要各找出一名胜利投手和一名败战投手。确定胜败投的规则如下：<br><br>(1)&nbsp;&nbsp;如果先发投手（每队的第一名投手）投完5局或以上，而且在被替补时得分领先，替补后直至比赛结束为止一直保持领先（不曾被追平或者落后过），球队因而胜利时，记这名先发投手为胜利投手。<br>(2)&nbsp;&nbsp;先发投手不管投多少局，只要在被替补时比分落后，而且之后本队到终场(2)&nbsp;&nbsp;先发投手不管投多少局，只要在被替补时比分落后，而且之后本队到终场为止都从未把比分扳平或领先，球队因而失利时，记这名先发投手为败战投手。<br>(3)&nbsp;&nbsp;投完整场比赛（没有被替补）的投手如果球队获胜，就是胜利投手；如果失利，就是败战投手。<br>(4)&nbsp;&nbsp;在比赛的任何时刻，只要比分相等，就相当于重新争夺胜负，前面已经被换下的投手就不可能是胜利投手或者败战投手。<br>(5)&nbsp;&nbsp;如果一名替补投手在场上的任何时刻，本队比分落后或打平，而他退场时比分领先并且一直保持到终场（或投完比赛剩下的局数没有退场，而终场时比分领先），记这名替补投手为胜利投手。<br>(6)&nbsp;&nbsp;如果一名替补投手在场上的任何时刻，本队比分打平或领先，而他退场时比分落后并且一直保持到终场（或投完比赛剩下的局数没有退场，而终场时比分落后），记这名替补投手为败战投手。<br>(7)&nbsp;&nbsp;如果先发投手没有投完5局，而在被替补时得分领先，并且一直保持到终场，则胜利投手属于“最起作用”的替补投手，即第一个上场的替补投手。<br><img style='max-width:100%;' src=../../../data/images/2536-1.jpg><br><br>在本题中，投手必须在本队防守的半局刚开始的时候被换下。<br><br>如果对这些规则不是很清楚，请参见下面的样例和样例解释。<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>输入包含多组数据。每组数据第一行是一个整数N(9&lt;=N&lt;=20)，表示这场比赛的局数。N=0表示输入结束。随后有两行，每行包含N个整数。第一行的第i个数表示第i局客队的得分（不超过20），第二行对应表示主队的得分。如果这个半局没有进行，用’X’表示。接下来的一行有两个整数A和B(1&lt;=A,B&lt;=10)，分别表示客队和主队上场的投手人数。然后是A行，每行有一个字符串和一个整数，分别表示依上场顺序给出的客队的投手名字（由字母组成，保证没有空格，不超过20个字符），以及他被替换下场时的局数（局数从1算起）。如果他没有被替换下场，则用’E’表示。最后是B行，表示客队的投手信息。<br>输入保证是符合题目要求的。<br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>对每组数据，输出两行。第一行包含胜利投手的名字，第二行包含败战投手的名字，格式参考样例输出。</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">9
+2 0 0 0 0 1 1 0 0
+0 2 0 0 1 0 0 2 X
+3 2
+Peavy 6
+Owings 7
+Rivera E
+Santana 6
+Wang E
+9
+2 0 0 0 0 1 1 0 0
+0 2 0 0 1 0 0 0 0
+3 2
+Peavy 6
+Owings 7
+Rivera E
+Santana 6
+Wang E
+0</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">Win: Wang
+Lose: Rivera
+Win: Owings
+Lose: Wang
+
+第一组样例解释：
+主队5-4击败客队，因此胜利投手从主队中产生。Santana是该队的先发投手，刚好投完了5局，而且退场的时候球队3-2领先。
+不过后来球队比分被扳平（然后又被反超），因此Santana不是胜利投手。而Wang则符合胜利投手的条件：他上场时候第6局马上就丢了一分，
+球队这时和对方3-3打平。
+而他投完了剩余比赛，最终球队也获胜。因此胜利投手是Wang。
+败战投手从客队中产生。Peavy是先发，
+他投完的时候是3-3打平，不符合败战投手的条件。而Owings只上来投了一局，投完的时候球队4-3领先，也不符合败战投手的条件。
+最后上场的Rivera也只投了1局丢了2分，正是这2分使球队输球。易验证Rivera符合败战投手的条件。
+Owings被换下时，比分情况为：
+2 0 0 0 0 1 1
+0 2 0 0 1 0
+客队4-3领先</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href="/search.php?field=problem&key=The+6th+UESTC+Programming+Contest&source=1&searchmode=source"> The 6th UESTC Programming Contest </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=2536'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=2536'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=2536">Discuss</a> | <a href='note/note.php?pid=2536'>Note</a><br></td></tr><tr>
+<td>
+	<table style="border:#1A5CC8 1px solid; font-size:14px" cellSpacing=0 cellPadding=1 width=100%>
+	<tr align=center>
+		<td class=footer_link height=45><a href="/">Home</a> | <a href=#top>Top</a></td>
+		<td style="padding:6px">
+			Hangzhou Dianzi University Online Judge 3.0<br>
+			Copyright &copy; 2005-2018 <a href=mailto:acm@hdu.edu.cn>HDU ACM Team</a>. All Rights Reserved.<br>
+			<a href="../about_us/developer.php">Designer & Developer </a>: <a>Wang Rongtao</a>&nbsp<a>LinLe</a>&nbsp<a href=mailto:gjavac@gmail.com >GaoJie</a>&nbsp<a href=mailto:gl8997@gmail.com >GanLu</a><br>
+			<span class=pagerunstatus>Total 0.000000(s) query 2, Server time : 2018-07-07 22:00:02, Gzip disabled</span>		</td>
+		<td class=footer_link>
+			<!-- <a href="javascript:history.go(-1);">Back</a> | <a href="javascript:history.forward();">Forward</a>-->
+			<a href="/admin">Administration</a>	
+		</td>
+	</tr>
+	</table>
+</td>
+</tr>
+</table>
+</body></html>

@@ -1,0 +1,24 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Gear Up</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU6039. Gear Up</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：8000/4000 MS (Java/Others)</span> <span class="ui label">时间限制：131072/131072 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><b>constroy</b> has some gears, each with a radius. Two gears are considered adjacent if they meet one of the following conditions:<br><br>1. They share a common edge (i.e. they have equal linear velocity).<br><br>2. They share a common shaft (i.e. they have equal angular velocity).<br><br>It is guaranteed that no pair of gears meets both of the above conditions.<br><br>A series of continuous adjacent gears constitutes a gear path. There is at most one gear path between each two gears.<br><br>Now <b>constroy</b> assigns an angular velocity to one of these gears and then asks you to determine the largest angular velocity among them.<br><br><b>sd0061</b> thinks this problem is too easy, so he replaces some gears and then asks you the question again.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">There are multiple test cases (about $30$).<br><br>For each test case:<br><br>The first line contains three integers $n, m, q$, the number of gears, the number of adjacent pairs and the number of operations. $(0 \leq m &lt; n \leq 10^5, 0 \leq q \leq 10^5)$<br><br>The second line contains $n$ integers, of which the $i$-th integer represents $r_i$, the radius of the $i$-th gear. $(r_i \in \{2^\lambda \mid 0 \leq \lambda \leq 30\})$<br><br>Each of the next $m$ lines contains three integers $a, x, y$, the $x$-th gear and the $y$-th gear are adjacent in the $a$-th condition. $(a \in \{1, 2\}, 1 \leq x, y \leq n, x \neq y)$<br><br>Each of the next $q$ line contains three integers $a, x, y$, an operation ruled in the following: $(a \in \{1, 2\}, 1 \leq x \leq n, y \in \{2^\lambda \mid 0 \leq \lambda \leq 30\})$<br><br>$a = 1$ means to replace the $x$-th gear with another one of radius $y$.<br><br>$a = 2$ means to assign angular velocity $y$ to the $x$-th gear and then determine the maximum angular velocity.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For each test case, firstly output &quot;<b>Case #$x$:</b>&quot; in one line (without quotes), where $x$ indicates the case number starting from $1$, and then for each operation of $a = 2$, output in one line a real number, the natural logarithm of the maximum angular velocity, with the precision of $3$ digits.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">4 3 4
+1 4 16 2
+1 2 4
+1 2 3
+2 1 4
+1 1 16
+1 2 4
+2 4 4
+1 4 16
+4 3 5
+2 16 4 8
+2 1 2
+1 2 3
+1 1 4
+2 1 4
+1 3 8
+2 1 16
+1 4 1
+2 1 8</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">Case #1:
+1.386
+Case #2:
+2.773
+3.466
+2.773</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2017+Multi-University+Training+Contest+-+Team+1&source=1&searchmode=source"> 2017 Multi-University Training Contest - Team 1 </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

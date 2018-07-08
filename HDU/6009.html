@@ -1,0 +1,50 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title> Lazors</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU6009.  Lazors</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：12000/6000 MS (Java/Others)</span> <span class="ui label">时间限制：32768/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Lazors is a puzzle game of lazers and reflections. There is a board of size N × M; some lazer transmitters and receivers installed on the board; and some tiles are initally placed in the board cells. The goal is to move the tiles so that all receivers get radiated by lazer beams with possible a series of reflections and refractions.<br>Transmitters are always at the center of one side of a cell. The direction of an emitted lazer beam is either diagnal or anti-diagonal. Each transmitter can be described by 4 parameters: x, y, from_dir, to_dir, where from_dir and to_dir is one of N, S, E, or W, representing north, south, east or west side of the cell. The first two parameters indicate the emitted lazer beam comes from cell on row x, column y; the last two indicate the direction of the emitted lazer beam.<br>Receivers are also at the center of one side of a cell. Each receiver can be described by 3 parameters:<br>x, y, dir, where dir is one of N, S, E, or W, representing north, south, east or west side of the cell. The parameters indicate the receiver is located at the center of dir side of the cell on row x, column y.<br>There are 4 types of tiles: white tile, black tile, glass tile, and prism tile. Each type of tile has its unique nature on lazer beam reflection and refraction.<br>A white tile reflects lazer beams by law of reflection. In the following picture, the transmitter is the small red dot in the north-west corner, and the radiated receiver is the big red dot in the<br>north-east corer.<br> <center><img style='max-width:100%;' src=./data/images/6009-1.jpg></center> <br>A black tile absorbs lazer beams. Lazer beams are stopped upon hitting the black tile. In the following picture, the transmitter is the small red dot in the north-west corner, and the un-radiated receiver is the target icon in the south-east corner.<br> <center><img style='max-width:100%;' src=./data/images/6009-2.jpg></center><br>A glass tile split one lazer beam into two lazer beams, with one beam reflected by law of reflection and the other passing through the tile. In the following picture, the transmitter is the small red dot in the south-east corner, and the radiated receivers are the two big red dots above the receiver.<br> <center><img style='max-width:100%;' src=./data/images/6009-3.jpg></center><br>A prism tile refracts lazer beams. A lazer beam is “shifted” by one unit of grid and keeps going with the orignal direction. In the following picture, the transmitter is the small red dot in the north-west corner, and the radiated receiver is the big red dot in the south-east corner.<br> <center><img style='max-width:100%;' src=./data/images/6009-4.jpg></center> <br>A fixed tile is locked on the board. You cannot move a fixed tile. In the following picutre, the white tile on row 2 column 2 is fixed. Black tiles, glass tiles, and prism tiles can also be fixed.<br><center><img style='max-width:100%;' src=./data/images/6009-5.jpg></center> <br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The first line of the input gives the number of test cases, T. T test cases follow.<br>Each test case starts with a line containing two integers: N, M. Each of the following N lines contains M characters:<br>$\bullet$ ‘.’ indicates an empty cell.<br>$\bullet$ ‘#’ indicates an cell that forbids placing any tiles.<br>$\bullet$ ‘o’ or ‘O’ indicates a white tile.<br>$\bullet$ ‘b’ or ‘B’ indicates a black tile.<br>$\bullet$ ‘x’ or ‘X’ indicates a glass tile.<br>$\bullet$ ‘m’ or ‘M’ indicates a prism tile.<br>$\bullet$ Capitial letters indicate fixed tiles.<br>Next line contains an integer X, the number of transmitters. Each of the following X lines contains<br>2 integers x, y; and 2 characters from_dir, to_dir.<br>Next line contains an integer Y , the number of receivers. Each of the following Y lines contains 2 integers x, y; and 1 character dir.<br><br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For each test case, output a line containing “Case #x:”, where x is the test case number (starting from 1). Next print the borad configuration with the same format as the input if there exists a solution, or print a line “No solution!”. If there exist multiple solutions, any solution is accepted.<br><h2>limits</h2><br>$\bullet$ 1 ≤ T ≤ 120.<br>$\bullet$ 1 ≤ N, M ≤ 6.<br>$\bullet$ 1 ≤ N × M ≤ 24.<br>$\bullet$ 0 ≤ x &lt; N.<br>$\bullet$ 0 ≤ y &lt; M.<br>$\bullet$ dir, from_dir, to_dir is one of N, S, E, or W.<br>$\bullet$ 1 ≤ X ≤ 2.<br>$\bullet$ 1 ≤ Y ≤ 5.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">3
+3 3
+###
+#.#
+##o
+1
+0 0 N E
+1
+0 2 N
+
+3 3
+#m.
+.xb
+o##
+2
+0 0 N E
+0 2 E S
+2
+1 0 W
+2 0 W
+
+4 4
+o.bo
+obBo
+b.b.
+Bb..
+1
+0 1 N E
+1
+2 3 E</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">Case #1:
+###
+#o#
+##.
+Case #2:
+#xb
+..o
+m##
+Case #3:
+b.ob
+o.Bo
+b...
+Bbob
+<div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div>
+Case #1:
+ <center><img src='./data/images/6009-6.jpg'></center>
+Case #2:
+<center><img src='./data/images/6009-7.jpg'></center>
+Case #3:
+<center><img src='./data/images/6009-8.jpg'></center> 
+</div><i style='font-size:1px'> </i></div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2016+CCPC-Final&source=1&searchmode=source"> 2016 CCPC-Final </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

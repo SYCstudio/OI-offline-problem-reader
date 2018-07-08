@@ -1,0 +1,32 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Simple Computers</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU1341. Simple Computers</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：2000/1000 MS (Java/Others)</span> <span class="ui label">时间限制：65536/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">You are to write an interpreter for a simple computer. This computer uses a processor with a small number of machine instructions. Furthermore, it is equipped with 32 byte of memory, one 8-bit accumulator (accu) and a 5-bit program counter (pc). The memory contains data as well as code, which is the usual von Neumann architecture. <br>The program counter holds the address of the instruction to be executed next. Each instruction has a length of 1 byte - the highest 3 bits define the type of instruction and the lowest 5 bits define an optional operand which is always a memory address (xxxxx). For instructions that don't need an operand the lowest 5 bits have no meaning (-----). Here is a list of the machine instructions and their semantics: <br><br>000xxxxx   STA x   store the value of the accu into memory byte x<br>001xxxxx   LDA x   load the value of memory byte x into the accu<br>010xxxxx   BEQ x   if the value of the accu is 0 load the value x into the pc<br>011-----   NOP     no operation<br>100-----   DEC     subtract 1 from the accu<br>101-----   INC     add 1 to the accu<br>110xxxxx   JMP x   load the value x into the pc<br>111-----   HLT     terminate program<br><br><br>In the beginning, program counter and accumulator are set to 0. After fetching an instruction but before its execution, the program counter is incremented. You can assume that programs will terminate.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The input file contains several test cases. Each test case specifies the contents of the memory prior to execution of the program. Byte 0 through 31 are given on separate lines in binary representation. A byte is denoted by its highest-to-lowest bits. Input is terminated by EOF.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For each test case, output on a line the value of the accumulator on termination in binary representation, again highest bits first.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">00111110
+10100000
+01010000
+11100000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00111111
+10000000
+00000010
+11000010
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+11111111
+10001001</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">10000111</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=University+of+Ulm+Local+Contest+2000&source=1&searchmode=source"> University of Ulm Local Contest 2000 </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

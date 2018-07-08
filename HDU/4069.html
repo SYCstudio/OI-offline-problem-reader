@@ -1,0 +1,43 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Squiggly Sudoku</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU4069. Squiggly Sudoku</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：4000/2000 MS (Java/Others)</span> <span class="ui label">时间限制：65536/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Today we play a squiggly <a href=http://en.wikipedia.org/wiki/Sudoku>sudoku</a>, The objective is to fill a 9*9 grid with digits so that each column, each row, and each of the nine Connecting-sub-grids that compose the grid  contains all of the digits from 1 to 9.<br>Left figure is the puzzle and right figure is one solution.<br><center><img style='max-width:100%;' src=./data/images/C348-1009-1.jpg></center> <br>Now, give you the information of the puzzle, please tell me is there no solution or multiple solution or one solution.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The first line is a number T(1&lt;=T&lt;=2500), represents the number of case. The next T blocks follow each indicates a case.<br>Each case contains nine lines, Each line contains nine integers.<br>Each module number tells the information of the gird and is the sum of up to five integers:<br>0~9: '0' means this gird is empty, '1' - '9' means the gird is already filled in.<br>16: wall to the up<br>32: wall to the right<br>64: wall to the down<br>128: wall to the left<br>I promise there must be nine Connecting-sub-grids, and each contains nine girds.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For each case, if there are Multiple Solutions or no solution just output &quot;Multiple Solutions&quot; or &quot;No solution&quot;. Else output the exclusive solution.(as shown in the sample output)</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">3
+144 18 112 208 80 25 54 144 48
+135 38 147 80 121 128 97 130 32
+137 32 160 144 114 167 208 0 32
+192 100 160 160 208 96 183 192 101
+209 80 39 192 86 48 136 80 114
+152 48 226 144 112 160 160 149 48
+128 0 112 166 215 96 160 128 41
+128 39 153 32 209 80 101 136 35
+192 96 200 67 80 112 208 68 96 
+
+144 48 144 81 81 16 53 144 48
+128 96 224 144 48 128 103 128 38
+163 208 80 0 37 224 209 0 32
+135 48 176 192 64 112 176 192 104
+192 101 128 89 80 82 32 150 48
+149 48 224 208 16 48 224 192 33
+128 0 114 176 135 0 80 112 169
+137 32 148 32 192 96 176 144 32
+192 96 193 64 80 80 96 192 96
+
+144 88 48 217 16 16 80 112 176
+224 176 129 48 128 40 208 16 37
+145 32 128 96 196 96 176 136 32
+192 32 227 176 144 80 96 192 32
+176 192 80 98 160 145 80 48 224
+128 48 144 80 96 224 183 128 48
+128 36 224 144 51 144 32 128 105
+131 64 112 136 32 192 36 224 176
+224 208 80 64 64 116 192 83 96</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">Case 1:
+521439678
+763895124
+984527361
+346182795
+157964832
+812743956
+235678419
+479216583
+698351247
+Case 2:
+No solution
+Case 3:
+Multiple Solutions</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=The+36th+ACM%2FICPC+Asia+Regional+Fuzhou+Site+%A1%AA%A1%AA+Online+Contest&source=1&searchmode=source"> The 36th ACM/ICPC Asia Regional Fuzhou Site —— Online Contest </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

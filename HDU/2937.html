@@ -1,0 +1,24 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Overlapping Squares</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU2937. Overlapping Squares</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：2000/1000 MS (Java/Others)</span> <span class="ui label">时间限制：32768/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">In most puzzles we are given some pieces and we have to make a target pattern which can be built in only one possible way. But some puzzles are a bit different, we are given a target pattern and from that target pattern we have to find in how many ways the pieces can be placed. Such a puzzle is the puzzle of overlapping squares. To understand this puzzle, look at the pictures below:<br><center><img style='max-width:100%;' src=./data/images/C193-1009-1.JPG>  </center><br><br>[tu pian]<br>In first figure we have placed a (2x2) filled square in a (4x4) grid. In the second figure we have placed another (2x2) filled square in the grid, which have of course deleted some part of the black lines of the previous square, in third picture we have placed a third square and in the fourth picture we have placed a fourth square. The picture can become even more complex if we place more (2x2) squares. Write a program to determine if it's possible to form a target image using at most six pieces of 2x2 squares.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The input consists of several test cases. Each test case is contained in five lines and each line contains nine characters. If the horizontal border of a filled square is visible it is denoted with ‘_’ (ASCII value 95) sign and if vertical border of a filled square is visible then it is denoted with ‘|’ (ASCII value 124) character. The board contains no other character than ‘_’, ‘|’ and of course ‘ ’ (ASCII Value 32). The border lines of the squares can only be along the grid lines. Each board lines end with a ‘#’ (Hash character) which denotes the end of line. This character is not a part of the grid or square. The last test case is followed by a single zero, which should not be processed.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For each test case, print the case number and 'Yes' or 'No', depending on whether it's possible to form the target.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">         #
+ _ _ _   #
+| |_ _|  #
+|_|   |  #
+  |_ _|  #
+         #
+   _ _   #
+  |   |  #
+  |_ _|  #
+         #
+ _ _ _ _ #
+|_|_|_|_|#
+|_|_|_|_|#
+|_|_|_|_|#
+|_|_|_|_|#
+   _ _   #
+ _|   |_ #
+| |_ _| |#
+|_|   |_|#
+  |_ _|_|#
+0</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">Case 1: Yes
+Case 2: Yes
+Case 3: No
+Case 4: Yes</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2006+Asia+Regional+Xi-An&source=1&searchmode=source"> 2006 Asia Regional Xi-An </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

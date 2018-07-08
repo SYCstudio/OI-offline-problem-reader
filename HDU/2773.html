@@ -1,0 +1,22 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>White Water Rafting</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU2773. White Water Rafting</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：2000/1000 MS (Java/Others)</span> <span class="ui label">时间限制：32768/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">You have been hired by a big theme park to design a new attraction: a white water rafting ride. You already designed the track; it is a round trip that is described by an inner and an outer polygon. The space in between the two polygons is the track.<br><br>You still need to design the rafts, however. It has been decided that they should be circular, so that they can spin freely along the track and increase the fun and excitement of the ride. Besides that, they should be as big as possible to fit the maximum number of people, but they can't be too big, for otherwise they would get stuck somewhere on the track.<br><br>What is the maximum radius of the rafts so that they can complete the track? </div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">On the first line one positive number: the number of testcases, at most 100. After that per testcase:<br><br>    * One line with an integer ni (3 ≤ ni ≤ 100): the number of points of the inner polygon.<br>    * ni lines with two integers each: the coordinates of the points of the inner polygon in consecutive order.<br>    * One line with an integer no (3 ≤ no ≤ 100): the number of points of the outer polygon.<br>    * no lines with two integers each: the coordinates of the points of the outer polygon in consecutive order. <br><br>All coordinates have absolute value no larger than 1000. The points of the polygons can be given in either clockwise or counterclockwise order and the two polygons do not intersect or touch themselves or each other. The outer polygon encloses the inner polygon. </div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Per testcase:<br><br>    * One line with a floating point number: the maximal radius of the white water rafts. This number must have a relative or absolute error less than 10<sup>-6</sup>. </div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">2
+4
+-5 -5
+5 -5
+5 5
+-5 5
+4
+-10 -10
+-10 10
+10 10
+10 -10
+3
+0 0
+1 0
+1 1
+5
+3 -3
+3 3
+-4 2
+-1 -1
+-2 -2</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">2.5
+0.70710678</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=NWERC+2008&source=1&searchmode=source"> NWERC 2008 </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

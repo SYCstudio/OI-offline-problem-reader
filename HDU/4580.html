@@ -1,0 +1,49 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Worm</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU4580. Worm</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：3000/1000 MS (Java/Others)</span> <span class="ui label">时间限制：65535/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Guy is a flying worm. A gun men are hunting him. Guy can't keep running all the time . At night ,he has to find a place to sleep, and that's very dangerous. In the sky, there are many flying rocks, Guy decides to stay on those rocks at night. The good thing is that the gun man is stupid, he always fire toward a fixed direction. And Guy knows the direction. Guy wants to find a place on a certain rock so that the rock can protect him best from the bullets. The more distance a bullet has to travel inside the rock to reach Guy, the safer is Guy. Please find the safest place for Guy. <br>Guy's world is a 2D plane. A rock can be consider as a polygon. Guy can just stay on the edge of the rock, he can't get inside a rock. Guy stands on a rock ,but he can't hang on a rock. As shown below, Guy can stay on point B,C and D, but he can't stay on point A,E,F and G because if he stay there, he will fall down to the ground when he get asleep.<br><br><center><img style='max-width:100%;' src=./data/images/C474-1005-1.jpg></center> <br><br>The direction of the gun fire can be described as a vector (d<sub>x</sub>, d<sub>y</sub>). The gun man is infinite far away, and he can choose any infinite far away point as the firing position. In other words, the bullet may fly along any straight line which is parallel to the vector (d<sub>x</sub>,d<sub>y</sub>). </div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">First Line is an integer T &lt;=20, means the number of test cases.<br>In each test cases, the first line is one integer m describing the number of polygons.<br>Then m polygons follow. Each Polygon P starts with an integer n as the number of vertex of P. after that there are n lines, each line is an integer pair (x, y) , meaning a vertex of P, in clockwise or counter-clockwise order.<br>The last line of each test case is two integers d<sub>x</sub>, d<sub>y</sub>, meaning that vector (d<sub>x</sub>,d<sub>y</sub>) is the direction of the gun fires.<br>The sum of the vertexes number of all polygons is smaller or equal to 1000.<br>The polygons will not intersect with each other or themselves. One polygon cannot be inside another.<br>There may be extra spaces and empty lines in the input data.<br>For more detail, see the sample input.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Output one line for each test case ---- the distance a bullet has to travel inside the rock to reach Guy when Guy stays on the safest place. If the bullet can hit Guy directly, output “Poor guy” instead. The result must be round to 2 digits after decimal point.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">3
+1
+6
+0 0
+0 1
+-1 1
+-1 -1
+1 -1
+1 0
+0 1
+
+1
+6
+0 0
+0 1
+-1 1
+-1 -1
+1 -1
+1 0
+0 -1
+
+3
+4
+0 0
+0 1
+2 1
+2 0
+4
+0 2
+0 3
+1 3
+1 2
+4
+1 3
+1 4
+2 4
+2 3
+0 -1</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">2.00
+Poor guy
+1.00
+<div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div>
+In the first sample input, Guy could only stand on two segments: {(-1,1)-(0,1)}, and{(0,0)-(1,0)}
+Notice that, Guy cannot stand on (-1,1),(0,1) and (1,0).
+
+<center><img src='./data/images/C474-1005-2.jpg'></center> 
+
+For the firing direction dx = 0, dy = 1, we could see that the safest place is any point on segment (-1,1) - (0,1) (except two ends). And a bullet has two travel distance 2 inside the rock to hit Guy. 
+Please do pay attention to the test case 2 and 3.
+</div><i style='font-size:1px'> </i></div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2013ACM-ICPC%BA%BC%D6%DD%C8%FC%C7%F8%C8%AB%B9%FA%D1%FB%C7%EB%C8%FC&source=1&searchmode=source"> 2013ACM-ICPC杭州赛区全国邀请赛 </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

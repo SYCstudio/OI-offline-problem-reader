@@ -1,0 +1,16 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Sequence operation</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU3397. Sequence operation</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：10000/5000 MS (Java/Others)</span> <span class="ui label">时间限制：32768/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">lxhgww got a sequence contains n characters which are all '0's or '1's.<br>We have five operations here:<br>Change operations:<br>0 a b  change all characters into '0's in [a , b]<br>1 a b  change all characters into '1's in [a , b]<br>2 a b  change all '0's into '1's and change all '1's into '0's in [a, b]<br>Output operations:<br>3 a b  output the number of '1's in [a, b]<br>4 a b  output the length of the longest continuous '1' string in [a , b]</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">T(T&lt;=10) in the first line is the case number.<br>Each case has two integers in the first line: n and m (1 &lt;= n , m &lt;= 100000).<br>The next line contains n characters, '0' or '1' separated by spaces.<br>Then m lines are the operations:<br>op a b: 0 &lt;= op &lt;= 4 , 0 &lt;= a &lt;= b &lt; n. </div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For each output operation , output the result.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">1
+10 10
+0 0 0 1 1 0 1 0 1 1
+1 0 2
+3 0 5
+2 2 2
+4 0 4
+0 3 6
+2 3 7
+4 2 8
+1 0 5
+0 5 6
+3 3 9</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">5
+2
+6
+5</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=HDOJ+Monthly+Contest+%A8C+2010.05.01&source=1&searchmode=source"> HDOJ Monthly Contest – 2010.05.01 </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

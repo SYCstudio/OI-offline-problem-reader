@@ -1,0 +1,21 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Rikka with K-Match</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU6094. Rikka with K-Match</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：14000/7000 MS (Java/Others)</span> <span class="ui label">时间限制：65536/65536 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">As we know, Rikka is poor at math. Yuta is worrying about this situation, so he gives Rikka some math tasks to practice. There is one of them:<br><br>Yuta has a graph $G$ with $n$ nodes $(i,j)(1 \leq i \leq n,1 \leq j \leq m)$. There is an edge between $(a,b)$ and $(c,d)$ if and only if $|a-c|+|b-d|=1$. Each edge has its weight.<br><br>Now Yuta wants to calculate the minimum weight $K$-matching of $G$.<br><br>It is too difficult for Rikka. Can you help her?&nbsp;&nbsp;<br><br>An edge set $S$ is a match of $G=\langle V,E \rangle$ if and only if each nodes in $V$ connects to at most one edge in $S$. A match $S$ is a $K$-match if and only if $|S|=K$. The weight of a match $S$ is the sum of the weights of the edges in $S$. And finally, the minimum weight $K$-matching of $G$ is defined as the $K$-match of $G$ with the minimum weight.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The first line contains a number $t(1 \leq t \leq 1000)$, the number of the testcases. And there are no more than $3$ testcases with $n &gt; 100$.<br><br>For each testcase, the first line contains three numbers $n,m,K(1 \leq n \leq 4 \times 10^4,1 \leq m \leq 4),1 \leq K \leq \lfloor \frac{nm}{2} \rfloor$.<br><br>Then $n-1$ lines follow, each line contains $m$ numbers $A_{i,j}(1 \leq A_{i,j} <br>\leq 10^9)$ -- the weight of the edge between $(i,j)$ and $(i+1,j)$.<br><br>If $m&gt;1$, then $n$ lines follow, each line contains $m-1$ numbers $B_{i,j}(1 \leq B_{i,j} \leq 10^9)$ -- the weight of the edge between $(i,j)$ and $(i,j+1)$.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For each testcase, print a single line with a single number -- the answer.<br><br>It is guaranteed that there exists at least one $K$-match.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">3
+3 3 1
+3 4 5
+8 9 10
+1 2
+6 7
+11 12
+3 3 2
+3 4 5
+8 9 10
+1 2
+6 7
+11 12
+3 3 3
+3 4 5
+8 9 10
+1 2
+6 7
+11 12</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">1
+5
+12</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2017+Multi-University+Training+Contest+-+Team+5&source=1&searchmode=source"> 2017 Multi-University Training Contest - Team 5 </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

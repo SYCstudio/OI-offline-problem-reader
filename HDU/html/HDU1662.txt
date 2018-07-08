@@ -1,0 +1,109 @@
+<html><head><meta name=keywords content="HDOJ ACM ICPC OJ C C++ Pascal Java"><meta http-equiv=Content-Type content="text/html;charset=gb2312"><link rel=stylesheet type=text/css href="/images/global.css" media=all><link rel=stylesheet type=text/css href="/css/diyinhead.css" media=all><link rel=stylesheet type=text/css href="/css/webinhead.css" media=all><script src="/js/global.js" type=text/javascript></script><script src="/js/register.js" type=text/javascript></script><script src="/js/MathJax/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script><title>Problem - 1662</title></head><body >
+<a name=top></a>
+<table align=center cellSpacing=0 cellPadding=0 width=980 border=0 style="word-wrap:break-word">
+<tr>
+	<td style="border:#1A5CC8 1px solid" align=center width=100%>
+		<a href="/">
+			<img src="/images/banner.jpg" width="100%" height=116 border=0>
+		</a>
+	</td>
+</tr>
+<tr>
+	<td style="border:#1A5CC8 1px solid">
+	<table cellSpacing=0 cellPadding=1 width="979px">
+	<tr bgcolor=#1A5CC8 align=center class=banner height=25>
+		<td>Online Judge</td>
+		<td>Online Exercise</td>
+		<td>Online Teaching</td>
+		<td>Online Contests</td>
+	<td>Exercise Author</td>
+	</tr>
+	<tr style="font-size:16px" align=center>
+		<td width=20% valign=top>
+		<a href="/faq.php" style="text-decoration: none">F.A.Q</a><br>
+		<a href="/friends" style="text-decoration: none">Hand In Hand</a><br>
+		<a href="/onlineuser.php" style="text-decoration: none">Online Acmers</a>	<br>
+		<!-- /onlineuser.php-->
+		
+		<a href="/forum" style="text-decoration: none">Forum | </a><a href="/discuss/public/list.php" style="text-decoration: none">Discuss</a><br>
+		<a href="/statistic/submit_graph.php" style="text-decoration: none">Statistical Charts</a><br>
+		</td>
+		<td width=20% valign=top>
+		<form action="/search.php" method=get>
+		<a href="/listproblem.php?vol=1" style="text-decoration: none">Problem Archive</a><br/>
+		<!--<a href="http://feeds.feedburner.com/Hdoj-problemset"><img src="/images/rss1.jpg" alt="problemset" style="vertical-align:text-bottom;"width=20 height=20></a><br>-->
+		<!--
+			 <a href="/submit.php">Submit Solution</a><br>
+		-->	
+		<a href="/status.php" style="text-decoration: none">Realtime Judge Status</a><br>
+
+		<a href="/ranklist.php" style="text-decoration: none">Authors Ranklist</a><br>
+		<input name=field value=author type=hidden><input class=text60 name=key>&nbsp;<input class=button40 type=submit value=Search>
+		
+		<!--
+			<input name=field value=problem type=hidden><input class=text60 name=key>&nbsp;<input class=button40 type=submit value=Search>
+		-->
+		</form>
+		</td>
+		<td width=20% valign=top>
+		 <form action='/search.php' method=get> 
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="text-decoration: none" href="http://code.hdu.edu.cn/">C/C++/Java Exams &nbsp;&nbsp;&nbsp;&nbsp;</a><br/>
+		<a style="text-decoration: none" href="/game">ACM Steps</a><br/>
+		<a href = "/ITJobs/">Go to Job</a><br/>	
+		<a href="/livecast" style="text-decoration: none">Contest LiveCast</a><br/>
+		<a style="text-decoration: none" href="/region">ICPC@China</a><br/>
+		<!-- <a href="/register.php">Register New Author</a><br> -->
+		<!-- <a href="/modifyuser.php">Update Your Information</a><br> -->
+		</form>
+		</td>
+		<td width=20% valign=top>
+		<a href="http://bestcoder.hdu.edu.cn" style="text-decoration: none; color: red; font-weight: bold;">Best Coder <sup style="color: gray;">beta</sup></a><br/><a href="/vip/contest_list.php" style="text-decoration: none">VIP</a> | <a href="/contests/contest_list.php" style="text-decoration: none">STD Contests</a><br /><a href="http://code.hdu.edu.cn/vcontest" style="text-decoration: none">Virtual Contests </a><br/>&nbsp;&nbsp;<a href="/diy/contest_list.php" style="text-decoration: none">&nbsp;&nbsp;DIY | </a><a href="/webcontest" style="text-decoration: none"><font color="">Web-DIY</font> <font size=1 color="gray"><sup>beta</sup></font></a><br/><a style="text-decoration: none" href="/recentcontest">Recent Contests</a><br/>		</td>
+		<td width=20%>
+					<form method=post action="/userloginex.php?action=login">
+			  <table width=168 border=0 align=center cellspacing=0>
+			  	<tr><td align=center colspan=2><a href="/qqlogin/oauth/login.php"><img src="/qqlogin/images/qqlogin.png" border="0" /></a></td></tr>
+				<tr><td width=68>Author ID&nbsp;</td><td align=right><input name=username type=text class=text90 maxlength=20></td></tr>
+				<tr><td>Password&nbsp;</td><td align=right><input name=userpass type=password class=text90 maxlength=20></td></tr>
+			  </table>
+			  <input name=login type=submit class=button40 value="Sign In">&nbsp;<a href="http://bestcoder.hdu.edu.cn/register.php?url=acm.hdu.edu.cn/userloginex.php?action=login" style="text-decoration: none">Register new ID</a>
+			</form>
+						</td>
+	</tr>
+	</table>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div align=center id=rollword><marquee scrollamount=2 width=600 scrolldelay=30 onMouseOver="javascript:this.stop();" onMouseOut="javascript:this.start();"><b style="margin-right:20px"></b></marquee></div>	</td>
+</tr>
+<tr><td align=center><h1 style='color:#1A5CC8'>Link and Pop -- the Block Game</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 30000/10000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 182&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 29<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>Recently, Robert found a new game on the Internet that is the newest version of `Link and Pop'. The game rule is very simple. Initially, a board of size n×m is filled with n×m blocks. Each of these blocks has a symbol on it. All you need to do is to find a pair of blocks with the same symbol on them, which can be linked with a line that consists of at most three straight horizontal or vertical line segments. Note that the line segments cannot cross the other blocks on the board (see fig.1 for some examples of possible links, note that some blocks have been already removed from the board). <br><center><img style='max-width:100%;' src=/data/images/1662-1.jpg></center><br><br><br><br><br>If you successfully find such a pair of blocks, the two blocks can be popped (that is, removed) together. After this, some of the blocks may be moved to new positions on the board following the rules described later. Then, you can start to find the next pair. The game continues until there are no block left on the board or you cannot find such a pair. <br><br>The blocks are moved according to the following rules. First, each block have a static moving attribute, which is one of `up', `down', `left', `right' and `stand still'. After a pair of block is removed, the blocks are checked one by one to see whether they can be moved towards the direction of its moving attribute. The blocks in the top row are checked first. Inside the same row, the blocks on the left are checked first. If the adjacent position at the direction of the block's moving attribute is not occupied, the block will be moved to that position immediately. No block can be moved beyond the boundary of the game board. Of course, a block with attribute `stand still' will always stay at its original position. After all the blocks are checked, which is called a turn of checking, another turn of checking is started. This continues until no more blocks can be moved to a new position following the moving rules. Note that inside each turn of checking, each of the blocks is checked and possibly moved only once. Blocks must not be checked and moved on its new position in one turn of checking. <br><br>Robert felt that the game was very interesting. However, after some time of playing, he found that when the size of the board is rather large, finding a pair of block becomes a very tough work. Further more, he often gets a `Game Over' because of no more blocks can be popped. Robert felt that it is not his fault that not all the blocks are being popped. It is only that there is a great chance that the game cannot be finished if the blocks are placed randomly at first. However, it will be very time consuming to prove this by playing the game many times. So, Robert asks you to write a program for him that will simulate his behavior in the game and see if the game can be finished. <br><br>In order to make such a program possible, Robert summarizes his rules of selecting block pairs as follows. First, the pair of blocks that can be linked with one straight line segment must be found and popped first, because such kind of pairs are easy to find. Next, if such a pair does not exist, the pairs that can be linked by two straight line segments must be found and popped. Finally, if both of the two kinds of pairs do not exist, the pairs that can be linked by three straight line segments must be found and popped. If more than one pair that can be linked with the same number of straight line segments exists, the pair that contains a block, which is positioned at the most top row (or most left if two more blocks are positioned in the same row), will be selected first. If this rule still cannot break the tie (more than one pair may share one block that is positioned at the most top, left position), the other block in these pairs are compared according to the same rules. Fig.2 shows a trace of a mini game of 'Link and Pop' that follows the above rules. <br><center><img style='max-width:100%;' src=/data/images/1662-2.jpg></center><br><br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>The input contains no more than 30 test cases. The first line of each test case contains 2 integers n, m (1&lt;=n, m&lt;=30), which is the size of the board. After this line, there will be n more lines. Each of these lines contains m strings, separated by single spaces. Each of these strings represents one block in the initial configuration. Each string always consists of two capital letters. The first letter is the symbol of the block. The second letter is always one of the letters `U',`D',`L',`R' and `S', which shows the block's moving attribute: up, down, left, right, and stand still respectively. There are no blank lines between test cases. The input ends with a line of two 0's: `0 0'.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each test case, first output the test case number. After this line, you must output the final configuration of the board with n lines, each containing m characters. If there is a block on the position, output the symbol of the block. If there is no block on the position, output a period instead. Do not output blank lines between test cases. </div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">3 3
+AD AU CL
+HS GU HL
+CS FD GS
+1 2
+BS BL
+0 0</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">Case 1
+...
+...
+.F.
+Case 2
+..</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href="/search.php?field=problem&key=2004+Asia+Regional+Shanghai+&source=1&searchmode=source"> 2004 Asia Regional Shanghai  </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>xhd</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=1662'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=1662'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=1662">Discuss</a> | <a href='note/note.php?pid=1662'>Note</a><br></td></tr><tr>
+<td>
+	<table style="border:#1A5CC8 1px solid; font-size:14px" cellSpacing=0 cellPadding=1 width=100%>
+	<tr align=center>
+		<td class=footer_link height=45><a href="/">Home</a> | <a href=#top>Top</a></td>
+		<td style="padding:6px">
+			Hangzhou Dianzi University Online Judge 3.0<br>
+			Copyright &copy; 2005-2018 <a href=mailto:acm@hdu.edu.cn>HDU ACM Team</a>. All Rights Reserved.<br>
+			<a href="../about_us/developer.php">Designer & Developer </a>: <a>Wang Rongtao</a>&nbsp<a>LinLe</a>&nbsp<a href=mailto:gjavac@gmail.com >GaoJie</a>&nbsp<a href=mailto:gl8997@gmail.com >GanLu</a><br>
+			<span class=pagerunstatus>Total 0.000000(s) query 2, Server time : 2018-07-07 21:04:00, Gzip disabled</span>		</td>
+		<td class=footer_link>
+			<!-- <a href="javascript:history.go(-1);">Back</a> | <a href="javascript:history.forward();">Forward</a>-->
+			<a href="/admin">Administration</a>	
+		</td>
+	</tr>
+	</table>
+</td>
+</tr>
+</table>
+</body></html>

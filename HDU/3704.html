@@ -1,0 +1,32 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Gem Combining</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU3704. Gem Combining</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：2000/1000 MS (Java/Others)</span> <span class="ui label">时间限制：32768/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">In the game &quot;Gem Craft&quot;, we create gems in the item bar.<br>There are N grids in the item bar, each grid can only accomodate one gem.<br>Each gem has its level.<br>When the level of a gem upgrade by 1, the power of the gem will be doubled.<br>The key to win the game is to get a high level gem.<br>Gems with level 0 are available directly.<br>To get gems with higher level, the only way is to combine low level gems.<br>Suppose we have 2*N gems with level K now, they can be turned into N gems with level (K+1) afert a combining operation.<br>Your task is to get at least one gem with level M in minimum steps of operation.<br>For one step of operation, you can do one of the following two things:<br>(1) Get gems with level 0 directly, filling up the empty grids.<br>(2) Combine even number of gems with same level.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The input contain some test cases.<br>Each test case contains two integers N and M (1&lt;=N&lt;=36, 0&lt;=M&lt;=20).<br>The input ends when N=M=0, this test case doesn't need processing.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For each test case, output one line.<br>The line contains only one integer, the minimum steps of operation.<br>If there is no solution to get a gem with level M, output -1 instead.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">4 3
+8 3
+0 0</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">9
+4
+
+<div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div>We use dots to present empty grid, use number to present the level of a gem.
+
+The first sample can be solved like this:
+
+****        Initial
+0000        Get level 0 gems
+**11        Combine level 0 gems
+***2        Combine level 1 gems
+0002        Get level 0 gems
+*012        Combine level 0 gems
+0012        Get level 0 gems
+*112        Combine level 0 gems
+**22        Combine level 1 gems
+***3        Combine level 2 gems
+
+In total of 9 steps of operation.
+
+The second sample can be solved like this:
+
+********        Initial
+00000000        Get level 0 gems
+****1111        Combine level 0 gems
+******22        Combine level 1 gems
+*******3        Combine level 2 gems
+
+It only takes 4 steps of operation.
+</div><i style='font-size:1px'> </i></div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=HDOJ+5th+Anniversary+Contest&source=1&searchmode=source"> HDOJ 5th Anniversary Contest </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

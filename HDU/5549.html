@@ -1,0 +1,29 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Walk Around The Campsite</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU5549. Walk Around The Campsite</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：40000/20000 MS (Java/Others)</span> <span class="ui label">时间限制：65535/65535 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Gan Jiang was one of Yu Zhou's friends but worked for Cao Cao. One day Gan Jiang visited Yu Zhou's army and would like to steal something from Yu Zhou's army in the midnight. Yu Zhou invited him to stay for the whole night and set up guards.<br><br>Gan Jiang saw there are $N$ forts numbered 0, 1, 2, …, n-1 in Yu Zhou's army, the guards are connecting the neighbours forts, including $(0,1), (1,2)...(n-2,n-1), (n-1,0)$ to form a simple polygon. Gan Jiang was in the fort 0 only allowed to walk towards the higher numbered forts in straight line. He was not allowed to go inside of the polygon even pass by other vertices, but he can go along the edges of the polygon, e.g, go from fort 2 to fort 3. When Gan Jiang arrived a fort, he could steal letters of value $V_{i}$. But walking makes him unhappy and for each unit length walking, he will get 1 unit of unhappiness, Gan Jiang could end this mission at any time and ride a horse back to Cao Cao.<br><br><center><img style='max-width:100%;' src=./data/images/5549-1.jpg></center><br>$$Figure\ 1:\ 3_{rd}\ sample$$<br><br>Gan Jiang would like to make the total value of letters as big as possible, but make the unhappiness as low as possible. So his target is to make the total value of letters minus total unhappiness as big as possible. Help Gan Jiang to get it.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The first line of the input gives the number of test cases, $T(1≤10)$. $T$ test cases follow. Each test case starts with an integer $N(1≤N≤1000$. Each of the next $N$ lines consists of 3 float numbers with 4 digits after decimal point, $x_{i}$, $y_{i}(-10^{5}≤x_{i},y_{i}≤10^{5})$, $V_{i}(0≤V_{i}≤10^{5})$, $(x_{i},y_{i})$ represents the coordinate of fort $i$ and $V_{i}$ represents the value of the letters in for $i$.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For each test case, output one line containing <b>Case #x: y</b>, where $x$ is the test case number (starting from 1) and $y$ is the maximal value of total value of letters minus total unhappiness. $y$ will be considered correct if it is within an absolute or relative error of $10^{-4}$ of the correct answer.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">3
+
+4
+0.0000 0.0000 0.0000
+1.0000 0.0000 0.5000
+1.0000 1.0000 2.0000
+0.0000 1.0000 0.5000
+
+5
+0.0000 0.0000 0.0000
+1.0000 1.0000 0.5000
+2.0000 0.0000 2.0000
+2.0000 2.0000 3.0000
+0.0000 2.0000 0.0000
+
+11
+0.0000 0.0000 100.0000
+1.0000 1.0000 100.0000
+2.0000 0.0000 100.0000
+2.0000 2.0000 100.0000
+3.0000 2.0000 100.0000
+3.0000 -2.0000 100.0000
+1.0000 0.0000 100.0000
+1.0000 -3.0000 100.0000
+4.0000 -3.0000 100.0000
+4.0000 4.0000 100.0000
+0.0000 4.0000 100.0000</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">Case #1: 0.5000
+Case #2: 1.0000
+Case #3: 1070.3431</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=The+2015+China+Collegiate+Programming+Contest&source=1&searchmode=source"> The 2015 China Collegiate Programming Contest </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

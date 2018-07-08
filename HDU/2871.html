@@ -1,0 +1,20 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Memory Control</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU2871. Memory Control</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：2000/1000 MS (Java/Others)</span> <span class="ui label">时间限制：32768/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Memory units are numbered from 1 up to N.<br>A sequence of memory units is called a memory block.  <br>The memory control system we consider now has four kinds of operations:<br>1.&nbsp;&nbsp;Reset   Reset all memory units free.<br>2.&nbsp;&nbsp;New x  Allocate a memory block consisted of x continuous free memory units with the least start number<br>3.&nbsp;&nbsp;Free x  Release the memory block which includes unit x<br>4.&nbsp;&nbsp;Get x   Return the start number of the xth memory block(Note that we count the memory blocks allocated from left to right)<br>Where 1&lt;=x&lt;=N.You are request to find out the output for M operations. <br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Input contains multiple cases.<br>Each test case starts with two integer N,M(1&lt;=N,M&lt;=50000) ,indicating that there are N units of memory and M operations.<br>Follow by M lines,each line contains one operation as describe above.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For each “Reset” operation, output “Reset Now”.<br>For each “New” operation, if it’s possible to allocate a memory block,<br>output “New at A”,where Ais the least start number,otherwise output “Reject New”.<br>For each “Free” operation, if it’s possible to find a memory block occupy unit x,<br>output “Free from A to B”,where A and B refer to the start and end number of the memory block,otherwise output “Reject Free”.<br>For each “Get” operation, if it’s possible to find the xth memory blocks,<br>output “Get at A”,where A is its start number,otherwise output “Reject Get”.<br>Output one blank line after each test case.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">6 10
+New 2
+New 5
+New 2
+New 2
+Free 3
+Get 1
+Get 2
+Get 3
+Free 3
+Reset</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">New at 1
+Reject New
+New at 3
+New at 5 
+Free from 3 to 4
+Get at 1
+Get at 5
+Reject Get
+Reject Free
+Reset Now</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2009+Multi-University+Training+Contest+7+-+Host+by+FZU&source=1&searchmode=source"> 2009 Multi-University Training Contest 7 - Host by FZU </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

@@ -1,0 +1,54 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Liveness Analysis</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU4659. Liveness Analysis</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：2000/1000 MS (Java/Others)</span> <span class="ui label">时间限制：131072/65536 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">A program syntax is defined as below: <br>PROGRAM ::= STATEMENTS end '\n'<br>STATEMENTS ::= STATEMENT STATEMENTS | epsilon<br>STATEMENT ::= a [variable] '\n' | u [variable] '\n' | IF-CLAUSE<br>IF-CLAUSE ::= if '\n' STATEMENTS end '\n' | if '\n' STATEMENTS else '\n' STATEMENTS end '\n'<br><br>In which '\n' means the new line character, epsilon means an empty string, [variable] means a variable, which is represented by a number between 1 and n (inclusive). Same numbers denote the same variable. <br>The program runs as follows: <br>If the statement is &quot;a [variable]&quot;, it assigns the variable a new value; <br>If the statement if &quot;u [variable]&quot;, it uses value of the variable to do something interesting; <br>If there is an IF-CLAUSE, it is possible that condition of this clause is satisfied or not satisfied. <br><br>We only need to do liveness analysis on this program. This is why we do not explicitly write assigned values, what we do with the variables and condition of IF-CLAUSEs. <br>In this task, there are three kinds of liveness for each of the variables. <br>1. Live. In one or more paths of this program, value of the variable at the beginning of the program is used. <br>2. Dead. In all paths of this program, the variable is assigned a new value before any use of this variable. <br>3. Half-dead. In all paths of this program, value of the variable at the beginning of the program is not used, but in one or more paths, the variable is never assigned a new value. </div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">First line, number of test cases, T. <br>Following are T test cases. For each test case, the first line is n, number of variables in the program. The following lines is the program. <br><br>Number of lines in the input &lt;= 500000</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">T lines. Each line contains n numbers. If the variable is live, output 1; if the variable is dead, output -1; if the variable is half-dead, output 0. </div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">10
+1
+end
+1
+a 1
+end
+1
+u 1
+end
+1
+a 1
+u 1
+end
+1
+u 1
+a 1
+end
+1
+if
+a 1
+else
+a 1
+end
+end
+1
+if
+a 1
+else
+u 1
+end
+end
+1
+if
+a 1
+end
+end
+1
+if
+u 1
+end
+end
+2
+a 1
+u 2
+end</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">0
+-1
+1
+-1
+1
+-1
+1
+0
+1
+-1 1</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2013+Multi-University+Training+Contest+6&source=1&searchmode=source"> 2013 Multi-University Training Contest 6 </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

@@ -1,0 +1,27 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Finding crosses</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU4414. Finding crosses</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：2000/1000 MS (Java/Others)</span> <span class="ui label">时间限制：32768/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The Nazca Lines are a series of ancient geoglyphs located in the Nazca Desert in southern Peru. They were designated as a UNESCO World Heritage Site in 1994. The high, arid plateau stretches more than 80 kilometres (50 mi) between the towns of Nazca and Palpa on the Pampas de Jumana about 400 km south of Lima. Although some local geoglyphs resemble Paracas motifs, scholars believe the Nazca Lines were created by the Nazca culture between 400 and 650 AD.[1] The hundreds of individual figures range in complexity from simple lines to stylized hummingbirds, spiders, monkeys, fish, sharks, orcas, llamas, and lizards.<br><br>Above is the description of Nazca Lines from Wikipedia. Recently scientists found out that those lines form many crosses. Do those crosses have something to do with the Christian religion? Scientists are curious about this. But at first, they want to figure out how many crosses are there. So they took a huge picture of Nazca area from the satellite, and they need you to write a program to count the crosses in the picture.<br><br>To simplify the problem, we assume that the picture is an N*N matrix made up of 'o' and '#', and some '#' can form a cross. Here we call three or more consecutive '#' (horizontal or vertical) as a &quot;segment&quot;. <br><br>The definition of a cross of width M is like this:<br><br>1) It's made up of a horizontal segment of length M and a vertical segment of length M.<br>2) The horizontal segment and the vertical segment overlap at their centers.<br>3) A cross must not have any adjacent '#'.<br>4) A cross's width is definitely odd and at least 3, so the above  mentioned &quot;centers&quot; can't be ambiguous.<br>For example, there is a cross of width 3 in figure 1 and there are no cross in figure 2 ,3 and 4.<br><br><center><img style='max-width:100%;' src=./data/images/C416-1005-1.jpg></center> <br><br>You may think you find a cross in the top 3 lines in figure 2.But it's not true because the cross you find has a adjacent '#' in the 4th line, so it can't be called a &quot;cross&quot;. There is no cross in figure 3 and figure 4 because of the same reason.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">There are several test cases. <br>In each test case:<br>The First line is a integer N, meaning that the picture is a N * N matrix ( 3&lt;=N&lt;=50) . <br>Next N line is the matrix.<br>The input end with N = 0<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For each test case, output the number of crosses you find in a line.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">4
+oo#o          
+o###
+oo#o
+ooo#
+4
+oo#o          
+o###
+oo#o
+oo#o
+5
+oo#oo
+oo#oo          
+#####
+oo#oo
+oo##o
+6
+ooo#oo
+ooo##o          
+o#####
+ooo#oo
+ooo#oo
+oooooo
+0</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">1
+0
+0
+0</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2012+ACM%2FICPC+Asia+Regional+Hangzhou+Online&source=1&searchmode=source"> 2012 ACM/ICPC Asia Regional Hangzhou Online </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

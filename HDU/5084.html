@@ -1,0 +1,32 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>HeHe</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU5084. HeHe</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：5000/3000 MS (Java/Others)</span> <span class="ui label">时间限制：65536/65536 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">$$M = \begin{pmatrix}<br>t_{n-1} &amp; t_n &amp; t_{n+1} &amp; \cdots &amp; t_{2*n-3} &amp; t_{2*n-2}\\ <br>t_{n-2} &amp; t_{n-1} &amp; t_n &amp; \cdots &amp; t_{2*n-4} &amp; t_{2*n-3}\\ <br>t_{n-3} &amp; t_{n-2} &amp; t_{n-1} &amp; \cdots &amp; t_{2*n-5} &amp; t_{2*n-4}\\ <br>\vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots &amp; \vdots\\ <br>t_1 &amp; t_2 &amp; t_3 &amp; \cdots &amp; t_{n-1} &amp; t_n\\ <br>t_0 &amp; t_1 &amp; t_2 &amp; \cdots &amp; t_{n-2} &amp; t_{n-1}\\ <br>\end{pmatrix}$$<br>You are expected to write a program to point out some elements of $M*M$.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Multi test cases (about 100), every case occupies two lines.<br>The first line contains an integer n.<br>Then second line contain 2*n-1 integers $t_0, t_1, t_2, t_3, \ldots, t_{2*n-4}, t_{2*n-3}, t_{2*n-2}$ separated by exact one space.<br>The third line contains an integer m, indicates the number of query.<br>Next m lines will give queries<br>$\begin{matrix}<br>r_0 &amp; c_0\\<br>r_1 &amp; c_1\\<br>r_2 &amp; c_2\\<br>\vdots &amp; \vdots\\<br>r_{m-1} &amp; c_{m-1}<br>\end{matrix}$<br>For $r_0, c_0$ the program will query the element of $M*M$ which locates in the $r_0^{th}$ row, $c_0^{th}$ column. For $r_i, c_i(0&lt;i&lt;m)$, assume that the answer of $i-1^{th}$ query is ANS, the program will query the element of $M*M$ which locates in $((r_i+ANS) \% n)^{th}$ row, $((c_i+ANS) \% n)^{th}$ column.<br>Please process to the end of file.<br>[Technical Specification]<br>$1 \leq n \leq 1000$<br>$0 \leq t_i \leq 100$<br>$0 \leq r_i, c_i \leq n-1$<br>$1 \leq m \leq 100000$</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For each case，output the sum of the answer of each query.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">3
+1 2 3 1 2
+2
+0 0
+1 2
+4
+10 5 7 2 10 5 7
+3
+1 2
+3 0
+2 1
+2
+1 2 3
+4
+0 0
+0 1
+1 0
+1 1</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">23
+348
+22
+<div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div>$\quad\  \text{For the first case }M = \begin{pmatrix}
+3 & 1 & 2\\ 
+2 & 3 & 1\\ 
+1 & 2 & 3
+\end{pmatrix}$
+
+$\text{For the second case }M = \begin{pmatrix}
+2 & 10 & 5 & 7\\ 
+7 & 2 & 10 & 5\\ 
+5 & 7 & 2 & 10\\ 
+10 & 5 & 7 & 2
+\end{pmatrix}$</div><i style='font-size:1px'> </i></div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=BestCoder+Round+%2315&source=1&searchmode=source"> BestCoder Round #15 </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

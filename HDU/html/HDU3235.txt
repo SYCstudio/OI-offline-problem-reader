@@ -1,0 +1,154 @@
+<html><head><meta name=keywords content="HDOJ ACM ICPC OJ C C++ Pascal Java"><meta http-equiv=Content-Type content="text/html;charset=gb2312"><link rel=stylesheet type=text/css href="/images/global.css" media=all><link rel=stylesheet type=text/css href="/css/diyinhead.css" media=all><link rel=stylesheet type=text/css href="/css/webinhead.css" media=all><script src="/js/global.js" type=text/javascript></script><script src="/js/register.js" type=text/javascript></script><script src="/js/MathJax/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script><title>Problem - 3235</title></head><body >
+<a name=top></a>
+<table align=center cellSpacing=0 cellPadding=0 width=980 border=0 style="word-wrap:break-word">
+<tr>
+	<td style="border:#1A5CC8 1px solid" align=center width=100%>
+		<a href="/">
+			<img src="/images/banner.jpg" width="100%" height=116 border=0>
+		</a>
+	</td>
+</tr>
+<tr>
+	<td style="border:#1A5CC8 1px solid">
+	<table cellSpacing=0 cellPadding=1 width="979px">
+	<tr bgcolor=#1A5CC8 align=center class=banner height=25>
+		<td>Online Judge</td>
+		<td>Online Exercise</td>
+		<td>Online Teaching</td>
+		<td>Online Contests</td>
+	<td>Exercise Author</td>
+	</tr>
+	<tr style="font-size:16px" align=center>
+		<td width=20% valign=top>
+		<a href="/faq.php" style="text-decoration: none">F.A.Q</a><br>
+		<a href="/friends" style="text-decoration: none">Hand In Hand</a><br>
+		<a href="/onlineuser.php" style="text-decoration: none">Online Acmers</a>	<br>
+		<!-- /onlineuser.php-->
+		
+		<a href="/forum" style="text-decoration: none">Forum | </a><a href="/discuss/public/list.php" style="text-decoration: none">Discuss</a><br>
+		<a href="/statistic/submit_graph.php" style="text-decoration: none">Statistical Charts</a><br>
+		</td>
+		<td width=20% valign=top>
+		<form action="/search.php" method=get>
+		<a href="/listproblem.php?vol=1" style="text-decoration: none">Problem Archive</a><br/>
+		<!--<a href="http://feeds.feedburner.com/Hdoj-problemset"><img src="/images/rss1.jpg" alt="problemset" style="vertical-align:text-bottom;"width=20 height=20></a><br>-->
+		<!--
+			 <a href="/submit.php">Submit Solution</a><br>
+		-->	
+		<a href="/status.php" style="text-decoration: none">Realtime Judge Status</a><br>
+
+		<a href="/ranklist.php" style="text-decoration: none">Authors Ranklist</a><br>
+		<input name=field value=author type=hidden><input class=text60 name=key>&nbsp;<input class=button40 type=submit value=Search>
+		
+		<!--
+			<input name=field value=problem type=hidden><input class=text60 name=key>&nbsp;<input class=button40 type=submit value=Search>
+		-->
+		</form>
+		</td>
+		<td width=20% valign=top>
+		 <form action='/search.php' method=get> 
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="text-decoration: none" href="http://code.hdu.edu.cn/">C/C++/Java Exams &nbsp;&nbsp;&nbsp;&nbsp;</a><br/>
+		<a style="text-decoration: none" href="/game">ACM Steps</a><br/>
+		<a href = "/ITJobs/">Go to Job</a><br/>	
+		<a href="/livecast" style="text-decoration: none">Contest LiveCast</a><br/>
+		<a style="text-decoration: none" href="/region">ICPC@China</a><br/>
+		<!-- <a href="/register.php">Register New Author</a><br> -->
+		<!-- <a href="/modifyuser.php">Update Your Information</a><br> -->
+		</form>
+		</td>
+		<td width=20% valign=top>
+		<a href="http://bestcoder.hdu.edu.cn" style="text-decoration: none; color: red; font-weight: bold;">Best Coder <sup style="color: gray;">beta</sup></a><br/><a href="/vip/contest_list.php" style="text-decoration: none">VIP</a> | <a href="/contests/contest_list.php" style="text-decoration: none">STD Contests</a><br /><a href="http://code.hdu.edu.cn/vcontest" style="text-decoration: none">Virtual Contests </a><br/>&nbsp;&nbsp;<a href="/diy/contest_list.php" style="text-decoration: none">&nbsp;&nbsp;DIY | </a><a href="/webcontest" style="text-decoration: none"><font color="">Web-DIY</font> <font size=1 color="gray"><sup>beta</sup></font></a><br/><a style="text-decoration: none" href="/recentcontest">Recent Contests</a><br/>		</td>
+		<td width=20%>
+					<form method=post action="/userloginex.php?action=login">
+			  <table width=168 border=0 align=center cellspacing=0>
+			  	<tr><td align=center colspan=2><a href="/qqlogin/oauth/login.php"><img src="/qqlogin/images/qqlogin.png" border="0" /></a></td></tr>
+				<tr><td width=68>Author ID&nbsp;</td><td align=right><input name=username type=text class=text90 maxlength=20></td></tr>
+				<tr><td>Password&nbsp;</td><td align=right><input name=userpass type=password class=text90 maxlength=20></td></tr>
+			  </table>
+			  <input name=login type=submit class=button40 value="Sign In">&nbsp;<a href="http://bestcoder.hdu.edu.cn/register.php?url=acm.hdu.edu.cn/userloginex.php?action=login" style="text-decoration: none">Register new ID</a>
+			</form>
+						</td>
+	</tr>
+	</table>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div align=center id=rollword><marquee scrollamount=2 width=600 scrolldelay=30 onMouseOver="javascript:this.stop();" onMouseOut="javascript:this.start();"><b style="margin-right:20px"></b></marquee></div>	</td>
+</tr>
+<tr><td align=center><h1 style='color:#1A5CC8'>Final Combat</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 20000/20000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 32768/32768 K (Java/Others)<br>Total Submission(s): 108&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 11<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>You’re playing an RPG, which is arguably the best Chinese RPG in 2007. You got to the final combat. You want to win as soon as possible. Do you know what I am talking about?<br><br><b>For competitors who're not familiar with the game</b>: we're giving a brief introduction to the combat system and the characters involved in that last combat very soon.<br><br><b>For competitors who're too familiar with the game</b>: we're simplifying and/or changing the rules and facts for this problem. We apologize if you feel unhappy about that.<br><br><center><img style='max-width:100%;' src=../../../data/images/3235-1.jpg></center><br><center>Fig. The final combat</center><br>The screenshot above gives you some idea about the combat system and the characters, which can be summarized as follows:<br><br><li>You have 4 heroes: Yun Tianhe (YTH), Han Lingsha (HLS), Liu Mengli (LML) and Murong Ziying (MRZY). Before the combat begins, you need to choose <b>exactly</b> three heroes and rearrange them in some order. Let's call the 1st, 2nd and 3rd hero H1, H2 and H3, respectively. In this screenshot above, H1 is YTH, H2 is HLS and H3 is LML. (Sorry for the Ziying fans!)</li><br><li>There are two bosses: Xuan Xiao (XX) and Su Yao (SY), both in the back of the screenshot.</li><br><li>The goal of this combat is to defeat SY. In this problem, you can assume that XX is immortal, although it's possible to defeat him in the real game.</li><br>The key to this problem is to understand the &quot;semi&quot; round-based combat system. See the <b>&quot;progress bar&quot;</b> on the top of the screen? Each hero has a very small <b>progress ball</b> (in light-blue) on the bar, with an icon above the ball. Similarly, each boss also has a ball (in red), but the icon is below the ball. When the combat begins, all the progress balls start moving from the left corner of the bar. When a ball reaches the right corner, the corresponding character is able to act. If more than one character can act, they make actions one by one, according to this precedence order: YTH, HLS, LML, MRZY, XX, SY. When a character is acting, all progress balls stopped moving. After a character finished an action, his/her progress ball is reset to the left corner of the progress bar. When nobody is acting, all progress balls go right simultaneously (but possibly with different speeds, see below).<br><br>In this problem, each character has 4 main properties: Jing, Qi, Shen, Su.<br><br><li><b>Jing</b> means &quot;health&quot;. When a character's Jing reaches zero or negative, he/she is defeated. A character's maximum Jing is denoted by parameter <i>maxjing</i>.</li><br><li><b>Qi</b> means &quot;vitality&quot;. It is used by special-skill attacks. When Qi is not enough, certain special-skill attacks cannot be performed. A character's maximum Qi is always 100.</li><br><li><b>Shen</b> means &quot;spirit&quot;. It is used by Xian Shu (something similar to, but more amazing than &quot;magic&quot;). When Shen is not enough, certain Xian Shu cannot be performed. A character's maximum Shen is denoted by parameter <i>maxshen</i>.</li><br><li><b>Su</b> means &quot;speed&quot;. It affects how quick a character's progress ball moves. Su is always a positive integer <b>less</b> than 5. If a character's Su is <i>x</i>, it takes 5-<i>x</i> units time for his/her progress ball to move from left corner to the right corner of the progress bar. A character's Su (which is never changed during the combat) is denoted by parameter <i>su</i>.</li><br>For simplicity, you may assume that both XX and SY use the same strategy:<br><br><li>In his/her (4<i>n</i>+1)-th action (<i>n</i>=0,1,2,...), make a weapon attack upon H1.</li><br><li>In his/her (4<i>n</i>+2)-th action (<i>n</i>=0,1,2,...), make a weapon attack upon H2.</li><br><li>In his/her (4<i>n</i>+3)-th action (<i>n</i>=0,1,2,...), make a weapon attack upon H3.</li><br><li>In his/her (4<i>n</i>+4)-th action (<i>n</i>=0,1,2,...), make a special-skill attack upon all the heroes.</li><br>Now we introduce four more parameters for each hero. The first two, <i>d1x</i> and <i>d2x</i>, are the damages that the hero takes on XX's weapon attack and special-skill attack, respectively. For SY's attacks, we define <i>d1s</i> and <i>d2s</i> similarly.<br><br>You’re very tired, so you don't want to waste your time designing complex tactics. When a hero is about to act, you only consider the following actions:<br><br><li><b>Make a physical weapon attack</b> upon either XX or SY (cannot attack both). Be warned though, SY is surrounded by swords (see the screenshot), so making weapon attacks upon her would hurt the attacker himself/herself. The amount of &quot;reflection damage&quot; that the attacker takes is the same as the &quot;physical damage&quot; that SY takes. Attacking XX (yes, you <b>can</b> do that, if you like) does <b>not</b> suffer from physical reflection.</li><br><li><b>Use Xian Shu to recover Jing.</b> To make your brain easier, you decided <b>not</b> to recover other heroes' Jing. In this problem, the only Xian Shu that you can use is called &quot;Yu Run&quot;, which recovers <i>yurun_jing</i> points of Jing (if the resulting Jing exceeds his/her maximum Jing, it is reduced to the maximum) and uses <i>yurun_shen</i> points of Shen.</li><br><li><b>Use items to recover Shen.</b> To make your brain easier, you decided <b>not</b> to recover other heroes' Shen. In this problem, the only item that you can use is called &quot;Shu Er Guo&quot;, which recovers <i>shuerguo_shen</i> points of Shen (if the resulting Shen exceeds his/her maximum Shen, it is reduced to the maximum). You have an infinite number of Shu Er Guo.</li><br><li><b>Make a special-skill attack</b> if his/her Qi is enough. Each hero has exactly one special-skill attack, attacking both XX and SY. Note that some special-skill attacks are physical. Using a physical special-skill attack makes you take the same damage as SY, just like weapon attacks.</li><br>Now it's time to introduce four more parameters for each hero: <i>wad</i>, <i>ssd</i>, <i>ssq</i> and <i>ssp</i>. The number of Jing points that SY takes by the hero's weapon attacks and special-skill attacks are denoted by <i>wad</i> and <i>ssd</i>, respectively. The special-skill attack is physical if and only if <i>ssp</i>=1 (otherwise, <i>ssp</i>=0). It needs <i>ssq</i> points of Qi.<br><br>As you may have noticed, Qi cannot be recovered by Xian Shu or items. There are only two ways to increase Qi: make a weapon attack, or get hit by a weapon attack. Being hurt by physical reflection does <b>not</b> earn you extra Qi.<br><br>So here come the last two parameters for each hero: <i>q</i>1 and <i>q</i>2, that means making a weapon attack increases <i>q</i>1 points of Qi (whether or not you're reflected), while getting hit by a weapon attack increases <i>q</i>2 points of Qi. If the resulting Qi exceeds his/her maximum Qi (which is always 100), it is reduced to the maximum. Again, performing a special-skill attack never increases your Qi. Getting hurt by the bosses' special-skill attacks never increases your Qi, either.<br><br>As a perfectionist, you don't want any hero to be defeated even temporarily (in the real game you can rebirth a hero with certain Xian Shu or items) - for example, it's <b>not</b> allowed to make YTH and SY defeated at the same time (it can happen, for example, after YTH has performed a powerful physical special-skill attack).<br><br>Finally comes the question: what is the earliest time (we only care about ball-moving time, not including time needed to make attacks) that you can win the combat, if you play optimally? To play optimally, you need to choose between the options listed above, for each act. It's not as easy as it sounds. Be <b>careful</b>!</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>There will be at most 100 test cases. Each case begins with 6 positive integers, <i>SY_jing</i> (SY's initial Jing), <i>XX_su</i> (XX's Su), <i>SY_su</i> (SY's Su), <i>yurun_jing</i>, <i>yurun_shen</i> and <i>shuerguo_shen</i>. The next four lines contain descriptions of YTH, HLS, LML and MRZY, in this order. Each line contains 16 non-negative integers: <i>maxjing, maxshen, su, d1x, d2x, d1s, d2s, wad, ssd, ssq, ssp, q1, q2, jing, qi, shen</i>. The last three parameters are the initial Jing, Qi and Shen values of this hero before the combat begins. The limits of most parameters are listed below:<br><br><center><img style='max-width:100%;' src=../../../data/images/3235-2.JPG></center><br>And finally, 1 &lt;= <i>jing</i> &lt;= <i>maxjing</i>, 0 &lt;= <i>qi</i> &lt;= 100, 0 &lt;= <i>shen</i> &lt;= <i>maxshen</i>. The last test case is followed by 6 zeros, which should not be processed.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each test case, print the earliest time that you can win, and all possible orderings to achieve this. Each ordering is expressed as the concatenation of the first letters of H1, H2 and H3's names. For example, if H1=HLS, H2=LML, H3=YTH, the ordering is expressed as HLY. The orderings should be sorted in increasing order lexicographically. If you can't win the combat within 12 units of ball-moving time, print -1. Print a blank line after the output of each test case.</div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">1000 1 1 200 15 75
+1000 100 1 2000 2000 2000 2000 300 800 20 0 5 5
+900 10 100
+1000 100 1 2000 2000 2000 2000 120 300 10 0 5 5
+100 80 100
+1000 100 1 2000 2000 2000 2000 100 400 30 1 5 5
+450 40 100
+1000 100 1 2000 2000 2000 2000 250 700 10 1 5 5
+600 50 100
+3000 4 1 800 15 75
+2000 100 3 2 2 2 2 1 1 1 0 2 1 1000 100 100
+2000 100 4 2 2 2 2 1 1000 25 0 2 1 1 1 100
+2000 100 1 2 2 2 2 1 1000 1 1 1 1 300 100 0
+2000 100 3 2 2 2 2 1 1000 30 0 5 1 1 6 100
+26399 3 2 3182 543 800
+4462 353 2 4300 4875 6856 5527 31497 5633 61 0 68
+63 4355 0 351
+5444 300 3 7682 1037 597 4214 6744 6861 68 0 65 12
+2136 32 143
+5875 705 2 2097 118 2366 978 14276 24850 48 0 55
+70 3562 40 277
+6413 33 1 6305 1898 340 5238 13989 25287 25 1 72
+34 3176 4 30
+0 0 0 0 0 0</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">Case 1: 4 HLY HYL LHY LYH YHL YLH
+
+Case 2: 12 HML
+
+Case 3: -1
+
+<div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div><b>Explanation</b>
+
+In the first sample, you can win the combat just after one action for each hero (at time 4, since all the su values are 1), but you need to be careful.
+
+YTH's special-skill attack is powerful (damage=900), but his Qi is not enough (10&lt;20). You can't use HLS's weapon attack, since she'll get defeated by physical
+ reflection. LML's weapon attack is weak, but she can use her special-skill attack even though she'll get hurt by reflection (her special-skill attack is physical), 
+since 400&lt;450. For MRZY, his special-skill is physical, and too powerful, so we can't use it, since 700>600.
+
+To summarize, we can use YTH's weapon attack (damage=300), HLS's special-skill attack (damage=300), LML's weapon attack (damage=100) and special-skill 
+attack (damage=400), and MRZY's weapon attack (damage=250). It's not hard to see, the only possible combination that can finish the combat in the quickest 
+way is YTH, HLS and LML (use special-skill attack), the ordering is arbitrary. Note that the combat ends immediately after SY is defeated, so don't worry about 
+the terrible attacks of XX and SY.
+
+In the second sample, YTH is too weak so we ignore him immediately. You can't avoid XX's first attack, which is able to defeat everyone except LML, so LML 
+seems to be the only possible H1. However, HLS moves before XX, so she can also be H1 if she uses Yu Run in her first action. Unfortunately, MRZY can't be 
+H1, since he's not quick enough to recover Jing before XX attacks.
+
+All the weapon attacks are too weak, so the best strategy is to accumulate Qi first, then perform the powerful special-skill attacks when possible. LML's su is 
+too low, but her Qi is enough at startup. All she needs to do is to recover Shen, then recover Jing, and then do the attack (Why so complex? because her 
+powerful special-skill attack is physical…). Note that SY is only able to attack two heroes before the combat ends, so H3 has one fewer chance to increase Qi 
+by reflection. Actually, it can be proven that neither HLS nor MRZY can be H3 - if so, they'll be unable to gain enough Qi for their special-skill attacks.
+
+To summarize, HLS can be H1 or H2, LML can be all, while MRZY can only be H1. So the only possible ordering is H1=HLS, H2=MRZY, H3=LML.
+
+In the third sample, it seems that you can defeat SY with HLS's special-skill attack (damage=6861) and LML's specialskill attack (damage=24850). However, LML 
+needs to recover Jing to avoid being defeated, but her initial Shen is not enough If we changed her initial Shen to 543 (enough for Yu Run), the answer would 
+become "6 LYH LYM".
+</div><i style='font-size:1px'> </i></div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href="/search.php?field=problem&key=2009+Asia+Wuhan+Regional+Contest+Hosted+by+Wuhan+University&source=1&searchmode=source"> 2009 Asia Wuhan Regional Contest Hosted by Wuhan University </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>chenrui</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=3235'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=3235'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=3235">Discuss</a> | <a href='note/note.php?pid=3235'>Note</a><br></td></tr><tr>
+<td>
+	<table style="border:#1A5CC8 1px solid; font-size:14px" cellSpacing=0 cellPadding=1 width=100%>
+	<tr align=center>
+		<td class=footer_link height=45><a href="/">Home</a> | <a href=#top>Top</a></td>
+		<td style="padding:6px">
+			Hangzhou Dianzi University Online Judge 3.0<br>
+			Copyright &copy; 2005-2018 <a href=mailto:acm@hdu.edu.cn>HDU ACM Team</a>. All Rights Reserved.<br>
+			<a href="../about_us/developer.php">Designer & Developer </a>: <a>Wang Rongtao</a>&nbsp<a>LinLe</a>&nbsp<a href=mailto:gjavac@gmail.com >GaoJie</a>&nbsp<a href=mailto:gl8997@gmail.com >GanLu</a><br>
+			<span class=pagerunstatus>Total 0.000000(s) query 2, Server time : 2018-07-07 22:20:45, Gzip disabled</span>		</td>
+		<td class=footer_link>
+			<!-- <a href="javascript:history.go(-1);">Back</a> | <a href="javascript:history.forward();">Forward</a>-->
+			<a href="/admin">Administration</a>	
+		</td>
+	</tr>
+	</table>
+</td>
+</tr>
+</table>
+</body></html>

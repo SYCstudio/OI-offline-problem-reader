@@ -1,0 +1,34 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Trie in Tina Town</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU5394. Trie in Tina Town</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：16000/8000 MS (Java/Others)</span> <span class="ui label">时间限制：524288/524288 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Tina Town is a friendly place. People there care about each other.<br><br>A trie which was planted by the first mayor of Tina Town grows in the center of the town.<br><br>We define a palindrome substring in a trie a string that is a suffix of a string which the path from the root to any node represents and the string is a palindrome. Two palindromes are different if and only if their positions are different. Now, Tina wants to know the sum of the length of all palindrome substrings. Tina didn’t know the answer so she asked you to find out the answer for her.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The first line contains a integer – number of cases<br>For each case, the first line is an integer $N$ representing the number of nodes in trie except the root.<br>The following $N$ lines contains a letter between $a$ and $d$ – the letter that node $n[i]$ stores and a number $f[i]$ – the index of $n[i]$’s father. It’s guaranteed that $fa[i] \leq i$. If $fa[i] = 0$ n[i] is the root.<br>$T \leq 10, N \leq 2*{10}^6$<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The first line contains a integer – number of cases<br>For each case, the first line is an integer $N$ representing the number of nodes in trie except the root.<br>The following $N$ lines contains a letter between $a$ and $d$ – the letter that node $n[i]$ stores and a number $f[i]$ – the index of $n[i]$’s father. It’s guaranteed that $fa[i] \leq i$. If $fa[i] = 0$ n[i] is the root.<br>$T \leq 10, N \leq 2*{10}^6$<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">2
+5
+a 0
+a 1
+a 2
+b 1
+b 4
+5
+a 0
+a 1
+a 2
+b 1
+a 4</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">14
+15
+<div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div>
+The first test case is a trie like this:
+aaa *1 -> 3
+aa *2 -> 4
+a *3-> 3
+b *2-> 2
+bb *1- > 2
+3+4+3+2+2 = 14
+
+The second test case:
+aaa *1 -> 3
+aba *1 -> 3
+a *4 -> 4
+b *1 -> 1
+aa *2 -> 4
+3+3+4+1+4 = 15
+
+If the stack size is too small, you can submit it in C++ and add ‘#pragma comment(linker, "/STACK:102400000,102400000”)’ at the head of your program.
+Large input, recommend to use fast I/O.
+</div><i style='font-size:1px'> </i></div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=BestCoder+Round+%2351+%28div.2%29&source=1&searchmode=source"> BestCoder Round #51 (div.2) </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

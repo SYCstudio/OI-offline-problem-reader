@@ -1,0 +1,33 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>The  N cubes puzzle</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU3604. The  N cubes puzzle</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：2000/1000 MS (Java/Others)</span> <span class="ui label">时间限制：65536/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Given n cubes 1*1*1 (x,  y,  z) and n types of pigments . You can choose any one of the n pigments to paint every face of these cubes as you want. To save space, we’d like you to stack these n cubes vertically into a 1*1*n cube. What’s more, to make it as much beautiful as possible, we demand you to find a painting way to make sure that all the vertical faces of the resulting cube are covered by n colors. <br>For example, such as n = 4, a cube's expand map just as sample 1-1 ;and the stacked cube's expand map just as sample 1-2;<br><img style='max-width:100%;' src=./data/images/C307-1002-1.jpg>&nbsp;&nbsp;&nbsp;&nbsp;<img style='max-width:100%;' src=./data/images/C307-1002-2.jpg></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The first line is an integer T (1&lt;=T&lt;=500) indicating the number of test cases.<br> Each test case begins with an integer n (1&lt;=n&lt;=10), which stands for the number of cubes. Then, the following 3 * n lines each contains a string which only consists of capital letters between 'A' and 'A' + n - 1 (colors of the pigments, 1&lt;=n&lt;=10). Pay attention, each cube occupies 3 lines describing its expanded map. <br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For each case, print a line formatted as &quot;Case #ID: &quot;, where ID (starting from 1) is the number of current test case. Then, if it’s possible to find a feasible solution, please output &quot;Yes”, or please output &quot;No&quot;.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">3
+2
+ A
+BBAA
+ B
+ B
+ABBA
+ A 
+3
+ A
+ABAB
+ B
+ C
+AACB
+ C
+ C
+ABBC
+ C
+4
+ A
+ADCB
+ A
+ A
+ADBC
+ D
+ C
+BBAD
+ C
+ B
+CDAC
+ D</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">Case #1: Yes
+Case #2: No
+Case #3: Yes</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2010+ACM-ICPC+Multi-University+Training+Contest%A3%A817%A3%A9%A1%AA%A1%AAHost+by+ZSTU&source=1&searchmode=source"> 2010 ACM-ICPC Multi-University Training Contest（17）——Host by ZSTU </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

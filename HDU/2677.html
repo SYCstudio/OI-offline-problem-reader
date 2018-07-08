@@ -1,0 +1,30 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Dota all stars</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU2677. Dota all stars</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：2000/1000 MS (Java/Others)</span> <span class="ui label">时间限制：32768/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Dota as a popular computer game has serval years. Lots of Dota fans know that the equipment in the game is very important. To get a excellent equipment may be pass many processes.  Look the picture, you may see that in order to get the finally one must get the other two first. But this two may be can not get directly.<br><img style='max-width:100%;' src=./data/images/C167-2-06.jpg><br>　　　　　<img style='max-width:100%;' src=./data/images/C167-2-07.jpg><img style='max-width:100%;' src=./data/images/C167-2-04.jpg><br><img style='max-width:100%;' src=./data/images/C167-2-03.jpg><br>　　　　　　　　　　　　　　　<img style='max-width:100%;' src=./data/images/C167-2-07.jpg><img style='max-width:100%;' src=./data/images/C167-2-01.jpg><br><img style='max-width:100%;' src=./data/images/C167-2-05.jpg><br><br><br>　　　　　<img style='max-width:100%;' src=./data/images/C167-2-07.jpg><img style='max-width:100%;' src=./data/images/C167-2-02.jpg> <br><img style='max-width:100%;' src=./data/images/C167-1002-08.jpg> <br>Now give the primary equipments which you can buy it by money directly in the shop.<br>And the numbers of equipments you already have.<br>You also know all the formulas how to get a new better equipment by primary equipments.<br>Last give the numbers of equipments you want, tell us how much extra money you need. <br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The input contains multiple test cases.<br>First part a integer n1 expressing the numbers of primary equipments you can buy in the shop.<br>Next n1 lines, each line form as S V,S is the name of equipment and V meaning you should cost V money to buy one equipments S.<br>Second part a integer n2 expressing the numbers of kinds equipments you have.<br>Next n2 lines, each line form as S,M, meaning the numbers of equipment S you have is M.<br>Third part a integer n3 expressing the numbers of formulas.<br>Next n3 lines, each line have a character '=', The left is the equipments you should use to get the right equipment. For example A + B + C = D, In order to get a D, you must use A,B,C,D.each one.<br>Last part a integer n4, expressing n4 kinds of equipments you need.<br>Than n4 lines, each line form as S,M. Meaning the numbers of equipment S you need is M.<br><br>You may sure the total kinds of equipment will not larger than 100. And the lengths of equipment name will less than 50.(a chinese words made up of two character )<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Output the extra money you need to achieve goal.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">4
+欢欣之刃 100
+敏捷之靴 20
+半兽人之斧 100
+力量腰带 50
+2
+散华 1
+力量腰带 2
+3
+欢欣之刃 + 敏捷之靴 = 散华
+半兽人之斧 + 力量腰带 = 夜叉
+散华 + 夜叉 = 散夜对剑
+1
+散夜对剑 2
+
+5
+鹰角弓 3200
+短棍 1100
+攻击之爪 950
+阔剑 1200
+恶魔刀锋 2600
+0
+3
+鹰角弓 + 短棍 = 蝴蝶
+攻击之爪 + 阔剑 = 水晶剑
+水晶剑 + 恶魔刀锋 = 大炮
+2
+蝴蝶 1
+大炮 1</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">320
+9050</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2009%D5%E3%BD%AD%B4%F3%D1%A7%BC%C6%CB%E3%BB%FA%D1%D0%BF%BC%B8%B4%CA%D4%A3%A8%BB%FA%CA%D4%B2%BF%B7%D6%A3%A9%A1%AA%A1%AA%C8%AB%D5%E6%C4%A3%C4%E2&source=1&searchmode=source"> 2009浙江大学计算机研考复试（机试部分）——全真模拟 </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

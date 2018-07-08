@@ -1,0 +1,43 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Digits on the Floor</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU2911. Digits on the Floor</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：6000/2000 MS (Java/Others)</span> <span class="ui label">时间限制：32768/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Taro attempts to tell digits to Hanako by putting straight bars on the floor. Taro wants to express each digit by making one of the forms shown in Figure 2.<br><br>Since Taro may not have bars of desired lengths, Taro cannot always make forms exactly as shown in Figure 2. Fortunately, Hanako can recognize a form as a digit if the connection relation between bars in the form is kept. Neither the lengths of bars nor the directions of forms affect Hanako抯 perception as long as the connection relation remains the same. For example, Hanako can recognize all the awkward forms in Figure 3 as digits. On the other hand, Hanako cannot recognize the forms in Figure 4 as digits. For clarity, touching bars are slightly separated in Figures 2, 3 and 4. Actually, touching bars overlap exactly at one single point.<br><center><img style='max-width:100%;' src=./data/images/con207-d-1.JPG></center><br>In the forms, when a bar touches another, the touching point is an end of at least one of them. That is, bars never cross. In addition, the angle of such two bars is always a right angle.<br><br>To enable Taro to represent forms with his limited set of bars, positions and lengths of bars can be changed as far as the connection relations are kept. Also, forms can be rotated. Keeping the connection relations means the following.<br><center><img style='max-width:100%;' src=./data/images/con207-d-12.JPG></center><br>?Separated bars are not made to touch.<br><br>?Touching bars are not made separate.<br><br>?When one end of a bar touches another bar, that end still touches the same bar. When ittouches a midpoint of the other bar, it remains to touch a midpoint of the same bar on the same side.<br><br><br>?The angle of touching two bars is kept to be the same right angle (90 degrees and &amp;#8722;90 degrees are considered different, and forms for 2 and 5 are kept distinguished). Your task is to find how many times each digit appears on the floor. The forms of some digits always contain the forms of other digits. For example, a form for 9 always contains four forms for 1, one form for 4, and two overlapping forms for 7. In this problem, ignore the forms contained in another form and count only the digit of the 搇argest?form composed of all mutually connecting bars. If there is one form for 9, it should be interpreted as one appearance of 9 and no appearance of 1, 4, or 7.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The input consists of a number of datasets. Each dataset is formatted as follows.<br><br>n<br>x1a y1a x1b y1b<br><br>x2a y2a x2b y2b<br><br>...<br><br>xna yna xnb xnb<br><br>In the first line, n represents the number of bars in the dataset. For the rest of the lines, one line represents one bar. Four integers xa, ya, xb, yb, delimited by single spaces, are given in each line. xa and ya are the x- and y-coordinates of one end of the bar, respectively. xb and yb are those of the other end. The coordinate system is as shown in Figure 5. You can assume 1 ≤ n ≤ 1000 and 0 ≤ xa; ya; xb; yb ≤ 1000. The end of the input is indicated by a line containing one zero.<br><br><center><img style='max-width:100%;' src=./data/images/con207-d-3.JPG></center> <br><br>You can also assume the following conditions.<br><br>More than two bars do not overlap at one point.<br><br> Every bar is used as a part of a digit. Non-digit forms do not exist on the floor.<br><br> A bar that makes up one digit does not touch nor cross any bar that makes up another digit.<br><br> There is no bar whose length is zero.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For each dataset, output a single line containing ten integers delimited by single spaces. These integers represent how many times 0, 1, 2, . . . , and 9 appear on the floor in this order. <br>Output lines must not contain other characters.</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">9
+60 140 200 300
+300 105 330 135
+330 135 250 215
+240 205 250 215
+298 167 285 154
+30 40 30 90
+30 90 150 90
+150 90 150 20
+30 40 150 40
+8
+320 20 300 60
+320 20 380 50
+380 50 240 330
+10 50 40 20
+10 50 110 150
+110 150 180 80
+40 20 37 17
+37 17 27 27
+20
+72 222 132 182
+204 154 204 54
+510 410 520 370
+404 54 204 54
+530 450 410 450
+204 68 404 68
+80 110 120 30
+130 160 180 60
+520 370 320 320
+310 360 320 320
+120 30 180 60
+60 100 80 110
+404 154 204 154
+80 60 60 100
+430 550 590 550
+510 410 310 360
+430 450 430 550
+404 54 404 154
+232 202 142 262
+142 262 102 202
+0</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">0 1 0 1 0 0 0 0 0 1
+0 0 0 0 0 1 0 1 0 0
+1 0 1 0 2 0 0 0 1 0</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2008+Asia+Regional+Aizu&source=1&searchmode=source"> 2008 Asia Regional Aizu </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

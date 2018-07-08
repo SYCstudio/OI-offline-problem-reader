@@ -1,0 +1,35 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Beat drop</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU3451. Beat drop</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：2000/1000 MS (Java/Others)</span> <span class="ui label">时间限制：32768/65536 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">John recently found an interesting flash game on BBS. The game is mainly about making the best of the present waterdrops and use as little waterdrops as possible to eliminate all the <center><img style='max-width:100%;' src=./data/images/3451-1.jpg></center>waterdrops on board.Now let’s briefly introduce the operations: The game board is a 6*6 square. At the beginning, there are waterdrops in some squares (in different sizes), gamers can obtain a larger waterdrop by adding little waterdrops to the square. When the number of little waterdrops in the square meets 4, the big waterdrop in the square breaks, producing 4 little waterdrops, in whatever circumstances, the broken waterdrop can only produce 4 little waterdrops, which then fly up, down left, right, four directions. When a little whatdrop meets a square that contains a waterdrop, it will be absorbed, and the one in the square will become larger, just the same as when you manually add one to the square. When multiple waterdrops arrive at （a square that contains a waterdrop） simultaneously, they will be absorbed by the square. If the waterdrop touch the edge of board, it disappears. Gamers hope to use the least waterdrops to eliminate the waterdrops on board, so they can make through more levels. For further details, please visit “flashempire”. John and other byr players are obsessed with the game, but he is just not good at it. It’s mainly because after he comes up with an order to add the waterdrop, he can’t imagine the layout. Now John needs your help. So you will be given a game board and how the waterdrops are distributed, and John will tell you how he is going to add the waterdrop, he hopes that you can tell him if it can make it through the level, if not, tell him what the board will be like at the end. We use a n*m square to represent the game board, and L to represent the up limit of the number of waterdrops each square can contain, the number of waterdrops in each square exceeds L, the drop breaks. And the broken water drop produces 4 little waterdrops that will fly in four directions in the same speed.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">The first line will contain an integer T indicating the number of test cases For each test case, it starts with three integers n, m, L, where n is the number of the rows, m is the number of the columns, L is the up limit of the number each square can contain. 1&lt;= n, m &lt;= 100，5 &lt;= L&lt;=10. Then follows a n*m matrix indicating the initial state of the game board, you are assured that every element is non-negative and no larger than L. After the matrix, there will be a number q, indicating how John is going to add the waterdrop at the qth step. John only adds waterdrop when it is stabel after putting last waterdrop. So q line follows, each contains two integers x,y indicating the location John adds waterdrop. 1&lt;=x&lt;=n,1&lt;=y&lt;=m.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For every test case, output “YES” or “NO” first, indicating if John can make it the end of this stage, if it is “NO”, it is required to output a n*m matrix indicating the final state of the game board.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">3
+2 2 2
+2 0
+0 0
+1
+1 1
+2 2 2
+2 0
+0 0 
+1
+1 2
+6 6 4
+4 3 2 0 0 0
+3 3 0 1 2 2
+1 3 2 4 2 0
+3 4 1 4 4 1
+3 2 2 2 3 0
+3 0 3 2 1 2
+6
+4 3
+4 3
+3 2
+2 2
+2 6
+4 4</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">YES
+NO
+2 1
+0 0
+NO
+0 0 0 0 0 0 
+0 0 0 0 0 0 
+0 0 0 0 0 0 
+0 0 0 0 0 0 
+0 0 0 0 0 0 
+0 0 0 0 4 4 </div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2010+ACM-ICPC+Multi-University+Training+Contest%A3%A82%A3%A9%A1%AA%A1%AAHost+by+BUPT+&source=1&searchmode=source"> 2010 ACM-ICPC Multi-University Training Contest（2）——Host by BUPT  </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

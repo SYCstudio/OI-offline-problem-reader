@@ -1,0 +1,28 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>Waiting ten thousand years for Love</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU2653. Waiting ten thousand years for Love</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：10000/2000 MS (Java/Others)</span> <span class="ui label">时间限制：32768/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">It was ten thousand years, after Demon Lemon caught Yifenfei’s love. In order to revenge and save his love, Yifenfei have been practising sword all day long and his Kongfu skills becomes so powerful that he can kill Demon Lemon immediately. Recently, Yifenfei have found Lemon’s castle, and now he is going to kill Lemon. At the same time, hearing about the terrible news, Demon Lemon is now preparing for escaping...<br><br>Now Yifenfei has got the map of the castle.<br>Here are all symbols of  the map:<br>Only one ‘Y’ Indicates the start position of Yifenfei.<br>Only one ‘L’ Indicates the position of Demon Lemon.<br>‘.’ Indicate the road that Yifenfei can walk on it, or fly over it.<br>‘#’ Indicate  the wall that Yifenfei can not walk or flay through it.<br>‘@’ Indicate the trap that Yifenfei can not walk on it, but can  fly over it.<br><br>Yifenfei can walk or fly to one of up, down, left or right four directions each step, walk costs him 2 seconds per step, fly costs him 1 second per step and 1 magic power. His magic power will not increased, and if his magic power is zero, he can not fly any more.<br><br>Now Yifenfei asks you for helping him kill Demon Lemon smoothly. At the same time, Demon Lemon will Leave the castle Atfer T seconds. If Yifenfei can’t kill Demon Lemon this time, he have to wait another ten thousand years.<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">Lots of test cases, please process to end of file. In each test case, firstly will have four integers N, M, T, P(1 &lt;= N, M, P &lt;= 80, 1 &lt;= T &lt;= 100000), indicates the size of map N * M, the Lemon’s leaving time(after T seconds, Lemon will disappeared) and Yifenfei’s magic power. Then an N * M two-dimensional array follows indicates the map. </div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">For each test case, first Print a line “Case C:”, C indicates the case number. Then, if Yifenfei can kill Demon Lemon successfully, Print “Yes, Yifenfei will kill Lemon at T sec.”, T indicates the minimum seconds he must cost. Otherwise, Print ”Poor Yifenfei, he has to wait another ten thousand years.” </div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">2 3 2 2
+Y@L
+###
+2 3 4 1
+Y@L
+###
+2 3 4 0
+Y.L
+###
+2 3 3 0
+Y.L
+###</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">Case 1:
+Yes, Yifenfei will kill Lemon at 2 sec.
+Case 2:
+Poor Yifenfei, he has to wait another ten thousand years.
+Case 3:
+Yes, Yifenfei will kill Lemon at 4 sec.
+Case 4:
+Poor Yifenfei, he has to wait another ten thousand years.
+
+
+
+<div style='font-family:Times New Roman;font-size:14px;background-color:F4FBFF;border:#B7CBFF 1px dashed;padding:6px'><div style='font-family:Arial;font-weight:bold;color:#7CA9ED;border-bottom:#B7CBFF 1px dashed'><i>Hint</i></div>Hint
+Case 1: Yifenfei cost 1 second and 1 magic-power fly to ‘@’, 
+but he can not step on it, he must cost another 1 second
+ and 1 magic-power fly to ‘L’ and kill Lemon immediately. 
+Case 2: When Yifenfei Fly to ‘@’, he has no power to fly, 
+and is killed by trap.</div><i style='font-size:1px'> </i></div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=%BE%F6%D5%BD%C1%FA%BB%A2%C3%C5&source=1&searchmode=source"> 决战龙虎门 </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

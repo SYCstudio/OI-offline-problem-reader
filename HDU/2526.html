@@ -1,0 +1,26 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>浪漫手机</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU2526. 浪漫手机</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：3000/1000 MS (Java/Others)</span> <span class="ui label">时间限制：32768/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">最近，WisKey迷上了手机铃声，但是他对音律不是很懂，所以他想着能否用计算机来随机生成铃声。当WisKey写好程序后，发现生成出来的根本不是铃声，而是噪声！<br>之后WisKey查阅了一些乐谱发现，其实很多铃声是以某种规律变化的，这里为了简化这个难题，他以连续3个音符来判断下个音符。<br>如有模式<br><img style='max-width:100%;' src=./data/images/c153-1007-1.JPG><br>在给定第一行乐谱的情况下，按模式将产生如下乐谱图形：<br><img style='max-width:100%;' src=./data/images/c153-1007-2.JPG><br>我们用0表示白色格子，用1表示黑色格子。<br>对于没有连续3个格子的边缘（即没有左边格子或右边格子），我们直接用白色格子代替缺少的那一个格子。<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">第一行有一个整数T，代表有T组数据。<br>每组数据有一个整数M，表示要输出M行乐谱。接着有8行模式串，左边是音符模式，右边是下一个音符。最后一行是第一行乐谱。<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">输出M行，表示M行乐谱。</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">1
+16
+111 1
+110 1
+101 1
+100 1
+011 1
+010 0
+001 1
+000 0
+0000000000000001000000000000000</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">0000000000000001000000000000000
+0000000000000010100000000000000
+0000000000000101010000000000000
+0000000000001010101000000000000
+0000000000010101010100000000000
+0000000000101010101010000000000
+0000000001010101010101000000000
+0000000010101010101010100000000
+0000000101010101010101010000000
+0000001010101010101010101000000
+0000010101010101010101010100000
+0000101010101010101010101010000
+0001010101010101010101010101000
+0010101010101010101010101010100
+0101010101010101010101010101010
+1010101010101010101010101010101</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=HDU+2008-10+Programming+Contest&source=1&searchmode=source"> HDU 2008-10 Programming Contest </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>

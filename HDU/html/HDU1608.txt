@@ -1,0 +1,139 @@
+<html><head><meta name=keywords content="HDOJ ACM ICPC OJ C C++ Pascal Java"><meta http-equiv=Content-Type content="text/html;charset=gb2312"><link rel=stylesheet type=text/css href="/images/global.css" media=all><link rel=stylesheet type=text/css href="/css/diyinhead.css" media=all><link rel=stylesheet type=text/css href="/css/webinhead.css" media=all><script src="/js/global.js" type=text/javascript></script><script src="/js/register.js" type=text/javascript></script><script src="/js/MathJax/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script><title>Problem - 1608</title></head><body >
+<a name=top></a>
+<table align=center cellSpacing=0 cellPadding=0 width=980 border=0 style="word-wrap:break-word">
+<tr>
+	<td style="border:#1A5CC8 1px solid" align=center width=100%>
+		<a href="/">
+			<img src="/images/banner.jpg" width="100%" height=116 border=0>
+		</a>
+	</td>
+</tr>
+<tr>
+	<td style="border:#1A5CC8 1px solid">
+	<table cellSpacing=0 cellPadding=1 width="979px">
+	<tr bgcolor=#1A5CC8 align=center class=banner height=25>
+		<td>Online Judge</td>
+		<td>Online Exercise</td>
+		<td>Online Teaching</td>
+		<td>Online Contests</td>
+	<td>Exercise Author</td>
+	</tr>
+	<tr style="font-size:16px" align=center>
+		<td width=20% valign=top>
+		<a href="/faq.php" style="text-decoration: none">F.A.Q</a><br>
+		<a href="/friends" style="text-decoration: none">Hand In Hand</a><br>
+		<a href="/onlineuser.php" style="text-decoration: none">Online Acmers</a>	<br>
+		<!-- /onlineuser.php-->
+		
+		<a href="/forum" style="text-decoration: none">Forum | </a><a href="/discuss/public/list.php" style="text-decoration: none">Discuss</a><br>
+		<a href="/statistic/submit_graph.php" style="text-decoration: none">Statistical Charts</a><br>
+		</td>
+		<td width=20% valign=top>
+		<form action="/search.php" method=get>
+		<a href="/listproblem.php?vol=1" style="text-decoration: none">Problem Archive</a><br/>
+		<!--<a href="http://feeds.feedburner.com/Hdoj-problemset"><img src="/images/rss1.jpg" alt="problemset" style="vertical-align:text-bottom;"width=20 height=20></a><br>-->
+		<!--
+			 <a href="/submit.php">Submit Solution</a><br>
+		-->	
+		<a href="/status.php" style="text-decoration: none">Realtime Judge Status</a><br>
+
+		<a href="/ranklist.php" style="text-decoration: none">Authors Ranklist</a><br>
+		<input name=field value=author type=hidden><input class=text60 name=key>&nbsp;<input class=button40 type=submit value=Search>
+		
+		<!--
+			<input name=field value=problem type=hidden><input class=text60 name=key>&nbsp;<input class=button40 type=submit value=Search>
+		-->
+		</form>
+		</td>
+		<td width=20% valign=top>
+		 <form action='/search.php' method=get> 
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="text-decoration: none" href="http://code.hdu.edu.cn/">C/C++/Java Exams &nbsp;&nbsp;&nbsp;&nbsp;</a><br/>
+		<a style="text-decoration: none" href="/game">ACM Steps</a><br/>
+		<a href = "/ITJobs/">Go to Job</a><br/>	
+		<a href="/livecast" style="text-decoration: none">Contest LiveCast</a><br/>
+		<a style="text-decoration: none" href="/region">ICPC@China</a><br/>
+		<!-- <a href="/register.php">Register New Author</a><br> -->
+		<!-- <a href="/modifyuser.php">Update Your Information</a><br> -->
+		</form>
+		</td>
+		<td width=20% valign=top>
+		<a href="http://bestcoder.hdu.edu.cn" style="text-decoration: none; color: red; font-weight: bold;">Best Coder <sup style="color: gray;">beta</sup></a><br/><a href="/vip/contest_list.php" style="text-decoration: none">VIP</a> | <a href="/contests/contest_list.php" style="text-decoration: none">STD Contests</a><br /><a href="http://code.hdu.edu.cn/vcontest" style="text-decoration: none">Virtual Contests </a><br/>&nbsp;&nbsp;<a href="/diy/contest_list.php" style="text-decoration: none">&nbsp;&nbsp;DIY | </a><a href="/webcontest" style="text-decoration: none"><font color="">Web-DIY</font> <font size=1 color="gray"><sup>beta</sup></font></a><br/><a style="text-decoration: none" href="/recentcontest">Recent Contests</a><br/>		</td>
+		<td width=20%>
+					<form method=post action="/userloginex.php?action=login">
+			  <table width=168 border=0 align=center cellspacing=0>
+			  	<tr><td align=center colspan=2><a href="/qqlogin/oauth/login.php"><img src="/qqlogin/images/qqlogin.png" border="0" /></a></td></tr>
+				<tr><td width=68>Author ID&nbsp;</td><td align=right><input name=username type=text class=text90 maxlength=20></td></tr>
+				<tr><td>Password&nbsp;</td><td align=right><input name=userpass type=password class=text90 maxlength=20></td></tr>
+			  </table>
+			  <input name=login type=submit class=button40 value="Sign In">&nbsp;<a href="http://bestcoder.hdu.edu.cn/register.php?url=acm.hdu.edu.cn/userloginex.php?action=login" style="text-decoration: none">Register new ID</a>
+			</form>
+						</td>
+	</tr>
+	</table>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div align=center id=rollword><marquee scrollamount=2 width=600 scrolldelay=30 onMouseOver="javascript:this.stop();" onMouseOut="javascript:this.start();"><b style="margin-right:20px"></b></marquee></div>	</td>
+</tr>
+<tr><td align=center><h1 style='color:#1A5CC8'>Centipede Collisions</h1><font><b><span style='font-family:Arial;font-size:12px;font-weight:bold;color:green'>Time Limit: 2000/1000 MS (Java/Others)&nbsp;&nbsp;&nbsp;&nbsp;Memory Limit: 65536/32768 K (Java/Others)<br>Total Submission(s): 170&nbsp;&nbsp;&nbsp;&nbsp;Accepted Submission(s): 24<br></span></b></font><br><br><div class=panel_title align=left>Problem Description</div> <div class=panel_content>A small boy named Tommy has some toy centipedes that are a series of 1 centimeter segments. Tommy assembles his centipedes to any length he likes and places them on a 30 x 30 centimeter board that allows the centipedes to travel in 1 centimeter wide tracks that criss-cross the board. <br><br>The centipedes travel only parallel to either the x or y axis on the board. Centipede segments of the same centipede advance at the same time and centipedes advance in cyclic numerical order (all of centipede 0 first, then 1, etc.). When more than one segment of two or more centipedes occupy the same x,y coordinate, there is a centipede collision. <br><br>Anytime a collision occurs, all segments occupying the collistion site stop and continue to occupy the collision site. All remaining segments on a centipede detach from the segment involved in the collision and continue their march until another collision occurs or an existing collision site is encountered or until the segments fall off the edge of the board. Anytime a segment enters a collision site, it becomes part of the collision. <br><br>Since Tommy left home without his centipede set, his mother has hired you to write a simulation program for his entertainment. Your program will simulate his board with a text printout of his grids. For example, Tommy may simulate 5 centipedes on his board that start out as shown on the grid on the left and finish as shown on the grid on the right (note the example grid is only 10 x 10 whereas Tommy's is 30 x 30.) <br><br>9 . . . . . . . . . . . . . . . . . . . . <br><br>8 . . . . . . . . . . . . . . . . . . . . <br><br>7 1 1 1 1 1 . . . . . . . . . . X . . . X <br><br>6 . 0 . . . . . . . . . . . . . . . . . . <br><br>5 . 0 . . . . . . . 3 . . . . . . . . . . <br><br>4 . 0 . . . 2 . . . 3 . . . . . . . . . . <br><br>3 . 0 . . . 2 . . . 3 . . . . . . . . . . <br><br>2 . . . . . 2 . . . 3 . . . . . . . . . . <br><br>1 . . . . . 2 . . . 3 . . . . . . . . . . <br><br>0 . . . . . 2 4 4 4 3 . X . . . . . . . . <br><br>Y Y <br><br>/X /X <br><br><br>Where <br><br>0 represents a centipede segment traveling from top to bottom,<br><br>1 represents a centipede segment traveling from left to right,<br><br>2 represents a centipede segment traveling from bottom to top,<br><br>3 represents a centipede segment traveling from bottom to top,<br><br>4 represents a centipede segment traveling from right to left, and<br><br>X represents a collision site involving 2 or more segments.<br><br><br>Your program will simulate up to 10 centipedes that travel on a 30 x 30 board. Tommy has 100 segments that he may use in his simulation. Of course, no centipede can be longer than 30 segments. <br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Input</div> <div class=panel_content>Input to your program will consist of a series of simulation sets. The first line of each input set will be a single integer (1 &lt;= N &lt;= 10) representing the number of centipedes in the simulation. (Centipedes are numbered 0 through N-1 in the same order as the input.) <br><br>The next N lines will each represent one centipede and will contain a single direction character followed by 3 integers. The direction character can be `U', `D', `L', or `R' for ``Up&quot;, ``Down&quot;, ``Left&quot;, or ``Right&quot; respectively and indicate the direction of travel. The next integer (1 &lt;= L &lt;= 30) indicates the length of the centipede in segments. The second and third integers indicate the x,y coordinates of the lead segment (0 &lt;= x &amp; y &lt;= 29). The next L-1 segments of the centipede occupy the L-1 board positions extending in the opposite direction from the direction of travel starting adjacent to the lead segment. <br><br>You can be assured that no centipede segment will originate off the board nor will the original configuration involve any collisions. <br><br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Output</div> <div class=panel_content>For each input simulation set, you should print (exactly) the following lines as the first two lines of output (starting in column 4). <br><br>0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2<br>0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9<br><br>The next 30 lines represent the state of the board after the simulation has completed (all centipede segments have entered a collision site or fallen off the edge of the board). Columns 1 and 2 should contain the row number (rows are numbered 29 down to 00) with leading zeroes. Even numbered columns between 4 and 62 (inclusive) represent the contents of the board cells. Board cells can contain either an X or a period. A period represents an empty cell and X represents a cell that contains 2 or more centipede segments involved in a collision. The last line of each output set is a blank line. <br><br>Follow the Sample Output for the exact format of the expected output. <br><br></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Input</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">10
+R 9 11 23
+U 8 11 17
+U 5 15 15
+U 5 15 8
+D 9 23 13
+U 6 23 6
+R 9 8 9
+L 13 17 0
+U 12 13 11
+L 5 20 9</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Sample Output</div><div class=panel_content><pre><div style="font-family:Courier New,Courier,monospace;">   0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2
+   0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9
+29 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+28 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+27 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+26 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+25 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+24 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+23 . . . . . . . . . . . X . . . X . . . . . . . . . . . . . .
+22 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+21 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+20 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+19 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+18 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+17 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+16 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+15 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+14 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+13 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+12 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+11 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+10 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+09 . . . . . . . . . . . . . X . X . . . . . . . X . . . . . .
+08 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+07 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+06 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+05 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+04 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+03 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+02 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+01 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+00 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</div></pre></div><div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Source</div> <div class=panel_content> <a href="/search.php?field=problem&key=South+Central+USA+1996&source=1&searchmode=source"> South Central USA 1996 </a> </div> <div class=panel_bottom>&nbsp;</div><br><div class=panel_title align=left>Recommend</div> <div class=panel_content>lcy</div><div class=panel_bottom>&nbsp;</div><br><center style='font-size:15px;font-family:Arial;font-weight:bold;color:#1A5CC8'><a href='statistic.php?pid=1608'>Statistic</a>&nbsp;|&nbsp;<a href='submit.php?pid=1608'>Submit</a>&nbsp;|&nbsp;<a href="./discuss/problem/list.php?problemid=1608">Discuss</a> | <a href='note/note.php?pid=1608'>Note</a><br></td></tr><tr>
+<td>
+	<table style="border:#1A5CC8 1px solid; font-size:14px" cellSpacing=0 cellPadding=1 width=100%>
+	<tr align=center>
+		<td class=footer_link height=45><a href="/">Home</a> | <a href=#top>Top</a></td>
+		<td style="padding:6px">
+			Hangzhou Dianzi University Online Judge 3.0<br>
+			Copyright &copy; 2005-2018 <a href=mailto:acm@hdu.edu.cn>HDU ACM Team</a>. All Rights Reserved.<br>
+			<a href="../about_us/developer.php">Designer & Developer </a>: <a>Wang Rongtao</a>&nbsp<a>LinLe</a>&nbsp<a href=mailto:gjavac@gmail.com >GaoJie</a>&nbsp<a href=mailto:gl8997@gmail.com >GanLu</a><br>
+			<span class=pagerunstatus>Total 0.000000(s) query 2, Server time : 2018-07-07 21:02:23, Gzip disabled</span>		</td>
+		<td class=footer_link>
+			<!-- <a href="javascript:history.go(-1);">Back</a> | <a href="javascript:history.forward();">Forward</a>-->
+			<a href="/admin">Administration</a>	
+		</td>
+	</tr>
+	</table>
+</td>
+</tr>
+</table>
+</body></html>

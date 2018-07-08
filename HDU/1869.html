@@ -1,0 +1,18 @@
+<html><head><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>六度分离</title></head><body><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">HDU1869. 六度分离</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：5000/1000 MS (Java/Others)</span> <span class="ui label">时间限制：32768/32768 K (Java/Others)</span></div></div></br><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">1967年，美国著名的社会学家斯坦利·米尔格兰姆提出了一个名为“小世界现象(small world phenomenon)”的著名假说，大意是说，任何2个素不相识的人中间最多只隔着6个人，即只用6个人就可以将他们联系在一起，因此他的理论也被称为“六度分离”理论(six degrees of separation)。虽然米尔格兰姆的理论屡屡应验，一直也有很多社会学家对其兴趣浓厚，但是在30多年的时间里，它从来就没有得到过严谨的证明，只是一种带有传奇色彩的假说而已。 <br><br>Lele对这个理论相当有兴趣，于是，他在HDU里对N个人展开了调查。他已经得到了他们之间的相识关系，现在就请你帮他验证一下“六度分离”是否成立吧。</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">本题目包含多组测试，请处理到文件结束。<br>对于每组测试，第一行包含两个整数N,M(0&lt;N&lt;100,0&lt;M&lt;200),分别代表HDU里的人数（这些人分别编成0~N-1号)，以及他们之间的关系。<br>接下来有M行，每行两个整数A,B(0&lt;=A,B&lt;N)表示HDU里编号为A和编号B的人互相认识。<br>除了这M组关系，其他任意两人之间均不相识。<br></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">对于每组测试，如果数据符合“六度分离”理论就在一行里输出&quot;Yes&quot;，否则输出&quot;No&quot;。</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">8 7
+0 1
+1 2
+2 3
+3 4
+4 5
+5 6
+6 7
+8 8
+0 1
+1 2
+2 3
+3 4
+4 5
+5 6
+6 7
+7 0</code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">Yes
+Yes</div></code></pre></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"> <a href="/search.php?field=problem&key=2008%BA%BC%B5%E7%BC%AF%D1%B5%B6%D3%D1%A1%B0%CE%C8%FC%A1%AA%A1%AA%C8%C8%C9%ED%C8%FC&source=1&searchmode=source"> 2008杭电集训队选拔赛——热身赛 </a> </div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">OI-offline-problem-reader Powered by <a href="http://www.sycstudio.com">SYCstudio</a>.</span></div></div></div></body></html>
